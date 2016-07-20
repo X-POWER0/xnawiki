@@ -2,7 +2,7 @@
 
 Title | Area | Description | Type
 ---|---|---|---
-[*Marketing Tips: Get your app or game noticed*](https://github.com/DDReaper/XNAGameStudio/wiki/Articles/Marketing Tips Get your app or game noticed) | | Collection of tips from developers in the community, on marketing your app or game. | Article
+[*Marketing Tips: Get your app or game noticed*](https://github.com/DDReaper/XNAGameStudio/wiki/Marketing-Tips-Get-your-app-or-game-noticed) | | Collection of tips from developers in the community, on marketing your app or game. | Article
 *Get to Windows Phone 7.5 #7: Using Push Notifications with Secondary Tiles and Deep Toast* |Push Notifications, User Experience | This is the seventh in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step.| Tutorial
 *Get to Windows Phone 7.5 #6: Using a Live Camera Feed* | Media, User Experience | This is the sixth in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step. | Tutorial
 *Get to Windows Phone 7.5 #4: Adding Secondary Tiles* | User Experience | This is the third in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step. | Tutorial
