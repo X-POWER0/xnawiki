@@ -1,0 +1,19 @@
+
+
+Title | Area | Description | Type
+---|---|---|---
+[*Marketing Tips: Get your app or game noticed*](https://github.com/DDReaper/XNAGameStudio/wiki/Articles/Marketing Tips Get your app or game noticed) | | Collection of tips from developers in the community, on marketing your app or game. | Article
+*Get to Windows Phone 7.5 #7: Using Push Notifications with Secondary Tiles and Deep Toast* |Push Notifications, User Experience | This is the seventh in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step.| Tutorial
+*Get to Windows Phone 7.5 #6: Using a Live Camera Feed* | Media, User Experience | This is the sixth in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step. | Tutorial
+*Get to Windows Phone 7.5 #4: Adding Secondary Tiles* | User Experience | This is the third in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step. | Tutorial
+*Get to Windows Phone 7.5 #1: From XNA to SLXNA* | Games: 2D Graphics | Our first video is about taking an existing XNA game, and modifying it to leverage our new Silverlight / XNA integration enabled by Windows Phone SDK 7.1. | Tutorial
+*Get to Windows Phone 7.5 #2: Adding FAS to XNA* | Games: 2D Graphics, Performance & Optimization | This is the second in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step. | Tutorial
+*Get to Windows Phone 7.5 #3: Adding FAS to a Typical Silverlight Application* | Performance & Optimization | This is the third in a series of videos that will detail how to add Windows Phone SDK 7.1 functionality to an existing Windows Phone application, step by step. | Tutorial
+*Fast Application Switching: Implications for Xbox LIVE Titles on Windows Phone Operating System 7.1 (“Mango”)* | Performance & Optimization | This technical article covers some of the most common questions around FAS, and how it affects development for interactive entertainment titles. | Article
+*PEGI Express Rating Tool Information* | Marketplace & Submission | PEGI Express is the name of a newly developed version of the PEGI (Pan European Game Information) rating sytem that allows games for Windows Phone to get an age rating. | Article
+*Compiled (XNB) Content Format* | Games: Content Pipeline | This article documents the format of the compiled data files (.xnb) produced by the XNA Game Studio 4.0 Content Pipeline build process. | Code Sample
+*Windows Phone Localization for Games* | Localization & Globalization | This document provides a step-by-step guide and recommended practices to ensure a Windows Phone game project made in XNA Game Studio is localizable. | Article
+*XNA Game Studio or Silverlight: Which Product is Right for Me? (Updated for Mango)* | | This article will help developers make an informed decision when choosing between the two. | Article
+*Game State Management (Mango, C#/VB)* | Games: Gameplay, User Experience | This sample shows how to manage the transitions among menus and gameplay states.| Code Sample
+*Silverlight XNA Game Components (Mango, C#/VB)* | Games: Data Management, Games: Gameplay | This sample provides an implementation and demonstration of a GameComponent system for use in games leveraging Silverlight and the XNA Framework. | Code Sample
+*Paddle Battle (Mango, C#/VB)* | Games: 2D Graphics, Games: Gameplay, Games: Graphics, User Experience | This sample shows a very basic game written on top of the new Silverlight/XNA Framework application model. | Code Sample 
