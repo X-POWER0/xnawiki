@@ -1,4 +1,4 @@
-#Windows Phone Localization for Games#
+#Localization for Games#
 
 Area
 Localization & Globalization
