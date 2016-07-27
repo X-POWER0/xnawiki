@@ -1,4 +1,4 @@
-#Silverlight Microphone Sample#
+#Microphone Sample#
 
 Area
 Games: Audio, Sensors

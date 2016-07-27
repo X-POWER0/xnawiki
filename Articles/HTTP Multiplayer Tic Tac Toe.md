@@ -20,7 +20,7 @@ The sample uses a self-hosted WCF service to simulate the server. The service’
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/tictactoe1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/tictactoe1.png)
+ ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/tictactoe1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/tictactoe2.png)
  	 
 
  
