@@ -25,7 +25,7 @@ Features:
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 		
-![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/marblemaze0.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/marblemaze0.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/marblemaze0.png)
+![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/marblemaze0.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/marblemaze1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/marblemaze2.png)
  
 
  
