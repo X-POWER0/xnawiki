@@ -15,8 +15,11 @@ This supplemental article outlines the different coordinate spaces that are nece
 Other items in the Shader Series
 
 [Shader Series: Introduction](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series Introduction) (Article)
+
 [Shader Series 1: Vertex Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 1 Vertex Lighting)
+
 [Shader Series 2: Textures and Colors Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 2 Textures and Colors)
+
 [Shader Series 3: Per-Pixel Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 3 Per-Pixel Lighting)
 
 

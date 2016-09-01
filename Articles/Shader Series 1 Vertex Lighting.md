@@ -19,7 +19,9 @@ This sample explores the diffuse and ambient lighting models and combines them i
 Other items in the Shader Series
 
 [Shader Series: Introduction](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series Introduction) (Article)
+
 [Shader Series 2: Textures and Colors Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 2 Textures and Colors)
+
 [Shader Series 3: Per-Pixel Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 3 Per-Pixel Lighting)
 
 

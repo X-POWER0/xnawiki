@@ -23,7 +23,9 @@ The most important lesson of this sample is that the manner in which you come up
 Other items in the Shader Series
 
 [Shader Series: Introduction](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series Introduction) (Article)
+
 [Shader Series 1: Vertex Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 1 Vertex Lighting)
+
 [Shader Series 3: Per-Pixel Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 3 Per-Pixel Lighting)
 
 
