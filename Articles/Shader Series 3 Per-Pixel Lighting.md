@@ -18,9 +18,9 @@ This sample uses Phong reflection to approximate specular light, creating highli
 
 Other items in the Shader Series
 
-    [Shader Series: Introduction](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series Introduction) (Article)
-    [Shader Series 1: Vertex Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 1 Vertex Lighting)
-    [Shader Series 2: Textures and Colors Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 2 Textures and Colors)
+[Shader Series: Introduction](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series Introduction) (Article)
+[Shader Series 1: Vertex Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 1 Vertex Lighting)
+[Shader Series 2: Textures and Colors Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 2 Textures and Colors)
 
 
 

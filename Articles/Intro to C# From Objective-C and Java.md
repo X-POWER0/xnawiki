@@ -14,7 +14,7 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 downloads
 
-[IntroToCSharp_Article_4_0.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/IntroToCSharp_Article_4_0.docx?raw=true)
+[IntroToCSharp_Article_4_0.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/IntroToCSharp_Article_4_0.doc?raw=true)
 
 Size: 0.15MB
 
