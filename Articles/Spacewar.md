@@ -17,7 +17,7 @@ The project comes ready to compile and run, and is easy to customize with only a
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![Spacewar1_thumb.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar1_thumb.jpg)![Spacewar2_thumb.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar2_thumb.jpg)![Spacewar3_thumb.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar3_thumb.jpg)![Spacewar4_thumb.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar4_thumb.jpg)		
+![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar1_thumb.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar2_thumb.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar3_thumb.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/Spacewar4_thumb.jpg)		
 
  
 downloads
