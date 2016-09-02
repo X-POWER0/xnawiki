@@ -29,10 +29,6 @@ Other items in the Shader Series
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[ShaderSeriesPrimer.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/ShaderSeriesPrimer.doc?raw=true)
-
-Size: 0.06MB
-
-Shader Series introduction article. 
+Download | Size | Description
+---|---|---|
+[ShaderSeriesPrimer.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/ShaderSeriesPrimer.doc?raw=true) | 0.06MB | Shader Series introduction article. 

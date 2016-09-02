@@ -20,8 +20,11 @@ Games don't need to be complex to be fun and interesting. Obstacle avoidance gam
 Other items in the Collision Series:
 
 [Collision Series 2: 2D Per-Pixel Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 2 2D Per-Pixel Collision)
+
 [Collision Series 3: 2D Collision with Transformed Objects](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 3 2D Collision with Transformed Objects)
+
 [Collision Series 4: Collision with a Heightmap](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 4 Collision with a Heightmap)
+
 [Collision Series 5: Heightmap Collision with Normals](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 5 Heightmap Collision with Normals)
 
 

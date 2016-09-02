@@ -33,10 +33,6 @@ All content and source code downloaded from this page is bound to the Microsoft 
 
 	
 	
-downloads
-
-[MultipassLighting_ARCHIVE_2_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MultipassLighting_ARCHIVE_2_0.zip?raw=true)
-
-Size: 1.53MB
-
-Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED). 
+Download | Size | Description
+---|---|---|
+[MultipassLighting_ARCHIVE_2_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MultipassLighting_ARCHIVE_2_0.zip?raw=true) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED). 

@@ -21,8 +21,11 @@ In the previous tutorial, you enhanced your simple obstacle avoidance game by ad
 Other items in the Collision Series:
 
 [Collision Series 1: 2D Rectangle Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 1 2D Rectangle Collision)
+
 [Collision Series 2: 2D Per-Pixel Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 2 2D Per-Pixel Collision)
+
 [Collision Series 4: Collision with a Heightmap](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 4 Collision with a Heightmap)
+
 [Collision Series 5: Heightmap Collision with Normals](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 5 Heightmap Collision with Normals)
 
 

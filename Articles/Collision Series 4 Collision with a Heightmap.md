@@ -19,8 +19,11 @@ The Generated Geometry sample introduced the concept of a heightmap. In that sam
 Other items in the Collision Series:
 
 [Collision Series 1: 2D Rectangle Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 1 2D Rectangle Collision)
+
 [Collision Series 2: 2D Per-Pixel Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 2 2D Per-Pixel Collision)
+
 [Collision Series 3: 2D Collision with Transformed Objects](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 3 2D Collision with Transformed Objects)
+
 [Collision Series 5: Heightmap Collision with Normals](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 5 Heightmap Collision with Normals)
 
  

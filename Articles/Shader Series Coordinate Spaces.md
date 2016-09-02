@@ -25,10 +25,6 @@ Other items in the Shader Series
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[CoordinateSpaces.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/CoordinateSpaces.docx?raw=true)
-
-Size: 0.07MB
-
-Shader Series: Coordinate Spaces article. 
+Download | Size | Description
+---|---|---|
+[CoordinateSpaces.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/CoordinateSpaces.docx?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article. 

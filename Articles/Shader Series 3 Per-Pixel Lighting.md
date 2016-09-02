@@ -30,10 +30,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_01_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_02_small.jpg)
 	
-downloads
-
-[PerPixelLightingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerPixelLightingSample_4_0.zip?raw=true)
-
-Size: 0.15MB
-
-Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[PerPixelLightingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerPixelLightingSample_4_0.zip?raw=true) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0). 

@@ -30,10 +30,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_01_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_02_small.jpg)
 	
-downloads
-
-[VertexLightingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/VertexLightingSample_4_0.zip?raw=true)
-
-Size: 0.16MB
-
-Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[VertexLightingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/VertexLightingSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0). 

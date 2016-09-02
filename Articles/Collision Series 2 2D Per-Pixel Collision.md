@@ -19,8 +19,11 @@ In the previous example, you created a simple object avoidance game by using rec
 Other items in the Collision Series:
 
 [Collision Series 1: 2D Rectangle Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 1 2D Rectangle Collision)
+
 [Collision Series 3: 2D Collision with Transformed Objects](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 3 2D Collision with Transformed Objects)
+
 [Collision Series 4: Collision with a Heightmap](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 4 Collision with a Heightmap)
+
 [Collision Series 5: Heightmap Collision with Normals](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 5 Heightmap Collision with Normals)
 
 
