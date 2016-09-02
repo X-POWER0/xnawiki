@@ -30,5 +30,4 @@ Download | Size | Description
 [RolePlayingGame_4_0_Phone.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RolePlayingGame_4_0_Phone.zip?raw=true) | 47.10MB | Source code and assets for the Windows Phone RPG Starter Kit.
 [RolePlayingGame_4_0_Win_Xbox.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RolePlayingGame_4_0_Win_Xbox.zip?raw=true) | 90.62MB | Source code and assets for the Xbox 360 and Windows RPG Starter Kit.
 [RPG_Tutorial_1_Quest.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/RPG_Tutorial_1_Quest.doc?raw=true) | 0.06MB | This document, used with the Role-Playing Game Sample, details how you can extend the Sample to create your own quests to challenge and reward players (XNA Game Studio 3.0).
-Framework
 [RPG_Tutorial_2_Engine.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/RPG_Tutorial_2_Engine.doc?raw=true) | 0.10MB | A step-by-step walkthrough for re-using the Role-Playing Game Sample tile engine in a separate game (XNA Game Studio 3.0). 
