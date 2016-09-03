@@ -28,10 +28,6 @@ Although pull and push mode invites appear very different to the user, they are 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[InvitesSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/InvitesSample_4_0.zip?raw=true)
-
-Size: 0.08MB
-
-Contains the source and assets for the Invites Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[InvitesSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/InvitesSample_4_0.zip?raw=true) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0). 

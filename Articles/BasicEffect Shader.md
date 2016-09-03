@@ -22,10 +22,6 @@ This code is provided for educational purposes. It may be a useful starting poin
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[BasicEffectShader_ARCHIVE_2_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/BasicEffectShader_ARCHIVE_2_0.zip?raw=true)
-
-Size: 0.02MB
-
-Source code for the BasicEffect Shader (XNA Game Studio 2.0, Archived). 
+Download | Size | Description
+---|---|---|
+[BasicEffectShader_ARCHIVE_2_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/BasicEffectShader_ARCHIVE_2_0.zip?raw=true) | 0.02MB | Source code for the BasicEffect Shader (XNA Game Studio 2.0, Archived). 

@@ -19,10 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 
  
-downloads
-[CameraShake_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CameraShake_4_0.zip?raw=true)
-Size 11.44MB
-Source code and assets for the Camera Shake sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[CameraShake_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CameraShake_4_0.zip?raw=true) | 11.44MB | Source code and assets for the Camera Shake sample.

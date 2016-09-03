@@ -25,10 +25,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 	
 
  
-downloads
-
-[CustomModelClassSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelClassSample_4_0.zip?raw=true)
-
-Size: 1.98MB
-
-Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[CustomModelClassSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelClassSample_4_0.zip?raw=true) | 1.98MB | Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0). 

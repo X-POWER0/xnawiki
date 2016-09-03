@@ -23,10 +23,6 @@ Unlike most XNA samples, which are written in C#, this utility is written in C++
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-[XnaGraphicsProfileChecker_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/XnaGraphicsProfileChecker_4_0.zip?raw=true)
-Size: 0.02MB
-Source code and assets for the XNA Graphics Profile Checker Utility.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[XnaGraphicsProfileChecker_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/XnaGraphicsProfileChecker_4_0.zip?raw=true) | 0.02MB | Source code and assets for the XNA Graphics Profile Checker Utility.

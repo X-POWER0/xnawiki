@@ -15,14 +15,8 @@ This sample demonstrates a simple car finder—a way to find a car in a large pa
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[GeolocationSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/GeolocationSample_4_0.zip?raw=true)
 
-Size 0.05MB
-
-Source code and assets for the Geolocation sample.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[GeolocationSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/GeolocationSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Geolocation sample.

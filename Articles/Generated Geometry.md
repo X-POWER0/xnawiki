@@ -22,10 +22,8 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 [XNA_GeneratedGeometry_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/XNA_GeneratedGeometry_01_small.jpg?raw=true)[XNA_GeneratedGeometry_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/XNA_GeneratedGeometry_02_small.jpg?raw=true)
 
-downloads
 
-[GeneratedGeometrySample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/GeneratedGeometrySample_4_0.zip?raw=true)
 
-Size: 2.40MB
-
-Source code and assets for the Generated Geometry Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[GeneratedGeometrySample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/GeneratedGeometrySample_4_0.zip?raw=true) | 2.40MB | Source code and assets for the Generated Geometry Sample (XNA Game Studio 4.0). 

@@ -26,10 +26,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![NinjAcademy](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/ninjacademy1.png)  	  	 
 
  
-downloads
-[NinjAcademy_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NinjAcademy_4_0.zip?raw=true)
-Size: 14.10MB
-Source code and assets for NinjAcademy
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[NinjAcademy_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NinjAcademy_4_0.zip?raw=true) | 14.10MB | Source code and assets for NinjAcademy

@@ -17,7 +17,6 @@ The program consists of two pages. The user enaters a number on the main page. T
 You can also view the documentation for this Starter Kit in the MSDN Libary. View the documentation for this Starter Kit.
 
  
-downloads
-[UnitConverterStarterKit.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/UnitConverterStarterKit.zip?raw=true)
-Size: 0.13MB
-This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program provides the user with the ability to convert values from one type of unit to another. 
+Download | Size | Description
+---|---|---|
+[UnitConverterStarterKit.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/UnitConverterStarterKit.zip?raw=true) | 0.13MB | This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program provides the user with the ability to convert values from one type of unit to another. 

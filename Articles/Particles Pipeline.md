@@ -26,10 +26,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/particlespipeline.png)		
 	  	 
 
-downloads
-
-[Particles2DPipeline_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Particles2DPipeline_4_0.zip?raw=true)
-
-Size: 0.63MB
-
-Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[Particles2DPipeline_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Particles2DPipeline_4_0.zip?raw=true) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0). 

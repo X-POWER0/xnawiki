@@ -34,14 +34,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/honeycomb_rush.png)	
 
  
-downloads
-
-[HoneycombRush_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/HoneycombRush_4_0.zip?raw=true)
-
-Size: 25.98MB
-
-Source code and assets for the Honeycomb Rush lab.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[HoneycombRush_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/HoneycombRush_4_0.zip?raw=true) | 25.98MB | Source code and assets for the Honeycomb Rush lab.

@@ -15,14 +15,6 @@ This article describes conditions that can cause game interruptions as part of t
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[Tombstoning_WP7_Games.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Tombstoning_WP7_Games.docx?raw=true)
-
-Size 0.04MB
-
-Tombstoning for Windows Phone 7 Games Article.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[Tombstoning_WP7_Games.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Tombstoning_WP7_Games.docx?raw=true) | 0.04MB | Tombstoning for Windows Phone 7 Games Article.

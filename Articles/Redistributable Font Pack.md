@@ -21,10 +21,6 @@ The fonts include:
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[RedistributableTTFs_ARCHIVE_3_1.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RedistributableTTFs_ARCHIVE_3_1.zip?raw=true)
-
-Size: 0.61MB
-
-Redistributable Font Pack for use in XNA Game Studio projects. 
+Download | Size | Description
+---|---|---|
+[RedistributableTTFs_ARCHIVE_3_1.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RedistributableTTFs_ARCHIVE_3_1.zip?raw=true) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects. 

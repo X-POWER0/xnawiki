@@ -16,10 +16,6 @@ It also includes an example .xnb parser, written in native C++, which demonstrat
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-[XNA_XNB_Format.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/XNA_XNB_Format.zip?raw=true)
-Size: 0.06MB
-Specification and sample parser for the XNA Compiled Content Format (XNB).
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[XNA_XNB_Format.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/XNA_XNB_Format.zip?raw=true) | 0.06MB | Specification and sample parser for the XNA Compiled Content Format (XNB).

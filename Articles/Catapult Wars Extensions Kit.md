@@ -29,10 +29,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapulttk4.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapulttk5.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapulttk6.png)
 
  
-downloads
-
-[CatapultWarsTrainingKit_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CatapultWarsTrainingKit_4_0.zip?raw=true)
-
-Size: 15.39MB
-
-Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[CatapultWarsTrainingKit_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CatapultWarsTrainingKit_4_0.zip?raw=true) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0). 

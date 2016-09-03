@@ -33,10 +33,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_Collision1_2D_Rectangle_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Collision1_2D_Rectangle_01_small.jpg)![XNA_Collision1_2D_Rectangle_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Collision1_2D_Rectangle_02_small.jpg)	
 
 
-downloads
-
-[RectangleCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RectangleCollisionSample_4_0.zip?raw=true)
-
-Size: 0.05MB
-
-Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[RectangleCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RectangleCollisionSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0). 

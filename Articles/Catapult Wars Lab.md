@@ -38,10 +38,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapultwars2.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapultwars2.png)	
 
  
-downloads
-
-[CatapultWars_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CatapultWars_4_0.zip?raw=true)
-
-Size: 9.39MB
-
-Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[CatapultWars_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CatapultWars_4_0.zip?raw=true) | 9.39MB | Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0). 

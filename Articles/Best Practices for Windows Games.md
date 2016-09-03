@@ -14,14 +14,6 @@ The practices discussed in this article will help you have the most success poss
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[BestPractices_WP7_Games.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/BestPractices_WP7_Games.docx?raw=true)
-
-Size 0.11MB
-
-Best Practices for Windows Phone 7 Games Article.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[BestPractices_WP7_Games.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/BestPractices_WP7_Games.docx?raw=true) | 0.11MB | Best Practices for Windows Phone 7 Games Article.

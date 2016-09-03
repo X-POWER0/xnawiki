@@ -33,10 +33,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_Collision2_PerPixel_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_01_small.jpg)![XNA_Collision2_PerPixel_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_02_small.jpg)
 	
 
-downloads
-
-[PerPixelCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerPixelCollisionSample_4_0.zip?raw=true)
-
-Size: 0.04MB
-
-Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[PerPixelCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerPixelCollisionSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0). 

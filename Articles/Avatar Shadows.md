@@ -18,10 +18,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/avatarshadows1.png)
 
  
-downloads
-[AvatarShadows_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarShadows_4_0.zip?raw=true)
-Size: 0.75MB
-Source code and assets for the Avatar Shadows Sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[AvatarShadows_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarShadows_4_0.zip?raw=true) | 0.75MB | Source code and assets for the Avatar Shadows Sample.

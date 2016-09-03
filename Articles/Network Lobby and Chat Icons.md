@@ -15,10 +15,6 @@ This set of images is designed for displaying status within a networking game, i
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[LobbyChatImages.Zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LobbyChatImages.Zip?raw=true)
-
-Size: 0.03MB
-
-Assets for the Network Lobby and Chat Icons Pack. 
+Download | Size | Description
+---|---|---|
+[LobbyChatImages.Zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LobbyChatImages.Zip?raw=true) | 0.03MB | Assets for the Network Lobby and Chat Icons Pack. 

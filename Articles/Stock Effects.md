@@ -24,10 +24,6 @@ If you want an easy starting point to learn shader programming, use the [*Shader
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-downloads
-
-[StockEffectsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/StockEffectsSample_4_0.zip?raw=true)
-
-Size: 0.07MB
-
-Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[StockEffectsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/StockEffectsSample_4_0.zip?raw=true) | 0.07MB | Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0). 

@@ -19,10 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/musicmanagement1.png) 
 
  
-downloads
-[WP7MusicManagement_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WP7MusicManagement_4_0.zip?raw=true)
-Size: 4.08MB
-Source code and assets for the Windows Phone 7 Music Management sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[WP7MusicManagement_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WP7MusicManagement_4_0.zip?raw=true) | 4.08MB | Source code and assets for the Windows Phone 7 Music Management sample.

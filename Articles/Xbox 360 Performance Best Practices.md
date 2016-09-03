@@ -15,10 +15,6 @@ The Xbox 360 is a powerful game system, but there are many things that can degra
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-[Best Practices for Game Performance on Xbox 360.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Best Practices for Game Performance on Xbox 360.docx?raw=true)
-Size: 0.04MB
-Best Practices for Game Performance on Xbox 360 Article.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[Best Practices for Game Performance on Xbox 360.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Best Practices for Game Performance on Xbox 360.docx?raw=true) | 0.04MB | Best Practices for Game Performance on Xbox 360 Article.

@@ -18,7 +18,8 @@ For more detail on Windows Phone recipes in general, see this post on the Window
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-downloads
-[NonLinear-WP-SLApp-Navigation-Service.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NonLinear-WP-SLApp-Navigation-Service.zip?raw=true)
-Size: 0.25MB
-Windows Phone 7 Recipe: Non-Linear Navigation Service 
+
+
+Download | Size | Description
+---|---|---|
+[NonLinear-WP-SLApp-Navigation-Service.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NonLinear-WP-SLApp-Navigation-Service.zip?raw=true) | 0.25MB | Windows Phone 7 Recipe: Non-Linear Navigation Service 

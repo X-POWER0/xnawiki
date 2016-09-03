@@ -12,10 +12,7 @@ For Objective-C and Java developers, this article is a deep dive into the C# lan
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[IntroToCSharp_Article_4_0.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/IntroToCSharp_Article_4_0.doc?raw=true)
-
-Size: 0.15MB
-
-Intro to C# from Objective-C and Java Article. 
+Download | Size | Description
+---|---|---|
+[IntroToCSharp_Article_4_0.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/IntroToCSharp_Article_4_0.doc?raw=true) | 0.15MB | Intro to C# from Objective-C and Java Article. 

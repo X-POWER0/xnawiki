@@ -22,10 +22,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-
-[RimLighting_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RimLighting_4_0.zip?raw=true)
-
-Size: 0.95MB
-
-Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[RimLighting_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/RimLighting_4_0.zip?raw=true) | 0.95MB | Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0). 

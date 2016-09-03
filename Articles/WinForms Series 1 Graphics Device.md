@@ -32,10 +32,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg)![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg)
 	
 
-downloads
-
-[WinFormsGraphicsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WinFormsGraphicsSample_4_0.zip?raw=true)
-
-Size: 0.04MB
-
-Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[WinFormsGraphicsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WinFormsGraphicsSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0). 

@@ -20,10 +20,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_ChaseAndEvade_01_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_ChaseAndEvade_02_small.jpg)	
 
-downloads
-
-[ChaseAndEvadeSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ChaseAndEvadeSample_4_0.zip?raw=true)
-
-Size: 0.07MB
-
-Source code and assets for the Chase & Evade Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[ChaseAndEvadeSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ChaseAndEvadeSample_4_0.zip?raw=true) | 0.07MB | Source code and assets for the Chase & Evade Sample (XNA Game Studio 4.0). 

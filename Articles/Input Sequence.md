@@ -18,10 +18,7 @@ As the number of moves in a game increases, the number of buttons on the control
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[InputSequenceSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/InputSequenceSample_4_0.zip?raw=true)
-
-Size: 0.05MB
-
-Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[InputSequenceSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/InputSequenceSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0). 

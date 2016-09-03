@@ -19,10 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/debugsample1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/debugsample2.png)
 
  
-downloads
-
-[PerformanceUtility_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerformanceUtility_4_0.zip?raw=true)
-
-Size: 0.15MB
-
-Source code and assets for the Performance Utility. 
+Download | Size | Description
+---|---|---|
+[PerformanceUtility_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerformanceUtility_4_0.zip?raw=true) | 0.15MB | Source code and assets for the Performance Utility. 

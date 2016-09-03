@@ -19,16 +19,7 @@ All content and source code downloaded from this page are bound to the Microsoft
   	 
 
  
-downloads
-[CardsStarterKit_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CardsStarterKit_4_0.zip?raw=true)
-Size 4.53MB
-Source code and assets for the C# version of the Card Game Starter Kit.
-Framework
-
-GS 4.0
-[CardsStarterKit_4_0_VB.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CardsStarterKit_4_0_VB.zip?raw=true)
-Size 4.51MB
-Source code and assets for the Visual Basic version of the Card Game Starter Kit.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[CardsStarterKit_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CardsStarterKit_4_0.zip?raw=true) | 4.53MB | Source code and assets for the C# version of the Card Game Starter Kit.
+[CardsStarterKit_4_0_VB.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CardsStarterKit_4_0_VB.zip?raw=true) | 4.51MB | Source code and assets for the Visual Basic version of the Card Game Starter Kit.

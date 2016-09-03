@@ -24,10 +24,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![devEd_waypoints_small4.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/devEd_waypoints_small4.jpg)![devEd_waypoints_small2.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/devEd_waypoints_small2.jpg)![devEd_waypoints_small3.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/devEd_waypoints_small3.jpg)		
 	
 
-downloads
-
-[WaypointSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WaypointSample_4_0.zip?raw=true)
-
-Size: 0.05MB
-
-Source code and assets for the Waypoint Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[WaypointSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WaypointSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Waypoint Sample (XNA Game Studio 4.0). 

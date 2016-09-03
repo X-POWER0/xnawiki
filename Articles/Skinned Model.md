@@ -23,10 +23,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Skinning_01_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Skinning_02_small.jpg)	
 
  
-downloads
-
-[SkinningSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SkinningSample_4_0.zip?raw=true)
-
-Size: 9.59MB
-
-Source code and assets for the Skinned Model Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[SkinningSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SkinningSample_4_0.zip?raw=true) | 9.59MB | Source code and assets for the Skinned Model Sample (XNA Game Studio 4.0). 

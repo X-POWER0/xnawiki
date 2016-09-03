@@ -14,7 +14,6 @@ To view the documentation that accompanies this starter kit, open the Level.sln 
 
 You can also view the documentation for this Starter Kit in the MSDN Libary. View the documentation for this Starter Kit.
 
-downloads
-[LevelStarterKit.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LevelStarterKit.zip?raw=true)
-Size: 0.08MB
-This Windows Phone 7 Starter Kit is a complete Level application written in C#. The program provides the user with the ability to use their phone as a level. 
+Download | Size | Description
+---|---|---|
+[LevelStarterKit.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LevelStarterKit.zip?raw=true) | 0.08MB | This Windows Phone 7 Starter Kit is a complete Level application written in C#. The program provides the user with the ability to use their phone as a level. 

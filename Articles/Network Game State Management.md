@@ -24,10 +24,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_NetGameStateManagement_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_NetGameStateManagement_01_small.jpg)
 
  
-downloads
-
-[NGSMSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NGSMSample_4_0.zip?raw=true)
-
-Size: 0.23MB
-
-Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[NGSMSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NGSMSample_4_0.zip?raw=true) | 0.23MB | Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0). 

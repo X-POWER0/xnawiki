@@ -26,10 +26,6 @@ These classes are particularly useful when debugging 3D games. For example, you 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[Primitives3DSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Primitives3DSample_4_0.zip?raw=true)
-
-Size: 0.05MB
-
-Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[Primitives3DSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Primitives3DSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0). 

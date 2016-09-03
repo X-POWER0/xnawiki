@@ -37,10 +37,6 @@ Much of the code in this demo, especially the custom content processors that are
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-downloads
-
-[ReachGraphicsDemo_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ReachGraphicsDemo_4_0.zip?raw=true)
-
-Size: 7.12MB
-
-Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[ReachGraphicsDemo_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ReachGraphicsDemo_4_0.zip?raw=true) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 

@@ -24,10 +24,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-
-[ShadowMappingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ShadowMappingSample_4_0.zip?raw=true)
-
-Size: 21.61MB
-
-Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[ShadowMappingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ShadowMappingSample_4_0.zip?raw=true) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0). 

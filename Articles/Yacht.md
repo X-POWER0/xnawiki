@@ -56,10 +56,6 @@ All content and source code downloaded from this page is bound to the Microsoft 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/yacht1.png)  	  	 
 
  
-downloads
-[Yacht_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Yacht_4_0.zip?raw=true)
-Size: 2.86MB
-Source code and assets for Yacht.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[Yacht_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Yacht_4_0.zip?raw=true) | 2.86MB | Source code and assets for Yacht.

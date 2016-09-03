@@ -26,10 +26,8 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![snowshovel1.png](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/snowshovel1.png)![snowshovel2.png](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/snowshovel2.png)
 	
-downloads
 
-[SnowShovelSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SnowShovelSample_4_0.zip?raw=true)
 
-Size: 0.12MB
-
-Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[SnowShovelSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SnowShovelSample_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0). 

@@ -19,10 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/custommodelanimation1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/custommodelanimation2.png)  	 
 
  
-downloads
-[CustomModelAnimation_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelAnimation_4_0.zip?raw=true)
-Size: 2.17MB
-Source code and assets for the Custom Model Rigid and Skinned Animation sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[CustomModelAnimation_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelAnimation_4_0.zip?raw=true) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.

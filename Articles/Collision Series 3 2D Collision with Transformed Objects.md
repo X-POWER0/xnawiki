@@ -36,10 +36,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 	
 
-downloads
-
-[TransformedCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/TransformedCollisionSample_4_0.zip?raw=true)
-
-Size: 0.18MB
-
-Source code and assets for the Collision Series 3: 2D Transformed Per-Pixel Tutorial (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[TransformedCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/TransformedCollisionSample_4_0.zip?raw=true) | 0.18MB | Source code and assets for the Collision Series 3: 2D Transformed Per-Pixel Tutorial (XNA Game Studio 4.0). 

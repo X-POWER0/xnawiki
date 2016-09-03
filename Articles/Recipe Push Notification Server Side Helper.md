@@ -17,7 +17,8 @@ Push Patterns are a generalization of a common use of PN in an end–to-end solu
 For more detail on this helper library, see the Windows Phone Developer Blog post.
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-downloads
-[PushRecipe_WP7_SL.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PushRecipe_WP7_SL.zip?raw=true)
-Size: 2.80MB
-Windows Phone 7 Recipe: Push Notification Server Side Helper Library 
+
+
+Download | Size | Description
+---|---|---|
+[PushRecipe_WP7_SL.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PushRecipe_WP7_SL.zip?raw=true) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library 

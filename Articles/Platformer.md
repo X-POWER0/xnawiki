@@ -30,10 +30,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/platformer1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/platformer1.png)
 
 
-downloads
-
-[Platformer_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Platformer_4_0.zip?raw=true)
-
-Size: 6.68MB
-
-Source code and assets for Platformer Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[Platformer_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Platformer_4_0.zip?raw=true) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0). 

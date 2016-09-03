@@ -14,10 +14,6 @@ Compare the Gestures abilities of Windows Phone 7 to other major phone platforms
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[Gestures_Article_4_0.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Gestures_Article_4_0.doc?raw=true)
-
-Size: 3.08MB
-
-Gestures for Windows Phone 7 Article. 
+Download | Size | Description
+---|---|---|
+[Gestures_Article_4_0.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Gestures_Article_4_0.doc?raw=true) | 3.08MB | Gestures for Windows Phone 7 Article. 

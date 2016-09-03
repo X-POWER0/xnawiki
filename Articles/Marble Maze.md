@@ -29,10 +29,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-
-[MarbleMaze_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MarbleMaze_4_0.zip?raw=true)
-
-Size: 56.91MB
-
-Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[MarbleMaze_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MarbleMaze_4_0.zip?raw=true) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0). 

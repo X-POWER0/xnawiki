@@ -15,14 +15,6 @@ Saving Embedded Images for Windows Phone 7 shows how to move image resources fro
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[SavingEmbeddedImages_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SavingEmbeddedImages_4_0.zip?raw=true)
-
-Size 0.17MB
-
-Source code and assets for the Saving Embedded Images sample.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[SavingEmbeddedImages_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SavingEmbeddedImages_4_0.zip?raw=true) | 0.17MB | Source code and assets for the Saving Embedded Images sample.

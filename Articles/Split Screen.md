@@ -19,10 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-[SplitScreenSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SplitScreenSample_4_0.zip?raw=true)
-Size 4.79MB
-Source code and assets for the Split Screen sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[SplitScreenSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SplitScreenSample_4_0.zip?raw=true) | Size 4.79MB | Source code and assets for the Split Screen sample.

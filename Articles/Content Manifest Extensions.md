@@ -23,10 +23,6 @@ Games looking to incorporate this functionality will either need to add the proj
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[ContentManifestExtensions_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ContentManifestExtensions_4_0.zip?raw=true)
-
-Size: 0.05MB
-
-Source code and assets for the Content Manifest Extensions Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[ContentManifestExtensions_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ContentManifestExtensions_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Content Manifest Extensions Sample (XNA Game Studio 4.0). 

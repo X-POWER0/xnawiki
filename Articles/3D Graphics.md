@@ -20,10 +20,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-
-[Graphics3DSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Graphics3DSample_4_0.zip?raw=true)
-
-Size: 0.36MB
-
-Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[Graphics3DSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Graphics3DSample_4_0.zip?raw=true) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0). 

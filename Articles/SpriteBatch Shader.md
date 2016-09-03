@@ -21,10 +21,6 @@ This HLSL code is provided for educational purposes. It may be a useful starting
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[SpriteBatchShader_ARCHIVE_2_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SpriteBatchShader_ARCHIVE_2_0.zip?raw=true)
-
-Size: 0.02MB
-
-Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived). 
+Download | Size | Description
+---|---|---|
+[SpriteBatchShader_ARCHIVE_2_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SpriteBatchShader_ARCHIVE_2_0.zip?raw=true) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived). 

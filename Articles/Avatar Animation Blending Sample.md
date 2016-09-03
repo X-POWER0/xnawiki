@@ -17,10 +17,8 @@ The AvatarAnimation object enables developers to play one of the built-in animat
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[AvatarAnimationBlendingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarAnimationBlendingSample_4_0.zip?raw=true)
 
-Size: 0.03MB
-
-Source code and assets for the Avatar Animation Blending Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[AvatarAnimationBlendingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarAnimationBlendingSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Avatar Animation Blending Sample (XNA Game Studio 4.0). 

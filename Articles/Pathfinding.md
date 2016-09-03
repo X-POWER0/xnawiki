@@ -22,10 +22,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pathfinding0.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pathfinding1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pathfinding2.png)		
 
  
-downloads
-
-[Pathfinding_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Pathfinding_4_0.zip?raw=true)
-
-Size: 0.14MB
-
-Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[Pathfinding_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/Pathfinding_4_0.zip?raw=true) | 0.14MB | Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0). 

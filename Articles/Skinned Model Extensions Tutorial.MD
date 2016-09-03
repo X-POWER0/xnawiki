@@ -22,10 +22,6 @@ If you want to jump straight to the end result, the final code produced by follo
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-downloads
-
-[SkinnedModelExtensions_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SkinnedModelExtensions_4_0.zip?raw=true)
-
-Size: 9.51MB
-
-Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[SkinnedModelExtensions_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SkinnedModelExtensions_4_0.zip?raw=true) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0). 

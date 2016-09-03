@@ -29,10 +29,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_01_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_02_small.jpg)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_03_small.jpg)		
 
  
-downloads
-
-[CustomModelEffectSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelEffectSample_4_0.zip?raw=true)
-
-Size: 0.94MB
-
-Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[CustomModelEffectSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelEffectSample_4_0.zip?raw=true) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0). 

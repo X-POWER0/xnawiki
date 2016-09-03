@@ -36,7 +36,8 @@ Walk
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads | Size | Description 
+
+Download | Size | Description 
 ---|---|---|
 [AvatarAnimPack_4_0_BIN.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarAnimPack_4_0_BIN.zip?raw=true) | 3.84MB | Assets for the Avatar Animation Pack.
 [AvatarAnimPack_4_0_FBX.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarAnimPack_4_0_FBX.zip?raw=true) | 34.52MB | Assets for the Avatar Animation Pack.

@@ -22,10 +22,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/bingpathfinding1.png)  	 
 
  
-downloads
-[BingMapsPathFinding_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/BingMapsPathFinding_4_0.zip?raw=true)
-Size: 0.17MB
-Source code and assets for the Bing Maps with Pathfinding sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[BingMapsPathFinding_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/BingMapsPathFinding_4_0.zip?raw=true) | 0.17MB | Source code and assets for the Bing Maps with Pathfinding sample.

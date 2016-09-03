@@ -16,7 +16,8 @@ For more information on how this sample works, see [How to: Preserve and Restore
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-downloads
-[TombstoningSample.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/TombstoningSample.zip?raw=true)
-Size: 0.05MB
-This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning. 
+
+
+Download | Size | Description
+---|---|---|
+[TombstoningSample.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/TombstoningSample.zip?raw=true) | 0.05MB | This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning. 

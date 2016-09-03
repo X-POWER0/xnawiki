@@ -26,10 +26,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_LensFlare_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_LensFlare_01_small.jpg)![XNA_LensFlare_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_LensFlare_02_small.jpg)
 
 	
-downloads
-
-[LensFlareSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LensFlareSample_4_0.zip?raw=true)
-
-Size: 1.57MB
-
-Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[LensFlareSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LensFlareSample_4_0.zip?raw=true) | 1.57MB | Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0). 

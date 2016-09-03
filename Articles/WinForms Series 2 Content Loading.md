@@ -27,10 +27,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_01_small.JPG)![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_02_small.JPG)![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_03_small.JPG)
   	  	 
-downloads
-
-[WinFormsContentSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WinFormsContentSample_4_0.zip?raw=true)
-
-Size: 1.08MB
-
-Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[WinFormsContentSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WinFormsContentSample_4_0.zip?raw=true) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0). 

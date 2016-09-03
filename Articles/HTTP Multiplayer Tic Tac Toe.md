@@ -24,10 +24,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  	 
 
  
-downloads
-[TicTacToe_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/TicTacToe_4_0.zip?raw=true)
-Size: 0.12MB
-Source code and assets for the Tic-Tac-Toe sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[TicTacToe_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/TicTacToe_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Tic-Tac-Toe sample.

@@ -40,10 +40,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/model viewer 1_small.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/model viewer 2_small.png)
 	
-downloads
-[ModelViewerDemo_4_0_Mango.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ModelViewerDemo_4_0_Mango.zip?raw=true)
-Size: 6.83MB
-Source code and assets for the Model Viewer Demo.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[ModelViewerDemo_4_0_Mango.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ModelViewerDemo_4_0_Mango.zip?raw=true) | 6.83MB | Source code and assets for the Model Viewer Demo.

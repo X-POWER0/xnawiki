@@ -14,10 +14,6 @@ XNA Game Studio 4.0 introduced new Dynamic Audio features to the XNA Sound Effec
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[DynamicAudio_Article_4_0.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/DynamicAudio_Article_4_0.docx?raw=true)
-
-Size: 0.43MB
-
-Dynamic Audio in XNA Game Studio 4.0 Article. 
+Download | Size | Description
+---|---|---|
+[DynamicAudio_Article_4_0.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/DynamicAudio_Article_4_0.docx?raw=true) | 0.43MB | Dynamic Audio in XNA Game Studio 4.0 Article. 

@@ -16,10 +16,6 @@ Take your game to the next level with more than 170 audio files, including body 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-downloads
-
-[SoundLab.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SoundLab.zip?raw=true)
-
-Size: 57.36MB
-
-Sound Assets for the Sound Lab Utility
+Download | Size | Description
+---|---|---|
+[SoundLab.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SoundLab.zip?raw=true) | 57.36MB | Sound Assets for the Sound Lab Utility

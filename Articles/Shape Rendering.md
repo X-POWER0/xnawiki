@@ -20,10 +20,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-
-[ShapeRenderingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ShapeRenderingSample_4_0.zip?raw=true)
-
-Size: 0.05MB
-
-Source code and assets for the Shape Rendering sample. 
+Download | Size | Description
+---|---|---|
+[ShapeRenderingSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ShapeRenderingSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Shape Rendering sample. 

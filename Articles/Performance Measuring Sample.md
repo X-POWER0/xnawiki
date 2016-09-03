@@ -19,10 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 
  
-downloads
-
-[PerformanceMeasuringSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerformanceMeasuringSample_4_0.zip?raw=true)
-
-Size: 0.10MB
-
-Source code and assets for the Performance Measuring sample
+Download | Size | Description
+---|---|---|
+[PerformanceMeasuringSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerformanceMeasuringSample_4_0.zip?raw=true) | 0.10MB | Source code and assets for the Performance Measuring sample

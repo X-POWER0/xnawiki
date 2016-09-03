@@ -15,10 +15,6 @@ This pack is a set of images that represent the buttons, thumbsticks, and trigge
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[ButtonImages.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ButtonImages.zip?raw=true)
-
-Size: 0.45MB
-
-Assets for the Xbox 360 Controller Button Images Pack. 
+Download | Size | Description
+---|---|---|
+[ButtonImages.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ButtonImages.zip?raw=true) | 0.45MB | Assets for the Xbox 360 Controller Button Images Pack. 

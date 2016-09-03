@@ -64,10 +64,6 @@ Space games are also fun to build because it's typically pretty easy to find con
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[SpaceShooter_ARCHIVE_3_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SpaceShooter_ARCHIVE_3_0.zip?raw=true)
-
-Size: 11.71MB
-
-Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived). 
+Download | Size | Description
+---|---|---|
+[SpaceShooter_ARCHIVE_3_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SpaceShooter_ARCHIVE_3_0.zip?raw=true) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived). 

@@ -15,10 +15,8 @@ This supplemental article explains the BoxCollider library provided in the [Ship
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-downloads
-[Ship Game - Using the Box Collider Library.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Ship Game - Using the Box Collider Library.doc?raw=true)
-Size: 0.11MB
-This article explains the BoxCollider library provided in the Ship game starter kit.
-Framework
 
-GS 2.0
+
+Download | Size | Description
+---|---|---|
+[Ship Game - Using the Box Collider Library.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Ship Game - Using the Box Collider Library.doc?raw=true) | 0.11MB | This article explains the BoxCollider library provided in the Ship game starter kit.

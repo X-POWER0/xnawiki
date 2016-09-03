@@ -16,10 +16,6 @@ To support this, the [Windows Phone Application Certification Requirements](http
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-[LoadingTimeReduction_WP7_XNAGS.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/LoadingTimeReduction_WP7_XNAGS.docx?raw=true)
-Size: 0.06MB
-Loading Time Reduction Article for Windows Phone.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[LoadingTimeReduction_WP7_XNAGS.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/LoadingTimeReduction_WP7_XNAGS.docx?raw=true) | 0.06MB | Loading Time Reduction Article for Windows Phone.

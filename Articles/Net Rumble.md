@@ -17,10 +17,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_NetRumble_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_NetRumble_01_small.jpg)![XNA_NetRumble_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_NetRumble_02_small.jpg)![XNA_NetRumble_03_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_NetRumble_03_small.jpg)  	  	
 
  
-downloads
-
-[NetRumble_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NetRumble_4_0.zip?raw=true)
-
-Size: 11.52MB
-
-Source code and assets for Net Rumble. 
+Download | Size | Description
+---|---|---|
+[NetRumble_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NetRumble_4_0.zip?raw=true) | 11.52MB | Source code and assets for Net Rumble. 

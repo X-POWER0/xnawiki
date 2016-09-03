@@ -18,10 +18,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/musicAndSoundSample1.png)
 
  
-downloads
-
-[SoundAndMusic_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SoundAndMusic_4_0.zip?raw=true)
-
-Size: 1.38MB
-
-Source code and assets for the Sound and Music Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[SoundAndMusic_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SoundAndMusic_4_0.zip?raw=true) | 1.38MB | Source code and assets for the Sound and Music Sample (XNA Game Studio 4.0). 

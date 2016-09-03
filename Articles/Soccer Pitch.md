@@ -15,14 +15,6 @@ This Windows Phone 7 sample application demonstrates the use of the DualTextured
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[SoccerPitchSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SoccerPitchSample_4_0.zip?raw=true)
-
-Size 0.16MB
-
-Source code and assets for the Soccer Pitch sample.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[SoccerPitchSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SoccerPitchSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Soccer Pitch sample.

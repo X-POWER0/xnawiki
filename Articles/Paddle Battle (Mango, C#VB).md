@@ -21,16 +21,7 @@ Note the gameplay of this sample is in landscape mode, so when using the emulato
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-[PaddleBattle_4_0_Mango.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango.zip?raw=true)
-Size: 0.22MB
-Source code and assets for the Paddle Battle sample.
-Framework
-
-GS 4.0
-[PaddleBattle_4_0_Mango_VB.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango_VB.zip?raw=true)
-Size: 0.21MB
-Source code and assets for the Visual Basic version of the Paddle Battle sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[PaddleBattle_4_0_Mango.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango.zip?raw=true) | 0.22MB | Source code and assets for the Paddle Battle sample.
+[PaddleBattle_4_0_Mango_VB.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango_VB.zip?raw=true) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.

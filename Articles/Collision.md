@@ -18,10 +18,6 @@ This sample implements collision detection for primitives, including triangles a
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[CollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CollisionSample_4_0.zip?raw=true)
-
-Size: 0.06MB
-
-Source code and assets for the Collision Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[CollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CollisionSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Collision Sample (XNA Game Studio 4.0). 

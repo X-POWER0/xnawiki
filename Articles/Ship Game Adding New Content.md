@@ -14,10 +14,8 @@ This supplemental article explains the various content types used in the [Ship G
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-downloads
-[ShipGame_Tutorial_1_NewContent.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/ShipGame_Tutorial_1_NewContent.doc?raw=true)
-Size: 1.06MB
-This article explains the various content types used in the Ship Game Sample (XNA Game Studio 3.0).
-Framework
 
-GS 3.0
+
+Download | Size | Description
+---|---|---|
+[ShipGame_Tutorial_1_NewContent.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/ShipGame_Tutorial_1_NewContent.doc?raw=true) | 1.06MB | This article explains the various content types used in the Ship Game Sample (XNA Game Studio 3.0).

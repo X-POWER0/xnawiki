@@ -36,14 +36,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 	
 
  
-downloads
-
-[MemoryMadnessLab_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MemoryMadnessLab_4_0.zip?raw=true)
-
-Size 8.07MB
-
-Source code and assets for the Memory Madness lab.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[MemoryMadnessLab_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MemoryMadnessLab_4_0.zip?raw=true) | 8.07MB | Source code and assets for the Memory Madness lab.

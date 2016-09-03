@@ -23,10 +23,6 @@ Five custom animations from the new Animation Asset Pack are included with this 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-downloads
-
-[CustomAvatarAnimation_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomAvatarAnimation_4_0.zip?raw=true)
-
-Size: 10.03MB
-
-Source code and assets for the Custom Avatar Animation sample 
+Download | Size | Description
+---|---|---|
+[CustomAvatarAnimation_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomAvatarAnimation_4_0.zip?raw=true) | 10.03MB | Source code and assets for the Custom Avatar Animation sample 

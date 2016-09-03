@@ -16,10 +16,6 @@ This document walks through the steps required to localize the Catapult Wars Lab
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-[WP_LocalizationForGames.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/WP_LocalizationForGames.docx?raw=true)
-Size: 1.38MB
-Article detailing localization for Windows Phone Games made using XNA Game Studio.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[WP_LocalizationForGames.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/WP_LocalizationForGames.docx?raw=true) | 1.38MB | Article detailing localization for Windows Phone Games made using XNA Game Studio.

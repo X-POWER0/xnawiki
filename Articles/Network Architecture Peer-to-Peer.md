@@ -24,10 +24,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_Peer2Peer_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Peer2Peer_01_small.jpg)![XNA_Peer2Peer_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Peer2Peer_02_small.jpg)
 	
 
-downloads
-
-[PeerToPeerSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PeerToPeerSample_4_0.zip?raw=true)
-
-Size: 0.09MB
-
-Source code and assets for the Network Architecture: Peer-to-Peer Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[PeerToPeerSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PeerToPeerSample_4_0.zip?raw=true) | 0.09MB | Source code and assets for the Network Architecture: Peer-to-Peer Sample (XNA Game Studio 4.0). 

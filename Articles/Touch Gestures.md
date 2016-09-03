@@ -21,10 +21,7 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/gesture1.png)
 
-downloads
 
-[GesturesSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/GesturesSample_4_0.zip?raw=true)
-
-Size: 0.17MB
-
-Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[GesturesSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/GesturesSample_4_0.zip?raw=true) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0). 

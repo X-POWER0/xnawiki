@@ -14,10 +14,6 @@ This article describes ways to reduce memory, techniques for allocating memory t
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[Performance_Considerations_WP7.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Performance_Considerations_WP7.docx?raw=true)
-
-Size: 0.07MB
-
-Performance Considerations for Windows Phone 7 Games Article. 
+Download | Size | Description
+---|---|---|
+[Performance_Considerations_WP7.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Performance_Considerations_WP7.docx?raw=true) | 0.07MB | Performance Considerations for Windows Phone 7 Games Article. 

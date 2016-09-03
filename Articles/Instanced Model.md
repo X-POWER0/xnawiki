@@ -29,10 +29,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![XNA_MeshInstancing_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_MeshInstancing_01_small.jpg)![XNA_MeshInstancing_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_MeshInstancing_02_small.jpg)
 	
 
-downloads
-
-[InstancedModelSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/InstancedModelSample_4_0.zip?raw=true)
-
-Size: 0.31MB
-
-Source code and assets for the Instanced Model Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[InstancedModelSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/InstancedModelSample_4_0.zip?raw=true) | 0.31MB | Source code and assets for the Instanced Model Sample (XNA Game Studio 4.0). 

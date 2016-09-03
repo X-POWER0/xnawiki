@@ -21,14 +21,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 
  
-downloads
-
-[UISample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/UISample_4_0.zip?raw=true)
-
-Size: 1.02MB
-
-Source code and assets for the User Interface Controls Sample.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[UISample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/UISample_4_0.zip?raw=true) | 1.02MB | Source code and assets for the User Interface Controls Sample.

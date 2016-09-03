@@ -12,10 +12,8 @@ This introductory article is for programmers who may have experience programming
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[IntroToGameLoop_Article_4_0.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/IntroToGameLoop_Article_4_0.docx?raw=true)
 
-Size: 0.13MB
-
-Intro to Game Loop Article. 
+Download | Size | Description
+---|---|---|
+[IntroToGameLoop_Article_4_0.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/IntroToGameLoop_Article_4_0.docx?raw=true) | 0.13MB | Intro to Game Loop Article. 

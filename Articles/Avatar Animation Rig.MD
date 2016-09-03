@@ -14,7 +14,7 @@ The avatar rig is a model and animation rig setup for authoring custom avatar an
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads | Size | Description 
+Download | Size | Description
 ---|---|---|
 [AvatarRig_4_0_Max_2010.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarRig_4_0_Max_2010.zip?raw=true) | 2.35MB | 3DS Max assets for the Avatar Rig
 [AvatarRig_4_0_Maya_2009.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarRig_4_0_Maya_2009.zip?raw=true) | 1.98MB | Maya assets for the Avatar Rig

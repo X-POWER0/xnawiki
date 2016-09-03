@@ -23,10 +23,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![XNA_SpriteSheet_01_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_SpriteSheet_01_small.JPG)
 
-downloads
-
-[SpriteSheetSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SpriteSheetSample_4_0.zip?raw=true)
-
-Size: 0.14MB
-
-Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[SpriteSheetSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/SpriteSheetSample_4_0.zip?raw=true) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0). 

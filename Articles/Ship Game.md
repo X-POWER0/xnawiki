@@ -30,10 +30,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
   	 
 
-downloads
-[ShipGame_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ShipGame_4_0.zip?raw=true)
-Size: 47.05MB
-Source code and assets for Ship Game.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[ShipGame_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ShipGame_4_0.zip?raw=true) | 47.05MB | Source code and assets for Ship Game.

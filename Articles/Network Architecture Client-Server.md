@@ -23,10 +23,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![XNA_ClientServer_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_ClientServer_01_small.jpg)![XNA_ClientServer_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_ClientServer_02_small.jpg)	
 
-downloads
-
-[ClientServerSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ClientServerSample_4_0.zip?raw=true)
-
-Size: 0.10MB
-
-Source code and assets for the Network Architecture: Client/Server Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[ClientServerSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/ClientServerSample_4_0.zip?raw=true) | 0.10MB | Source code and assets for the Network Architecture: Client/Server Sample (XNA Game Studio 4.0). 

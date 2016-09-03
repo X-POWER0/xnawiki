@@ -19,14 +19,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 
  
-downloads
-
-[PathDrawing_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PathDrawing_4_0.zip?raw=true)
-
-Size: 0.84MB
-
-Source code and assets for the Path Drawing sample.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[PathDrawing_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PathDrawing_4_0.zip?raw=true) | 0.84MB | Source code and assets for the Path Drawing sample.

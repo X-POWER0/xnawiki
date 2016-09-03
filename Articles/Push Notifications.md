@@ -21,10 +21,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pushnot0.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pushnot1.png)
 
-downloads
-
-[PushNotificationsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PushNotificationsSample_4_0.zip?raw=true)
-
-Size: 0.08MB
-
-Source code and assets for Push Notifications Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[PushNotificationsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PushNotificationsSample_4_0.zip?raw=true) | 0.08MB | Source code and assets for Push Notifications Sample (XNA Game Studio 4.0). 

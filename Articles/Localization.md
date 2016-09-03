@@ -19,10 +19,7 @@ This sample demonstrates loading strings for different languages, building fonts
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[LocalizationSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LocalizationSample_4_0.zip?raw=true)
-
-Size: 0.08MB
-
-Source code and assets for the Localization Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[LocalizationSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LocalizationSample_4_0.zip?raw=true) | 0.08MB | Source code and assets for the Localization Sample (XNA Game Studio 4.0). 

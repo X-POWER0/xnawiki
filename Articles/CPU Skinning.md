@@ -21,10 +21,6 @@ Important While the emulator mimics the functionality of the Windows Phone, it d
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 
-downloads
-
-[CPUSkinningSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CPUSkinningSample_4_0.zip?raw=true)
-
-Size: 5.13MB
-
-Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[CPUSkinningSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CPUSkinningSample_4_0.zip?raw=true) | 5.13MB | Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0). 

@@ -18,10 +18,6 @@ All content and source code downloaded from this page are bound to the Microsoft
 ![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/dynamicmenu1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/dynamicmenu2.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/dynamicmenu3.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/dynamicmenu4.png)  	  	  	  	  	  	 
 
  
-downloads
-[DynamicMenu_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/DynamicMenu_4_0.zip?raw=true)
-Size: 0.75MB
-Source code and assets for the Dynamic Menu sample.
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[DynamicMenu_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/DynamicMenu_4_0.zip?raw=true) | 0.75MB | Source code and assets for the Dynamic Menu sample.

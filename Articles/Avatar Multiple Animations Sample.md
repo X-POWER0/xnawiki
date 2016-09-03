@@ -16,10 +16,8 @@ In this sample, we demonstrate how to play two built-in avatar animations at the
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
 
-[AvatarMultipleAnimationsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarMultipleAnimationsSample_4_0.zip?raw=true)
 
-Size: 0.03MB
-
-Source code and assets for the Avatar Multiple Animation Sample (XNA Game Studio 4.0). 
+Download | Size | Description
+---|---|---|
+[AvatarMultipleAnimationsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/AvatarMultipleAnimationsSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Avatar Multiple Animation Sample (XNA Game Studio 4.0). 

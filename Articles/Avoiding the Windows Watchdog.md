@@ -15,14 +15,6 @@ This article explains how the Windows Phone Watchdog service works and how to pr
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-downloads
-
-[Avoiding_the_Windows_Phone_Watchdog.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Avoiding_the_Windows_Phone_Watchdog.docx?raw=true)
-
-Size 0.02MB
-
-Avoiding the Windows Phone Watchdog Article.
-
-Framework
-
-GS 4.0
+Download | Size | Description
+---|---|---|
+[Avoiding_the_Windows_Phone_Watchdog.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Avoiding_the_Windows_Phone_Watchdog.docx?raw=true) | 0.02MB | Avoiding the Windows Phone Watchdog Article.
