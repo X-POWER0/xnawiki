@@ -1,4 +1,5 @@
-#XNAGameStudio
+# XNAGameStudio
+
 The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
 
 The archive is now complete and all but two samples can be found here, next step MonoGaming the samples where applicable.
@@ -6,7 +7,8 @@ The archive is now complete and all but two samples can be found here, next step
 
 If you have comments or suggestions for the archive, please let me know on twitter @SimonDarksideJ or on this site.
 
-#Complete solutions
+# Complete solutions
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Card Game Starter Kit: Blackjack (C#/VB)*](https://github.com/DDReaper/XNAGameStudio/wiki/Card-Game-Starter-Kit-Blackjack-(C%23VB)) | Games: 2D Graphics, Games: Audio, Games: Gameplay, Games: Graphics, Input, Touch & Gestures, User Experience | This starter kit contains a complete Blackjack game that incorporates an easily re-usable set of card classes that you can use to build your own card game. | Code Sample
@@ -30,7 +32,8 @@ Title | Area | Description | Type
 
 ---
 
-#Shaders and effects
+# Shaders and effects
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Shader Series: Introduction*](https://github.com/DDReaper/XNAGameStudio/wiki/Shader-Series-Introduction) | Games: Graphics, Games: Shaders | This article is an introduction to the Shader Series, a set of samples and articles that allow an intermediate 3D developer to begin to explore the programmable graphics pipeline. | Article
@@ -68,7 +71,8 @@ Title | Area | Description | Type
 
 ---
 
-#Physics and AI
+# Physics and AI
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Collision Series 1: 2D Rectangle Collision*](https://github.com/DDReaper/XNAGameStudio/wiki/Collision-Series-1-2D-Rectangle-Collision) | Games: 2D Graphics, Games: Collision | This tutorial details several simple techniques for constraining motion and collision detection in two dimensions. | Tutorial
@@ -93,7 +97,8 @@ Title | Area | Description | Type
 
 ---
 
-#Content Pipeline
+# Content Pipeline
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Authoring Particle Systems Using XML and the Content Pipeline*](https://github.com/DDReaper/XNAGameStudio/wiki/Authoring-Particle-Systems-Using-XML-and-the-Content-Pipeline) | Games: 3D Graphics, Games: Content Pipeline, Games: Graphics, Games: Shaders | This tutorial teaches you how to extend the Particle 3D sample so the particle systems are defined by XML files loaded with the XNA Content Pipeline. | Tutorial
@@ -109,7 +114,8 @@ Title | Area | Description | Type
 
 ---
 
-#Networking samples
+# Networking samples
+
 Title | Area | Description | Type
 ---|---|---|---
 [*HTTP Multiplayer: Tic Tac Toe*](https://github.com/DDReaper/XNAGameStudio/wiki/HTTP-Multiplayer-Tic-Tac-Toe) | Networking & Web Services | This sample demonstrates how create an HTTP Multiplayer game for Windows Phone. | Code Sample
@@ -126,7 +132,8 @@ Title | Area | Description | Type
 
 ---
 
-#Misc Tools / Audio and Assets
+# Misc Tools / Audio and Assets
+
 Title | Area | Description | Type
 ---|---|---|---
 [*3D Audio*](https://github.com/DDReaper/XNAGameStudio/wiki/3D-Audio) | Games: 2D Graphics, Games: Audio | This sample shows how to position sounds in 3D space by implementing panning, Doppler, and distance attenuation effects. | Code Sample
@@ -170,7 +177,8 @@ Title | Area | Description | Type
  
 ---
 
-#Assorted documentation
+# Assorted documentation
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Avoiding the Windows Watchdog*](https://github.com/DDReaper/XNAGameStudio/wiki/Avoiding-the-Windows-Watchdog) | Performance & Optimization | This article gives tips on how to avoid the Windows Phone Watchdog, which seeks out and shuts down unresponsive applications. | Article
@@ -196,7 +204,8 @@ Title | Area | Description | Type
 
 ---
 
-#Avatar samples (Not supported by MG yet)
+# Avatar samples (Not supported by MG yet)
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Custom Avatar Animation Sample*](https://github.com/DDReaper/XNAGameStudio/wiki/Custom-Avatar-Animation-Sample) | Games: 3D Graphics, Games: Content Pipeline, Games: Graphics | This sample shows how to load and process a custom animation for an avatar by using the XNA Framework Content Pipeline. | Code Sample
@@ -209,7 +218,8 @@ Title | Area | Description | Type
 
 ---
 
-#Archived (pre XNA 4.0) samples 
+# Archived (pre XNA 4.0) samples 
+
 Title | Area | Description | Type
 ---|---|---|---
 [*Tiled Sprites*](https://github.com/DDReaper/XNAGameStudio/wiki/Tiled-Sprites)-(ARCHIVED) | Games: 2D Graphics, Games: Graphics | This sample shows how to manage data for tiling, animation, visibility determination, and virtualization of a 2D camera. | Code Sample
