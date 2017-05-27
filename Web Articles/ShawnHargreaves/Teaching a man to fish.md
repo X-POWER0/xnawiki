@@ -42,6 +42,12 @@ Add this code to Main:
     }
 ```
 
+> To use this in MonoGame currently, you will need to reference the MonoGame Content Pipeline dll, which is normally located in
+>
+> "C:\Program Files (x86)\MSBuild\MonoGame\v3.0\Tools\MonoGame.Framework.Content.Pipeline.dll"
+>
+> **However, DO NOT leave this reference in a LIVE build, as it wil include the entire Content Pipeline architecture which is not needed for live projects.**
+
 Run the program. Look in the bin\Debug folder, and open the test.xml output file. With the class shown above, this will look like:
 
 ```xml
