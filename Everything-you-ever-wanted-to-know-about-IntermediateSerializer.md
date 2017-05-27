@@ -1,6 +1,6 @@
 # Everything you ever wanted to know about IntermediateSerializer
 
-It is good to know [how to fish](https://github.com/DDReaper/XNAGameStudio/wiki/Teaching-a-man-to-fish), but sometimes you just want to go to the store and buy a salmon that somebody else already caught for you. With this in mind, here is my attempt to fill in the blanks about exactly how to use [IntermediateSerializer](http://blogs.msdn.com/shawnhar/archive/2008/07/28/intermediateserializer-vs-xmlserializer.aspx).
+It is good to know [how to fish](https://github.com/DDReaper/XNAGameStudio/wiki/Teaching-a-man-to-fish), but sometimes you just want to go to the store and buy a salmon that somebody else already caught for you. With this in mind, here is my attempt to fill in the blanks about exactly how to use [IntermediateSerializer](https://github.com/DDReaper/XNAGameStudio/wiki/IntermediateSerializervsXmlSerializer).
 
 ---
 
