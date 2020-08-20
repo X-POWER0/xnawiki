@@ -79,4 +79,4 @@ But there are also situations where XmlSerializer would be a better choice:
 * Supports XML schemas 
 * Supports SOAP 
 
-Next up: more details on how the [IntermediateSerializer](https://github.com/DDReaper/XNAGameStudio/wiki/Everything-you-ever-wanted-to-know-about-IntermediateSerializer) works, and how to control it.
+Next up: more details on how the [IntermediateSerializer](https://github.com/simondarksidej/XNAGameStudio/wiki/Everything-you-ever-wanted-to-know-about-IntermediateSerializer) works, and how to control it.

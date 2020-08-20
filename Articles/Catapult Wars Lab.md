@@ -10,9 +10,9 @@ Tutorial
 
 Sample Overview
 
-This lab is a full 2D gesture-based catapult battle game. Launch rocks to crush your opponent, but beware the changing wind! Two learning modules help you build the gameplay from scratch, then polish with animation, sounds, and menu screens, all in 90 minutes. Based on the [Game State Management Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Game-State-Management-(Mango,-C%23VB)).
+This lab is a full 2D gesture-based catapult battle game. Launch rocks to crush your opponent, but beware the changing wind! Two learning modules help you build the gameplay from scratch, then polish with animation, sounds, and menu screens, all in 90 minutes. Based on the [Game State Management Sample](https://github.com/simondarksidej/XNAGameStudio/wiki/Game-State-Management-(Mango,-C%23VB)).
 
-For more fun with Catapult Wars, see the [Catapult Wars Extensions Kit](https://github.com/DDReaper/XNAGameStudio/wiki/Catapult Wars Extensions Kit).
+For more fun with Catapult Wars, see the [Catapult Wars Extensions Kit](https://github.com/simondarksidej/XNAGameStudio/wiki/Catapult Wars Extensions Kit).
 
 Contains:
 
@@ -35,9 +35,9 @@ Features:
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapultwars2.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/catapultwars2.png)	
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapultwars2.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapultwars2.png)	
 
  
 Download | Size | Description
 ---|---|---|
-[CatapultWars_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CatapultWars_4_0.zip?raw=true) | 9.39MB | Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0). 
+[CatapultWars_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/CatapultWars_4_0.zip?raw=true) | 9.39MB | Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0). 

@@ -20,4 +20,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[CollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CollisionSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Collision Sample (XNA Game Studio 4.0). 
+[CollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/CollisionSample_4_0.zip?raw=true) | 0.06MB | Source code and assets for the Collision Sample (XNA Game Studio 4.0). 

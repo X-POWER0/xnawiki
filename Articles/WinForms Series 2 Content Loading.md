@@ -20,13 +20,13 @@ Note: This sample runs only on Windows. WinForms, MSBuild, and the Content Pipel
 
 Other items in the Winforms Series
 
-[WinForms Series 1: Graphics Device](https://github.com/DDReaper/XNAGameStudio/wiki/WinForms Series 1 Graphics Device)
+[WinForms Series 1: Graphics Device](https://github.com/simondarksidej/XNAGameStudio/wiki/WinForms Series 1 Graphics Device)
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_01_small.JPG)![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_02_small.JPG)![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_03_small.JPG)
+![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_01_small.JPG)![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_02_small.JPG)![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_03_small.JPG)
   	  	 
 Download | Size | Description
 ---|---|---|
-[WinFormsContentSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/WinFormsContentSample_4_0.zip?raw=true) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0). 
+[WinFormsContentSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/WinFormsContentSample_4_0.zip?raw=true) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0). 

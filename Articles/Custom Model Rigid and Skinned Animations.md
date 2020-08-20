@@ -16,9 +16,9 @@ These examples are useful for different reasons. When using a rigid model, for i
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/custommodelanimation1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/custommodelanimation2.png)  	 
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/custommodelanimation1.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/custommodelanimation2.png)  	 
 
  
 Download | Size | Description
 ---|---|---|
-[CustomModelAnimation_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CustomModelAnimation_4_0.zip?raw=true) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.
+[CustomModelAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/CustomModelAnimation_4_0.zip?raw=true) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.

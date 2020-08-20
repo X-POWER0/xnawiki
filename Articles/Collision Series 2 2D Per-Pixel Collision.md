@@ -18,21 +18,21 @@ In the previous example, you created a simple object avoidance game by using rec
 
 Other items in the Collision Series:
 
-[Collision Series 1: 2D Rectangle Collision](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 1 2D Rectangle Collision)
+[Collision Series 1: 2D Rectangle Collision](https://github.com/simondarksidej/XNAGameStudio/wiki/Collision Series 1 2D Rectangle Collision)
 
-[Collision Series 3: 2D Collision with Transformed Objects](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 3 2D Collision with Transformed Objects)
+[Collision Series 3: 2D Collision with Transformed Objects](https://github.com/simondarksidej/XNAGameStudio/wiki/Collision Series 3 2D Collision with Transformed Objects)
 
-[Collision Series 4: Collision with a Heightmap](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 4 Collision with a Heightmap)
+[Collision Series 4: Collision with a Heightmap](https://github.com/simondarksidej/XNAGameStudio/wiki/Collision Series 4 Collision with a Heightmap)
 
-[Collision Series 5: Heightmap Collision with Normals](https://github.com/DDReaper/XNAGameStudio/wiki/Collision Series 5 Heightmap Collision with Normals)
+[Collision Series 5: Heightmap Collision with Normals](https://github.com/simondarksidej/XNAGameStudio/wiki/Collision Series 5 Heightmap Collision with Normals)
 
 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Collision2_PerPixel_01_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_01_small.jpg)![XNA_Collision2_PerPixel_02_small.jpg](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_02_small.jpg)
+![XNA_Collision2_PerPixel_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_01_small.jpg)![XNA_Collision2_PerPixel_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_02_small.jpg)
 	
 
 Download | Size | Description
 ---|---|---|
-[PerPixelCollisionSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PerPixelCollisionSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0). 
+[PerPixelCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/PerPixelCollisionSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0). 

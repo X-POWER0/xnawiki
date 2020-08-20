@@ -23,4 +23,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[CPUSkinningSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/CPUSkinningSample_4_0.zip?raw=true) | 5.13MB | Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0). 
+[CPUSkinningSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/CPUSkinningSample_4_0.zip?raw=true) | 5.13MB | Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0). 

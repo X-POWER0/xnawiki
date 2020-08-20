@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[LobbyChatImages.Zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/LobbyChatImages.Zip?raw=true) | 0.03MB | Assets for the Network Lobby and Chat Icons Pack. 
+[LobbyChatImages.Zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/LobbyChatImages.Zip?raw=true) | 0.03MB | Assets for the Network Lobby and Chat Icons Pack. 

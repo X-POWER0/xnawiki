@@ -32,10 +32,10 @@ Features
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/memorymadness1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/memorymadness2.png)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/memorymadness1.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/memorymadness2.png)
 	
 
  
 Download | Size | Description
 ---|---|---|
-[MemoryMadnessLab_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/MemoryMadnessLab_4_0.zip?raw=true) | 8.07MB | Source code and assets for the Memory Madness lab.
+[MemoryMadnessLab_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/MemoryMadnessLab_4_0.zip?raw=true) | 8.07MB | Source code and assets for the Memory Madness lab.

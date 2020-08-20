@@ -19,8 +19,8 @@ Push Notifications for Windows Phone 7 consist of two projects: a Windows Phone 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pushnot0.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/pushnot1.png)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/pushnot0.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/pushnot1.png)
 
 Download | Size | Description
 ---|---|---|
-[PushNotificationsSample_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/PushNotificationsSample_4_0.zip?raw=true) | 0.08MB | Source code and assets for Push Notifications Sample (XNA Game Studio 4.0). 
+[PushNotificationsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/PushNotificationsSample_4_0.zip?raw=true) | 0.08MB | Source code and assets for Push Notifications Sample (XNA Game Studio 4.0). 

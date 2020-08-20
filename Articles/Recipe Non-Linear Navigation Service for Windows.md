@@ -22,4 +22,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[NonLinear-WP-SLApp-Navigation-Service.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/NonLinear-WP-SLApp-Navigation-Service.zip?raw=true) | 0.25MB | Windows Phone 7 Recipe: Non-Linear Navigation Service 
+[NonLinear-WP-SLApp-Navigation-Service.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/NonLinear-WP-SLApp-Navigation-Service.zip?raw=true) | 0.25MB | Windows Phone 7 Recipe: Non-Linear Navigation Service 

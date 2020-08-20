@@ -14,9 +14,9 @@ Note: This sample requires a Bing Maps key to run. To register and obtain a key,
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/bingmaps1.png)![](https://github.com/DDReaper/XNAGameStudio/blob/master/Images/bingmaps2.png)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/bingmaps1.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/bingmaps2.png)
 
  
 Download | Size | Description
 ---|---|---|
-[BingMaps_4_0.zip](https://github.com/DDReaper/XNAGameStudio/blob/master/Samples/BingMaps_4_0.zip?raw=true) | 0.18MB | Source code and assets for the Bing Maps sample.
+[BingMaps_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/BingMaps_4_0.zip?raw=true) | 0.18MB | Source code and assets for the Bing Maps sample.

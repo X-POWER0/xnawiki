@@ -14,17 +14,16 @@ This supplemental article outlines the different coordinate spaces that are nece
 
 Other items in the Shader Series
 
-[Shader Series: Introduction](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series Introduction) (Article)
+[Shader Series: Introduction](https://github.com/simondarksidej/XNAGameStudio/wiki/Shader_Series_Introduction) (Article)
 
-[Shader Series 1: Vertex Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 1 Vertex Lighting)
+[Shader Series 1: Vertex Lighting Sample](https://github.com/simondarksidej/XNAGameStudio/wiki/Shader_Series_1_Vertex_Lighting)
 
-[Shader Series 2: Textures and Colors Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 2 Textures and Colors)
+[Shader Series 2: Textures and Colors Sample](https://github.com/simondarksidej/XNAGameStudio/wiki/Shader_Series_2_Textures_and_Colors)
 
-[Shader Series 3: Per-Pixel Lighting Sample](https://github.com/DDReaper/XNAGameStudio/wiki/Shader Series 3 Per-Pixel Lighting)
-
+[Shader Series 3: Per-Pixel Lighting Sample](https://github.com/simondarksidej/XNAGameStudio/wiki/Shader_Series_3_Per-Pixel_Lighting)
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[CoordinateSpaces.doc](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/CoordinateSpaces.docx?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article. 
+[CoordinateSpaces.doc](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/CoordinateSpaces.doc?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article.

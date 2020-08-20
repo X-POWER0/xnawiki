@@ -16,4 +16,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Performance_Considerations_WP7.docx](https://github.com/DDReaper/XNAGameStudio/blob/master/Documents/Performance_Considerations_WP7.docx?raw=true) | 0.07MB | Performance Considerations for Windows Phone 7 Games Article. 
+[Performance_Considerations_WP7.docx](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/Performance_Considerations_WP7.docx?raw=true) | 0.07MB | Performance Considerations for Windows Phone 7 Games Article. 
