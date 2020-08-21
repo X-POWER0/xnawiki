@@ -15,7 +15,7 @@ The archive is now complete and all but two samples can be found here, next step
 
 If you have comments or suggestions for the archive, please let me know on twitter @SimonDarksideJ or on this site.
 
-## [XNAGame Studio Archive](XNAArchiveContents.md)
+## [XNAGame Studio Archive](XNAArchiveContents)
 
 The XNA Game Studio archive contains all of the content (over 100 articles, samples and more) from the now retired XNA Educational Library, broken up in to several distinct sections:
 
@@ -35,13 +35,13 @@ All the samples are available in both source and include a downloadable zip for 
 
 Over time a lot of these samples will be upgraded to MonoGame, or even included in the [MonoGame.Samples collection](https://github.com/monogame/monogame.samples).
 
-## [Shawn Hargreaves Blog](ShawnHargreaves.md)
+## [Shawn Hargreaves Blog](ShawnHargreaves)
 
 What should be required reading for any XNA/MonoGame developer is the blog by one of the original developers of the XNA Framework at Microsoft.
 
 Only one set of articles here at the moment, but this should be mandatory reading if you deal with XML!
 
-## [Ziggyware Archive](Ziggyware.md)
+## [Ziggyware Archive](Ziggyware)
 
 Ziggyware was a massive tutorial site back in the day and the place developers went to go to get their daily feed of interesting stuff.
 
