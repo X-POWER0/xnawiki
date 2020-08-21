@@ -27,11 +27,11 @@ This sample uses Phong reflection to approximate specular light, creating highli
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Shader3_PerPixelLighting_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Shader3_PerPixelLighting_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[PerPixelLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerPixelLightingSample_4_0) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0).
+[PerPixelLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/PerPixelLightingSample_4_0) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0).
 [PerPixelLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerPixelLightingSample_4_0.zip) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0).
 ||||

@@ -13,5 +13,5 @@ The practices discussed in this article will help you have the most success poss
 
 Download | Size | Description
 ---|---|---|
-[BestPractices_WP7_Games.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/BestPractices_WP7_Games.docx?raw=true) | 0.11MB | Best Practices for Windows Phone 7 Games Article.
+[BestPractices_WP7_Games.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/BestPractices_WP7_Games.docx?raw=true) | 0.11MB | Best Practices for Windows Phone 7 Games Article.
 ||||

@@ -27,11 +27,11 @@ In the previous tutorial, you enhanced your simple obstacle avoidance game by ad
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Collision3_2D_Transform_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision3_2D_Transform_01_small.jpg?raw=true)
-![XNA_Collision3_2D_Transform_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision3_2D_Transform_02_small.jpg?raw=true)
+![XNA_Collision3_2D_Transform_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision3_2D_Transform_01_small.jpg?raw=true)
+![XNA_Collision3_2D_Transform_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision3_2D_Transform_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[TransformedCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TransformedCollisionSample_4_0) | 0.18MB | Source code and assets for the Collision Series 3: 2D Transformed Per-Pixel Tutorial (XNA Game Studio 4.0).
+[TransformedCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/TransformedCollisionSample_4_0) | 0.18MB | Source code and assets for the Collision Series 3: 2D Transformed Per-Pixel Tutorial (XNA Game Studio 4.0).
 [TransformedCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TransformedCollisionSample_4_0.zip) | 0.18MB | Source code and assets for the Collision Series 3: 2D Transformed Per-Pixel Tutorial (XNA Game Studio 4.0).
 ||||

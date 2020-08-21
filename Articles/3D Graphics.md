@@ -15,11 +15,11 @@ The sample consists of a 3D scene of a spaceship, rendered by using BasicEffect.
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![3D Sample 0](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/3Dsample0.png?raw=true)
-![3D Sample 1](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/3Dsample1.png?raw=true)
+![3D Sample 0](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/3Dsample0.png?raw=true)
+![3D Sample 1](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/3Dsample1.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[Graphics3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Graphics3DSample_4_0) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
+[Graphics3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/Graphics3DSample_4_0) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
 [Graphics3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Graphics3DSample_4_0.zip) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
 ||||

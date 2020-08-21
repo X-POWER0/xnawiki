@@ -27,11 +27,11 @@ This sample explores the diffuse and ambient lighting models and combines them i
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Shader1_VertexLighting_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Shader1_VertexLighting_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[VertexLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/VertexLightingSample_4_0) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0).
+[VertexLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/VertexLightingSample_4_0) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0).
 [VertexLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/VertexLightingSample_4_0.zip) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0).
 ||||

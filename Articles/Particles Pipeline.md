@@ -19,12 +19,12 @@ This sample's particle systems are based on the Spacewar particle system. Howeve
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/particlespipeline.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Particle_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Particle_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/particlespipeline.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[Particles2DPipeline_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Particles2DPipeline_4_0) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0).
+[Particles2DPipeline_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/Particles2DPipeline_4_0) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0).
 [Particles2DPipeline_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Particles2DPipeline_4_0.zip) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0).
 ||||

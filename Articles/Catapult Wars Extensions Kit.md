@@ -20,15 +20,15 @@ Exercises:
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk2.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk3.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk4.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk5.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk6.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapulttk1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapulttk2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapulttk3.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapulttk4.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapulttk5.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapulttk6.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[CatapultWarsTrainingKit_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CatapultWarsTrainingKit_4_0) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0)
+[CatapultWarsTrainingKit_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/CatapultWarsTrainingKit_4_0) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0)
 [CatapultWarsTrainingKit_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/CatapultWarsTrainingKit_4_0.zip) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0)
 ||||

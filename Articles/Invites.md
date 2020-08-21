@@ -25,6 +25,6 @@ Although pull and push mode invites appear very different to the user, they are 
 
 Download | Size | Description
 ---|---|---|
-[InvitesSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/InvitesSample_4_0) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0).
+[InvitesSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/InvitesSample_4_0) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0).
 [InvitesSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/InvitesSample_4_0.zip) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0).
 ||||

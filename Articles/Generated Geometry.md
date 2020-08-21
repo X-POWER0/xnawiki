@@ -15,11 +15,11 @@ The sample renders a simple terrain with a sky behind it. The input data consist
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_GeneratedGeometry_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_GeneratedGeometry_01_small.jpg?raw=true)
-![XNA_GeneratedGeometry_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_GeneratedGeometry_02_small.jpg?raw=true)
+![XNA_GeneratedGeometry_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_GeneratedGeometry_01_small.jpg?raw=true)
+![XNA_GeneratedGeometry_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_GeneratedGeometry_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[GeneratedGeometrySample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GeneratedGeometrySample_4_0) | 2.40MB | Source code and assets for the Generated Geometry Sample (XNA Game Studio 4.0).
+[GeneratedGeometrySample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/GeneratedGeometrySample_4_0) | 2.40MB | Source code and assets for the Generated Geometry Sample (XNA Game Studio 4.0).
 [GeneratedGeometrySample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/GeneratedGeometrySample_4_0.zip) | 2.40MB | Source code and assets for the Generated Geometry Sample (XNA Game Studio 4.0).
 ||||

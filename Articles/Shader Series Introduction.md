@@ -29,5 +29,5 @@ This article is an introduction to the Shader Series, a set of samples and artic
 
 Download | Size | Description
 ---|---|---|
-[ShaderSeriesPrimer.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/ShaderSeriesPrimer.doc?raw=true) | 0.06MB | Shader Series introduction article.
+[ShaderSeriesPrimer.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/ShaderSeriesPrimer.doc?raw=true) | 0.06MB | Shader Series introduction article.
 ||||

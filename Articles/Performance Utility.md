@@ -13,11 +13,11 @@ Note: This utility doesn't currently include supporting documentation. To see an
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).>/p>
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/debugsample1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/debugsample2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/debugsample1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/debugsample2.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[PerformanceUtility_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerformanceUtility_4_0) | 0.15MB | Source code and assets for the Performance Utility.
+[PerformanceUtility_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/PerformanceUtility_4_0) | 0.15MB | Source code and assets for the Performance Utility.
 [PerformanceUtility_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerformanceUtility_4_0.zip) | 0.15MB | Source code and assets for the Performance Utility.
 ||||

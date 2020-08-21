@@ -13,6 +13,6 @@ This article is an introduction to using data structures in games, with several 
 
 Download | Size | Description
 ---|---|---|
-[DataStructures.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/DataStructures.doc?raw=true) | 0.23MB | The Data Structures Article in Four Parts, covering concepts in data management specific to games and .NET data structures.
-[DataStructures_CheatSheet.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/DataStructures_CheatSheet.doc?raw=true) | 0.04MB | A useful "cheat sheet" for the Data Structures article series that indicates the performance characteristics of various operations on different data structures.
+[DataStructures.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/DataStructures.doc?raw=true) | 0.23MB | The Data Structures Article in Four Parts, covering concepts in data management specific to games and .NET data structures.
+[DataStructures_CheatSheet.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/DataStructures_CheatSheet.doc?raw=true) | 0.04MB | A useful "cheat sheet" for the Data Structures article series that indicates the performance characteristics of various operations on different data structures.
 ||||

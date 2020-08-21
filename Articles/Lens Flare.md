@@ -19,11 +19,11 @@ The sample uses hardware occlusion queries to efficiently detect when the sun is
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_LensFlare_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_LensFlare_01_small.jpg?raw=true)
-![XNA_LensFlare_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_LensFlare_02_small.jpg?raw=true)
+![XNA_LensFlare_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_LensFlare_01_small.jpg?raw=true)
+![XNA_LensFlare_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_LensFlare_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[LensFlareSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/LensFlareSample_4_0) | 1.57MB | Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0).
+[LensFlareSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/LensFlareSample_4_0) | 1.57MB | Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0).
 [LensFlareSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/LensFlareSample_4_0.zip) | 1.57MB | Source code and assets for the Lens Flare Sample (XNA Game Studio 4.0).
 ||||

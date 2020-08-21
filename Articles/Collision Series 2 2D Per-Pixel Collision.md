@@ -25,11 +25,11 @@ In the previous example, you created a simple object avoidance game by using rec
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Collision2_PerPixel_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_01_small.jpg?raw=true)
-![XNA_Collision2_PerPixel_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision2_PerPixel_02_small.jpg?raw=true)
+![XNA_Collision2_PerPixel_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision2_PerPixel_01_small.jpg?raw=true)
+![XNA_Collision2_PerPixel_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision2_PerPixel_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[PerPixelCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerPixelCollisionSample_4_0) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0)
+[PerPixelCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/PerPixelCollisionSample_4_0) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0)
 [PerPixelCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerPixelCollisionSample_4_0.zip) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0)
 ||||

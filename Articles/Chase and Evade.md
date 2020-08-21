@@ -15,11 +15,11 @@ This sample demonstrates chasing and evading behaviors by using three actors—a
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ChaseAndEvade_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ChaseAndEvade_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_ChaseAndEvade_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_ChaseAndEvade_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[ChaseAndEvadeSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ChaseAndEvadeSample_4_0) | 0.07MB | Source code and assets for the Chase & Evade Sample (XNA Game Studio 4.0).
+[ChaseAndEvadeSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ChaseAndEvadeSample_4_0) | 0.07MB | Source code and assets for the Chase & Evade Sample (XNA Game Studio 4.0).
 [ChaseAndEvadeSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ChaseAndEvadeSample_4_0.zip) | 0.07MB | Source code and assets for the Chase & Evade Sample (XNA Game Studio 4.0).
 ||||

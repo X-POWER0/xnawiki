@@ -27,5 +27,5 @@ This supplemental article outlines the different coordinate spaces that are nece
 
 Download | Size | Description
 ---|---|---|
-[CoordinateSpaces.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/CoordinateSpaces.doc?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article.
+[CoordinateSpaces.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/CoordinateSpaces.doc?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article.
 ||||

@@ -17,12 +17,12 @@ In the original version of the sample, each particle system was defined by using
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_02_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_03_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Particle3D_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Particle3D_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Particle3D_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[XmlParticles_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/XmlParticles_4_0) | 0.40MB | Source code and assets for the XML Particle Systems Tutorial (XNA Game Studio 4.0).
+[XmlParticles_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/XmlParticles_4_0) | 0.40MB | Source code and assets for the XML Particle Systems Tutorial (XNA Game Studio 4.0).
 [XmlParticles_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/XmlParticles_4_0.zip) | 0.40MB | Source code and assets for the XML Particle Systems Tutorial (XNA Game Studio 4.0).
 ||||

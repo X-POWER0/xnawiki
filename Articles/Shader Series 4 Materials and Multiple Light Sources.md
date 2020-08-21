@@ -27,11 +27,11 @@ Until now, the Shader Series has focused on single meshes, single lights, and si
 
 > All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader4_Materials_MultiLights_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader4_Materials_MultiLights_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Shader4_Materials_MultiLights_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Shader4_Materials_MultiLights_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[MaterialsAndLights_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MaterialsAndLights_ARCHIVE_2_0) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED).
+[MaterialsAndLights_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/MaterialsAndLights_ARCHIVE_2_0) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED).
 [MaterialsAndLights_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/MaterialsAndLights_ARCHIVE_2_0.zip) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED).
 ||||

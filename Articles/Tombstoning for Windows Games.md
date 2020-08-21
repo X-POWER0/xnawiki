@@ -17,5 +17,5 @@ This article describes conditions that can cause game interruptions as part of t
 
 Download | Size | Description
 ---|---|---|
-[Tombstoning_WP7_Games.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/Tombstoning_WP7_Games.docx?raw=true) | 0.04MB | Tombstoning for Windows Phone 7 Games Article.
+[Tombstoning_WP7_Games.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/Tombstoning_WP7_Games.docx?raw=true) | 0.04MB | Tombstoning for Windows Phone 7 Games Article.
 ||||

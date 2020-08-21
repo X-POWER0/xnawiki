@@ -13,5 +13,5 @@ This article describes ways to reduce memory, techniques for allocating memory t
 
 Download | Size | Description
 ---|---|---|
-[Performance_Considerations_WP7.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/Performance_Considerations_WP7.docx?raw=true) | 0.07MB | Performance Considerations for Windows Phone 7 Games Article.
+[Performance_Considerations_WP7.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/Performance_Considerations_WP7.docx?raw=true) | 0.07MB | Performance Considerations for Windows Phone 7 Games Article.
 ||||

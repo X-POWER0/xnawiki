@@ -45,6 +45,6 @@ Much of the code in this demo, especially the custom content processors that are
 
 Download | Size | Description
 ---|---|---|
-[ReachGraphicsDemo_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ReachGraphicsDemo_4_0) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0).
+[ReachGraphicsDemo_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ReachGraphicsDemo_4_0) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0).
 [ReachGraphicsDemo_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ReachGraphicsDemo_4_0.zip) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0).
 ||||

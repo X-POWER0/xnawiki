@@ -13,5 +13,5 @@ This article explains how the Windows Phone Watchdog service works and how to pr
 
 Download | Size | Description
 ---|---|---|
-[Avoiding_the_Windows_Phone_Watchdog.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/Avoiding_the_Windows_Phone_Watchdog.docx?raw=true) | 0.02MB | Avoiding the Windows Phone Watchdog Article.
+[Avoiding_the_Windows_Phone_Watchdog.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/Avoiding_the_Windows_Phone_Watchdog.docx?raw=true) | 0.02MB | Avoiding the Windows Phone Watchdog Article.
 ||||

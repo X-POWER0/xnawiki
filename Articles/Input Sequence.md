@@ -17,6 +17,6 @@ As the number of moves in a game increases, the number of buttons on the control
 
 Download | Size | Description
 ---|---|---|
-[InputSequenceSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/InputSequenceSample_4_0) | 0.05MB | Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0).
+[InputSequenceSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/InputSequenceSample_4_0) | 0.05MB | Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0).
 [InputSequenceSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/InputSequenceSample_4_0.zip) | 0.05MB | Source code and assets for the Input Sequence Sample (XNA Game Studio 4.0).
 ||||

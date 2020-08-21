@@ -21,6 +21,6 @@ Unlike most XNA samples, which are written in C#, this utility is written in C++
 
 Download | Size | Description
 ---|---|---|
-[XnaGraphicsProfileChecker_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/XnaGraphicsProfileChecker_4_0) | 0.02MB | Source code and assets for the XNA Graphics Profile Checker Utility.
+[XnaGraphicsProfileChecker_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/XnaGraphicsProfileChecker_4_0) | 0.02MB | Source code and assets for the XNA Graphics Profile Checker Utility.
 [XnaGraphicsProfileChecker_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/XnaGraphicsProfileChecker_4_0.zip) | 0.02MB | Source code and assets for the XNA Graphics Profile Checker Utility.
 ||||

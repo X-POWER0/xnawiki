@@ -21,11 +21,11 @@ When using the Emulator, the Y axis will be inverted when the emulator is rotate
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/Bounce1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/Bounce2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/Bounce1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/Bounce2.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[BounceSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BounceSample_4_0) | 0.06MB | Source code and assets for the Bounce Sample (XNA Game Studio 4.0).
+[BounceSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/BounceSample_4_0) | 0.06MB | Source code and assets for the Bounce Sample (XNA Game Studio 4.0).
 [BounceSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/BounceSample_4_0.zip) | 0.06MB | Source code and assets for the Bounce Sample (XNA Game Studio 4.0).
 ||||

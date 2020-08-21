@@ -23,6 +23,6 @@ These classes are particularly useful when debugging 3D games. For example, you 
 
 Download | Size | Description
 ---|---|---|
-[Primitives3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Primitives3DSample_4_0) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0).
+[Primitives3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/Primitives3DSample_4_0) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0).
 [Primitives3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Primitives3DSample_4_0.zip) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0).
 ||||

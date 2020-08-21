@@ -19,6 +19,6 @@ This HLSL code is provided for educational purposes. It may be a useful starting
 
 Download | Size | Description
 ---|---|---|
-[SpriteBatchShader_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpriteBatchShader_ARCHIVE_2_0) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived).
+[SpriteBatchShader_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/SpriteBatchShader_ARCHIVE_2_0) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived).
 [SpriteBatchShader_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SpriteBatchShader_ARCHIVE_2_0.zip) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived).
 ||||

@@ -21,12 +21,12 @@ Note: This sample runs only on Windows. WinForms, MSBuild, and the Content Pipel
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_Winform-ContentLoader_01_small.JPG?raw=true)
-![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_Winform-ContentLoader_02_small.JPG?raw=true)
-![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_Winform-ContentLoader_03_small.JPG?raw=true)
+![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_Winform-ContentLoader_01_small.JPG?raw=true)
+![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_Winform-ContentLoader_02_small.JPG?raw=true)
+![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_Winform-ContentLoader_03_small.JPG?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[WinFormsContentSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsContentSample_4_0) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0).
+[WinFormsContentSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/WinFormsContentSample_4_0) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0).
 [WinFormsContentSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/WinFormsContentSample_4_0.zip) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0).
 ||||

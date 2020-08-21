@@ -13,13 +13,13 @@ The project comes ready to compile and run, and is easy to customize with only a
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/Spacewar1_thumb.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/Spacewar2_thumb.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/Spacewar3_thumb.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/Spacewar4_thumb.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/Spacewar1_thumb.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/Spacewar2_thumb.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/Spacewar3_thumb.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/Spacewar4_thumb.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[Spacewar_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Spacewar_4_0) | 29.94MB | Source code and assets for Spacewar.
+[Spacewar_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/Spacewar_4_0) | 29.94MB | Source code and assets for Spacewar.
 [Spacewar_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Spacewar_4_0.zip) | 29.94MB | Source code and assets for Spacewar.
 ||||

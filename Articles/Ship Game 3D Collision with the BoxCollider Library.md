@@ -14,5 +14,5 @@ This supplemental article explains the BoxCollider library provided in the [Ship
 
 Download | Size | Description
 ---|---|---|
-[Ship Game - Using the Box Collider Library.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/Ship%20Game%20-%20Using%20the%20Box%20Collider%20Library.doc?raw=true) | 0.11MB | This article explains the BoxCollider library provided in the Ship game starter kit.
+[Ship Game - Using the Box Collider Library.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/Ship%20Game%20-%20Using%20the%20Box%20Collider%20Library.doc?raw=true) | 0.11MB | This article explains the BoxCollider library provided in the Ship game starter kit.
 ||||

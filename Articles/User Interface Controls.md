@@ -13,10 +13,10 @@ Several controls are provided, including scrolling lists of text and images, as 
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/uisample.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/uisample.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[UISample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/UISample_4_0) | 1.02MB | Source code and assets for the User Interface Controls Sample.
+[UISample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/UISample_4_0) | 1.02MB | Source code and assets for the User Interface Controls Sample.
 [UISample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/UISample_4_0.zip) | 1.02MB | Source code and assets for the User Interface Controls Sample.
 ||||

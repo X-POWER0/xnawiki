@@ -17,11 +17,11 @@ By pressing a button, you can compare and contrast the spring-based camera with 
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/ChaseCamera_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/ChaseCamera_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/ChaseCamera_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/ChaseCamera_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[ChaseCamera_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ChaseCamera_4_0) | 0.76MB | Source code and assets for the Chase Camera Sample (XNA Game Studio 4.0)
+[ChaseCamera_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ChaseCamera_4_0) | 0.76MB | Source code and assets for the Chase Camera Sample (XNA Game Studio 4.0)
 [ChaseCamera_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ChaseCamera_4_0.zip) | 0.76MB | Source code and assets for the Chase Camera Sample (XNA Game Studio 4.0)
 ||||

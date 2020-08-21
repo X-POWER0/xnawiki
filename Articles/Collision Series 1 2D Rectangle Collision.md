@@ -25,11 +25,11 @@ Games don't need to be complex to be fun and interesting. Obstacle avoidance gam
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Collision1_2D_Rectangle_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision1_2D_Rectangle_01_small.jpg?raw=true)
-![XNA_Collision1_2D_Rectangle_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision1_2D_Rectangle_02_small.jpg?raw=true)
+![XNA_Collision1_2D_Rectangle_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision1_2D_Rectangle_01_small.jpg?raw=true)
+![XNA_Collision1_2D_Rectangle_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision1_2D_Rectangle_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[RectangleCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RectangleCollisionSample_4_0) | 0.05MB | Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0).
+[RectangleCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/RectangleCollisionSample_4_0) | 0.05MB | Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0).
 [RectangleCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/RectangleCollisionSample_4_0.zip) | 0.05MB | Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0).
 ||||

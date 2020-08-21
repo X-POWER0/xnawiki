@@ -17,16 +17,16 @@ All gameplay content is loaded into the Content Pipeline by using XML, making it
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_RPG-Game_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_RPG-Game_01_small.jpg?raw=true)
-![XNA_RPG-Game_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_RPG-Game_02_small.jpg?raw=true)
-![XNA_RPG-Game_03_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_RPG-Game_03_small.jpg?raw=true)
+![XNA_RPG-Game_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_RPG-Game_01_small.jpg?raw=true)
+![XNA_RPG-Game_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_RPG-Game_02_small.jpg?raw=true)
+![XNA_RPG-Game_03_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_RPG-Game_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[RolePlayingGame_4_0_Phone](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RolePlayingGame_4_0_Phone) | 47.10MB | Source code and assets for the Windows Phone RPG Starter Kit.
+[RolePlayingGame_4_0_Phone](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/RolePlayingGame_4_0_Phone) | 47.10MB | Source code and assets for the Windows Phone RPG Starter Kit.
 [RolePlayingGame_4_0_Phone.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/RolePlayingGame_4_0_Phone.zip) | 47.10MB | Source code and assets for the Windows Phone RPG Starter Kit.
-[RolePlayingGame_4_0_Win_Xbox](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RolePlayingGame_4_0_Win_Xbox) | 90.62MB | Source code and assets for the Xbox 360 and Windows RPG Starter Kit.
+[RolePlayingGame_4_0_Win_Xbox](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/RolePlayingGame_4_0_Win_Xbox) | 90.62MB | Source code and assets for the Xbox 360 and Windows RPG Starter Kit.
 [RolePlayingGame_4_0_Win_Xbox.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/RolePlayingGame_4_0_Win_Xbox.zip) | 90.62MB | Source code and assets for the Xbox 360 and Windows RPG Starter Kit.
-[RPG_Tutorial_1_Quest.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/RPG_Tutorial_1_Quest.doc?raw=true) | 0.06MB | This document, used with the Role-Playing Game Sample, details how you can extend the Sample to create your own quests to challenge and reward players (XNA Game Studio 3.0).
-[RPG_Tutorial_2_Engine.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/RPG_Tutorial_2_Engine.doc?raw=true) | 0.10MB | A step-by-step walkthrough for re-using the Role-Playing Game Sample tile engine in a separate game (XNA Game Studio 3.0).
+[RPG_Tutorial_1_Quest.doc](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Documents/RPG_Tutorial_1_Quest.doc?raw=true) | 0.06MB | This document, used with the Role-Playing Game Sample, details how you can extend the Sample to create your own quests to challenge and reward players (XNA Game Studio 3.0).
+[RPG_Tutorial_2_Engine.doc](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Documents/RPG_Tutorial_2_Engine.doc?raw=true) | 0.10MB | A step-by-step walkthrough for re-using the Role-Playing Game Sample tile engine in a separate game (XNA Game Studio 3.0).
 ||||

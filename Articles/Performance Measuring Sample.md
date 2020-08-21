@@ -11,11 +11,11 @@ This sample utilizes the Performance Utility to show the impact of adding 3D sph
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/performanceSample1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/performanceSample2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/performanceSample1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/performanceSample2.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[PerformanceMeasuringSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerformanceMeasuringSample_4_0) | 0.10MB | Source code and assets for the Performance Measuring sample
+[PerformanceMeasuringSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/PerformanceMeasuringSample_4_0) | 0.10MB | Source code and assets for the Performance Measuring sample
 [PerformanceMeasuringSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerformanceMeasuringSample_4_0.zip) | 0.10MB | Source code and assets for the Performance Measuring sample
 ||||

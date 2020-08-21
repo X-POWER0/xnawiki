@@ -1,6 +1,6 @@
 # XNA Game Studio Archive
 
-![XNA Game Studio](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/xna_game_studio_logo.jpg?raw=true)
+![XNA Game Studio](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/xna_game_studio_logo.jpg?raw=true)
 
 The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
 

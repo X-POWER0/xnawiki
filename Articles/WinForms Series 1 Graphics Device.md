@@ -25,11 +25,11 @@ Note that this sample runs only on Windows. WinForms isn't available on Xbox 360
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg?raw=true)
-![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg?raw=true)
+![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg?raw=true)
+![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[WinFormsGraphicsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsGraphicsSample_4_0) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0).
+[WinFormsGraphicsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/WinFormsGraphicsSample_4_0) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0).
 [WinFormsGraphicsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/WinFormsGraphicsSample_4_0.zip) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0).
 ||||

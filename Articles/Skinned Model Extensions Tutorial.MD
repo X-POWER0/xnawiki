@@ -19,6 +19,6 @@ If you want to jump straight to the end result, the final code produced by follo
 
 Download | Size | Description
 ---|---|---|
-[SkinnedModelExtensions_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SkinnedModelExtensions_4_0) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0).
+[SkinnedModelExtensions_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/SkinnedModelExtensions_4_0) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0).
 [SkinnedModelExtensions_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SkinnedModelExtensions_4_0.zip) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0).
 ||||

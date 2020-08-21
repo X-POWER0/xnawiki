@@ -15,5 +15,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[LoadingTimeReduction_WP7_XNAGS.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/LoadingTimeReduction_WP7_XNAGS.docx?raw=true) | 0.06MB | Loading Time Reduction Article for Windows Phone.
+[LoadingTimeReduction_WP7_XNAGS.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/LoadingTimeReduction_WP7_XNAGS.docx?raw=true) | 0.06MB | Loading Time Reduction Article for Windows Phone.
 ||||

@@ -63,6 +63,6 @@ Space games are also fun to build because it's typically pretty easy to find con
 
 Download | Size | Description
 ---|---|---|
-[SpaceShooter_ARCHIVE_3_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpaceShooter_ARCHIVE_3_0) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived).
+[SpaceShooter_ARCHIVE_3_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/SpaceShooter_ARCHIVE_3_0) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived).
 [SpaceShooter_ARCHIVE_3_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SpaceShooter_ARCHIVE_3_0.zip) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived).
 ||||

@@ -17,11 +17,11 @@ This sample shows how to make the tank example from the [Network Architecture: P
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-[XNA_NetworkPrediction_01_small.jpg](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_NetworkPrediction_01_small.jpg?raw=true)
-![XNA_NetworkPrediction_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_02_small.jpg?raw=true)
+[XNA_NetworkPrediction_01_small.jpg](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_NetworkPrediction_01_small.jpg?raw=true)
+![XNA_NetworkPrediction_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_NetworkPrediction_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[NetworkPredictionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NetworkPredictionSample_4_0) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0).
+[NetworkPredictionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/NetworkPredictionSample_4_0) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0).
 [NetworkPredictionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NetworkPredictionSample_4_0.zip) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0).
 ||||

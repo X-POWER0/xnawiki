@@ -31,11 +31,11 @@ Features:
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapultwars2.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapultwars2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapultwars2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/catapultwars2.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[CatapultWars_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CatapultWars_4_0) | 9.39MB | Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0).
+[CatapultWars_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/CatapultWars_4_0) | 9.39MB | Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0).
 [CatapultWars_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/CatapultWars_4_0.zip) | 9.39MB | Source code and assets for the Catapult Wars Lab (XNA Game Studio 4.0).
 ||||

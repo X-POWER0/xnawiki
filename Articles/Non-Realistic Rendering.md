@@ -21,12 +21,12 @@ Many graphical effects can be achieved by combining these techniques in various 
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_02_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_03_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_NonRealisticRendering_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_NonRealisticRendering_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_NonRealisticRendering_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[NonPhotoRealisticSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NonPhotoRealisticSample_4_0) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0).
+[NonPhotoRealisticSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/NonPhotoRealisticSample_4_0) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0).
 [NonPhotoRealisticSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NonPhotoRealisticSample_4_0.zip) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0).
 ||||

@@ -19,12 +19,12 @@ Since all of the GamePadState values are displayed as data, it would have been f
 
 A common use of this tool is to investigate how the controls provided by various accessories map to the GamePadState and GamePadCapabilities values.
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Input-Reporter_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Input-Reporter_01_small.jpg?raw=true)
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[InputReporter_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/InputReporter_4_0)| 0.13MB | Source code and assets for the Input Reporter Tool.
+[InputReporter_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/InputReporter_4_0)| 0.13MB | Source code and assets for the Input Reporter Tool.
 [InputReporter_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/InputReporter_4_0.zip)| 0.13MB | Source code and assets for the Input Reporter Tool.
 ||||

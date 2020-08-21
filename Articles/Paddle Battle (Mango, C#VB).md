@@ -20,8 +20,8 @@ Note the gameplay of this sample is in landscape mode, so when using the emulato
 
 Download | Size | Description
 ---|---|---|
-[PaddleBattle_4_0_Mango](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PaddleBattle_4_0_Mango) | 0.22MB | Source code and assets for the Paddle Battle sample.
+[PaddleBattle_4_0_Mango](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/PaddleBattle_4_0_Mango) | 0.22MB | Source code and assets for the Paddle Battle sample.
 [PaddleBattle_4_0_Mango.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PaddleBattle_4_0_Mango.zip) | 0.22MB | Source code and assets for the Paddle Battle sample.
-[PaddleBattle_4_0_Mango_VB](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PaddleBattle_4_0_Mango_VB) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.
+[PaddleBattle_4_0_Mango_VB](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/PaddleBattle_4_0_Mango_VB) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.
 [PaddleBattle_4_0_Mango_VB.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PaddleBattle_4_0_Mango_VB.zip) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.
 ||||

@@ -17,10 +17,10 @@ This sample automates the process of creating sprite sheets by using a custom co
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_SpriteSheet_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_SpriteSheet_01_small.JPG?raw=true)
+![XNA_SpriteSheet_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_SpriteSheet_01_small.JPG?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[SpriteSheetSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpriteSheetSample_4_0) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0)
+[SpriteSheetSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/SpriteSheetSample_4_0) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0)
 [SpriteSheetSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SpriteSheetSample_4_0.zip) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0)
 ||||

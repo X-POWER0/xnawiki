@@ -27,12 +27,12 @@ Additive, multipass lighting techniques are not unique to programmable shader ha
 
 > All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Multipass_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Multipass_01_small.jpg?raw=true)
-![XNA_Multipass_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Multipass_02_small.jpg?raw=true)
-![XNA_Multipass_03_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Multipass_03_small.jpg?raw=true)
+![XNA_Multipass_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Multipass_01_small.jpg?raw=true)
+![XNA_Multipass_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Multipass_02_small.jpg?raw=true)
+![XNA_Multipass_03_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Multipass_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[MultipassLighting_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MultipassLighting_ARCHIVE_2_0) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED).
+[MultipassLighting_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/MultipassLighting_ARCHIVE_2_0) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED).
 [MultipassLighting_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/MultipassLighting_ARCHIVE_2_0.zip) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED).
 ||||

@@ -25,11 +25,11 @@ The Generated Geometry sample introduced the concept of a heightmap. In that sam
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Collision4_Heightmap_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision4_Heightmap_01_small.jpg?raw=true)
-![XNA_Collision4_Heightmap_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Collision4_Heightmap_02_small.jpg?raw=true)
+![XNA_Collision4_Heightmap_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision4_Heightmap_01_small.jpg?raw=true)
+![XNA_Collision4_Heightmap_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Collision4_Heightmap_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[HeightmapCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HeightmapCollisionSample_4_0) | 1.00MB | Source code and assets for the Collision Series 4: Heightmap Sample (XNA Game Studio 4.0)
+[HeightmapCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/HeightmapCollisionSample_4_0) | 1.00MB | Source code and assets for the Collision Series 4: Heightmap Sample (XNA Game Studio 4.0)
 [HeightmapCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/HeightmapCollisionSample_4_0.zip) | 1.00MB | Source code and assets for the Collision Series 4: Heightmap Sample (XNA Game Studio 4.0)
 ||||

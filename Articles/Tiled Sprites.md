@@ -23,11 +23,11 @@ Sprite animation is a similar data management task to tiling, since several sour
 
 > All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_TiledSprites_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_TiledSprites_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_TiledSprites_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_TiledSprites_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[TiledSpritesSample_ARCHIVE_3_1](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TiledSpritesSample_ARCHIVE_3_1) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived).
+[TiledSpritesSample_ARCHIVE_3_1](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/TiledSpritesSample_ARCHIVE_3_1) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived).
 [TiledSpritesSample_ARCHIVE_3_1.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TiledSpritesSample_ARCHIVE_3_1.zip) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived).
 ||||

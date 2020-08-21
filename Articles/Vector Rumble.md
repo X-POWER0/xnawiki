@@ -15,12 +15,12 @@ Vector Rumble is a two-dimensional shooter, pitting up to four players against o
 
 > All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_VectorRumble_01_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_VectorRumble_02_small.jpg?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_VectorRumble_03_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_VectorRumble_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_VectorRumble_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_VectorRumble_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[VectorRumble_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/VectorRumble_ARCHIVE_2_0) | 26.68MB | Source code and assets for the Vector Rumble Sample (XNA Game Studio 2.0, Archived).
+[VectorRumble_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/VectorRumble_ARCHIVE_2_0) | 26.68MB | Source code and assets for the Vector Rumble Sample (XNA Game Studio 2.0, Archived).
 [VectorRumble_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/VectorRumble_ARCHIVE_2_0.zip) | 26.68MB | Source code and assets for the Vector Rumble Sample (XNA Game Studio 2.0, Archived).
 ||||

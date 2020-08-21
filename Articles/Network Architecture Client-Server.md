@@ -17,11 +17,11 @@ For an alternative way to handle networked game simulation, see the [Peer-to-Pee
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_ClientServer_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ClientServer_01_small.jpg?raw=true)
-![XNA_ClientServer_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ClientServer_02_small.jpg?raw=true)
+![XNA_ClientServer_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_ClientServer_01_small.jpg?raw=true)
+![XNA_ClientServer_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_ClientServer_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[ClientServerSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ClientServerSample_4_0) | 0.10MB | Source code and assets for the Network Architecture: Client/Server Sample (XNA Game Studio 4.0).
+[ClientServerSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ClientServerSample_4_0) | 0.10MB | Source code and assets for the Network Architecture: Client/Server Sample (XNA Game Studio 4.0).
 [ClientServerSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ClientServerSample_4_0.zip) | 0.10MB | Source code and assets for the Network Architecture: Client/Server Sample (XNA Game Studio 4.0).
 ||||

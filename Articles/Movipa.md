@@ -22,9 +22,9 @@ Movipa is a puzzle game involving moving images that demonstrates the following 
 
 > All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/a-lebank-image11.PNG?raw=true)
-![](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/a-lebank-image12.PNG?raw=true)
-![](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/a-lebank-image4.PNG?raw=true)
+![](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/a-lebank-image11.PNG?raw=true)
+![](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/a-lebank-image12.PNG?raw=true)
+![](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/a-lebank-image4.PNG?raw=true)
 
 Download | Size | Description
 ---|---|---|

@@ -15,5 +15,5 @@ This tutorial teaches you how to find and correct performance problems in your g
 
 Download | Size | Description
 ---|---|---|
-[OptimizationTutorial_ARCHIVE_2_0.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/OptimizationTutorial_ARCHIVE_2_0.doc?raw=true) | 0.08MB | The Optimization: High-Frequency Code Article (XNA Game Studio 2.0, Archived).
+[OptimizationTutorial_ARCHIVE_2_0.doc](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Documents/OptimizationTutorial_ARCHIVE_2_0.doc?raw=true) | 0.08MB | The Optimization: High-Frequency Code Article (XNA Game Studio 2.0, Archived).
 ||||

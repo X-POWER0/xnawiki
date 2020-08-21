@@ -19,10 +19,10 @@ NinjAcademy is a complete gesture-based Windows Phone game. The player attempts 
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![NinjAcademy](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/ninjacademy1.png?raw=true)
+![NinjAcademy](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/ninjacademy1.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[NinjAcademy_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NinjAcademy_4_0) | 14.10MB | Source code and assets for NinjAcademy
+[NinjAcademy_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/NinjAcademy_4_0) | 14.10MB | Source code and assets for NinjAcademy
 [NinjAcademy_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NinjAcademy_4_0.zip) | 14.10MB | Source code and assets for NinjAcademy
 ||||

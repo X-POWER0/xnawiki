@@ -13,11 +13,11 @@ These examples are useful for different reasons. When using a rigid model, for i
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/custommodelanimation1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/custommodelanimation2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/custommodelanimation1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/custommodelanimation2.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[CustomModelAnimation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelAnimation_4_0) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.
+[CustomModelAnimation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/CustomModelAnimation_4_0) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.
 [CustomModelAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/CustomModelAnimation_4_0.zip) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.
 ||||

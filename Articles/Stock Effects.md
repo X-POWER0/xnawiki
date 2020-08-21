@@ -21,6 +21,6 @@ If you want an easy starting point to learn shader programming, use the [*Shader
 
 Download | Size | Description
 ---|---|---|
-[StockEffectsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/StockEffectsSample_4_0) | 0.07MB | Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0).
+[StockEffectsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/StockEffectsSample_4_0) | 0.07MB | Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0).
 [StockEffectsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/StockEffectsSample_4_0.zip) | 0.07MB | Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0).
 ||||

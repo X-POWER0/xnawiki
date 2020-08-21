@@ -11,13 +11,13 @@ This sample demonstrates how to develop a dynamic user interface that can be cre
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/dynamicmenu1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/dynamicmenu2.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/dynamicmenu3.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/dynamicmenu4.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/dynamicmenu1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/dynamicmenu2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/dynamicmenu3.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/dynamicmenu4.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[DynamicMenu_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/DynamicMenu_4_0) | 0.75MB | Source code and assets for the Dynamic Menu sample.
+[DynamicMenu_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/DynamicMenu_4_0) | 0.75MB | Source code and assets for the Dynamic Menu sample.
 [DynamicMenu_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/DynamicMenu_4_0.zip) | 0.75MB | Source code and assets for the Dynamic Menu sample.
 ||||

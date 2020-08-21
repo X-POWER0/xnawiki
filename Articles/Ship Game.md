@@ -23,12 +23,12 @@ The Ship Game starter kit includes a readme file outlining the game controls, ar
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame2.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame3.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/shipgame1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/shipgame2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/shipgame3.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[ShipGame_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShipGame_4_0) | 47.05MB | Source code and assets for Ship Game.
-[ShipGame_4_0.zip](https://github.com/simondarksidej/XNAGameStudio.zip/tree/master/Samples/ShipGame_4_0.zip) | 47.05MB | Source code and assets for Ship Game.
+[ShipGame_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ShipGame_4_0) | 47.05MB | Source code and assets for Ship Game.
+[ShipGame_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ShipGame_4_0.zip) | 47.05MB | Source code and assets for Ship Game.
 ||||

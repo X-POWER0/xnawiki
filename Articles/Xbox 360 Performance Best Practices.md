@@ -13,5 +13,5 @@ The Xbox 360 is a powerful game system, but there are many things that can degra
 
 Download | Size | Description
 ---|---|---|
-[Best Practices for Game Performance on Xbox 360.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/Best%20Practices%20for%20Game%20Performance%20on%20Xbox%20360.docx?raw=true) | 0.04MB | Best Practices for Game Performance on Xbox 360 Article.
+[Best Practices for Game Performance on Xbox 360.docx](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Documents/Best%20Practices%20for%20Game%20Performance%20on%20Xbox%20360.docx?raw=true) | 0.04MB | Best Practices for Game Performance on Xbox 360 Article.
 ||||

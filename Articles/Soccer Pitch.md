@@ -13,6 +13,6 @@ This Windows Phone 7 sample application demonstrates the use of the DualTextured
 
 Download | Size | Description
 ---|---|---|
-[SoccerPitchSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SoccerPitchSample_4_0) | 0.16MB | Source code and assets for the Soccer Pitch sample.
+[SoccerPitchSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/SoccerPitchSample_4_0) | 0.16MB | Source code and assets for the Soccer Pitch sample.
 [SoccerPitchSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SoccerPitchSample_4_0.zip) | 0.16MB | Source code and assets for the Soccer Pitch sample.
 ||||

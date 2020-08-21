@@ -15,12 +15,12 @@ Shadow mapping refers to a shadowing technique where you can use a texture to st
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_ShadowMapping_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_ShadowMapping_01_small.JPG?raw=true)
-![XNA_ShadowMapping_02_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_ShadowMapping_02_small.JPG?raw=true)
-![XNA_ShadowMapping_03_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_ShadowMapping_03_small.JPG?raw=true)
+![XNA_ShadowMapping_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_ShadowMapping_01_small.JPG?raw=true)
+![XNA_ShadowMapping_02_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_ShadowMapping_02_small.JPG?raw=true)
+![XNA_ShadowMapping_03_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/XNA_ShadowMapping_03_small.JPG?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[ShadowMappingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShadowMappingSample_4_0) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0).
+[ShadowMappingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ShadowMappingSample_4_0) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0).
 [ShadowMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ShadowMappingSample_4_0.zip) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0).
 ||||

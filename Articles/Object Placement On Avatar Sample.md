@@ -13,6 +13,6 @@ Occasionally, you may want the avatars in your game to interact with other objec
 
 Download | Size | Description
 ---|---|---|
-[ObjectPlacementOnAvatarSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ObjectPlacementOnAvatarSample_4_0) | 0.06MB | Source code and assets for the Object Placement on Avatar Sample (XNA Game Studio 4.0).
+[ObjectPlacementOnAvatarSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/ObjectPlacementOnAvatarSample_4_0) | 0.06MB | Source code and assets for the Object Placement on Avatar Sample (XNA Game Studio 4.0).
 [ObjectPlacementOnAvatarSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ObjectPlacementOnAvatarSample_4_0.zip) | 0.06MB | Source code and assets for the Object Placement on Avatar Sample (XNA Game Studio 4.0).
 ||||

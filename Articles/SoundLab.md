@@ -13,6 +13,6 @@ Take your game to the next level with more than 170 audio files, including body 
 
 Download | Size | Description
 ---|---|---|
-[SoundLab](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SoundLab) | 57.36MB | Sound Assets for the Sound Lab Utility
+[SoundLab](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/SoundLab) | 57.36MB | Sound Assets for the Sound Lab Utility
 [SoundLab.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SoundLab.zip) | 57.36MB | Sound Assets for the Sound Lab Utility
 ||||

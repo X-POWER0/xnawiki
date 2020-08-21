@@ -11,11 +11,11 @@ This sample demonstrates a crucial scenario many games will want to enable: lock
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/LayoutSample2.png?raw=true)
- ![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/LayoutSample3.png?raw=true)
+ ![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/LayoutSample2.png?raw=true)
+ ![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/LayoutSample3.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[Orientation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Orientation_4_0) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0).
+[Orientation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/Orientation_4_0) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0).
 [Orientation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Orientation_4_0.zip) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0).
 ||||

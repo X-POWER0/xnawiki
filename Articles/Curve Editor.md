@@ -23,12 +23,12 @@ You can create a Curve class in your XNA Framework game code and fill in the key
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Curve-Editor_01_small.JPG?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Curve-Editor_02_small.JPG?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Curve-Editor_03_small.JPG?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Curve-Editor_01_small.JPG?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Curve-Editor_02_small.JPG?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/XNA_Curve-Editor_03_small.JPG?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[CurveEditor_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CurveEditor_4_0) | 0.28MB | Source code and content for the Curve Editor Tool.
+[CurveEditor_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/CurveEditor_4_0) | 0.28MB | Source code and content for the Curve Editor Tool.
 [CurveEditor_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/CurveEditor_4_0.zip) | 0.28MB | Source code and content for the Curve Editor Tool.
 ||||

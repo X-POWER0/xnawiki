@@ -15,11 +15,11 @@ Windows Phone 7 devices include a number of hardware sensors, one of which is th
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/accel1.png?raw=true)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/accel2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/accel1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/accel2.png?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[AccelerometerSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AccelerometerSample_4_0) | 0.08MB | Source code and assets for the Accelerometer Sample (XNA Game Studio 4.0).
+[AccelerometerSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/archive/Samples/AccelerometerSample_4_0) | 0.08MB | Source code and assets for the Accelerometer Sample (XNA Game Studio 4.0).
 [AccelerometerSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/AccelerometerSample_4_0.zip) | 0.08MB | Source code and assets for the Accelerometer Sample (XNA Game Studio 4.0).
 ||||
