@@ -17,5 +17,5 @@ Games frequently need to add visual debugging information to help identify bugs 
 Download | Size | Description
 ---|---|---|
 [ShapeRenderingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShapeRenderingSample_4_0) | 0.05MB | Source code and assets for the Shape Rendering sample.
-[ShapeRenderingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ShapeRenderingSample_4_0.zip) | 0.05MB | Source code and assets for the Shape Rendering sample.
+[ShapeRenderingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ShapeRenderingSample_4_0.zip) | 0.05MB | Source code and assets for the Shape Rendering sample.
 ||||

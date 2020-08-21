@@ -23,5 +23,5 @@ Any project that references the importer can use the importer. The importer can 
 Download | Size | Description
 ---|---|---|
 [ModelImporterSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ModelImporterSample_4_0) | 1.49MB | Source code and assets for the Custom Model Importer Sample (XNA Game Studio 4.0).
-[ModelImporterSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ModelImporterSample_4_0.zip) | 1.49MB | Source code and assets for the Custom Model Importer Sample (XNA Game Studio 4.0).
+[ModelImporterSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ModelImporterSample_4_0.zip) | 1.49MB | Source code and assets for the Custom Model Importer Sample (XNA Game Studio 4.0).
 ||||

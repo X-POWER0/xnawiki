@@ -32,5 +32,5 @@ This lab is a full 2D touch-based game. Fill the vat with honey from the beehive
 Download | Size | Description
 ---|---|---|
 [HoneycombRush_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HoneycombRush_4_0) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
-[HoneycombRush_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/HoneycombRush_4_0.zip) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
+[HoneycombRush_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/HoneycombRush_4_0.zip) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
 ||||

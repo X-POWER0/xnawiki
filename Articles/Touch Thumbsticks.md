@@ -18,5 +18,5 @@ The sample contains a simple shooter game controlled by holding the phone in lan
 Download | Size | Description
 ---|---|---|
 [TouchThumbsticksSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TouchThumbsticksSample_4_0) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0).
-[TouchThumbsticksSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TouchThumbsticksSample_4_0.zip) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0).
+[TouchThumbsticksSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TouchThumbsticksSample_4_0.zip) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0).
 ||||

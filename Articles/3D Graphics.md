@@ -21,5 +21,5 @@ The sample consists of a 3D scene of a spaceship, rendered by using BasicEffect.
 Download | Size | Description
 ---|---|---|
 [Graphics3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Graphics3DSample_4_0) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
-[Graphics3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Graphics3DSample_4_0.zip) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
+[Graphics3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Graphics3DSample_4_0.zip) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
 ||||

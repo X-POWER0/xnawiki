@@ -17,5 +17,5 @@ It also includes an example .xnb parser, written in native C++, which demonstrat
 Download | Size | Description
 ---|---|---|
 [XNA_XNB_Format](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/XNA_XNB_Format) | 0.06MB | Specification and sample parser for the XNA Compiled Content Format (XNB).
-[XNA_XNB_Format.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/XNA_XNB_Format.zip) | 0.06MB | Specification and sample parser for the XNA Compiled Content Format (XNB).
+[XNA_XNB_Format.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/XNA_XNB_Format.zip) | 0.06MB | Specification and sample parser for the XNA Compiled Content Format (XNB).
 ||||

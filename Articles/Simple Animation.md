@@ -21,5 +21,5 @@ A tank model is loaded through the content pipeline, and then rendered by using 
 Download | Size | Description
 ---|---|---|
 [SimpleAnimation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SimpleAnimation_4_0) | 4.89MB | Source code and assets for the Simple Animation Sample (XNA Game Studio 4.0).
-[SimpleAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SimpleAnimation_4_0.zip) | 4.89MB | Source code and assets for the Simple Animation Sample (XNA Game Studio 4.0).
+[SimpleAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SimpleAnimation_4_0.zip) | 4.89MB | Source code and assets for the Simple Animation Sample (XNA Game Studio 4.0).
 ||||

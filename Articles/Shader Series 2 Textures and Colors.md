@@ -38,5 +38,5 @@ The most important lesson of this sample is that the manner in which you come up
 Download | Size | Description
 ---|---|---|
 [TexturesAndColorsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TexturesAndColorsSample_4_0) | 0.46MB | Source code and assets for the Shader Series 2: Textures & Colors Sample (XNA Game Studio 4.0).
-[TexturesAndColorsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TexturesAndColorsSample_4_0.zip) | 0.46MB | Source code and assets for the Shader Series 2: Textures & Colors Sample (XNA Game Studio 4.0).
+[TexturesAndColorsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TexturesAndColorsSample_4_0.zip) | 0.46MB | Source code and assets for the Shader Series 2: Textures & Colors Sample (XNA Game Studio 4.0).
 ||||

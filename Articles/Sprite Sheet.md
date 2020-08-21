@@ -22,5 +22,5 @@ This sample automates the process of creating sprite sheets by using a custom co
 Download | Size | Description
 ---|---|---|
 [SpriteSheetSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpriteSheetSample_4_0) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0)
-[SpriteSheetSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SpriteSheetSample_4_0.zip) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0)
+[SpriteSheetSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SpriteSheetSample_4_0.zip) | 0.14MB | Source code and assets for the Sprite Sheet Sample (XNA Game Studio 4.0)
 ||||

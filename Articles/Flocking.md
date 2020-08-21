@@ -24,5 +24,5 @@ This sample demonstrates some of these behaviors. The sample has a flock of bird
 Download | Size | Description
 ---|---|---|
 [FlockingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/FlockingSample_4_0) | 0.16MB | Source code and assets for the Flocking Sample (XNA Game Studio 4.0).
-[FlockingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/FlockingSample_4_0.zip) | 0.16MB | Source code and assets for the Flocking Sample (XNA Game Studio 4.0).
+[FlockingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/FlockingSample_4_0.zip) | 0.16MB | Source code and assets for the Flocking Sample (XNA Game Studio 4.0).
 ||||

@@ -18,5 +18,5 @@ Several controls are provided, including scrolling lists of text and images, as 
 Download | Size | Description
 ---|---|---|
 [UISample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/UISample_4_0) | 1.02MB | Source code and assets for the User Interface Controls Sample.
-[UISample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/UISample_4_0.zip) | 1.02MB | Source code and assets for the User Interface Controls Sample.
+[UISample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/UISample_4_0.zip) | 1.02MB | Source code and assets for the User Interface Controls Sample.
 ||||

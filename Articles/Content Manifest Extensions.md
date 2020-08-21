@@ -22,5 +22,5 @@ Games looking to incorporate this functionality will either need to add the proj
 Download | Size | Description
 ---|---|---|
 [ContentManifestExtensions_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ContentManifestExtensions_4_0) | 0.05MB | Source code and assets for the Content Manifest Extensions Sample (XNA Game Studio 4.0)
-[ContentManifestExtensions_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ContentManifestExtensions_4_0.zip) | 0.05MB | Source code and assets for the Content Manifest Extensions Sample (XNA Game Studio 4.0)
+[ContentManifestExtensions_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ContentManifestExtensions_4_0.zip) | 0.05MB | Source code and assets for the Content Manifest Extensions Sample (XNA Game Studio 4.0)
 ||||

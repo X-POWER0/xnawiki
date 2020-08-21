@@ -19,5 +19,5 @@ The sample also provides a simple arcball class and a ModelViewerCamera class. T
 Download | Size | Description
 ---|---|---|
 [RimLighting_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RimLighting_4_0) | 0.95MB | Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0).
-[RimLighting_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/RimLighting_4_0.zip) | 0.95MB | Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0).
+[RimLighting_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/RimLighting_4_0.zip) | 0.95MB | Source code and assets for the Rim Lighting Sample (XNA Game Studio 4.0).
 ||||

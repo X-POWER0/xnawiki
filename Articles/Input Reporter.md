@@ -26,5 +26,5 @@ A common use of this tool is to investigate how the controls provided by various
 Download | Size | Description
 ---|---|---|
 [InputReporter_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/InputReporter_4_0)| 0.13MB | Source code and assets for the Input Reporter Tool.
-[InputReporter_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/InputReporter_4_0.zip)| 0.13MB | Source code and assets for the Input Reporter Tool.
+[InputReporter_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/InputReporter_4_0.zip)| 0.13MB | Source code and assets for the Input Reporter Tool.
 ||||

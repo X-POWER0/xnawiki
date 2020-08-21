@@ -28,5 +28,5 @@ Note: This sample runs only on Windows. WinForms, MSBuild, and the Content Pipel
 Download | Size | Description
 ---|---|---|
 [WinFormsContentSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsContentSample_4_0) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0).
-[WinFormsContentSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/WinFormsContentSample_4_0.zip) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0).
+[WinFormsContentSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/WinFormsContentSample_4_0.zip) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0).
 ||||

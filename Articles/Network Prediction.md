@@ -23,5 +23,5 @@ This sample shows how to make the tank example from the [Network Architecture: P
 Download | Size | Description
 ---|---|---|
 [NetworkPredictionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NetworkPredictionSample_4_0) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0).
-[NetworkPredictionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/NetworkPredictionSample_4_0.zip) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0).
+[NetworkPredictionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NetworkPredictionSample_4_0.zip) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0).
 ||||

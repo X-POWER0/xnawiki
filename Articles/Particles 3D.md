@@ -28,5 +28,5 @@ Although this sample works in 3D, the same code can be used for efficient 2D par
 Download | Size | Description
 ---|---|---|
 [Particles3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Particles3DSample_4_0) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0).
-[Particles3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Particles3DSample_4_0.zip) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0).
+[Particles3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Particles3DSample_4_0.zip) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0).
 ||||

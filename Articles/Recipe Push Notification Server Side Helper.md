@@ -20,5 +20,5 @@ For more detail on this helper library, see the Windows Phone Developer Blog pos
 Download | Size | Description
 ---|---|---|
 [PushRecipe_WP7_SL](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PushRecipe_WP7_SL) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library
-[PushRecipe_WP7_SL.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PushRecipe_WP7_SL.zip) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library
+[PushRecipe_WP7_SL.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PushRecipe_WP7_SL.zip) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library
 ||||

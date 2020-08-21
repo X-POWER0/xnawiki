@@ -20,5 +20,5 @@ This sample includes code that uses the Gestures API to enable hold, drag, tap, 
 Download | Size | Description
 ---|---|---|
 [GesturesSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GesturesSample_4_0) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0)
-[GesturesSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/GesturesSample_4_0.zip) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0)
+[GesturesSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/GesturesSample_4_0.zip) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0)
 ||||

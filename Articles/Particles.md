@@ -25,5 +25,5 @@ This sample demonstrates the use of up-front allocations to avoid garbage collec
 Download | Size | Description
 ---|---|---|
 [ParticleSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ParticleSample_4_0) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0)
-[ParticleSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ParticleSample_4_0.zip) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0)
+[ParticleSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ParticleSample_4_0.zip) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0)
 ||||

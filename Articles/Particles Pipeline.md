@@ -26,5 +26,5 @@ This sample's particle systems are based on the Spacewar particle system. Howeve
 Download | Size | Description
 ---|---|---|
 [Particles2DPipeline_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Particles2DPipeline_4_0) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0).
-[Particles2DPipeline_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Particles2DPipeline_4_0.zip) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0).
+[Particles2DPipeline_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Particles2DPipeline_4_0.zip) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0).
 ||||

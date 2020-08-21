@@ -15,5 +15,5 @@ The Split Screen Sample demonstrates how to render the same scene to multiple vi
 Download | Size | Description
 ---|---|---|
 [SplitScreenSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SplitScreenSample_4_0) | Size 4.79MB | Source code and assets for the Split Screen sample.
-[SplitScreenSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SplitScreenSample_4_0.zip) | Size 4.79MB | Source code and assets for the Split Screen sample.
+[SplitScreenSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SplitScreenSample_4_0.zip) | Size 4.79MB | Source code and assets for the Split Screen sample.
 ||||

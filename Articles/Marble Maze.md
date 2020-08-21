@@ -27,5 +27,5 @@ The Marble Maze Lab is a complete 3D accelerometer-based game for Windows Phone 
 Download | Size | Description
 ---|---|---|
 [MarbleMaze_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MarbleMaze_4_0) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0).
-[MarbleMaze_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/MarbleMaze_4_0.zip) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0).
+[MarbleMaze_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/MarbleMaze_4_0.zip) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0).
 ||||

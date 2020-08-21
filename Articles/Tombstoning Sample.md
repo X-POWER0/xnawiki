@@ -16,5 +16,5 @@ For more information on how this sample works, see [How to: Preserve and Restore
 Download | Size | Description
 ---|---|---|
 [TombstoningSample](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TombstoningSample) | 0.05MB | This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning.
-[TombstoningSample.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TombstoningSample.zip) | 0.05MB | This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning.
+[TombstoningSample.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TombstoningSample.zip) | 0.05MB | This sample shows how to restore the visual state of a page and application data when an application is reactivated after tombstoning.
 ||||

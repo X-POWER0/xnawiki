@@ -18,5 +18,5 @@ This sample and the associated document explain the problems you'll encounter in
 Download | Size | Description
 ---|---|---|
 [SafeAreaSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SafeAreaSample_4_0) | 0.71MB | Source code and assets for the Safe Area Sample (XNA Game Studio 4.0).
-[SafeAreaSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SafeAreaSample_4_0.zip) | 0.71MB | Source code and assets for the Safe Area Sample (XNA Game Studio 4.0).
+[SafeAreaSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SafeAreaSample_4_0.zip) | 0.71MB | Source code and assets for the Safe Area Sample (XNA Game Studio 4.0).
 ||||

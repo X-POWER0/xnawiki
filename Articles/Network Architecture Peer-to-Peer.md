@@ -23,5 +23,5 @@ For an alternative way to handle networked game simulation, see the [Client/Serv
 Download | Size | Description
 ---|---|---|
 [PeerToPeerSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PeerToPeerSample_4_0) | 0.09MB | Source code and assets for the Network Architecture: Peer-to-Peer Sample (XNA Game Studio 4.0).
-[PeerToPeerSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PeerToPeerSample_4_0.zip) | 0.09MB | Source code and assets for the Network Architecture: Peer-to-Peer Sample (XNA Game Studio 4.0).
+[PeerToPeerSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PeerToPeerSample_4_0.zip) | 0.09MB | Source code and assets for the Network Architecture: Peer-to-Peer Sample (XNA Game Studio 4.0).
 ||||

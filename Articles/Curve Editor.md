@@ -30,5 +30,5 @@ You can create a Curve class in your XNA Framework game code and fill in the key
 Download | Size | Description
 ---|---|---|
 [CurveEditor_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CurveEditor_4_0) | 0.28MB | Source code and content for the Curve Editor Tool.
-[CurveEditor_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CurveEditor_4_0.zip) | 0.28MB | Source code and content for the Curve Editor Tool.
+[CurveEditor_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/CurveEditor_4_0.zip) | 0.28MB | Source code and content for the Curve Editor Tool.
 ||||

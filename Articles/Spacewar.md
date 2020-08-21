@@ -21,5 +21,5 @@ The project comes ready to compile and run, and is easy to customize with only a
 Download | Size | Description
 ---|---|---|
 [Spacewar_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Spacewar_4_0) | 29.94MB | Source code and assets for Spacewar.
-[Spacewar_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Spacewar_4_0.zip) | 29.94MB | Source code and assets for Spacewar.
+[Spacewar_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Spacewar_4_0.zip) | 29.94MB | Source code and assets for Spacewar.
 ||||

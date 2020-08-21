@@ -33,5 +33,5 @@ This sample uses Phong reflection to approximate specular light, creating highli
 Download | Size | Description
 ---|---|---|
 [PerPixelLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerPixelLightingSample_4_0) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0).
-[PerPixelLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PerPixelLightingSample_4_0.zip) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0).
+[PerPixelLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerPixelLightingSample_4_0.zip) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0).
 ||||

@@ -33,5 +33,5 @@ This sample explores the diffuse and ambient lighting models and combines them i
 Download | Size | Description
 ---|---|---|
 [VertexLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/VertexLightingSample_4_0) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0).
-[VertexLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/VertexLightingSample_4_0.zip) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0).
+[VertexLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/VertexLightingSample_4_0.zip) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0).
 ||||

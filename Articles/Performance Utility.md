@@ -19,5 +19,5 @@ Note: This utility doesn't currently include supporting documentation. To see an
 Download | Size | Description
 ---|---|---|
 [PerformanceUtility_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerformanceUtility_4_0) | 0.15MB | Source code and assets for the Performance Utility.
-[PerformanceUtility_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PerformanceUtility_4_0.zip) | 0.15MB | Source code and assets for the Performance Utility.
+[PerformanceUtility_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerformanceUtility_4_0.zip) | 0.15MB | Source code and assets for the Performance Utility.
 ||||

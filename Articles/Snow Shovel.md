@@ -26,5 +26,5 @@ In Snow Shovel, the game objective is to gather as many snowflakes with the shov
 Download | Size | Description
 ---|---|---|
 [SnowShovelSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SnowShovelSample_4_0) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0).
-[SnowShovelSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SnowShovelSample_4_0.zip) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0).
+[SnowShovelSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SnowShovelSample_4_0.zip) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0).
 ||||

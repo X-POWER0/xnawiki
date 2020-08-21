@@ -16,5 +16,5 @@ This sample uses the accelerometer to estimate the orientation of the phone's sc
 Download | Size | Description
 ---|---|---|
 [TiltPerspective_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TiltPerspective_4_0) | 0.24MB | Source code and assets for the Tilt Perspective sample.
-[TiltPerspective_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TiltPerspective_4_0.zip) | 0.24MB | Source code and assets for the Tilt Perspective sample.
+[TiltPerspective_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TiltPerspective_4_0.zip) | 0.24MB | Source code and assets for the Tilt Perspective sample.
 ||||

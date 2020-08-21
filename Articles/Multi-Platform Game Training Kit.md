@@ -16,5 +16,5 @@ This training kit is a set of resources for extending the Honeycomb Rush Lab to 
 Download | Size | Description
 ---|---|---|
 [HoneycombRushTrainingKit_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HoneycombRushTrainingKit_4_0) | 59.93MB | Source code and assets for the Honeycomb Rush Training Kit.
-[HoneycombRushTrainingKit_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/HoneycombRushTrainingKit_4_0.zip) | 59.93MB | Source code and assets for the Honeycomb Rush Training Kit.
+[HoneycombRushTrainingKit_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/HoneycombRushTrainingKit_4_0.zip) | 59.93MB | Source code and assets for the Honeycomb Rush Training Kit.
 ||||

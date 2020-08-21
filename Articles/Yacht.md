@@ -55,5 +55,5 @@ This game includes the following features:
 Download | Size | Description
 ---|---|---|
 [Yacht_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Yacht_4_0) | 2.86MB | Source code and assets for Yacht.
-[Yacht_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Yacht_4_0.zip) | 2.86MB | Source code and assets for Yacht.
+[Yacht_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Yacht_4_0.zip) | 2.86MB | Source code and assets for Yacht.
 ||||

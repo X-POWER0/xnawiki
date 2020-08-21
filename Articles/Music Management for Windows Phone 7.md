@@ -18,5 +18,5 @@ To help your games meet these requirements, this sample provides a BackgroundMus
 Download | Size | Description
 ---|---|---|
 [WP7MusicManagement_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WP7MusicManagement_4_0) | 4.08MB | Source code and assets for the Windows Phone 7 Music Management sample.
-[WP7MusicManagement_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/WP7MusicManagement_4_0.zip) | 4.08MB | Source code and assets for the Windows Phone 7 Music Management sample.
+[WP7MusicManagement_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/WP7MusicManagement_4_0.zip) | 4.08MB | Source code and assets for the Windows Phone 7 Music Management sample.
 ||||

@@ -22,5 +22,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 Download | Size | Description
 ---|---|---|
 [NGSMSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NGSMSample_4_0) | 0.23MB | Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0).
-[NGSMSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/NGSMSample_4_0.zip) | 0.23MB | Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0).
+[NGSMSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NGSMSample_4_0.zip) | 0.23MB | Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0).
 ||||

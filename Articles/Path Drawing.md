@@ -16,5 +16,5 @@ The Path Drawing sample builds on the core of the Waypoint Sample to demonstrate
 Download | Size | Description
 ---|---|---|
 [PathDrawing_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PathDrawing_4_0) | 0.84MB | Source code and assets for the Path Drawing sample.
-[PathDrawing_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PathDrawing_4_0.zip) | 0.84MB | Source code and assets for the Path Drawing sample.
+[PathDrawing_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PathDrawing_4_0.zip) | 0.84MB | Source code and assets for the Path Drawing sample.
 ||||

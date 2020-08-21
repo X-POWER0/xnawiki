@@ -17,5 +17,5 @@ This sample utilizes the Performance Utility to show the impact of adding 3D sph
 Download | Size | Description
 ---|---|---|
 [PerformanceMeasuringSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerformanceMeasuringSample_4_0) | 0.10MB | Source code and assets for the Performance Measuring sample
-[PerformanceMeasuringSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PerformanceMeasuringSample_4_0.zip) | 0.10MB | Source code and assets for the Performance Measuring sample
+[PerformanceMeasuringSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PerformanceMeasuringSample_4_0.zip) | 0.10MB | Source code and assets for the Performance Measuring sample
 ||||

@@ -16,5 +16,5 @@ The sample shows 16 animated avatars that cast planar shadows onto the ground. T
  Download | Size | Description
 ---|---|---|
 [AvatarShadows_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarShadows_4_0) | 0.75MB | Source code and assets for the Avatar Shadows Sample.
-[AvatarShadows_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/AvatarShadows_4_0.zip) | 0.75MB | Source code and assets for the Avatar Shadows Sample.
+[AvatarShadows_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/AvatarShadows_4_0.zip) | 0.75MB | Source code and assets for the Avatar Shadows Sample.
 ||||

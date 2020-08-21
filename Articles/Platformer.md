@@ -33,6 +33,6 @@ Platformer includes the following features:
 Download | Size | Description
 ---|---|---|
 [Platformer_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Platformer_4_0) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0).
-[Platformer_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Platformer_4_0.zip) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0).
+[Platformer_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Platformer_4_0.zip) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0).
 [MonoGame Platformer 2D sample](https://github.com/MonoGame/MonoGame.Samples/tree/develop/Platformer2D) | 6.68MB | Source code and assets for Platformer Sample upgraded for MonoGame 3.8.
 ||||

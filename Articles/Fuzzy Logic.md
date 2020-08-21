@@ -28,5 +28,5 @@ This sample is based on the Chase & Evade sample and assumes that the reader is 
 Download | Size | Description
 ---|---|---|
 [FuzzyLogicSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/FuzzyLogicSample_4_0) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0).
-[FuzzyLogicSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/FuzzyLogicSample_4_0.zip) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0).
+[FuzzyLogicSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/FuzzyLogicSample_4_0.zip) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0).
 ||||

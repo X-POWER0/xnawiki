@@ -26,5 +26,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 Download | Size | Description
 ---|---|---|
 [SpriteEffectsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpriteEffectsSample_4_0) | 0.30MB | Source code and assets for the Sprite Effects Sample (XNA Game Studio 4.0).
-[SpriteEffectsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SpriteEffectsSample_4_0.zip) | 0.30MB | Source code and assets for the Sprite Effects Sample (XNA Game Studio 4.0).
+[SpriteEffectsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SpriteEffectsSample_4_0.zip) | 0.30MB | Source code and assets for the Sprite Effects Sample (XNA Game Studio 4.0).
 ||||

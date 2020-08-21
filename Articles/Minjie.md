@@ -22,5 +22,5 @@ The goal in Minjie is to flip your opponent's pieces to your own color by surrou
 Download | Size | Description
 ---|---|---|
 [Minjie_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Minjie_ARCHIVE_2_0) | 7.90MB | Source code and assets for the MinJie Sample (XNA Game Studio 2.0, Archived).
-[Minjie_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Minjie_ARCHIVE_2_0.zip) | 7.90MB | Source code and assets for the MinJie Sample (XNA Game Studio 2.0, Archived).
+[Minjie_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Minjie_ARCHIVE_2_0.zip) | 7.90MB | Source code and assets for the MinJie Sample (XNA Game Studio 2.0, Archived).
 ||||

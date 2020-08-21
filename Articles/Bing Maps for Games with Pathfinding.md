@@ -20,5 +20,5 @@ Note: This sample requires a Bing Maps key to run. To register and obtain a key,
 Download | Size | Description
 ---|---|---|
 [BingMapsPathFinding_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BingMapsPathFinding_4_0) | 0.17MB | Source code and assets for the Bing Maps with Pathfinding sample.
-[BingMapsPathFinding_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/BingMapsPathFinding_4_0.zip) | 0.17MB | Source code and assets for the Bing Maps with Pathfinding sample.
+[BingMapsPathFinding_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/BingMapsPathFinding_4_0.zip) | 0.17MB | Source code and assets for the Bing Maps with Pathfinding sample.
 ||||

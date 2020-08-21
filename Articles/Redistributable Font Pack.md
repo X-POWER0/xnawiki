@@ -20,5 +20,5 @@ The fonts include:
 Download | Size | Description
 ---|---|---|
 [RedistributableTTFs](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RedistributableTTFs_ARCHIVE_3_1) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects.
-[RedistributableTTFs.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/RedistributableTTFs_ARCHIVE_3_1.zip) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects.
+[RedistributableTTFs.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/RedistributableTTFs_ARCHIVE_3_1.zip) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects.
 ||||

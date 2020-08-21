@@ -34,5 +34,5 @@ Additive, multipass lighting techniques are not unique to programmable shader ha
 Download | Size | Description
 ---|---|---|
 [MultipassLighting_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MultipassLighting_ARCHIVE_2_0) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED).
-[MultipassLighting_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/MultipassLighting_ARCHIVE_2_0.zip) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED).
+[MultipassLighting_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/MultipassLighting_ARCHIVE_2_0.zip) | 1.53MB | Source code and assets for the Shader Series 5: Multipass Lighting Sample (XNA Game Studio 2.0, ARCHIVED).
 ||||

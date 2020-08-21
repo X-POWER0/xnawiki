@@ -33,5 +33,5 @@ Until now, the Shader Series has focused on single meshes, single lights, and si
 Download | Size | Description
 ---|---|---|
 [MaterialsAndLights_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MaterialsAndLights_ARCHIVE_2_0) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED).
-[MaterialsAndLights_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/MaterialsAndLights_ARCHIVE_2_0.zip) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED).
+[MaterialsAndLights_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/MaterialsAndLights_ARCHIVE_2_0.zip) | 1.53MB | Source code and assets for the Shader Series 4: Materials & Lights Sample (XNA Game Studio 2.0, ARCHIVED).
 ||||

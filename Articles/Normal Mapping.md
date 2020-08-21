@@ -26,5 +26,5 @@ To make rendering more efficient at runtime, a second custom processor changes t
 Download | Size | Description
 ---|---|---|
 [NormalMappingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NormalMappingSample_4_0) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)
-[NormalMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/NormalMappingSample_4_0.zip) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)
+[NormalMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NormalMappingSample_4_0.zip) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)
 ||||

@@ -17,5 +17,5 @@ This sample demonstrates a crucial scenario many games will want to enable: lock
 Download | Size | Description
 ---|---|---|
 [Orientation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Orientation_4_0) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0).
-[Orientation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Orientation_4_0.zip) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0).
+[Orientation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Orientation_4_0.zip) | 0.13MB | Source code and assets for the Orientation Sample (XNA Game Studio 4.0).
 ||||

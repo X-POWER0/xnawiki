@@ -21,5 +21,5 @@ The goal in Catapult is to send the pumpkin flying as far as possible. You do th
 Download | Size | Description
 ---|---|---|
 [Catapult_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Catapult_ARCHIVE_2_0) | 31.60MB | Source code and assets for the Catapult Sample (XNA Game Studio 2.0, Archived).
-[Catapult_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Catapult_ARCHIVE_2_0.zip) | 31.60MB | Source code and assets for the Catapult Sample (XNA Game Studio 2.0, Archived).
+[Catapult_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Catapult_ARCHIVE_2_0.zip) | 31.60MB | Source code and assets for the Catapult Sample (XNA Game Studio 2.0, Archived).
 ||||

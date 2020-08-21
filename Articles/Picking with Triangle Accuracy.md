@@ -24,5 +24,5 @@ This sample extends the approximate bounding box tests from the [Picking](https:
 Download | Size | Description
 ---|---|---|
 [TrianglePickingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TrianglePickingSample_4_0) | 3.77MB | Source code and assets for the Picking with Triangle Accuracy Sample (XNA Game Studio 4.0).
-[TrianglePickingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TrianglePickingSample_4_0.zip) | 3.77MB | Source code and assets for the Picking with Triangle Accuracy Sample (XNA Game Studio 4.0).
+[TrianglePickingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/TrianglePickingSample_4_0.zip) | 3.77MB | Source code and assets for the Picking with Triangle Accuracy Sample (XNA Game Studio 4.0).
 ||||

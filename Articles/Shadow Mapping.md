@@ -22,5 +22,5 @@ Shadow mapping refers to a shadowing technique where you can use a texture to st
 Download | Size | Description
 ---|---|---|
 [ShadowMappingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShadowMappingSample_4_0) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0).
-[ShadowMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ShadowMappingSample_4_0.zip) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0).
+[ShadowMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ShadowMappingSample_4_0.zip) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0).
 ||||

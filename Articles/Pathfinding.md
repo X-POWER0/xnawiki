@@ -22,5 +22,5 @@ To create realistic enemy movement by using AI, implementing Pathfinding algorit
 Download | Size | Description
 ---|---|---|
 [Pathfinding_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Pathfinding_4_0) | 0.14MB | Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0).
-[Pathfinding_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Pathfinding_4_0.zip) | 0.14MB | Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0).
+[Pathfinding_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Pathfinding_4_0.zip) | 0.14MB | Source code and assets for the Pathfinding Sample (XNA Game Studio 4.0).
 ||||

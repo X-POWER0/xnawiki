@@ -23,5 +23,5 @@ By pressing a button, you can compare and contrast the spring-based camera with 
 Download | Size | Description
 ---|---|---|
 [ChaseCamera_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ChaseCamera_4_0) | 0.76MB | Source code and assets for the Chase Camera Sample (XNA Game Studio 4.0)
-[ChaseCamera_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ChaseCamera_4_0.zip) | 0.76MB | Source code and assets for the Chase Camera Sample (XNA Game Studio 4.0)
+[ChaseCamera_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ChaseCamera_4_0.zip) | 0.76MB | Source code and assets for the Chase Camera Sample (XNA Game Studio 4.0)
 ||||

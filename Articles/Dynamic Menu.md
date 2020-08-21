@@ -19,5 +19,5 @@ This sample demonstrates how to develop a dynamic user interface that can be cre
 Download | Size | Description
 ---|---|---|
 [DynamicMenu_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/DynamicMenu_4_0) | 0.75MB | Source code and assets for the Dynamic Menu sample.
-[DynamicMenu_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/DynamicMenu_4_0.zip) | 0.75MB | Source code and assets for the Dynamic Menu sample.
+[DynamicMenu_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/DynamicMenu_4_0.zip) | 0.75MB | Source code and assets for the Dynamic Menu sample.
 ||||

@@ -24,5 +24,5 @@ NinjAcademy is a complete gesture-based Windows Phone game. The player attempts 
 Download | Size | Description
 ---|---|---|
 [NinjAcademy_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NinjAcademy_4_0) | 14.10MB | Source code and assets for NinjAcademy
-[NinjAcademy_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/NinjAcademy_4_0.zip) | 14.10MB | Source code and assets for NinjAcademy
+[NinjAcademy_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NinjAcademy_4_0.zip) | 14.10MB | Source code and assets for NinjAcademy
 ||||

@@ -14,5 +14,5 @@ Saving Embedded Images for Windows Phone 7 shows how to move image resources fro
 Download | Size | Description
 ---|---|---|
 [SavingEmbeddedImages_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SavingEmbeddedImages_4_0) | 0.17MB | Source code and assets for the Saving Embedded Images sample.
-[SavingEmbeddedImages_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SavingEmbeddedImages_4_0.zip) | 0.17MB | Source code and assets for the Saving Embedded Images sample.
+[SavingEmbeddedImages_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/SavingEmbeddedImages_4_0.zip) | 0.17MB | Source code and assets for the Saving Embedded Images sample.
 ||||

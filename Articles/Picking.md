@@ -23,5 +23,5 @@ In the sample, there's a table with several objects on it. If the user moves the
 Download | Size | Description
 ---|---|---|
 [PickingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PickingSample_4_0) | 3.95MB | Source code and assets for the Picking Sample (XNA Game Studio 4.0).
-[PickingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PickingSample_4_0.zip) | 3.95MB | Source code and assets for the Picking Sample (XNA Game Studio 4.0).
+[PickingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/PickingSample_4_0.zip) | 3.95MB | Source code and assets for the Picking Sample (XNA Game Studio 4.0).
 ||||

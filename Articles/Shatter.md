@@ -20,5 +20,5 @@ The shatter effect operates on every triangle in the model independently. For ev
 Download | Size | Description
 ---|---|---|
 [ShatterEffectSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShatterEffectSample_4_0) | 11.41MB | Source code and assets for the Shatter Sample (XNA Game Studio 4.0)
-[ShatterEffectSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ShatterEffectSample_4_0.zip) | 11.41MB | Source code and assets for the Shatter Sample (XNA Game Studio 4.0)
+[ShatterEffectSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/ShatterEffectSample_4_0.zip) | 11.41MB | Source code and assets for the Shatter Sample (XNA Game Studio 4.0)
 ||||

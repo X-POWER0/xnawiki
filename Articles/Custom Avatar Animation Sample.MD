@@ -20,5 +20,5 @@ Five custom animations from the new Animation Asset Pack are included with this 
 Download | Size | Description
 ---|---|---|
 [CustomAvatarAnimation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomAvatarAnimation_4_0) | 10.03MB | Source code and assets for the Custom Avatar Animation sample
-[CustomAvatarAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CustomAvatarAnimation_4_0.zip) | 10.03MB | Source code and assets for the Custom Avatar Animation sample
+[CustomAvatarAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/CustomAvatarAnimation_4_0.zip) | 10.03MB | Source code and assets for the Custom Avatar Animation sample
 ||||
