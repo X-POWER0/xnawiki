@@ -1,6 +1,6 @@
 # Everything you ever wanted to know about IntermediateSerializer
 
-It is good to know [how to fish](https://github.com/simondarksidej/XNAGameStudio/wiki/Web_Articles/ShawnHargreaves/Teaching-a-man-to-fish), but sometimes you just want to go to the store and buy a salmon that somebody else already caught for you. With this in mind, here is my attempt to fill in the blanks about exactly how to use [IntermediateSerializer](https://github.com/simondarksidej/XNAGameStudio/wiki/Web_Articles/ShawnHargreaves/IntermediateSerializervsXmlSerializer).
+It is good to know [how to fish](Teaching-a-man-to-fish), but sometimes you just want to go to the store and buy a salmon that somebody else already caught for you. With this in mind, here is my attempt to fill in the blanks about exactly how to use [IntermediateSerializer](IntermediateSerializervsXmlSerializer).
 
 ## Contents
 
@@ -60,7 +60,7 @@ Consider this test class:
     }
 ```
 
-Using the technique described in my [previous post](https://github.com/simondarksidej/XNAGameStudio/wiki/Web_Articles/ShawnHargreaves/Teaching-a-man-to-fish), it will create this XML:
+Using the technique described in my [previous post](Teaching-a-man-to-fish), it will create this XML:
 
 ```xml
     <?xml version="1.0" encoding="utf-8"?>
