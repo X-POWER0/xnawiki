@@ -13,17 +13,17 @@ The Robot Game Kit is a complete mini game for XNA Game Studio. The project come
 
 Robot Game is a three-dimensional robot combat game that demonstrates the following components:
 
-    * Advanced graphics using shaders and post-processing effects
-    * Advanced particle system
-    * Collision detection, 3D positional sound, input, and screens management
-    * Single-player mode and split-screen two-player versus mode
-    * Customizable game elements, such as robots, weapons, and items
+* Advanced graphics using shaders and post-processing effects
+* Advanced particle system
+* Collision detection, 3D positional sound, input, and screens management
+* Single-player mode and split-screen two-player versus mode
+* Customizable game elements, such as robots, weapons, and items
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
 download | Size | Description
 ---|---|---|
-[RobotGameSystemDetails_ARCHIVE_2_0.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/RobotGameSystemDetails_ARCHIVE_2_0.doc?raw=true) | 0.13MB | A system component document that will assist in extending the Robot Game Sample (XNA Game Studio 2.0, Archived).
+[RobotGameSystemDetails_ARCHIVE_2_0.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/RobotGameSystemDetails_ARCHIVE_2_0.doc?raw=true) | 0.13MB | A system component document that will assist in extending the Robot Game Sample (XNA Game Studio 2.0, Archived).
 [RobotGame_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RobotGame_ARCHIVE_2_0) | 49.14MB | Source and assets for the Robot Game Sample (XNA Game Studio 2.0, Archived).
 [RobotGame_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/RobotGame_ARCHIVE_2_0.zip) | 49.14MB | Source and assets for the Robot Game Sample (XNA Game Studio 2.0, Archived).
 ||||

@@ -9,13 +9,13 @@ Games: 2D Graphics, Games: Audio, Games: Collision, Games: Gameplay, Input, Touc
 
 This lab is a full 2D touch-based game. Fill the vat with honey from the beehives before time runs out. Use your smoke gun to prevent bees from stinging you and making you drop your honey. Based on the Game State Management Sample.
 
-Contains:
+## Contains
 
     Source code, in steps, compatible with XNA GS 4.0
     Graphical, sound, and music assets
     Detailed walkthrough in DOC format
 
-Features:
+## Features
 
     2D graphics and animations
     8-direction movement
@@ -32,4 +32,5 @@ Features:
 Download | Size | Description
 ---|---|---|
 [HoneycombRush_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HoneycombRush_4_0) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
+[HoneycombRush_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/HoneycombRush_4_0.zip) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
 ||||

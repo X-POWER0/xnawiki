@@ -12,5 +12,5 @@ For Objective-C and Java developers, this article is a deep dive into the C# lan
 
 Download | Size | Description
 ---|---|---|
-[IntroToCSharp_Article_4_0.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/IntroToCSharp_Article_4_0.doc?raw=true) | 0.15MB | Intro to C# from Objective-C and Java Article.
+[IntroToCSharp_Article_4_0.doc](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Documents/IntroToCSharp_Article_4_0.doc?raw=true) | 0.15MB | Intro to C# from Objective-C and Java Article.
 ||||

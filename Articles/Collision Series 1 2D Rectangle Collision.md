@@ -31,4 +31,5 @@ Games don't need to be complex to be fun and interesting. Obstacle avoidance gam
 Download | Size | Description
 ---|---|---|
 [RectangleCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RectangleCollisionSample_4_0) | 0.05MB | Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0).
+[RectangleCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/RectangleCollisionSample_4_0.zip) | 0.05MB | Source code and assets for the Collision Series 1: 2D Rectangle Tutorial (XNA Game Studio 4.0).
 ||||

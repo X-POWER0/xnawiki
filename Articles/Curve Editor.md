@@ -9,9 +9,9 @@ Games: Math|9/27/2007|Tool
 
 The Curve Editor Tool enables you to graphically construct and edit curves in a format that can be loaded by the XNA Framework into a Curve object. Curve Editor contains three projects, each in its own folder.
 
-    * CurveEditor – A standalone utility that enables you to edit and save curves for use with the XNA Framework Curve class.
-    * CurveControl – A component that can be imported into a WinForms application to provide curve display and editing capabilities.
-    * CurveControlUsageSample – An example of how to use the CurveControl component in a WinForms application.
+* CurveEditor – A standalone utility that enables you to edit and save curves for use with the XNA Framework Curve class.
+* CurveControl – A component that can be imported into a WinForms application to provide curve display and editing capabilities.
+* CurveControlUsageSample – An example of how to use the CurveControl component in a WinForms application.
 
 ## Tool Overview
 
@@ -30,4 +30,5 @@ You can create a Curve class in your XNA Framework game code and fill in the key
 Download | Size | Description
 ---|---|---|
 [CurveEditor_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CurveEditor_4_0) | 0.28MB | Source code and content for the Curve Editor Tool.
+[CurveEditor_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CurveEditor_4_0.zip) | 0.28MB | Source code and content for the Curve Editor Tool.
 ||||

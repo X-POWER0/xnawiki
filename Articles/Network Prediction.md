@@ -17,7 +17,7 @@ This sample shows how to make the tank example from the [Network Architecture: P
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-[XNA_NetworkPrediction_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_01_small.jpg?raw=true)
+[XNA_NetworkPrediction_01_small.jpg](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_NetworkPrediction_01_small.jpg?raw=true)
 ![XNA_NetworkPrediction_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_02_small.jpg?raw=true)
 
 Download | Size | Description

@@ -26,4 +26,5 @@ Instancing requires the vertex and index data to be organized in a particular wa
 Download | Size | Description
 ---|---|---|
 [InstancedModelSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/InstancedModelSample_4_0) | 0.31MB | Source code and assets for the Instanced Model Sample (XNA Game Studio 4.0).
+[InstancedModelSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/InstancedModelSample_4_0.zip) | 0.31MB | Source code and assets for the Instanced Model Sample (XNA Game Studio 4.0).
 ||||

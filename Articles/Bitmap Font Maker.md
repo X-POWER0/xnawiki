@@ -16,4 +16,5 @@ This tool converts Windows TrueType fonts into .bmp files that can be imported b
 Download | Size | Description
 ---|---|---|
 [BitmapFontMaker_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BitmapFontMaker_4_0) | 0.03MB | Source code and assets for the Bitmap Font Maker Tool (XNA Game Studio 2.0).
+[BitmapFontMaker_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/BitmapFontMaker_4_0.zip) | 0.03MB | Source code and assets for the Bitmap Font Maker Tool (XNA Game Studio 2.0).
 ||||

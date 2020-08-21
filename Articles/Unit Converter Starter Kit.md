@@ -1,14 +1,11 @@
-#Unit Converter Starter Kit#
+# Unit Converter Starter Kit
 
-Area
-Games: Data Management
-Submitted
-11/19/2010
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: Data Management|11/19/2010|Code Sample
+||||
 
----
-
-Sample Overview
+## Sample Overview
 
 This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program enables the user with to convert values from one type of unit to another. The units can be in the following categories: length, temperature, speed, time, volume, angle, weight, or area.
 
@@ -16,7 +13,10 @@ The program consists of two pages. The user enaters a number on the main page. T
 
 You can also view the documentation for this Starter Kit in the MSDN Libary. View the documentation for this Starter Kit.
 
- 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+
 Download | Size | Description
 ---|---|---|
-[UnitConverterStarterKit](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/UnitConverterStarterKit) | 0.13MB | This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program provides the user with the ability to convert values from one type of unit to another. 
+[UnitConverterStarterKit](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/UnitConverterStarterKit) | 0.13MB | This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program provides the user with the ability to convert values from one type of unit to another.
+[UnitConverterStarterKit.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/UnitConverterStarterKit.zipS) | 0.13MB | This Windows Phone 7 Starter Kit is a complete Unit Converter application written in C#. The program provides the user with the ability to convert values from one type of unit to another.
+||||

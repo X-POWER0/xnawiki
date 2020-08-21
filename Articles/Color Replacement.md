@@ -21,4 +21,5 @@ When it's the Red Team versus the Blue Team, or when you want to drive a car pai
 Download | Size | Description
 ---|---|---|
 [ColorReplacementSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ColorReplacementSample_4_0) | 1.86MB | Source code and assets for the Color Replacement Sample (XNA Game Studio 4.0)
+[ColorReplacementSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ColorReplacementSample_4_0.zip) | 1.86MB | Source code and assets for the Color Replacement Sample (XNA Game Studio 4.0)
 ||||

@@ -24,4 +24,5 @@ Because this billboard implementation runs entirely in the vertex shader, there 
 Download | Size | Description
 ---|---|---|
 [BillboardSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BillboardSample_4_0) | 0.42MB | Source code and assets for the Billboard Sample (XNA Game Studio 4.0).
+[BillboardSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/BillboardSample_4_0.zip) | 0.42MB | Source code and assets for the Billboard Sample (XNA Game Studio 4.0).
 ||||

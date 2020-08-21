@@ -20,4 +20,5 @@ This sample demonstrates loading strings for different languages, building fonts
 Download | Size | Description
 ---|---|---|
 [LocalizationSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/LocalizationSample_4_0) | 0.08MB | Source code and assets for the Localization Sample (XNA Game Studio 4.0).
+[LocalizationSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/LocalizationSample_4_0.zip) | 0.08MB | Source code and assets for the Localization Sample (XNA Game Studio 4.0).
 ||||

@@ -29,5 +29,6 @@ Exercises:
 
 Download | Size | Description
 ---|---|---|
-[CatapultWarsTrainingKit_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CatapultWarsTrainingKit_4_0) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0).
+[CatapultWarsTrainingKit_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CatapultWarsTrainingKit_4_0) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0)
+[CatapultWarsTrainingKit_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CatapultWarsTrainingKit_4_0.zip) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0)
 ||||

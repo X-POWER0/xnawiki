@@ -24,7 +24,11 @@ The sample also includes functionality for handling tombstoning and fast app swi
 Download | Size | Description
 ---|---|---|
 [GSMSample_4_0_Mango](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GSMSample_4_0_Mango) | 0.16MB | Source code and assets for the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
+[GSMSample_4_0_Mango.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/GSMSample_4_0_Mango.zip) | 0.16MB | Source code and assets for the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
 [GSMSample_4_0_Mango_VB](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GSMSample_4_0_Mango_VB) | 0.16MB | Source code and assets for the Visual Basic version of the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
+[GSMSample_4_0_Mango_VB.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/GSMSample_4_0_Mango_VB.zip) | 0.16MB | Source code and assets for the Visual Basic version of the Game State Management Sample (XNA Game Studio 4.0 Refresh - Mango).
 [GSMSample_4_0_PHONE](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GSMSample_4_0_PHONE) | 0.12MB | Source code and assets for the Windows Phone version of the Game State Management Sample (XNA Game Studio 4.0).
+[GSMSample_4_0_PHONE.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/GSMSample_4_0_PHONE.zip) | 0.12MB | Source code and assets for the Windows Phone version of the Game State Management Sample (XNA Game Studio 4.0).
 [GSMSample_4_0_WIN_XBOX](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GSMSample_4_0_WIN_XBOX) | 0.15MB | Source code and assets for the Windows/Xbox 360 version of the Game State Management Sample (XNA Game Studio 4.0).
+[GSMSample_4_0_WIN_XBOX.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/GSMSample_4_0_WIN_XBOX.zip) | 0.15MB | Source code and assets for the Windows/Xbox 360 version of the Game State Management Sample (XNA Game Studio 4.0).
 ||||

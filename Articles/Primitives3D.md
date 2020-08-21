@@ -13,11 +13,11 @@ This sample provides easily reusable code for drawing basic geometric primitives
 
 These classes are particularly useful when debugging 3D games. For example, you could use them to display your collision bounding boxes or bounding spheres as translucent or wireframe 3D models.
 
-    * Cube
-    * Sphere
-    * Cylinder
-    * Torus
-    * Teapot
+* Cube
+* Sphere
+* Cylinder
+* Torus
+* Teapot
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 

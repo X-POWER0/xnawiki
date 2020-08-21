@@ -13,10 +13,10 @@ Snow Shovel is a simple game designed for Windows Phone 7 that shows how to draw
 
 In Snow Shovel, the game objective is to gather as many snowflakes with the shovel as you can before time runs out. The game implements the following features:
 
-    * 2D Graphics Rendering
-    * Accelerometer Input (Windows Phone 7)
-    * Scoring
-    * Game Timer
+* 2D Graphics Rendering
+* Accelerometer Input (Windows Phone 7)
+* Scoring
+* Game Timer
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 

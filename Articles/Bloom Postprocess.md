@@ -9,7 +9,7 @@ Games: Graphics, Games: Postprocessing, Games: Shaders|4/26/2007|Code Sample
 
 This sample shows how to use bloom post-processing filters to add a glow effect over the top of an existing scene.
 
-Sample Overview
+## Sample Overview
 
 Bloom post-processing emulates the visual effect of bright lights and glowing objects. It does this by extracting the brightest parts of an image to a custom render target, blurring these bright areas, and then adding the blurred result back into the original image.
 
@@ -22,4 +22,5 @@ Because bloom is implemented entirely as a post-process, it can easily be used o
 Download | Size | Description
 ---|---|---|
 [BloomSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BloomSample_4_0) | 11.48MB | Source code and assets for the Bloom Postprocessing Sample (XNA Game Studio 4.0)
+[BloomSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/BloomSample_4_0.zip) | 11.48MB | Source code and assets for the Bloom Postprocessing Sample (XNA Game Studio 4.0)
 ||||

@@ -18,4 +18,5 @@ Note: This sample requires a Bing Maps key to run. To register and obtain a key,
 Download | Size | Description
 ---|---|---|
 [BingMaps_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BingMaps_4_0) | 0.18MB | Source code and assets for the Bing Maps sample.
+[BingMaps_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/BingMaps_4_0.zip) | 0.18MB | Source code and assets for the Bing Maps sample.
 ||||

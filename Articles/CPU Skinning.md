@@ -15,5 +15,6 @@ Important While the emulator mimics the functionality of the Windows Phone, it d
 
 Download | Size | Description
 ---|---|---|
-[CPUSkinningSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CPUSkinningSample_4_0) | 5.13MB | Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0).
+[CPUSkinningSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CPUSkinningSample_4_0) | 5.13MB | Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0)
+[CPUSkinningSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CPUSkinningSample_4_0.zip) | 5.13MB | Source code and assets for the CPU Skinning Sample (XNA Game Studio 4.0)
 ||||

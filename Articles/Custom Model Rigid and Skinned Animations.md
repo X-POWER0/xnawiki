@@ -19,4 +19,5 @@ These examples are useful for different reasons. When using a rigid model, for i
 Download | Size | Description
 ---|---|---|
 [CustomModelAnimation_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelAnimation_4_0) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.
+[CustomModelAnimation_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CustomModelAnimation_4_0.zip) | 2.17MB | Source code and assets for the Custom Model Rigid and Skinned Animation sample.
 ||||

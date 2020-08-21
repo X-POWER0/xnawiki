@@ -11,7 +11,7 @@ This sample builds on the Peer-to-Peer sample, adding support for invites.
 
 ## Sample Overview
 
-To test invites, you need two machines (either Xbox 360 or PC) with two XNA Creators Club subscriptions. This is because invites work only with LIVE PlayerMatch sessions, unlike other networking features that can be tested locally by using system link. If you don't have two subscriptions, the easiest way to try this out is to get a friend to help, or ask for assistance on the creators.xna.com forums.
+To test invites, you need two machines (either Xbox 360 or PC) with two XNA Creators Club subscriptions. This is because invites work only with LIVE PlayerMatch sessions, unlike other networking features that can be tested locally by using system link.
 
 To join a session through an invite, run this sample on two machines, using LIVE profiles that are friends. Press A to create a session on the first machine. There are three ways the second machine can join this session:
 
@@ -26,4 +26,5 @@ Although pull and push mode invites appear very different to the user, they are 
 Download | Size | Description
 ---|---|---|
 [InvitesSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/InvitesSample_4_0) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0).
+[InvitesSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/InvitesSample_4_0.zip) | 0.08MB | Contains the source and assets for the Invites Sample (XNA Game Studio 4.0).
 ||||

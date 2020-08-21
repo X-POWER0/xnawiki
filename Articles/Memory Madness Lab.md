@@ -32,4 +32,5 @@ This lab is a full 2D touch-based memory game. Repeat the patterns of the blinki
 Download | Size | Description
 ---|---|---|
 [MemoryMadnessLab_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MemoryMadnessLab_4_0) | 8.07MB | Source code and assets for the Memory Madness lab.
+[MemoryMadnessLab_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/MemoryMadnessLab_4_0.zip) | 8.07MB | Source code and assets for the Memory Madness lab.
 ||||

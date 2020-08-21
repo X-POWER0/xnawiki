@@ -26,4 +26,5 @@ When using the Emulator, the Y axis will be inverted when the emulator is rotate
 Download | Size | Description
 ---|---|---|
 [BounceSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/BounceSample_4_0) | 0.06MB | Source code and assets for the Bounce Sample (XNA Game Studio 4.0).
+[BounceSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/BounceSample_4_0.zip) | 0.06MB | Source code and assets for the Bounce Sample (XNA Game Studio 4.0).
 ||||

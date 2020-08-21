@@ -22,4 +22,5 @@ The techniques shown here are an invisibility cloak, heat haze, and privacy glas
 Download | Size | Description
 ---|---|---|
 [DistortionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/DistortionSample_4_0) | 2.41MB | Source code and assets for the Distortion Sample (XNA Game Studio 4.0).
+[DistortionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/DistortionSample_4_0.zip) | 2.41MB | Source code and assets for the Distortion Sample (XNA Game Studio 4.0).
 ||||

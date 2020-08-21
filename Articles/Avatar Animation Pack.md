@@ -5,7 +5,7 @@
 Games: Content Pipeline|7/20/2009|Tool
 ||||
 
-Custom Animation List:
+## Custom Animation List
 
 * Climb
 * Crawl
@@ -34,7 +34,11 @@ Custom Animation List:
 Download | Size | Description
 ---|---|---|
 [AvatarAnimPack_4_0_BIN](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarAnimPack_4_0_BIN) | 3.84MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_BIN.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/AvatarAnimPack_4_0_BIN.zip) | 3.84MB | Assets for the Avatar Animation Pack.
 [AvatarAnimPack_4_0_FBX](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarAnimPack_4_0_FBX) | 34.52MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_FBX.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/AvatarAnimPack_4_0_FBX.zip) | 34.52MB | Assets for the Avatar Animation Pack.
 [AvatarAnimPack_4_0_Maya](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarAnimPack_4_0_Maya) | 29.16MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_Maya.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/AvatarAnimPack_4_0_Maya.zip) | 29.16MB | Assets for the Avatar Animation Pack.
 [AvatarAnimPack_4_0_Mod_Tool](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarAnimPack_4_0_Mod_Tool) | 38.48MB | Assets for the Avatar Animation Pack.
+[AvatarAnimPack_4_0_Mod_Tool.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/AvatarAnimPack_4_0_Mod_Tool.zip) | 38.48MB | Assets for the Avatar Animation Pack.
 ||||

@@ -1,14 +1,11 @@
-#Yacht#
+# Yacht
 
-Area
-Games: 2D Graphics, Games: Gameplay, Games: Graphics, Input, Touch & Gestures, Networking & Web Services
-Submitted
-12/20/2010
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: 2D Graphics, Games: Gameplay, Games: Graphics, Input, Touch & Gestures, Networking & Web Services|12/20/2010|Code Sample
+||||
 
----
-
-Sample Overview
+## Sample Overview
 
 This starter kit is a dice game where the player rolls 5 dice in an attempt to create specific combinations. Included in this starter kit is support for a Wi-Fi multiplayer game over HTTP.
 
@@ -19,7 +16,7 @@ NOTE: In order to run the multiplayer component of this game, specific instructi
 Server:
 
     * Ensure your computer is connected to a wireless network
-    * Open YachtServer.sln in elavated mode or as an Administrator
+    * Open YachtServer.sln in elevated mode or as an Administrator
     * Build and run YachtServer
 
 Client (Emulator):
@@ -51,11 +48,12 @@ This game includes the following features:
     * 2D Animation
     * Sound effects and game music
 
-All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
+> All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/yacht1.png?raw=true)  	  	 
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/yacht1.png?raw=true)
 
- 
 Download | Size | Description
 ---|---|---|
 [Yacht_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Yacht_4_0) | 2.86MB | Source code and assets for Yacht.
+[Yacht_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Yacht_4_0.zip) | 2.86MB | Source code and assets for Yacht.
+||||

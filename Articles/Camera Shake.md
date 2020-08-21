@@ -18,4 +18,5 @@ Camera Shake demonstrates how a game can increase immersion by providing visual 
 Download | Size | Description
 ---|---|---|
 [CameraShake_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CameraShake_4_0) | 11.44MB | Source code and assets for the Camera Shake sample.
+[CameraShake_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CameraShake_4_0.zip) | 11.44MB | Source code and assets for the Camera Shake sample.
 ||||

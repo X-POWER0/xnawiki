@@ -30,5 +30,6 @@ The Generated Geometry sample introduced the concept of a heightmap. In that sam
 
 Download | Size | Description
 ---|---|---|
-[HeightmapCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HeightmapCollisionSample_4_0) | 1.00MB | Source code and assets for the Collision Series 4: Heightmap Sample (XNA Game Studio 4.0).
+[HeightmapCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HeightmapCollisionSample_4_0) | 1.00MB | Source code and assets for the Collision Series 4: Heightmap Sample (XNA Game Studio 4.0)
+[HeightmapCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/HeightmapCollisionSample_4_0.zip) | 1.00MB | Source code and assets for the Collision Series 4: Heightmap Sample (XNA Game Studio 4.0)
 ||||

@@ -22,5 +22,6 @@ Fortunately, the layered design of the Content Pipeline makes it easy to replace
  
 Download | Size | Description
 ---|---|---|
-[CustomModelClassSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelClassSample_4_0) | 1.98MB | Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0).
+[CustomModelClassSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelClassSample_4_0) | 1.98MB | Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0)
+[CustomModelClassSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CustomModelClassSample_4_0.zip) | 1.98MB | Source code and assets for the Custom Model Class Sample (XNA Game Studio 4.0)
 ||||

@@ -9,7 +9,7 @@ Games: 2D Graphics, Games: Audio, Games: Collision, Games: Gameplay, Games: Grap
 
 NinjAcademy is a complete gesture-based Windows Phone game. The player attempts to get the highest score possible by slashing bundles of bamboo, throwing shurikens at wooden targets, and avoiding the deadly dynamite.
 
-This game includes the following features:
+## This game includes the following features
 
     Implementation of the Game State Management sample
     Gesture-based input

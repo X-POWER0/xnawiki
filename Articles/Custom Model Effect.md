@@ -25,5 +25,6 @@ The second custom content pipeline processor converts a regular 2D photograph in
 
 Download | Size | Description
 ---|---|---|
-[CustomModelEffectSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelEffectSample_4_0) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0).
+[CustomModelEffectSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelEffectSample_4_0) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0)
+[CustomModelEffectSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CustomModelEffectSample_4_0.zip) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0)
 ||||

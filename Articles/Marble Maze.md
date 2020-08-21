@@ -7,7 +7,7 @@ Games: 3D Graphics, Games: Audio, Games: Collision, Games: Gameplay, Games: Grap
 
 The Marble Maze Lab is a complete 3D accelerometer-based game for Windows Phone 7. Move your marble through the maze as quick as possible, but beware of the pits that will force you to restart from your last checkpoint. Based on the [Game State Management Sample](https://github.com/simondarksidej/XNAGameStudio/wiki/Game-State-Management-(Mango,-C%23VB)).
 
-### Features
+## Features
 
     3D Graphics with Basic Effect
     Sound and Music with Variable Pitch and Volume
@@ -27,4 +27,5 @@ The Marble Maze Lab is a complete 3D accelerometer-based game for Windows Phone 
 Download | Size | Description
 ---|---|---|
 [MarbleMaze_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/MarbleMaze_4_0) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0).
+[MarbleMaze_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/MarbleMaze_4_0.zip) | 56.91MB | Source code and assets for the Marble Maze Lab (XNA Game Studio 4.0).
 ||||

@@ -1,18 +1,15 @@
-#WinForms Series 1: Graphics Device#
+# WinForms Series 1: Graphics Device
 
-Area
-Games: Graphics
-Submitted
-1/10/2008
-Code Sample
-
----
+|Area|Submitted|Type|
+|-|-|-|
+Games: Graphics|1/10/2008|Code Sample
+||||
 
 ## Description
 
 This sample shows you how to use an XNA Framework GraphicsDevice object to display 3D graphics inside a WinForms application.
 
-Sample Overview
+## Sample Overview
 
 The XNA Framework Game class provides a quick, easy, and portable way to host your game. It automatically creates a window for the game to run inside, initializes the graphics hardware, and offers simple Update and Draw methods for you to override. Sometimes the Game behavior just isn't flexible enough, though. Perhaps you want more control over how the window is created, or maybe you're writing a level editor and want to place Windows user interface controls around the 3D drawing surface.
 
@@ -22,16 +19,17 @@ This sample implements a GraphicsDeviceControl class, which inherits from System
 
 Note that this sample runs only on Windows. WinForms isn't available on Xbox 360.
 
-Other items in the Winforms Series
+## Other items in the Winforms Series
 
-[WinForms Series 2: Content Loading](https://github.com/simondarksidej/XNAGameStudio/wiki/WinForms Series 2 Content Loading)
+* [WinForms Series 2: Content Loading](https://github.com/simondarksidej/XNAGameStudio/wiki/WinForms_Series_2_Content_Loading)
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
-![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg?raw=true)![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg?raw=true)
-	
+![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg?raw=true)
+![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[WinFormsGraphicsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsGraphicsSample_4_0) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0). 
+[WinFormsGraphicsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsGraphicsSample_4_0) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0).
+[WinFormsGraphicsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/WinFormsGraphicsSample_4_0.zip) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0).
+||||

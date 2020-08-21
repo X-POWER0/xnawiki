@@ -22,4 +22,5 @@ The sample uses a self-hosted WCF service to simulate the server. The service’
 Download | Size | Description
 ---|---|---|
 [TicTacToe_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TicTacToe_4_0) | 0.12MB | Source code and assets for the Tic-Tac-Toe sample.
+[TicTacToe_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TicTacToe_4_0.zip) | 0.12MB | Source code and assets for the Tic-Tac-Toe sample.
 ||||

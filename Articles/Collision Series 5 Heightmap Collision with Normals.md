@@ -32,5 +32,6 @@ This sample demonstrates how to do this by moving a tank around on a heightmap. 
 
 Download | Size | Description
 ---|---|---|
-[TankOnAHeightMapSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TankOnAHeightMapSample_4_0) | 13.57MB | Source code and assets for the Collision Series 5: Heightmap with Normals Sample (XNA Game Studio 4.0).
+[TankOnAHeightMapSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TankOnAHeightMapSample_4_0) | 13.57MB | Source code and assets for the Collision Series 5: Heightmap with Normals Sample (XNA Game Studio 4.0)
+[TankOnAHeightMapSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/TankOnAHeightMapSample_4_0.zip) | 13.57MB | Source code and assets for the Collision Series 5: Heightmap with Normals Sample (XNA Game Studio 4.0)
 ||||

@@ -22,4 +22,5 @@ The function TurnToFace does the hard work in this sample. You can copy it and u
 Download | Size | Description
 ---|---|---|
 [AimingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AimingSample_4_0) | 0.06MB | Source code and assets for the Aiming Sample (XNA Game Studio 4.0).
+[AimingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/AimingSample_4_0.zip) | 0.06MB | Source code and assets for the Aiming Sample (XNA Game Studio 4.0).
 ||||

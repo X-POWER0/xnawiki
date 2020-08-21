@@ -41,4 +41,5 @@ The sample takes advantage of the Silverlight Storyboard animation system to dri
 Download | Size | Description
 ---|---|---|
 [ModelViewerDemo_4_0_Mango](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ModelViewerDemo_4_0_Mango) | 6.83MB | Source code and assets for the Model Viewer Demo.
+[ModelViewerDemo_4_0_Mango.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ModelViewerDemo_4_0_Mango.zip) | 6.83MB | Source code and assets for the Model Viewer Demo.
 ||||

@@ -30,5 +30,6 @@ In the previous example, you created a simple object avoidance game by using rec
 
 Download | Size | Description
 ---|---|---|
-[PerPixelCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerPixelCollisionSample_4_0) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0).
+[PerPixelCollisionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerPixelCollisionSample_4_0) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0)
+[PerPixelCollisionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PerPixelCollisionSample_4_0.zip) | 0.04MB | Source code and assets for the Collision Series 2: 2D Per-Pixel Tutorial (XNA Game Studio 4.0)
 ||||

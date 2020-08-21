@@ -15,8 +15,8 @@ A tank model is loaded through the content pipeline, and then rendered by using 
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_simple_animation_01_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_simple_animation_01_small.jpg?raw=true)
-![XNA_simple_animation_02_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_simple_animation_02_small.jpg?raw=true)
+![XNA_simple_animation_01_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_simple_animation_01_small.JPG?raw=true)
+![XNA_simple_animation_02_small.JPG](https://github.com/SimonDarksideJ/XNAGameStudio/raw/master/Images/XNA_simple_animation_02_small.JPG?raw=true)
 
 Download | Size | Description
 ---|---|---|

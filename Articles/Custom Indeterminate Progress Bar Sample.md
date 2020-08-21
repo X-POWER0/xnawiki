@@ -14,4 +14,5 @@ This sample shows you how to create a custom indeterminate progress bar that run
 Download | Size | Description
 ---|---|---|
 [CustomIndeterminateProgressBarSample](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomIndeterminateProgressBarSample) | 0.05MB | This sample shows you how to create a custom indeterminate progress bar that runs on the compositor thread for better performance.
+[CustomIndeterminateProgressBarSample.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/CustomIndeterminateProgressBarSample.zip) | 0.05MB | This sample shows you how to create a custom indeterminate progress bar that runs on the compositor thread for better performance.
 ||||

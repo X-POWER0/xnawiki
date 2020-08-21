@@ -22,4 +22,5 @@ This sample demonstrates how to overcome this problem by implementing an AudioMa
 Download | Size | Description
 ---|---|---|
 [Audio3DSample_4_0](https://github.com/SimonDarksideJ/XNAGameStudio/tree/master/Samples/Audio3DSample_4_0) | 0.70MB | Source code and assets for the 3D Audio Sample (XNA Game Studio 4.0).
+[Audio3DSample_4_0.zip](https://github.com/SimonDarksideJ/XNAGameStudioZips/tree/master/Samples/Audio3DSample_4_0.zip) | 0.70MB | Source code and assets for the 3D Audio Sample (XNA Game Studio 4.0).
 ||||

@@ -1,12 +1,9 @@
-#Touch Gestures#
+# Touch Gestures
 
-Area
-Input, Touch & Gestures
-Submitted
-7/12/2010
-Code Sample
-
----
+|Area|Submitted|Type|
+|-|-|-|
+Input, Touch & Gestures|7/12/2010|Code Sample
+||||
 
 ## Description
 
@@ -16,12 +13,12 @@ Sample Overview
 
 This sample includes code that uses the Gestures API to enable hold, drag, tap, flick, and pinch gestures.
 
-
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 ![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/gesture1.png?raw=true)
 
-
 Download | Size | Description
 ---|---|---|
-[GesturesSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GesturesSample_4_0) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0). 
+[GesturesSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/GesturesSample_4_0) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0)
+[GesturesSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/GesturesSample_4_0.zip) | 0.17MB | Source code and assets for the Touch Gestures Sample (XNA Game Studio 4.0)
+||||
