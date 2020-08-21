@@ -60,4 +60,4 @@ Run the program. Look in the bin\Debug folder, and open the test.xml output file
     </XnaContent>
 ```
 
-Tada! That’s how [IntermediateSerializer](https://github.com/simondarksidej/XNAGameStudio/wiki/Everything-you-ever-wanted-to-know-about-IntermediateSerializer) represents this particular class in XML.
+Tada! That’s how [IntermediateSerializer](https://github.com/simondarksidej/XNAGameStudio/wiki/Web_Articles/ShawnHargreaves/Everything-you-ever-wanted-to-know-about-IntermediateSerializer) represents this particular class in XML.
