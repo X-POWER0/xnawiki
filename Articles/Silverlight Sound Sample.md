@@ -15,4 +15,4 @@ This sample demonstrates how to use the XNA Framework's SoundEffect and SoundEff
 
 Download | Size | Description
 ---|---|---|
-[silverlightsoundsample.txt](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/silverlightsoundsample.txt?raw=true) | 0.00MB | Demonstrates how to play multiple sounds simultaneously in a Silverlight application for Windows Phone. Shows how to load a wave audio file into a Stream that can be played by using the SoundEffect classes.
+[silverlightsoundsample.txt](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/silverlightsoundsample.txt?raw=true) | 0.00MB | Demonstrates how to play multiple sounds simultaneously in a Silverlight application for Windows Phone. Shows how to load a wave audio file into a Stream that can be played by using the SoundEffect classes.

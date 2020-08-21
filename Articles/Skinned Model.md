@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows how to process and render a skinned character model by using the XNA Framework Content Pipeline.
  
@@ -20,9 +20,9 @@ Out of the box, the XNA Framework provides only partial support for animation. I
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 	
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Skinning_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Skinning_02_small.jpg)	
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Skinning_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Skinning_02_small.jpg?raw=true)	
 
  
 Download | Size | Description
 ---|---|---|
-[SkinningSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/SkinningSample_4_0.zip?raw=true) | 9.59MB | Source code and assets for the Skinned Model Sample (XNA Game Studio 4.0). 
+[SkinningSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SkinningSample_4_0) | 9.59MB | Source code and assets for the Skinned Model Sample (XNA Game Studio 4.0). 

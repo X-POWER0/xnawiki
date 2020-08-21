@@ -1,14 +1,11 @@
-#Catapult Wars Extensions Kit#
+# Catapult Wars Extensions Kit
 
-Area
-Games: 2D Graphics, Games: Collision, Games: Gameplay, Games: Graphics, Input, Touch & Gestures
-Submitted
-10/4/2010
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: 2D Graphics, Games: Collision, Games: Gameplay, Games: Graphics, Input, Touch & Gestures|10/4/2010|Code Sample
+||||
 
----
-
-Sample Overview
+## Sample Overview
 
 This training kit is a set of resources for extending the Catapult Wars Lab, to better understand and experiment with building 2D game features. The kit consists of a set of small exercises and a larger advanced exercise.
 
@@ -21,14 +18,16 @@ Exercises:
     Supply Crate: Add special ammunition by destroying crates.
     (Advanced) Scrolling Screen: Expand the play space beyond the game screen.
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk1.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk2.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk3.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk4.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk5.png?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk6.png?raw=true)
 
-		
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk1.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk2.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk3.png)
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk4.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk5.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/catapulttk6.png)
-
- 
 Download | Size | Description
 ---|---|---|
-[CatapultWarsTrainingKit_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/CatapultWarsTrainingKit_4_0.zip?raw=true) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0). 
+[CatapultWarsTrainingKit_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CatapultWarsTrainingKit_4_0) | 15.39MB | Source code and assets for the Catapult Wars Training Kit (XNA Game Studio 4.0).
+||||

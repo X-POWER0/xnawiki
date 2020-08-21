@@ -9,7 +9,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows a very basic game written on top of the new Silverlight/XNA application model.
 
@@ -23,5 +23,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[PaddleBattle_4_0_Mango.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango.zip?raw=true) | 0.22MB | Source code and assets for the Paddle Battle sample.
-[PaddleBattle_4_0_Mango_VB.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/PaddleBattle_4_0_Mango_VB.zip?raw=true) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.
+[PaddleBattle_4_0_Mango](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PaddleBattle_4_0_Mango) | 0.22MB | Source code and assets for the Paddle Battle sample.
+[PaddleBattle_4_0_Mango_VB](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PaddleBattle_4_0_Mango_VB) | 0.21MB | Source code and assets for the Visual Basic version of the Paddle Battle sample.

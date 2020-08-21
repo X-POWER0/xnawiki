@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample explains how to move lighting calculations to the pixel shader for high-quality per-pixel lighting.
 
@@ -28,8 +28,8 @@ Other items in the Shader Series
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_02_small.jpg)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader3_PerPixelLighting_02_small.jpg?raw=true)
 	
 Download | Size | Description
 ---|---|---|
-[PerPixelLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/PerPixelLightingSample_4_0.zip?raw=true) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0). 
+[PerPixelLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PerPixelLightingSample_4_0) | 0.15MB | Source code and assets for the Shader Series 3: Per-Pixel Lighting Sample (XNA Game Studio 4.0). 

@@ -53,9 +53,9 @@ This game includes the following features:
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/yacht1.png)  	  	 
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/yacht1.png?raw=true)  	  	 
 
  
 Download | Size | Description
 ---|---|---|
-[Yacht_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/Yacht_4_0.zip?raw=true) | 2.86MB | Source code and assets for Yacht.
+[Yacht_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Yacht_4_0) | 2.86MB | Source code and assets for Yacht.

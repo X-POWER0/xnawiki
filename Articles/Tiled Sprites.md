@@ -10,7 +10,7 @@ Code Sample
 
 Note: This item is no longer supported. It may demonstrate techniques that are no longer valid in current versions of XNA Game Studio. The item is archived here, but will not be updated.
 
-Description: 
+## Description 
 
 This sample shows how to manage data for tiling, animation, visibility determination, and virtualization of a 2D camera. 
 
@@ -27,9 +27,9 @@ Sprite animation is a similar data management task to tiling, since several sour
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_TiledSprites_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_TiledSprites_02_small.jpg)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_TiledSprites_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_TiledSprites_02_small.jpg?raw=true)
 
 		 
 Download | Size | Description
 ---|---|---|
-[TiledSpritesSample_ARCHIVE_3_1.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/TiledSpritesSample_ARCHIVE_3_1.zip?raw=true) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived). 
+[TiledSpritesSample_ARCHIVE_3_1](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TiledSpritesSample_ARCHIVE_3_1) | 0.06MB | Source code and assets for the Tiled Sprites Sample (XNA Game Studio 3.1, Archived). 

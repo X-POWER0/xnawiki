@@ -39,4 +39,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[ReachGraphicsDemo_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/ReachGraphicsDemo_4_0.zip?raw=true) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 
+[ReachGraphicsDemo_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ReachGraphicsDemo_4_0) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 

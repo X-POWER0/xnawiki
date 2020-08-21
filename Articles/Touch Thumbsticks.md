@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample demonstrates a technique for using the touch panel to provide thumbstick-style controls for a game.
 
@@ -22,4 +22,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[TouchThumbsticksSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/TouchThumbsticksSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0). 
+[TouchThumbsticksSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/TouchThumbsticksSample_4_0) | 0.04MB | Source code and assets for the Touch Thumbsticks Sample (XNA Game Studio 4.0). 

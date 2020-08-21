@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows how to use prediction and smoothing algorithms to compensate for network lag, making remotely controlled objects appear to move smoothly even when there is a significant delay in packets being delivered over the network.
 
@@ -22,7 +22,7 @@ This sample shows how to make the tank example from the [Network Architecture: P
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 	
-![XNA_NetworkPrediction_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_01_small.jpg)![XNA_NetworkPrediction_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_02_small.jpg)
+![XNA_NetworkPrediction_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_01_small.jpg?raw=true)![XNA_NetworkPrediction_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetworkPrediction_02_small.jpg?raw=true)
  
 
  
@@ -30,4 +30,4 @@ All content and source code downloaded from this page are bound to the Microsoft
  
 Download | Size | Description
 ---|---|---|
-[NetworkPredictionSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/NetworkPredictionSample_4_0.zip?raw=true) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0). 
+[NetworkPredictionSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NetworkPredictionSample_4_0) | 0.25MB | Source code and assets for the Network Prediction Sample (XNA Game Studio 4.0). 

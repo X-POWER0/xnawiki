@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows how to implement stylized, non-photorealistic rendering techniques, such as cartoon shading, edge detection, and a pencil sketch effect.
 
@@ -25,10 +25,10 @@ Many graphical effects can be achieved by combining these techniques in various 
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_02_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_03_small.jpg)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_02_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NonRealisticRendering_03_small.jpg?raw=true)
 
 		
 
 Download | Size | Description
 ---|---|---|
-[NonPhotoRealisticSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/NonPhotoRealisticSample_4_0.zip?raw=true) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0). 
+[NonPhotoRealisticSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NonPhotoRealisticSample_4_0) | 3.65MB | Source code and assets for the Non-Realistic Rendering Sample (XNA Game Studio 4.0). 

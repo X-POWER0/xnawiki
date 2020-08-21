@@ -26,10 +26,10 @@ The following tutorials are also available:
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame1.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame2.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame3.png)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame1.png?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame2.png?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/shipgame3.png?raw=true)
 
   	 
 
 Download | Size | Description
 ---|---|---|
-[ShipGame_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/ShipGame_4_0.zip?raw=true) | 47.05MB | Source code and assets for Ship Game.
+[ShipGame_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShipGame_4_0) | 47.05MB | Source code and assets for Ship Game.

@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows how you can apply an effect on any model in your game to shatter it apart. The effect is simulated with a vertex shader.
 
@@ -19,8 +19,8 @@ The shatter effect operates on every triangle in the model independently. For ev
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShatterEffect_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShatterEffect_02_small.jpg)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShatterEffect_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShatterEffect_02_small.jpg?raw=true)
 	
 Download | Size | Description
 ---|---|---|
-[ShatterEffectSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/ShatterEffectSample_4_0.zip?raw=true) | 11.41MB | Source code and assets for the Shatter Sample (XNA Game Studio 4.0). 
+[ShatterEffectSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShatterEffectSample_4_0) | 11.41MB | Source code and assets for the Shatter Sample (XNA Game Studio 4.0). 

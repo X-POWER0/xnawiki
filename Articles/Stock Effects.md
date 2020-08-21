@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 Stock effects provides source code for the five effects (BasicEffect, SkinnedEffect, EnvironmentMapEffect, DualTextureEffect, and AlphaTestEffect), and the default shader used by SpriteBatch (SpriteEffect), built into the XNA Framework. There's also a command-line utility (CompileEffect) that uses the Content Pipeline to compile a .fx source file into a binary blob that can be passed directly to the XNA Framework Effect class constructor.
 
@@ -26,4 +26,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[StockEffectsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/StockEffectsSample_4_0.zip?raw=true) | 0.07MB | Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0). 
+[StockEffectsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/StockEffectsSample_4_0) | 0.07MB | Source code and assets for the Stock Effects Sample (XNA Game Studio 4.0). 

@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[SavingEmbeddedImages_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/SavingEmbeddedImages_4_0.zip?raw=true) | 0.17MB | Source code and assets for the Saving Embedded Images sample.
+[SavingEmbeddedImages_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SavingEmbeddedImages_4_0) | 0.17MB | Source code and assets for the Saving Embedded Images sample.

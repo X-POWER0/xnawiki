@@ -1,11 +1,10 @@
-#article details#
+# Marketing Tips: Get your app or game noticed
 
-Marketing Tips: Get your app or game noticed
-Submitted
-11/28/2011
----
+|Area|Submitted|Type|
+|-|-|-|
+||11/28/2011| Article
 
-Getting Started
+## Getting Started
 
 With so many apps and games on the market today, journalists just don’t have time to play them all, causing a number of great independent apps and games to remain under the radar. However, there are some simple things you can do to raise awareness and increase the chances of securing reviews for your creation. The tips below are tried and true tactics that successful developers and PR professionals use all the time when trying to secure reviews.
 
@@ -15,7 +14,7 @@ With so many apps and games on the market today, journalists just don’t have t
     Judge a book by its cover. We hear from journalists that they often base what they download and try on the look and feel of a app or game — its tile/box art and description — so it's critical to ensure these are as polished as possible. Don't forget the spellcheck and have another person help you with editing. It also pays to do some research on cinematography before creating your cover art – developers we hear from say the angle of the shot means more than you think.
     Polished (and short) trailers reign supreme. A flashy promotional video is a great way to get the attention of media and gamers alike. But, it's important to keep a couple things in mind: keep it short (under two minutes is ideal) and make sure it's "incredibly polished" (as one developer in the XNA community says).
 
-PR Tips for Promoting Your App or Game
+## PR Tips for Promoting Your App or Game
 
 Once you've established your web presence, finalized your art and queued up the press release, what's next? Below are more tips that are essential to ensuring your product gets the attention it deserves – at the right time and from the right people.
 
@@ -37,20 +36,20 @@ Once you've established your web presence, finalized your art and queued up the 
     Don't burn bridges. If a review of your product is negative, don't take it personally. Recognize that product reviews are very subjective. You do not want to ruin your relationship with the journalist by being rude or too defensive. You never know when you'll need to contact them for a review of a new product of yours in the future. If the journalist included any factual errors in their review, inform them of the inaccuracies, but do not try to change their mind or expect them to post additional information.
     Maintain the relationship. Start to follow the reviewer on Twitter, regularly read their articles or subscribe to their RSS feed to stay up-to-date on what they are working on. Inform them of any new products you are working on that they may be interested in reviewing in the future. Let them know you are willing to be interviewed at any time if they need an independent developer's perspective for an article.
 
-Direct From Developers:
+## Direct From Developers:
 
 Here are some top tips that came up most often during the #DevChat:
 
-"Naming a game is important. Search the potential name and see how many pages have that exact name."
+* "Naming a game is important. Search the potential name and see how many pages have that exact name."
 
-"Make a website! Even if it is just blogger, you need a web presence and make sure all your photos, videos and other assets link back to it!"
+* "Make a website! Even if it is just blogger, you need a web presence and make sure all your photos, videos and other assets link back to it!"
 
-"Don't be afraid to be creative with your press release – a funny press release can go a long way in helping you stand out. And make sure you spellcheck!"
+* "Don't be afraid to be creative with your press release – a funny press release can go a long way in helping you stand out. And make sure you spellcheck!"
 
-"Choose your screen shots carefully and leave your official shots unbranded."
+* "Choose your screen shots carefully and leave your official shots unbranded."
 
-"Nice box art draws me to games on Xbox LIVE Indie Games. A picture of a cat and the use of Arial doesn't."
+* "Nice box art draws me to games on Xbox LIVE Indie Games. A picture of a cat and the use of Arial doesn't."
 
-"Go to professionals for sound and music. Get an indie rate which is essentially cost and build a relationship."
+* "Go to professionals for sound and music. Get an indie rate which is essentially cost and build a relationship."
 
-"Don't be afraid to throw stuff out. If you haven't scrapped at least half of your work by the end, you're not done."
+* "Don't be afraid to throw stuff out. If you haven't scrapped at least half of your work by the end, you're not done."

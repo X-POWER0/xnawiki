@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample provides easily reusable code for drawing basic geometric primitives.
 
@@ -28,4 +28,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Primitives3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/Primitives3DSample_4_0.zip?raw=true) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0). 
+[Primitives3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Primitives3DSample_4_0) | 0.05MB | Source code and assets for the Primitives 3D Sample (XNA Game Studio 4.0). 

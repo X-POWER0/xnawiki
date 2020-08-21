@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 Snow Shovel is a simple game designed for Windows Phone 7 that shows how to draw 2D sprites and handle player input by using the accelerometer.
 
@@ -24,10 +24,10 @@ In Snow Shovel, the game objective is to gather as many snowflakes with the shov
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![snowshovel1.png](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/snowshovel1.png)![snowshovel2.png](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/snowshovel2.png)
+![snowshovel1.png](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/snowshovel1.png?raw=true)![snowshovel2.png](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/snowshovel2.png?raw=true)
 	
 
 
 Download | Size | Description
 ---|---|---|
-[SnowShovelSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/SnowShovelSample_4_0.zip?raw=true) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0). 
+[SnowShovelSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SnowShovelSample_4_0) | 0.12MB | Source code and assets for the Snow Shovel Sample (XNA Game Studio 4.0). 

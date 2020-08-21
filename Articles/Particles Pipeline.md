@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample builds on the Particles 2D sample to allow authoring of particle effects in XML files, which makes creating new particle systems and modifying particle system parameters a much simpler task. Additionally, the sample adds a few extra features such as the ParticleEmitter class, which makes it easier to attach particle systems to game objects and to get a smooth spawning of particles as the object moves around.
 
@@ -23,9 +23,9 @@ This sample's particle systems are based on the Spacewar particle system. Howeve
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/particlespipeline.png)		
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/particlespipeline.png?raw=true)		
 	  	 
 
 Download | Size | Description
 ---|---|---|
-[Particles2DPipeline_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/Particles2DPipeline_4_0.zip?raw=true) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0). 
+[Particles2DPipeline_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Particles2DPipeline_4_0) | 0.63MB | Source code and assets for the Particles Pipeline Sample (XNA Game Studio 4.0). 

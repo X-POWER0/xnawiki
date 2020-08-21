@@ -17,5 +17,5 @@ The AvatarAnimation object enables developers to play one of the built-in animat
 
 Download | Size | Description
 ---|---|---|
-[AvatarAnimationBlendingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/AvatarAnimationBlendingSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Avatar Animation Blending Sample (XNA Game Studio 4.0).
+[AvatarAnimationBlendingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarAnimationBlendingSample_4_0) | 0.03MB | Source code and assets for the Avatar Animation Blending Sample (XNA Game Studio 4.0).
 ||||

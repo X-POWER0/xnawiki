@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 Platformer is a self-contained game solution for Windows, Xbox 360, and Windows Phone 7 that includes both game code and game assets. The game is a standard 2D platformer with levels, enemies, and collectable gems.
 
@@ -27,9 +27,9 @@ Platformer includes the following features:
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/platformer1.png)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/platformer1.png)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/platformer1.png?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/platformer1.png?raw=true)
 
 
 Download | Size | Description
 ---|---|---|
-[Platformer_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/Platformer_4_0.zip?raw=true) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0). 
+[Platformer_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Platformer_4_0) | 6.68MB | Source code and assets for Platformer Sample (XNA Game Studio 4.0). 

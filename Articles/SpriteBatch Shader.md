@@ -10,7 +10,7 @@ Tool
 
 Note: This item is no longer supported. This effect code is now provided as part of the Stock Effects Sample for XNA Game Studio 4.0.
 
-Description:
+## Description
 
 The SpriteBatch shader represents the source code for the drawing functionality of the SpriteBatch object in the XNA Framework. It is provided as HLSL source code in a .fx file, along with an instructional document that describes the workings of the shader and how you can integrate it into your XNA Game Studio project.
 
@@ -23,4 +23,4 @@ All content and source code downloaded from this page is bound to the Microsoft 
 
 Download | Size | Description
 ---|---|---|
-[SpriteBatchShader_ARCHIVE_2_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/SpriteBatchShader_ARCHIVE_2_0.zip?raw=true) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived). 
+[SpriteBatchShader_ARCHIVE_2_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpriteBatchShader_ARCHIVE_2_0) | 0.02MB | Source code for the SpriteBatch Shader (XNA Game Studio 2.0, Archived). 

@@ -9,7 +9,7 @@ Article
 
 ---
 
-Description:
+## Description
 
 This supplemental article explains the BoxCollider library provided in the [Ship Game starter kit*](https://github.com/simondarksidej/XNAGameStudio/wiki/Ship Game). BoxCollider is a collision-detection and response library that features an octree implementation, collision response with friction effects, and prebuilt collision-aware camera classes.
 
@@ -19,4 +19,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[Ship Game - Using the Box Collider Library.doc](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/Ship Game - Using the Box Collider Library.doc?raw=true) | 0.11MB | This article explains the BoxCollider library provided in the Ship game starter kit.
+[Ship Game - Using the Box Collider Library.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/Ship Game - Using the Box Collider Library.doc?raw=true) | 0.11MB | This article explains the BoxCollider library provided in the Ship game starter kit.

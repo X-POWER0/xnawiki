@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description: 
+## Description 
 
 This sample shows you how to import arbitrary 3D models at run time by running the Content Pipeline importers and processors dynamically on the fly as opposed to building all the content ahead of time in the usual way.
 
@@ -25,8 +25,8 @@ Other items in the Winforms Series
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_01_small.JPG)![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_02_small.JPG)![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_03_small.JPG)
+![XNA_Winform-ContentLoader_01_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_01_small.jpg?raw=true)![XNA_Winform-ContentLoader_02_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_02_small.jpg?raw=true)![XNA_Winform-ContentLoader_03_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Winform-ContentLoader_03_small.jpg?raw=true)
   	  	 
 Download | Size | Description
 ---|---|---|
-[WinFormsContentSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/WinFormsContentSample_4_0.zip?raw=true) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0). 
+[WinFormsContentSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsContentSample_4_0) | 1.08MB | Source code and assets for the WinForms Series 2: Content Loading Sample (XNA Game Studio 4.0). 

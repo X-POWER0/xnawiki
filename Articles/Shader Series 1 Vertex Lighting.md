@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows one of the most basic uses of shader effects — vertex lighting.
 
@@ -28,8 +28,8 @@ Other items in the Shader Series
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_02_small.jpg)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Shader1_VertexLighting_02_small.jpg?raw=true)
 	
 Download | Size | Description
 ---|---|---|
-[VertexLightingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/VertexLightingSample_4_0.zip?raw=true) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0). 
+[VertexLightingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/VertexLightingSample_4_0) | 0.16MB | Source code and assets for the Shader Series 1: Vertex Lighting Sample (XNA Game Studio 4.0). 

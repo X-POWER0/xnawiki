@@ -15,5 +15,5 @@ In this sample, we demonstrate how to play two built-in avatar animations at the
 
 Download | Size | Description
 ---|---|---|
-[AvatarMultipleAnimationsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/AvatarMultipleAnimationsSample_4_0.zip?raw=true) | 0.03MB | Source code and assets for the Avatar Multiple Animation Sample (XNA Game Studio 4.0).
+[AvatarMultipleAnimationsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarMultipleAnimationsSample_4_0) | 0.03MB | Source code and assets for the Avatar Multiple Animation Sample (XNA Game Studio 4.0).
 ||||

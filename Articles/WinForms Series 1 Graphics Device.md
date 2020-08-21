@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows you how to use an XNA Framework GraphicsDevice object to display 3D graphics inside a WinForms application.
 
@@ -29,9 +29,9 @@ Other items in the Winforms Series
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg)![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg)
+![XNA_WinForms1_GraphicsDevice_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_01_small.jpg?raw=true)![XNA_WinForms1_GraphicsDevice_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_WinForms1_GraphicsDevice_02_small.jpg?raw=true)
 	
 
 Download | Size | Description
 ---|---|---|
-[WinFormsGraphicsSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/WinFormsGraphicsSample_4_0.zip?raw=true) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0). 
+[WinFormsGraphicsSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/WinFormsGraphicsSample_4_0) | 0.04MB | Source code and assets for the WinForms Series 1: Graphics Device Sample (XNA Game Studio 4.0). 

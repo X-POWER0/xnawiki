@@ -1,12 +1,9 @@
 # Accelerometer
 
-Area
-Input, Touch & Gestures
-Submitted
-8/4/2010
-Code Sample
-
----
+|Area|Submitted|Type|
+|-|-|-|
+|Input, Touch & Gestures|8/4/2010|Code Sample|
+||||
 
 ## Description
 
@@ -23,5 +20,5 @@ Windows Phone 7 devices include a number of hardware sensors, one of which is th
 
 Download | Size | Description
 ---|---|---|
-[AccelerometerSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/AccelerometerSample_4_0.zip?raw=true) | 0.08MB | Source code and assets for the Accelerometer Sample (XNA Game Studio 4.0).
+[AccelerometerSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AccelerometerSample_4_0) | 0.08MB | Source code and assets for the Accelerometer Sample (XNA Game Studio 4.0).
 ||||

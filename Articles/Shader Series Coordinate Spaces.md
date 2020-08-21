@@ -8,7 +8,7 @@ Article
 
 ---
 
-Description:
+## Description
 
 This supplemental article outlines the different coordinate spaces that are necessary when creating shaders.
 
@@ -26,4 +26,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[CoordinateSpaces.doc](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/CoordinateSpaces.doc?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article.
+[CoordinateSpaces.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/CoordinateSpaces.doc?raw=true) | 0.07MB | Shader Series: Coordinate Spaces article.

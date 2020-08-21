@@ -5,8 +5,6 @@
 |Games: 3D Graphics, Games: Graphics|10/4/2010|Code Sample
 ||||
 
----
-
 ## Description
 
 This sample shows how to render 3D content to screen with a basic effect.
@@ -22,5 +20,5 @@ The sample consists of a 3D scene of a spaceship, rendered by using BasicEffect.
 
 Download | Size | Description
 ---|---|---|
-[Graphics3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/Graphics3DSample_4_0.zip?raw=true) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
+[Graphics3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Graphics3DSample_4_0) | 0.36MB | Source code and assets for the 3D Graphics Sample (XNA Game Studio 4.0).
 ||||

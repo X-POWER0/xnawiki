@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows you how to implement basic shadow mapping from a directional light where the view and projection of the shadow map adapt to the viewing frustum of the viewer's camera. You can use the sample to shadow a large scene with multiple dynamic objects that cast dynamic shadows
 
@@ -20,10 +20,10 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 
 		
-![XNA_ShadowMapping_01_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_01_small.JPG)![XNA_ShadowMapping_02_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_02_small.JPG)![XNA_ShadowMapping_03_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_03_small.JPG)
+![XNA_ShadowMapping_01_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_01_small.jpg?raw=true)![XNA_ShadowMapping_02_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_02_small.jpg?raw=true)![XNA_ShadowMapping_03_small.JPG](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_ShadowMapping_03_small.jpg?raw=true)
  
 
  
 Download | Size | Description
 ---|---|---|
-[ShadowMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/ShadowMappingSample_4_0.zip?raw=true) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0). 
+[ShadowMappingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ShadowMappingSample_4_0) | 21.61MB | Source code and assets for the Shadow Mapping Sample (XNA Game Studio 4.0). 

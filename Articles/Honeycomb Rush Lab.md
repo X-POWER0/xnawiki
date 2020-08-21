@@ -1,14 +1,11 @@
-#Honeycomb Rush Lab#
+# Honeycomb Rush Lab
 
-Area
-Games: 2D Graphics, Games: Audio, Games: Collision, Games: Gameplay, Input, Touch & Gestures
-Submitted
-11/8/2010
-Tutorial
+|Area|Submitted|Type|
+|-|-|-|
+Games: 2D Graphics, Games: Audio, Games: Collision, Games: Gameplay, Input, Touch & Gestures|11/8/2010|Tutorial
+||||
 
----
-
-Sample Overview
+## Sample Overview
 
 This lab is a full 2D touch-based game. Fill the vat with honey from the beehives before time runs out. Use your smoke gun to prevent bees from stinging you and making you drop your honey. Based on the Game State Management Sample.
 
@@ -28,12 +25,11 @@ Features:
     Simple fire-and-forget sounds
     Menu screen interactions
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/honeycomb_rush.png?raw=true)
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/honeycomb_rush.png)	
-
- 
 Download | Size | Description
 ---|---|---|
-[HoneycombRush_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/HoneycombRush_4_0.zip?raw=true) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
+[HoneycombRush_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/HoneycombRush_4_0) | 25.98MB | Source code and assets for the Honeycomb Rush lab.
+||||

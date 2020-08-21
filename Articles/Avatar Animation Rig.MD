@@ -13,7 +13,7 @@ The avatar rig is a model and animation rig setup for authoring custom avatar an
 
 Download | Size | Description
 ---|---|---|
-[AvatarRig_4_0_Max_2010.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/AvatarRig_4_0_Max_2010.zip?raw=true) | 2.35MB | 3DS Max assets for the Avatar Rig
-[AvatarRig_4_0_Maya_2009.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/AvatarRig_4_0_Maya_2009.zip?raw=true) | 1.98MB | Maya assets for the Avatar Rig
-[AvatarRig_4_0_SoftImage_Mod_Tool7_5.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/AvatarRig_4_0_SoftImage_Mod_Tool7_5.zip?raw=true) | 2.50MB | SoftImage assets for the Avatar Rig
+[AvatarRig_4_0_Max_201](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarRig_4_0_Max_2010) | 2.35MB | 3DS Max assets for the Avatar Rig
+[AvatarRig_4_0_Maya_2009](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarRig_4_0_Maya_2009) | 1.98MB | Maya assets for the Avatar Rig
+[AvatarRig_4_0_SoftImage_Mod_Tool7_5](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/AvatarRig_4_0_SoftImage_Mod_Tool7_5) | 2.50MB | SoftImage assets for the Avatar Rig
 ||||

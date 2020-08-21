@@ -1,14 +1,11 @@
-#Loading Time Reduction for Windows Phone 7 Games#
+# Loading Time Reduction for Windows Phone 7 Games
 
-Area
-Performance & Optimization
-Submitted
-12/10/2010
-Article
+|Area|Submitted|Type|
+|-|-|-|
+Performance & Optimization|12/10/2010|Article
+||||
 
----
-
-Article Overview
+## Article Overview
 
 Applications on mobile devices typically require low-friction entry and exit, allowing for quick and responsive experiences. Unlike console or PC games, where the user can invest hours in a single game session, use of applications on mobile devices is often on the order of seconds to minutes. Users can become frustrated when too much of these brief experiences is spent loading screens or performing other non-interactive activities.
 
@@ -18,4 +15,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[LoadingTimeReduction_WP7_XNAGS.docx](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/LoadingTimeReduction_WP7_XNAGS.docx?raw=true) | 0.06MB | Loading Time Reduction Article for Windows Phone.
+[LoadingTimeReduction_WP7_XNAGS.docx](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/LoadingTimeReduction_WP7_XNAGS.docx?raw=true) | 0.06MB | Loading Time Reduction Article for Windows Phone.
+||||

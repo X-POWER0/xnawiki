@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description:
+## Description
 
 This sample shows how to make an XNA Framework game display correctly on a wide range of televisions.
 
@@ -21,4 +21,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[SafeAreaSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/SafeAreaSample_4_0.zip?raw=true) | 0.71MB | Source code and assets for the Safe Area Sample (XNA Game Studio 4.0). 
+[SafeAreaSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SafeAreaSample_4_0) | 0.71MB | Source code and assets for the Safe Area Sample (XNA Game Studio 4.0). 

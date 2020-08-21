@@ -1,14 +1,11 @@
-#Graphics Profile Checker#
+# Graphics Profile Checker
 
-Area
-Games: Graphics
-Submitted
-11/30/2010
-Tool
+|Area|Submitted|Type|
+|-|-|-|
+Games: Graphics|11/30/2010|Tool
+||||
 
----
-
-Sample Overview
+## Sample Overview
 
 The XNA Framework GraphicsAdapter.IsProfileSupported API enables you to check whether the current hardware supports the Reach or HiDef graphics profiles, but this only returns a simple boolean, with no details of why a failing profile isn't supported.
 
@@ -20,9 +17,9 @@ Unlike most XNA samples, which are written in C#, this utility is written in C++
     A version of Visual Studio 2010 that includes C++ support (not just C# Express)
     The native DirectX SDK ([http://msdn.microsoft.com/en-us/directx](http://msdn.microsoft.com/en-us/directx))
 
-
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[XnaGraphicsProfileChecker_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/XnaGraphicsProfileChecker_4_0.zip?raw=true) | 0.02MB | Source code and assets for the XNA Graphics Profile Checker Utility.
+[XnaGraphicsProfileChecker_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/XnaGraphicsProfileChecker_4_0) | 0.02MB | Source code and assets for the XNA Graphics Profile Checker Utility.
+||||

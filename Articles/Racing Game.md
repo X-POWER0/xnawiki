@@ -10,7 +10,7 @@ Code Sample
 
 Note: This item is no longer supported. It may demonstrate techniques that are no longer valid in current versions of XNA Game Studio. The item is archived here, but will not be updated.
 
-Description: 
+## Description 
 
 The Racing Game Starter Kit is a complete game. This sample comes ready to compile and run, and it's easy to customize with a little bit of C# programming. You are free to use the source code as the basis for your own XNA Game Studio projects, and to share your work with others.
 
@@ -20,7 +20,7 @@ Racing Game is a 3D auto racing game that features advanced graphics, audio, and
 
 All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Racing-Game_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Racing-Game_02_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Racing-Game_03_small.jpg)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Racing-Game_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Racing-Game_02_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Racing-Game_03_small.jpg?raw=true)
 
   		
 

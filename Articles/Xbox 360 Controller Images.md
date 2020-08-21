@@ -8,7 +8,7 @@ Tool
 
 ---
 
-Description:
+## Description
 
 This pack is a set of Xbox 360 controller graphics that you can use in your games.
 
@@ -17,4 +17,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[ControllerImages.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/ControllerImages.zip?raw=true) | 0.67MB | Assets for the Xbox 360 Controller Images Pack. 
+[ControllerImages](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ControllerImages) | 0.67MB | Assets for the Xbox 360 Controller Images Pack. 

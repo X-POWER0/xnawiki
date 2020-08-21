@@ -8,7 +8,7 @@ Article
 
 ---
 
-Description:
+## Description
 
 This article is an introduction to the Shader Series, a set of samples and articles that allow an intermediate 3D developer to begin to explore the programmable graphics pipeline.
 
@@ -31,4 +31,4 @@ All content and source code downloaded from this page are bound to the Microsoft
 
 Download | Size | Description
 ---|---|---|
-[ShaderSeriesPrimer.doc](https://github.com/simondarksidej/XNAGameStudio/blob/master/Documents/ShaderSeriesPrimer.doc?raw=true) | 0.06MB | Shader Series introduction article. 
+[ShaderSeriesPrimer.doc](https://github.com/simondarksidej/XNAGameStudio/tree/master/Documents/ShaderSeriesPrimer.doc?raw=true) | 0.06MB | Shader Series introduction article. 

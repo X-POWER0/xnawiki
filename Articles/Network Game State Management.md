@@ -8,7 +8,7 @@ Code Sample
 
 ---
 
-Description: 
+## Description 
 
 This sample shows how to implement the user interface for a multiplayer networked game. It provide menus for creating, finding, and joining sessions, a lobby screen, and robust network error handling.
 
@@ -21,9 +21,9 @@ At the main menu, players can choose between Single Player, LIVE, or System Link
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![XNA_NetGameStateManagement_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetGameStateManagement_01_small.jpg)
+![XNA_NetGameStateManagement_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NetGameStateManagement_01_small.jpg?raw=true)
 
  
 Download | Size | Description
 ---|---|---|
-[NGSMSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/NGSMSample_4_0.zip?raw=true) | 0.23MB | Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0). 
+[NGSMSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NGSMSample_4_0) | 0.23MB | Source code and assets for the Network Game State Management Sample (XNA Game Studio 4.0). 

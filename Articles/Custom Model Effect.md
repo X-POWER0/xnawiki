@@ -1,20 +1,15 @@
-#Custom Model Effect#
+# Custom Model Effect
 
-Area
-Games: Content Pipeline, Games: Graphics, Games: Shaders
-Submitted
-2/19/2007
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: Content Pipeline, Games: Graphics, Games: Shaders|2/19/2007|Code Sample
+||||
 
----
-
-Description:
+## Description
 
 This sample shows how custom effects can be applied to a model by using the XNA Framework Content Pipeline.
 
- 
-
-Sample Overview
+## Sample Overview
 
 This sample demonstrates how to use a custom effect to render a model with a static environment cube map, creating a shiny, reflective surface. The sample uses two custom content pipeline processors.
 
@@ -22,13 +17,13 @@ The first processor applies the environment mapping effect to the model during t
 
 The second custom content pipeline processor converts a regular 2D photograph into a cube map that can be used for the environment mapping.
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_03_small.jpg?raw=true)
 
-
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_02_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_CustomModelEffect_03_small.jpg)		
-
- 
 Download | Size | Description
 ---|---|---|
-[CustomModelEffectSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/CustomModelEffectSample_4_0.zip?raw=true) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0). 
+[CustomModelEffectSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/CustomModelEffectSample_4_0) | 0.94MB | Source code and assets for the Custom Model Effect Sample (XNA Game Studio 4.0).
+||||

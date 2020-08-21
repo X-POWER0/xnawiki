@@ -1,18 +1,15 @@
-#Fuzzy Logic#
+# Fuzzy Logic
 
-Area
-Games: Artificial Intelligence
-Submitted
-1/24/2008
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: Artificial Intelligence|1/24/2008|Code Sample
+||||
 
----
-
-Description:
+## Description
 
 This sample shows how an AI can use fuzzy logic to make decisions. It also demonstrates a method for organizing different AI behaviors, similar to a state machine.
 
-Sample Overview
+## Sample Overview
 
 When you program the AI for your games, you know that your actors often have to choose between several different options. In many cases, the choice is black and white: if you see the player, attack him. However, the decision-making process is often much less clear cut. If you are low on health, go find a med kit. If there is a powerup nearby, pick it up. But how do you define low on health or nearby? And what if you're both low on health and also near a powerup? Which action is more important? You can give your AI actors the ability to make these kinds of decisions by using fuzzy logic.
 
@@ -22,12 +19,13 @@ In addition, the sample demonstrates a design pattern that can be useful when pr
 
 This sample is based on the Chase & Evade sample and assumes that the reader is familiar with the code and concepts explained in that sample.
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
-![XNA_FuzzyLogic_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_01_small.jpg)![XNA_FuzzyLogic_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_02_small.jpg)![XNA_FuzzyLogic_03_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_03_small.jpg)
-		
+![XNA_FuzzyLogic_01_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_01_small.jpg?raw=true)
+![XNA_FuzzyLogic_02_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_02_small.jpg?raw=true)
+![XNA_FuzzyLogic_03_small.jpg](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_FuzzyLogic_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[FuzzyLogicSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/FuzzyLogicSample_4_0.zip?raw=true) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0). 
+[FuzzyLogicSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/FuzzyLogicSample_4_0) | 0.09MB | Source code and assets for the Fuzzy Logic Sample (XNA Game Studio 4.0).
+||||

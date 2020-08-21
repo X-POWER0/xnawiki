@@ -5,8 +5,6 @@
 Games: 2D Graphics, Games: Audio|4/26/2007|Code Sample
 ||||
 
----
-
 ## Description
 
 This sample shows how to position sounds in 3D space by implementing panning, Doppler, and distance attenuation effects.
@@ -19,9 +17,9 @@ This sample demonstrates how to overcome this problem by implementing an AudioMa
 
 > All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Audio3D_01_small.jpg)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Audio3D_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Audio3D_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Audio3D_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[Audio3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/Audio3DSample_4_0.zip?raw=true) | 0.70MB | Source code and assets for the 3D Audio Sample (XNA Game Studio 4.0).
+[Audio3DSample_4_0](https://github.com/SimonDarksideJ/XNAGameStudio/tree/master/Samples/Audio3DSample_4_0) | 0.70MB | Source code and assets for the 3D Audio Sample (XNA Game Studio 4.0).
 ||||

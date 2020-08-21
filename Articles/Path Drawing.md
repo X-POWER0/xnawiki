@@ -15,10 +15,10 @@ The Path Drawing sample builds on the core of the Waypoint Sample to demonstrate
 
 All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
- ![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/path_drawing.png)
+ ![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/path_drawing.png?raw=true)
 
 
  
 Download | Size | Description
 ---|---|---|
-[PathDrawing_4_0.zip](https://github.com/simondarksidej/XNAGameStudio/blob/master/Samples/PathDrawing_4_0.zip?raw=true) | 0.84MB | Source code and assets for the Path Drawing sample.
+[PathDrawing_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PathDrawing_4_0) | 0.84MB | Source code and assets for the Path Drawing sample.
