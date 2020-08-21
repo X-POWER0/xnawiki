@@ -9,8 +9,8 @@ http://shawnhargreaves.com/
 
 |Title|Description|
 |-|-|
-|[Everything you ever wanted to know about IntermediateSerializer](Everything-you-ever-wanted-to-know-about-IntermediateSerializer.md)| A deep dive in to what makes the Intermediate Serializer work
-|[IntermediateSerializer vs. XmlSerializer](IntermediateSerializervsXmlSerializer.md)|A detailed comparison of the Intermediate Serializer and the base .NET XML Serializer|
-|[Teaching a man to fish](Teaching-a-man-to-fish.md)|Shawn's random responses to the top questions on handling XML|
+|[Everything you ever wanted to know about IntermediateSerializer](Everything-you-ever-wanted-to-know-about-IntermediateSerializer)| A deep dive in to what makes the Intermediate Serializer work
+|[IntermediateSerializer vs. XmlSerializer](IntermediateSerializervsXmlSerializer)|A detailed comparison of the Intermediate Serializer and the base .NET XML Serializer|
+|[Teaching a man to fish](Teaching-a-man-to-fish)|Shawn's random responses to the top questions on handling XML|
 
 There are more, but the ones above are mandatory reading.
