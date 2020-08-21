@@ -1,12 +1,9 @@
-#Skinned Model Extensions Tutorial#
+# Skinned Model Extensions Tutorial
 
-Area
-Games: 3D Graphics, Games: Collision, Games: Content Pipeline, Games: Graphics
-Submitted
-10/21/2009
-Tutorial
-
----
+|Area|Submitted|Type|
+|-|-|-|
+Games: 3D Graphics, Games: Collision, Games: Content Pipeline, Games: Graphics|10/21/2009|Tutorial
+||||
 
 ## Description
 
@@ -18,10 +15,10 @@ This tutorial will teach you how to extend the Skinned Model sample by directly 
 
 If you want to jump straight to the end result, the final code produced by following this tutorial can be found in the SkinnedModelExtensions subfolder.
 
-
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[SkinnedModelExtensions_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SkinnedModelExtensions_4_0) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0). 
+[SkinnedModelExtensions_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SkinnedModelExtensions_4_0) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0).
+[SkinnedModelExtensions_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/SkinnedModelExtensions_4_0.zip) | 9.51MB | Source code and assets for the Skinned Model Extensions Tutorial (XNA Game Studio 4.0).
+||||

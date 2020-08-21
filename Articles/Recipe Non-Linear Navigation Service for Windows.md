@@ -1,12 +1,11 @@
-#Recipe: Non-Linear Navigation Service for Windows#
+# Recipe: Non-Linear Navigation Service for Windows
 
-Area
-User Experience
-Submitted
-12/9/2010
-Article
+|Area|Submitted|Type|
+|-|-|-|
+User Experience|12/9/2010|Article
+||||
 
----
+## Sample Overview
 
 Part of the beauty of Windows Phone 7 is its Back key functionality, which makes it easy for users to step back through a stack of previously loaded applications and application pages. However, this functionality comes at a cost for the application developer, who must understand how the page stack operates in Silverlight for Windows Phone, and how to manipulate that stack in an optimal manner.
 
@@ -16,10 +15,10 @@ For more detail on this recipe, see the Windows Phone Developer Blog.
 
 For more detail on Windows Phone recipes in general, see this post on the Windows Phone Developer Blog.
 
-
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[NonLinear-WP-SLApp-Navigation-Service](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NonLinear-WP-SLApp-Navigation-Service) | 0.25MB | Windows Phone 7 Recipe: Non-Linear Navigation Service 
+[NonLinear-WP-SLApp-Navigation-Service](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NonLinear-WP-SLApp-Navigation-Service) | 0.25MB | Windows Phone 7 Recipe: Non-Linear Navigation Service
+[NonLinear-WP-SLApp-Navigation-Service.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/NonLinear-WP-SLApp-Navigation-Service.zip) | 0.25MB | Windows Phone 7 Recipe: Non-Linear Navigation Service
+||||

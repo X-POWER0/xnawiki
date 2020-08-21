@@ -1,18 +1,15 @@
-#Normal Mapping#
+# Normal Mapping
 
-Area
-Games: 3D Graphics, Games: Content Pipeline, Games: Shaders
-Submitted
-2/19/2007
-Code Sample
-
----
+|Area|Submitted|Type|
+|-|-|-|
+Games: 3D Graphics, Games: Content Pipeline, Games: Shaders|2/19/2007|Code Sample
+||||
 
 ## Description
 
 This sample builds on the concepts illustrated in the [Custom Model Effect](https://github.com/simondarksidej/XNAGameStudio/wiki/Custom Model Effect) sample, and it applies a normal mapping effect to a mesh. The sample also uses a custom content processor to demonstrate two additional concepts: adding and removing per-vertex data from a mesh, and reading opaque data.
 
-Sample Overview
+## Sample Overview
 
 The sample demonstrates how to use a custom effect to render a model with a normal map, creating the appearance of a bumpy surface without needing to render additional geometry.
 
@@ -20,13 +17,14 @@ A custom content pipeline processor applies the normal mapping effect to the mod
 
 To make rendering more efficient at runtime, a second custom processor changes the normal map pixel format from an encoded unsigned format to a signed format.
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_02_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_03_small.jpg?raw=true)
-
-		
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_NormalMappingEffect_03_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
 [NormalMappingSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NormalMappingSample_4_0) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)
+[NormalMappingSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/NormalMappingSample_4_0.zip) | 8.81MB | Source code and assets for the Normal Mapping Sample (XNA Game Studio 4.0)
+||||

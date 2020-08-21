@@ -1,18 +1,15 @@
-#Particles 3D#
+# Particles 3D
 
-Area
-Games: 3D Graphics, Games: Graphics, Games: Shaders
-Submitted
-5/24/2007
-Code Sample
-
----
+|Area|Submitted|Type|
+|-|-|-|
+Games: 3D Graphics, Games: Graphics, Games: Shaders|5/24/2007|Code Sample
+||||
 
 ## Description
 
 This sample shows how to implement a 3D particle system by using point sprites. It animates the particles entirely on the graphics card by using a custom vertex shader, so it can draw large numbers of particles with minimal CPU overhead.
 
-Sample Overview
+## Sample Overview
 
 When displaying large numbers of particles, games can easily become bottlenecked by the amount of CPU work involved in updating everything and transferring the latest particle positions across to the GPU for drawing. This sample avoids that by animating particles entirely on the GPU, so the CPU overhead remains low regardless of how many particles are active. Moving eye candy to the GPU leaves the CPU free for other things, such as gameplay, physics, or AI.
 
@@ -22,12 +19,14 @@ New particles are always added to the end of the vertex buffer, and old ones are
 
 Although this sample works in 3D, the same code can be used for efficient 2D particle systems by setting an orthographic matrix as the camera projection.
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_02_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_03_small.jpg?raw=true)
 
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_02_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle3D_03_small.jpg?raw=true)
-
-		
 Download | Size | Description
 ---|---|---|
-[Particles3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Particles3DSample_4_0) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0). 
+[Particles3DSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/Particles3DSample_4_0) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0).
+[Particles3DSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/Particles3DSample_4_0.zip) | 0.38MB | Source code and assets for the Particles 3D Sample (XNA Game Studio 4.0).
+||||

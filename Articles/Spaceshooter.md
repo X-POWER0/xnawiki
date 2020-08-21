@@ -1,24 +1,21 @@
-#Spaceshooter (ARCHIVED)#
+# Spaceshooter (ARCHIVED)
 
-Area
-Games: Artificial Intelligence, Games: Collision, Games: Content Pipeline
-Submitted
-4/30/2009
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: Artificial Intelligence, Games: Collision, Games: Content Pipeline|
+4/30/2009|Code Sample
+||||
 
----
+> Note: This item is no longer supported. It may demonstrate techniques that are no longer valid in current versions of XNA Game Studio. The item is archived here, but will not be updated.
 
-    Note: This item is no longer supported. It may demonstrate techniques that are no longer valid in current versions of XNA Game Studio. The item is archived here, but will not be updated.
-
-Description
+## Description
 
 The SpaceShooter Sample is the released version of a tutorial session created for the Korea Game Conference in 2008 by Frank Savage, a member of the XNA Game Studio Team.
 
-Notes from the Developer
+## Notes from the Developer
 The idea was to try and create a basic prototype of a Wing Commander-style game using XNA Game Studio. Despite having worked with XNA Game Studio for nearly 4 years, I was still surprised at how easy it was to create this minigame. This represents a grand total of 25 hours of coding, finding data on the web, building a procedural star field with MapZone, and lifting the rest of content from other XNA Game Studio samples and starter kits. Add to that another 5 hours of bug fixes, FxCop cleanup, garbage collector cleanup, and writing this document!
 
-
-Getting Started
+## Getting Started
 
 Most everything in SpaceShooter is a GameComponent. I did this to demonstrate the enormous flexibility inherent in the GameComponent class in terms of updating, rendering, loading content, initializing, and so on. This also means that most pieces of SpaceShooter are reusable in your own games. Because I wanted to show all of the different ways you can use GameComponent, the usage from one component to another varies greatly in terms of how update, draw, load content, and initialize are called.
 
@@ -28,7 +25,7 @@ There is a simple AI for the enemy ship that just keeps him moving to evade you.
 
 The particle system is from the GPU particle sample, and the game includes the bloom effect sample as well to ensure the game looks as next gen as possible.
 
-Artificial Intelligence
+## Artificial Intelligence
 
 Many people starting out as game developers make some serious mistakes around the game AI. This is because most beginner game developers (and many seasoned veterans, I might add) do not understand the real purpose behind the game's AI. The AI in a game exists to show the player a good time. Period. It's all too easy to make a game AI that is very hard and punishes the player mercilessly and too often. In fact, many game designers feel like they've achieved their goal when this happens. Most people playing games, however, are not trained fighter pilots or soldiers or race car drivers or sword-wielding barbarians. The game's job is to make them feel like they are! The AI must be designed to reinforce the illusion that if you just had a space fighter, you are the right guy to protect the Earth from thousands upon thousands of bad guys. The AI in SpaceShooter has one key component needed to do that. It simply flies and turns, varying the speed at which the fighter is moving and the direction and turn rates as it turns. That's it. Very simple behavior that results in a fun chase to swat the bad guy down!
 
@@ -36,8 +33,7 @@ The code is also simple. Every two seconds, the AI checks to see if it wants to 
 
 The next step in improving the game is to create a pursuit and fire AI and to add more than one ship. You can also coordinate the AIs so that the AI the player has targeted goes into evade mode and the other ship goes into pursuit and fire mode. Look for a future installment that adds the pursuit and fire AI and pits these two ships against you.
 
-
-Collision Detection
+## Collision Detection
 
 The XNA Framework ships with a number of useful collision detection primitives, but tying them together into a coherent collision detection system is still not easy. In the SpaceShooter case, I ran into two problems.
 
@@ -47,23 +43,26 @@ The other problem is the "bullet through tissue paper" problem. This refers to a
 
 Note that there are also simple mathematical ways to find the closest point between any two moving objects over some time interval. If I know the time of closest approach for any two objects across a given frame, I can simply move them to that location and check the collision extents. This avoids the problem as well and is somewhat less complex than the solution I adopted, but the idea here was to provide the community with ways to solve these kinds of problems that didn't require a textbook on linear algebra.
 
-
-Content
+## Content
 
 Space games are also fun to build because it's typically pretty easy to find content on the web or generate yourself, even if you (like me) are terrible at creating art.
 
 * The sun's texture is hand-built from some close-ups of sunspots, which are quite easy to find on the web. All of the Earth's textures came from the http://visibleearth.nasa.gov/ website. There are some very large textures available there, but I chose a size of 2K × 1K or the download for this game would have been awfully big! It's easy to grab higher resolution versions of the clouds, diffuse textures, height maps, and night lights. Doing this really improves the representation of Earth in terms of visual quality.
+
 * The starfield was made using the MapZone Pro tool available from Allegorithmic.
+
 * The ships were taken from the ShipGame Sample. Note that the ships are using a different shader than the default shader from ShipGame. Luckily, SpaceShooter includes a Content Pipeline processor that shows you how to do this.
+
 * There are also Content Pipeline processors to create a normal map from a height map since this is apparently becoming something of a lost art on the web today in terms of available code. The Earth’s height map is simply grayscale texture, which the processor changes into a normal map.
+
 * The sound effects and bolts are from the original Spacewar sample.
+
 * The explosions and particle trails are simply instances of particle emitters based on the GPU Particle sample.
 
-
-
-
-All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
+> All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[SpaceShooter_ARCHIVE_3_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpaceShooter_ARCHIVE_3_0) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived). 
+[SpaceShooter_ARCHIVE_3_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/SpaceShooter_ARCHIVE_3_0) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived).
+[SpaceShooter_ARCHIVE_3_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/Samples/SpaceShooter_ARCHIVE_3_0.zip) | 11.71MB | Contains all source and assets for the SpaceShooter Sample (XNA Game Studio 3.0, Archived).
+||||

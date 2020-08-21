@@ -1,18 +1,15 @@
-#Particles#
+# Particles
 
-Area
-Games: 2D Graphics, Games: Graphics
-Submitted
-4/26/2007
-Code Sample
-
----
+|Area|Submitted|Type|
+|-|-|-|
+Games: 2D Graphics, Games: Graphics|4/26/2007|Code Sample
+||||
 
 ## Description
 
 This sample introduces the concept of a particle system, and shows how to draw particle effects by using SpriteBatch. Two particle effects are demonstrated: an explosion and a rising plume of smoke.
 
-Sample Overview
+## Sample Overview
 
 Particle systems are a technique for rendering special effects that are typically very fluid and organic. They are common in games, generally being used for smoke, fire, sparks, and splashes of water.
 
@@ -20,13 +17,13 @@ A particle system consists of any number of small particles. Each particle has i
 
 This sample demonstrates the use of up-front allocations to avoid garbage collections. Also, the particle systems inherit from DrawableGameComponent, so they can be easily plugged into any XNA Framework game.
 
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
-![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg?raw=true)![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg?raw=true)
-
-	
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_01_small.jpg?raw=true)
+![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/XNA_Particle_02_small.jpg?raw=true)
 
 Download | Size | Description
 ---|---|---|
-[ParticleSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ParticleSample_4_0) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0) 
+[ParticleSample_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ParticleSample_4_0) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0)
+[ParticleSample_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ParticleSample_4_0.zip) | 0.47MB | Source code and assets for the Particles Sample (XNA Game Studio 4.0)
+||||

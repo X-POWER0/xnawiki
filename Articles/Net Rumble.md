@@ -18,4 +18,5 @@ All content and source code downloaded from this page are bound to the Microsoft
 Download | Size | Description
 ---|---|---|
 [NetRumble_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/NetRumble_4_0) | 11.52MB | Source code and assets for Net Rumble.
+[NetRumble_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/raw/zips/NetRumble_4_0.zip) | 11.52MB | Source code and assets for Net Rumble.
 ||||

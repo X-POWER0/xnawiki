@@ -1,11 +1,9 @@
-Redistributable Font Pack (ARCHIVED)
-Area
-Games: 2D Graphics
-Submitted
-5/26/2010
-Tool
+# Redistributable Font Pack (ARCHIVED)
 
-Note: The fonts in this pack are included automatically as part of installing XNA Game Studio 4.0. If you are using XNA Game Studio 4.0, you do not need to download this pack. The pack is provided for the benefit of users of XNA Game Studio 3.0 and 3.1.
+|Area|Submitted|Type|
+|-|-|-|
+Games: 2D Graphics|5/26/2010|Tool
+||||
 
 ## Description
 
@@ -17,10 +15,10 @@ The fonts include:
 
 ![](https://github.com/simondarksidej/XNAGameStudio/blob/master/Images/redistfonts.png?raw=true)
 
-
-
-All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
+> All content and source code downloaded from this page is bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[RedistributableTTFs_ARCHIVE_3_1](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RedistributableTTFs_ARCHIVE_3_1) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects. 
+[RedistributableTTFs](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/RedistributableTTFs_ARCHIVE_3_1) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects.
+[RedistributableTTFs.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/RedistributableTTFs_ARCHIVE_3_1.zip) | 0.61MB | Redistributable Font Pack for use in XNA Game Studio projects.
+||||

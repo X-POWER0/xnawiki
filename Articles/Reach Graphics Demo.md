@@ -1,16 +1,13 @@
-#Reach Graphics Demo#
+# Reach Graphics Demo
 
-Area
-Games: 2D Graphics, Games: 3D Graphics
-Submitted
-3/31/2010
-Code Sample
+|Area|Submitted|Type|
+|-|-|-|
+Games: 2D Graphics, Games: 3D Graphics|3/31/2010|Code Sample
+||||
 
----
+This demo was shown at the GDC and MIX 2010 conferences, showing XNA Game Studio 4.0 graphics capabilities on Windows Phone 7.
 
-This demo was shown at the GDC and MIX 2010 conferences, showing XNA Game Studio 4.0 graphics capabilities on Windows Phone 7. 
-
-Demo Overview
+## Demo Overview
 
 This demo contains projects for both Windows and Windows Phone 7. To build and run it, you must first download the Windows Phone Developer Tools, which includes XNA Game Studio 4.0.
 
@@ -20,23 +17,34 @@ If you leave the demo running without moving the mouse, it will enter an 'attrac
 
 This sample was originally developed as a demo for MIX; you can see the sample in action during the second half of the Building a High Performance 3D Game For Windows Phone talk from MIX10.
 
-Credits
+## Credits
 
 Much of the code in this demo, especially the custom content processors that are used to prepare the graphics content, is borrowed from existing XNA Game Studio samples. Specifically:
 
-[Skinned Model](https://github.com/simondarksidej/XNAGameStudio/wiki/Skinned Model) 	*SkinnedModelProcessor, SkinningData, Keyframe, AnimationPlayer, and AnimationClip*
+* [Skinned Model](https://github.com/simondarksidej/XNAGameStudio/wiki/Skinned_Model)
 
-[Custom Model Effect](https://github.com/simondarksidej/XNAGameStudio/wiki/Custom Model Effect) 	*EnvironmentMappedModelProcessor, EnvironmentMappedMaterialProcessor, and CubemapProcessor*
+    *SkinnedModelProcessor, SkinningData, Keyframe, AnimationPlayer, and AnimationClip*
 
-[Generated Geometry](https://github.com/simondarksidej/XNAGameStudio/wiki/Generated Geometry) 	*SkyProcessor, SkyContent, and Sky*
+* [Custom Model Effect](https://github.com/simondarksidej/XNAGameStudio/wiki/Custom_Model_Effect)
 
-[Sprite Effects](https://github.com/simondarksidej/XNAGameStudio/wiki/Sprite Effects) 	*TexturePlusAlphaProcessor*
+    *EnvironmentMappedModelProcessor, EnvironmentMappedMaterialProcessor, and CubemapProcessor*
 
-[Simple Animation](https://github.com/simondarksidej/XNAGameStudio/wiki/Simple Animation) 	*Tank class*
+* [Generated Geometry](https://github.com/simondarksidej/XNAGameStudio/wiki/Generated_Geometry)
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
+    *SkyProcessor, SkyContent, and Sky*
 
+* [Sprite Effects](https://github.com/simondarksidej/XNAGameStudio/wiki/Sprite_Effects)
+
+    *TexturePlusAlphaProcessor*
+
+* [Simple Animation](https://github.com/simondarksidej/XNAGameStudio/wiki/Simple_Animation)
+
+    *Tank class*
+
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[ReachGraphicsDemo_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ReachGraphicsDemo_4_0) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0). 
+[ReachGraphicsDemo_4_0](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/ReachGraphicsDemo_4_0) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0).
+[ReachGraphicsDemo_4_0.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/ReachGraphicsDemo_4_0.zip) | 7.12MB | Source code and assets for the Reach Graphics Demo (XNA Game Studio 4.0).
+||||

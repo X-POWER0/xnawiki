@@ -1,12 +1,11 @@
-#Recipe: Push Notification Server Side Helper#
+# Recipe: Push Notification Server Side Helper
 
-Area
-Push Notifications
-Submitted
-1/14/2011
-Article
+|Area|Submitted|Type|
+|-|-|-|
+Push Notifications|1/14/2011|Article
+||||
 
----
+## Sample Overview
 
 The Push Notification Server Side Helper Library, a part of the Windows Phone 7 Push Recipe, provides an easy way to send all three types of push notification message that are currently supported by Microsoft Push Notification Services (MPNS): Tile, Toast, and Raw. These types are described in more detail in the recipe documentation.
 
@@ -16,9 +15,10 @@ Push Patterns are a generalization of a common use of PN in an end–to-end solu
 
 For more detail on this helper library, see the Windows Phone Developer Blog post.
 
-All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
-
+> All content and source code downloaded from this page are bound to the Microsoft Permissive License (Ms-PL).
 
 Download | Size | Description
 ---|---|---|
-[PushRecipe_WP7_SL](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PushRecipe_WP7_SL) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library 
+[PushRecipe_WP7_SL](https://github.com/simondarksidej/XNAGameStudio/tree/master/Samples/PushRecipe_WP7_SL) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library
+[PushRecipe_WP7_SL.zip](https://github.com/simondarksidej/XNAGameStudioZips/tree/master/Samples/PushRecipe_WP7_SL.zip) | 2.80MB | Windows Phone 7 Recipe: Push Notification Server Side Helper Library
+||||
