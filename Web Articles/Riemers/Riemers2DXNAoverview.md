@@ -24,6 +24,6 @@ This section will be updated once the entire series has been uploaded!
 
 Below you can find some screenshots of this series of 2D MonoGame Tutorials. The code is written in such a way that you can easily adjust the resolution. For an example of a larger screenshot, click here.
 
-![Example01](https://github.com/simondarksidej/MonoGameGameStudio/raw/archive/Images/Riemers/2DXNA00OverView01.jpg?raw=true)
+![Example01](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/Riemers/2DXNA00OverView01.jpg?raw=true)
 
-![Example02](https://github.com/simondarksidej/MonoGameGameStudio/raw/archive/Images/Riemers/2DXNA00OverView02.jpg?raw=true)
+![Example02](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/Riemers/2DXNA00OverView02.jpg?raw=true)
