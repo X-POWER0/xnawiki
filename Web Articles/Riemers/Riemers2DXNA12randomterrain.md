@@ -421,3 +421,7 @@ Next chapter, we’ll do something about the solid green color of our terrain.
      }
  }
 ```
+
+## Next Steps
+
+[Texture to array of colors](Riemers2DXNA13texturetocolors)

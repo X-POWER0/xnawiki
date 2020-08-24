@@ -407,3 +407,7 @@ Two chapters ago, you learned how to create a Texture2D object from a 2D array o
      }
  }
 ```
+
+## Next Steps
+
+[2D Collision Detection](Riemers2DXNA14collisionoverview)

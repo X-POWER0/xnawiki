@@ -699,3 +699,7 @@ Now when you run this code, you’ll notice your explosion grows as large as we 
     }
 }
 ```
+
+## Next Steps
+
+[Adding explosion craters](Riemers2DXNA20explosion)

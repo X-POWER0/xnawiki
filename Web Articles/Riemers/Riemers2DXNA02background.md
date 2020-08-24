@@ -223,3 +223,7 @@ This is what you should see on your screen:
      }
  }
 ```
+
+## Next Steps
+
+[Specifying the position of an image on the screen](Riemers2DXNA03imageposition)

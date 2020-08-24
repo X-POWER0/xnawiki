@@ -610,3 +610,7 @@ When you run this code, your explosions should look a lot smoother, as shown in 
      }
  }
 ```
+
+## Next Steps
+
+[Particle engine](Riemers2DXNA19particleengine)

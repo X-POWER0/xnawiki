@@ -55,7 +55,7 @@ The first line sets the size of our backbuffer, which will contain what will be 
 
 When you run this code, you should see a window of 500x500 pixels, with the title you set, as shown below.
 
-![Blank Screen](https://github.com/simondarksidej/MonoGameGameStudio/raw/archive/Images/Riemers/2DXNA01Starting01.jpg?raw=true)
+![Blank Screen](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA01Starting01.jpg?raw=true)
 
 Where appropriate, after some chapters I will suggest some short exercises, allowing you practice what you’ve learned in the chapter. After the exercise, the whole code of the chapter is listed, with the changes of the current chapter highlighted. I have stripped away all the comments, so it looks a bit more compact.
 
@@ -130,3 +130,7 @@ You can try these exercises to practice what you've learned:
      }
  }
 ```
+
+## Next Steps
+
+[Drawing a full-screen background image](Riemers2DXNA02background)

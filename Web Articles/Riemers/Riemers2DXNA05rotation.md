@@ -197,3 +197,7 @@ Next chapter we’ll learn how we can read in keyboard input, so we can adjust t
      }
  }
 ```
+
+## Next Steps
+
+[Reading out the Keyboard](Riemers2DXNA06keyboardinput)

@@ -619,3 +619,7 @@ If you’re unsure about where some part of the code should be placed, have a lo
      }
  }
 ```
+
+## Next Steps
+
+[Particles](Riemers2DXNA17particles)

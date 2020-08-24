@@ -305,3 +305,7 @@ In this chapter and the previous chapter, you’ve seen how to go from angle to 
      }
  }
 ```
+
+## Next Steps
+
+[Adding the smoke trail](Riemers2DXNA10smoketrail)

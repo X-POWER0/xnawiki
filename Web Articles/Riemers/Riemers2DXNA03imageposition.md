@@ -284,3 +284,7 @@ We will solve them in the next chapter.
      }
  }
 ```
+
+## Next Steps
+
+[More powerful features of the SpriteBatch](Riemers2DXNA04spritebatch)

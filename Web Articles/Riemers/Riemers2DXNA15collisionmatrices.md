@@ -119,3 +119,7 @@ This is the corresponding matrix:
 That will be all for this chapter. At this moment, we have the 2D arrays of colors of our images, their transformation matrices and the CheckTextures method. We will put all of them together in the next chapter.
 
 ![Matrix code](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA15Collision4.jpg?raw=true)
+
+## Next Steps
+
+[Putting Collision Detection into practice](Riemers2DXNA16puttingcdintoaction)

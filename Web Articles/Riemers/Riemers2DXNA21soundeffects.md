@@ -648,3 +648,7 @@ That’s it! When you run the code, you should hear some sound effect each time 
     }
 }
 ```
+
+## Next Steps
+
+[Resolution independency](Riemers2DXNA22resolution)

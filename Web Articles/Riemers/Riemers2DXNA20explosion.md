@@ -681,3 +681,7 @@ When you run this code, you should see a new crater each time your rocket collid
     }
 }
 ```
+
+## Next Steps
+
+[Playing sound effects in XNA](Riemers2DXNA21soundeffects)

@@ -30,10 +30,10 @@ To store this data in a nice way, we’ll define new struct, ParticleData, which
  public struct ParticleData
  {
      public float BirthTime;
-     public float MaxAge;        
+     public float MaxAge;
      public Vector2 OrginalPosition;
      public Vector2 Accelaration;
-     public Vector2 Direction;        
+     public Vector2 Direction;
      public Vector2 Position;
      public float Scaling;
      public Color ModColor;
@@ -669,3 +669,7 @@ I agree that this final image is not really what we expect of an explosion. But 
      }
  }
 ```
+
+## Next Steps
+
+[Additive alpha blending](Riemers2DXNA18alphablending)

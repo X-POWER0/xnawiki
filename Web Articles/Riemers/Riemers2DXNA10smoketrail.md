@@ -326,3 +326,7 @@ That’s it for this chapter!
      }
  }
 ```
+
+## Next Steps
+
+[Defining the colors of a texture per-pixel](Riemers2DXNA11manualtexturecreation)

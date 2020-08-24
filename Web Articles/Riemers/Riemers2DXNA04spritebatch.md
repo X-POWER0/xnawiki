@@ -235,3 +235,7 @@ Try to mirror the carriages horizontally by changing SpriteEffects.None in the S
      }
  }
 ```
+
+## Next Steps
+
+[Rotation – Drawing the cannon](Riemers2DXNA05rotation)

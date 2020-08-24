@@ -246,3 +246,7 @@ That is it for this chapter! You can see the cannon rotate on your keyboard inpu
      }
  }
 ```
+
+## Next Steps
+
+[Writing text to the screen in XNA](Riemers2DXNA07writingtext)

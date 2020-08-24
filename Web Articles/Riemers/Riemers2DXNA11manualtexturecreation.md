@@ -364,3 +364,7 @@ Next chapter, we will make some changes to the slope of the terrain, and to the 
      }
  }
 ```
+
+## Next Steps
+
+[Random terrain generation](Riemers2DXNA12randomterrain)
