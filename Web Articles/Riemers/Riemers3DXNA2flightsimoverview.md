@@ -36,6 +36,19 @@ Below you can find a list of screenshots:
 
 ![Example Scene 4](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-00screen4.jpg?raw=true)
 
-## Next Steps
+## Chapters
 
-[Initialization of our Project](Riemers3DXNA2flightsim01starting)
+1. [Initialization of our Project](Riemers3DXNA2flightsim01starting)
+2. [Textures](Riemers3DXNA2flightsim02textures)
+3. [Creating a floorplan](Riemers3DXNA2flightsim03floorplan)
+4. [Drawing the buildings](Riemers3DXNA2flightsim04creatingcity)
+5. [Importing 3D Models from file](Riemers3DXNA2flightsim05loadingmodel)
+6. [Adding lighting to our city](Riemers3DXNA2flightsim06ambientanddiffuse)
+7. [Using quaternions for rotations](Riemers3DXNA2flightsim07quaternioncamera)
+8. [Quaternions: Flight kinematics](Riemers3DXNA2flightsim08flightkinematics)
+9. [Collision detection](Riemers3DXNA2flightsim09collision)
+10. [Adding targets](Riemers3DXNA2flightsim10addingtargets)
+11. [Point sprites – Billboarding](Riemers3DXNA2flightsim11pointsprites)
+12. [Alpha blending – Bullet collision](Riemers3DXNA2flightsim12alphablending)
+13. [Drawing the skybox](Riemers3DXNA2flightsim13skybox)
+14. [Adding camera delay](Riemers3DXNA2flightsim14cameradelay)

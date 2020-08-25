@@ -11,7 +11,7 @@ Start with this code:
  {
      int width = tex.GetLength(0);
      int height = tex.GetLength(1);
- 
+
      for (int x = 0; x < width; x++)
      {
          for (int y = 0; y < height; y++)
@@ -20,7 +20,7 @@ Start with this code:
              {
                  Vector2 imagePos = new Vector2(x, y);
                  Vector2 screenPos = Vector2.Transform(imagePos, mat);
- 
+
                  int screenX = (int)screenPos.X;
                  int screenY = (int)screenPos.Y;
              }

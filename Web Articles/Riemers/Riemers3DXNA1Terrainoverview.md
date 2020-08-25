@@ -2,7 +2,6 @@
 
 This part of the site shows you how easy it is to get a XNA program up and running!. This tutorial is aimed at people who haven't done any 3D programming so far and would like to see some results in the shortest possible time. To this end, XNA is an ideal programming environment. Using C# as programming language, the code looks very much like Java, so anyone having some notions of Java should be able to start right away. Even more, this tutorial is written in such a way that anyone who has any programming experience should be able to understand and complete it! Here’s a screenshot of the final chapter of Series 1:
 
-
 This first series of XNA tutorial gives you a general introduction to XNA. It is divided in several chapters, which you can find listed below. In every chapter you’ll learn a basic XNA feature:
 
 * Starting a project: setting up and using the Development Environment
@@ -22,6 +21,18 @@ During this series you will need to download the following resources:
 The effect file: effects.fx
 Terrain from file: heightmap.bmp
 
-## Next Steps
+## Chapters
 
-[Starting your MonoGame 4.0 Project](Riemers3DXNA1Terrain01starting)
+1. [Starting your MonoGame 4.0 Project](Riemers3DXNA1Terrain01starting)
+2. [The effect file](Riemers3DXNA1Terrain02effect)
+3. [Drawing your first Triangle](Riemers3DXNA1Terrain03triangles)
+4. [World Space coordinates and the camera](Riemers3DXNA1Terrain04worldspace)
+5. [Rotations and translations](Riemers3DXNA1Terrain05rotation)
+6. [Recycling vertices using inidices](Riemers3DXNA1Terrain06indices)
+7. [Terrain creation basics](Riemers3DXNA1Terrain07terrainbasics)
+8. [Terrain creation from file](Riemers3DXNA1Terrain08terrainfile)
+9. [Rotate your terrain using the keyboard](Riemers3DXNA1Terrain09keyboard)
+10. [Adding some color and the Z-Buffer](Riemers3DXNA1Terrain10colors)
+11. [Experimenting with Lights in XNA](Riemers3DXNA1Terrain11lighting)
+12. [Adding normals to our Terrain – Intuitive approach](Riemers3DXNA1Terrain12terrainlighting)
+13. [Improving performance by using VertexBuffers and IndexBuffers](Riemers3DXNA1Terrain13buffers)

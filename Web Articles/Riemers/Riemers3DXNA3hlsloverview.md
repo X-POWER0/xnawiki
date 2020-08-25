@@ -35,6 +35,22 @@ World transform: carmesh.zip
 
 Shaping the light: carlight.jpg
 
-## Next Steps
+## Chapters
 
-[Starting point](Riemers3DXNA3hlsl01starting)
+1. [Starting point](Riemers3DXNA3hlsl01starting)
+2. [HLSL Introduction](Riemers3DXNA3hlsl02hlslintroduction)
+3. [Defining our own vertex format](Riemers3DXNA3hlsl03vertexformat)
+4. [The first Vertex Shader](Riemers3DXNA3hlsl04vertexshader)
+5. [Drawing the triangle using custom Shaders](Riemers3DXNA3hlsl05pixelshader)
+6. [Experimenting with shaders](Riemers3DXNA3hlsl06perpixelcolors)
+7. [Texturing our triangle using the Pixel Shader](Riemers3DXNA3hlsl07texturedtriangle)
+8. [Triangle Strips](Riemers3DXNA3hlsl08trianglestrip)
+9. [World transformation](Riemers3DXNA3hlsl09worldtransform)
+10. [Adding normals](Riemers3DXNA3hlsl10worldnormals)
+11. [Creating our first light](Riemers3DXNA3hlsl11perpixellighting)
+12. [Shadow Mapping](Riemers3DXNA3hlsl12shadowmap)
+13. [Rendering our scene into a texture](Riemers3DXNA3hlsl13rendertotexture)
+14. [Transforming vertices](Riemers3DXNA3hlsl14projectivetexturing)
+15. [Adding shadows](Riemers3DXNA3hlsl15realshadow)
+16. [Changing the shape of our light](Riemers3DXNA3hlsl16shapingthelight)
+17. [Preshaders](Riemers3DXNA3hlsl17preshaders)
