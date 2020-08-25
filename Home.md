@@ -51,6 +51,27 @@ We've grabbed a load of articles from the site, including:
 * C# tutorials
 * XNA tutorials (even a couple of MonoGame articles too)
 
+## Riemers tutorial series
+
+Riemers was considered the premier tutorial site back in the early days of XNA and its author [Riemer Grootjans](https://www.amazon.com/Riemer-Grootjans/e/B002DP7P3U) also wrote several books on advanced programming techniques for XNA.
+
+We've managed to archive the entire site's XNA content (with the exception of his books :D) and are upgrading this to the latest MonoGame version.
+
+Here you will find the following tutorial series
+
+* [2D Series - Shooters](Riemers2DXNAoverview)
+* [3D Series 1 - Terrain](Riemers3DXNA1Terrainoverview)
+* [3D Series 2 - Flightsim](Riemers3DXNA2flightsimoverview)
+* [3D Series 3 - HLSL](Riemers3DXNA3hlsloverview)
+* [3D Series 4 - Advanced Terrain](Riemers3DXNA4advterrainoverview)
+
+As well as several helpful short articles
+
+* [Automatically generating normals](Riemersnormalgeneration)
+* [Matrices and DirectX](RiemersMattices)
+* [The maths behind Matrices](RiemersMatrixMath)
+* [Homogeneous matrices](RiemersHomogeneousMatricies)
+
 ## Contribute more
 
 If you find an XNA / MonoGame article that is worth preserving, be sure to drop us an Issue and let us know where to get it as we'll grab it as soon as we can.
