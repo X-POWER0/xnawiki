@@ -171,7 +171,7 @@ When you open the foreground.png image in windows explorer, you see that the par
 
 This is what you should see on your screen:
 
-![mgcb-editor Add Content Item](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA02Background03.png?raw=true)
+![mgcb-editor Add Content Item](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA02Background04.png?raw=true)
 
 ## Exercises
 
