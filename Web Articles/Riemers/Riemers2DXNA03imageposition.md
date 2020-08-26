@@ -36,7 +36,7 @@ We will keep track of an array of **PlayerData** objects (the array can be thoug
 
 When the code is finished, we want to be able to easily adjust the number of players, which the last variable allows.
 
-## Setting players up
+## Setting up players
 
 To give players options of being different colours, first we will create a new pre-populated array of available Player colours by adding the following property to the **Properties** section of the code:
 
@@ -78,7 +78,10 @@ The for loop then scrolls through each PlayerData object in the array, for each 
 
 Since the image of the cannon is vertically upwards and we want to start our game with all cannons lying vertically to the right, we need to rotate them over 90 degrees. (will will use this later in the series in [Rotation - Drawing the cannon](Riemers2DXNA05rotation)) Finally we set the initial cannon power to 100.
 
-> In game programming, and thus also in MonoGame, all angles are defined in [radians](http://en.wikipedia.org/wiki/Radian).  This might sound difficult, but if you know that pi (=3.14) radians correspond to 180 degrees, you can find how many radians correspond to any given number of degrees. Even better, MonoGame does the calculations for us: we just need to pass in the number of degrees to the MathHelper.ToRadians method, and MonoGame will convert it to radians for us.
+> In game programming, and thus also in MonoGame, all angles are defined in [radians](http://en.wikipedia.org/wiki/Radian).  This might sound difficult, but if you know that pi (=3.14) radians correspond to 180 degrees, you can find how many radians correspond to any given number of degrees. 
+>
+> Even better, MonoGame does the calculations for us: we just need to pass in the number of degrees to the MathHelper.ToRadians method, and MonoGame will convert it to radians for us.
+>
 > 90 Degrees corresponds to pi/2, so MathHelper.ToRadians(90) is the same as MathHelper.PiOver2 as used in our code.
 
 There’s one important thing we still need to initialize: the position of players on the terrain. As you can see, the foreground image has 4 flat areas, perfectly suited to place a cannon. When we will create a new foreground image ourselves in a later chapter, for now we know the position of these flat areas and will have to code them by hard. 
