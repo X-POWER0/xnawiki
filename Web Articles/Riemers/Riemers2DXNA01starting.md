@@ -6,9 +6,9 @@ Welcome to the first entry of this MonoGame Tutorial. This tutorial is aimed at 
 
 The software required to start writing your own MonoGame code is completely free to download, please refer to the MonoGame "[Setting up your development environment guide](https://docs.monogame.net/articles/getting_started/0_getting_started.html#setting-up-your-development-environment)" for your respective operating system:
 
-- [Windows](1_setting_up_your_development_environment_windows.md)
-- [macOS](1_setting_up_your_development_environment_macos.md)
-- [Ubuntu](1_setting_up_your_development_environment_ubuntu.md)
+- [Windows](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_windows.html)
+- [macOS](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_macos.html)
+- [Ubuntu](https://docs.monogame.net/articles/getting_started/1_setting_up_your_development_environment_ubuntu.html)
 
 > For more details consult the [MonoGame Getting Started Guide](https://docs.monogame.net/articles/getting_started/0_getting_started.html)
 
@@ -16,9 +16,9 @@ The software required to start writing your own MonoGame code is completely free
 
 With the release of MonoGame 3.8, there are now multiple ways to [create your new MonoGame project](https://docs.monogame.net/articles/getting_started/0_getting_started.html#creating-a-new-project) depending on the operating system you are developing on:
 
-- [Visual Studio 2019](2_creating_a_new_project_vs.md)
-- [Visual Studio for Mac](2_creating_a_new_project_vsm.md)
-- [DotNet core CLI](2_creating_a_new_project_netcore.md)
+- [Visual Studio 2019](https://docs.monogame.net/articles/getting_started/2_creating_a_new_project_vs.html)
+- [Visual Studio for Mac](https://docs.monogame.net/articles/getting_started/2_creating_a_new_project_vsm.html)
+- [DotNet core CLI](https://docs.monogame.net/articles/getting_started/2_creating_a_new_project_netcore.html)
 
 Once your project is generated you will see is contains 2 code files:
 
