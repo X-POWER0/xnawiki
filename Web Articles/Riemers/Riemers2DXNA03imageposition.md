@@ -177,7 +177,7 @@ You can try these exercises to practice what you've learned:
 - Try adding more players and positioning them (do not forget to increase the numberOfPlayers variable)
 - Add different players with their own images, hint, odd players use carriages, even players use tanks?
 
-## Code so far
+## The code so far
 
 ```csharp
 using Microsoft.Xna.Framework;

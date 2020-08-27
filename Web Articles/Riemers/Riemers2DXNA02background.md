@@ -180,7 +180,7 @@ You can try these exercises to practice what you've learned:
 - Try changing the order of the images drawn and watch your foreground disappear.
 - Play with adding more images on top of each other (just remove them before the next exercise)
 
-## Code so far
+## The code so far
 
 ```csharp
 using Microsoft.Xna.Framework;

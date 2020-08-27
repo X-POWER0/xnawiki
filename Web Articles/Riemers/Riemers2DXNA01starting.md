@@ -80,7 +80,7 @@ You can try these exercises to practice what you've learned:
 - Change the size of your window to 800x600.
 - Instead of creating a windowed game, switch to 800x600 fullscreen mode (use Alt+F4 to terminate your program).
 
-## Code so far
+## Starting code
 
 ```csharp
 using Microsoft.Xna.Framework;

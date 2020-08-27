@@ -111,7 +111,7 @@ You can try these exercises to practice what you've learned:
 
 * Try to mirror the carriages horizontally by changing SpriteEffects.None in the SpriteBatch.Draw method.
 
-## Our code
+## The code so far
 
 ```csharp
 using Microsoft.Xna.Framework;
