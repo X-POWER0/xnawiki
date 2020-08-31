@@ -49,9 +49,13 @@ Moving on to the **CreateForeground** method, this method should create the fore
             for (int y = 0; y < _screenHeight; y++)
             {
                 if (y > _terrainContour[x])
+                {
                     foregroundColors[x + y * _screenWidth] = Color.Green;
+                }
                 else
+                {
                     foregroundColors[x + y * _screenWidth] = Color.Transparent;
+                }
             }
         }
     }
@@ -219,9 +223,13 @@ namespace Series2D1
                 for (int y = 0; y < _screenHeight; y++)
                 {
                     if (y > _terrainContour[x])
+                    {
                         foregroundColors[x + y * _screenWidth] = Color.Green;
+                    }
                     else
+                    {
                         foregroundColors[x + y * _screenWidth] = Color.Transparent;
+                    }
                 }
             }
 

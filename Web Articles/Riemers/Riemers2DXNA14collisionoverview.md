@@ -1,34 +1,36 @@
 # 2D Collision Detection
 
-With our rockets flying through the screen and each pixel of the terrain known to our code, we’re ready for the most challenging, and thus interesting part of this series: collision detection.
+With our rockets flying through the screen and each pixel of the terrain known to our code, we are ready for the most challenging and thus interesting part of this series, collision detection.
 
-The general idea behind collision detection between 2 images is very straightforward: for each pixel of the first image, we will check if it collides with a pixel of the second image.
+## 2D Collision 101
 
-Remember an image is always a rectangle. Since very few object are really rectangular, most images contain a lot of transparent pixels. This is shown in the left image below. Note that the transparent pixels have a greenish color, while the non-transparent pixels have a soft-red color (don’t you dare to call it pink). We’ll get back to this later.
+The general idea behind collision detection between 2 images is very straightforward, for each pixel of the first image, we will check if it is in the same position as (collides) with a pixel of the second image.
+
+However, because an image is always a rectangle does not mean that the image it contains is actually rectangular as most images contain a lot of transparent pixels. This is shown in the left image below. Note that the transparent pixels have a greenish color, while the non-transparent pixels have a soft-red color (don’t you dare to call it pink). We’ll get back to this later.
 
 ![Collision](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA14Collision1.png?raw=true)
 
-Before we can check for collisions between 2 images, we need to make sure they are positioned correctly; that they are moved to the correct position on the screen. If we wouldn’t first position them correctly before checking for collisions, the top-left pixels of both images would align and we would almost always have a collision. This is shown in the right part of the image above.
+Before we can check for collision between 2 images, we need to make sure they are positioned correctly when they are moved to the correct position on the screen. If we dd not first position them correctly before checking for collisions, then the top-left pixels of both images would align and we would almost always have a collision. This is shown in the right part of the image above.
 
-Let’s say both images are positioned so the rocket is positioned in front of the cannon, much like shown in the left part of the image below.
+For example, if both images are positioned so that the rocket is positioned in front of the cannon, much like shown in the left part of the image below. Although in the left part the rectangles of both images collide, we see the actual cannon and rocket detail actually do not collide. This is because in all pairs of overlapping pixels, at least one of both is transparent.
 
 ![Collision](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA14Collision2.png?raw=true)
 
-Although in the left part the rectangles of both images collide, we see the cannon and rocket actually don’t collide. This is because in all pairs of overlapping pixels, at least one of both is transparent.
-
-When comparing 2 colliding pixels, if either of them is transparent, there is no collision between the actually object. Only when both the pixel of the first and of the second image are non-transparent, there is a real collision. This is presented in the table below:
+When comparing 2 colliding pixels, if either of them is transparent there is no collision between the objects, only when both the pixel of the first and of the second image are non-transparent is there a real collision. This is presented in the table below:
 
 ![Chart](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA14Collision3.png?raw=true)
 
 An example of a real collision is shown in the right part of the image above. You see that the final 4 pixels of the cannon are non-transparent, while they collide with 4 non-transparent pixels of the rocket.
 
-This, however, is not all there is to say about 2D collision detection. In the figures above, neither of the 2D images has been scaled or rotated. When our rocket collides with a cannon, it will both be scaled and rotated. This situation is shown in the left part of the image below.
+## 2D collision with rotated and scaled textures
+
+This however, is not all there is to say about 2D collision detection. In the figures above, neither of the 2D images has been scaled or rotated, but when our rocket collides with a cannon it will also be scaled and rotated as shown in the left part of the image below.
 
 ![Angle Collision](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA14Collision4.png?raw=true)
 
-The right part if the image above shows the most complicated case: where both images are scaled and/or rotated. We will meet this case in our game.
+The right part if the image above shows the most complicated case where both images are both scaled and/or rotated. We will meet this case in our game.  The real question of this chapter is how we can check for collisions in such cases.
 
-The real question of this chapter is how we can check for collisions in such cases. This is some pseudocode of how we will do this:
+The following is some pseudocode for how we will handle this:
 
 ```text
  For each pixel in image A:
@@ -42,17 +44,21 @@ The real question of this chapter is how we can check for collisions in such cas
  }
 ```
 
-This is illustrated in the image below. The image shows a screen with a rotated cannon and a rotated+scaled rocket. I’ve added the original images of both in the top-left corner as a reference.
+This is illustrated in the image above, the image shows a screen with a rotated cannon and a rotated and scaled rocket as shown in the top-left corner as a reference.
 
-Very nice, but how can we ‘Find the screen coordinate occupied by this pixel’? This is done through matrices. Remember, matrices are nothing magical, in fact they’re just a grid of 4x4 numbers. But all I want you to know about matrices at this point is this: a matrix can store the position, rotation and scaling of an image.
+## Using Matrices to simplify detection
 
-When a matrix holds the position, rotation and scaling of an image, you can use this matrix to find the final screen coordinate of any pixel of this image. Also important in this case in the other way around: if we take the inverse of this matrix, given any screen coordinate we can find the coordinate of the pixel in the original image.
+Very nice, but how can we ‘Find the screen coordinate occupied by this pixel’? This is done through matrices. Remember though matrices are nothing magical, in fact they are just a grid of 4x4 numbers, but all you to remember about matrices at this point is this:
 
-Now we’ll walk through our pseudocode above. Instead of doing this exercise for all pixels of image A, we will only discuss this for the bottom-right pixel (3,8) of image A. As a first step, we want to find to which screen coordinate this pixel will be drawn. We can find this by multiplying (=’transforming’) the pixel’s coordinate (3,8) by the image matrix. This will give us the coordinate of where the pixel will be rendered on the screen!
+* A matrix can store the position, rotation and scale of an image.
 
-The next step is the opposite: given the screen coordinate, we want to find which pixel in image B is drawn there. This is done by transforming the screen coordinate by the inverse of the matrix if image B. This will give us the coordinate in the original image B, which is (13,2) in this case.
+When a matrix holds the position, rotation and scale of an image, you can use this matrix to find the final screen coordinate of any pixel of this image, also important in this case in the other way around, if we take the inverse of this matrix given any screen coordinate, then we can find the coordinate of the pixel in the original image.
 
-Next, we see that both the pixel in the original image A and in the original image B have are non-transparent, so both images collide on the screen!
+Instead of doing this exercise for all pixels of image A, we will only discuss this for the bottom-right pixel (3,8) of image A. 
+
+* As a first step, we want to find to which screen coordinate this pixel will be drawn which we can find by multiplying (=’transforming’) the pixel’s coordinate (3,8) by the image matrix, this will give us the coordinate of where the pixel will be rendered on the screen!
+* The next step is the opposite, given the screen coordinate, we want to find which pixel in image B is drawn there, this is done by transforming the screen coordinate by the inverse of the matrix if image B. This will give us the coordinate in the original image B, which is (13,2) in this case.
+* Next, we see whether both the pixel in the original image A and in the original image B are non-transparent, if so both images collide on the screen!
 
 Let’s put this in some code. We will create a method, TexturesCollide, which will return whether 2 images collide. The method will need 4 things in order to work properly:
 
@@ -61,317 +67,296 @@ Let’s put this in some code. We will create a method, TexturesCollide, which w
 * The 2D array of colors of image 2
 * The matrix of image 2
 
-So we can already add this to our code:
+## The collision detection function
+
+Let us start to implement this with the following method:
 
 ```csharp
- private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
- {
-     return new Vector2(-1, -1);
- }
+    private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
+    {
+    }
 ```
 
-The method will not only return whether there is a collision, but if there is one it will return the screen position of where the collision occurred. If no collision was detected, (-1,-1) will be returned.
+> Ignore any errors raised from this new function as we slowly build it up and explain.
 
-Let’s translate “For each pixel in image A” into C# code, add this to the top of the method:
+The method will eventually return whether there is a collision and if there is one, it will return the screen position of where the collision occurred. If no collision was detected, (-1,-1) will be returned.
+
+Using matrices, we need to transform a coordinate by mat1 and then by the inverse in mat2. We can obtain the matrix that is the combination of both by simply multiplying them. Put this line at the top of the method:
 
 ```csharp
- int width1 = tex1.GetLength(0);
- int height1 = tex1.GetLength(1);
- for (int x1 = 0; x1 < width1; x1++)
- {
-     for (int y1 = 0; y1 < height1; y1++)
-     {
-     }
- }
+    Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
 ```
 
-For each pixel of image 1, we first want to find the corresponding screen coordinate. This is done by transforming the original X,Y coordinate with the matrix of image 1, so add these lines inside the double for-loop:
+Since the mat1to2 matrix is the combination of the mat1 and the inverse(mat2) matrices, transforming a coordinate from Image 1 by this matrix will immediately give us the coordinate in Image 2!
+
+Let us next translate “For each pixel in image A” into C# code, add this to the top of the method:
 
 ```csharp
- Vector2 pos1 = new Vector2(x1,y1);
- Vector2 screenCoord = Vector2.Transform(pos1, mat1);
+    int width1 = tex1.GetLength(0);
+    int height1 = tex1.GetLength(1);
+    int width2 = tex2.GetLength(0);
+    int height2 = tex2.GetLength(1);
+
+    for (int x1 = 0; x1 < width1; x1++)
+    {
+        for (int y1 = 0; y1 < height1; y1++)
+        {
+        }
+    }
 ```
 
-Now we have the screen coordinate of the current pixel, let’s find to which pixel this correspond in the original image 2. This is the opposite of what we’ve done 2 seconds ago, so now we need to transform the screen coordiante by the inverse of the matrix of image 2:
+For each pixel of image 1 we first want to find the corresponding screen coordinate, this is done by transforming the original X,Y coordinate with the matrix of image 1 as well as using the inverse of the mat2 matrix to find the corresponding position in image 2. So add these lines inside the double for-loop:
 
 ```csharp
- Matrix inverseMat2 = Matrix.Invert(mat2);
- Vector2 pos2 = Vector2.Transform(screenCoord, inverseMat2);
+    Vector2 pos1 = new Vector2(x1,y1);
+    Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
 ```
 
-OK, so at this moment we have 2 positions in the original images, of which we know they are drawn to the same screen pixel. All we need to do is check whether they are both non-transparent:
+At this moment we now have 2 positions from the original images  which we know if they are drawn to the same screen pixel. All we need to do now is check whether they are both non-transparent:
 
 ```csharp
- if (tex1[x1, y1].A > 0)
- {
-     if (tex2[x2, y2].A > 0)
-     {
-         return screenCoord;
-     }
- }
+    int x2 = (int)pos2.X;
+    int y2 = (int)pos2.Y;
+    if ((x2 >= 0) && (x2 < width2))
+    {
+        if ((y2 >= 0) && (y2 < height2))
+        {
+            if (tex1[x1, y1].A > 0)
+            {
+                if (tex2[x2, y2].A > 0)
+                {
+                    Vector2 screenCoord = Vector2.Transform(pos1, mat1);
+                    return screenCoord;
+                }
+            }
+        }
+    }
 ```
 
-Which checks whether the Alpha component of both colors is larger than 0. If both colors are non-transparent, we return the screen coordinate.
+Which checks whether the Alpha component of both colors is larger than 0. If both colors are non-transparent, we transform the screen coordinate by the inverse of the matrix from image 2 and return the screen coordinate.
 
-Now in case no collision is detected, we need to return (-1,-1) to the calling code. Later on, we’ll create our program so it interpretes (-1,-1) as ‘no collision found’. So put this line at the very end of the method:
+Now, in case no collision is detected we need to return (-1,-1) to the calling code, later on we will update our game so it interprets (-1,-1) as "no collision found". So put this line at the very end of the method:
 
 ```csharp
- return new Vector2(-1,-1);
+    return new Vector2(-1,-1);
 ```
 
 This implements the core functionality of the method. While there might be cases that this method survives, in general it will crash, because some pixels of image A will fall outside of image B. In the image above for example: the very first pixel the rocket (to the left of the top of the rocket) does not correspond to a pixel in image B, so this line will cause or program to crash:
 
 ```csharp
- if (tex2[x2, y2].A > 0)
+    if (tex2[x2, y2].A > 0)
 ```
 
-This is easily solvable, by checking whether the coordinate for image B is not outside image B:
+## Final 2D collision detection code
+
+As this has been a bit of a rollercoaster ride, here is the full function for reference:
 
 ```csharp
- int width2 = tex2.GetLength(0);
- int height2 = tex2.GetLength(1);
- int x2 = (int)pos2.X;
- int y2 = (int)pos2.Y;
- if ((x2 >= 0) && (x2 < width2))
- {
-     if ((y2 >= 0) && (y2 < height2))
-     {
-         if (tex1[x1, y1].A > 0)
-         {
-             if (tex2[x2, y2].A > 0)
-             {
-                 return screenCoord;
-             }
-         }
-     }
- }
+    private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
+    {
+        Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
+        int width1 = tex1.GetLength(0);
+        int height1 = tex1.GetLength(1);
+        int width2 = tex2.GetLength(0);
+        int height2 = tex2.GetLength(1);
+
+        for (int x1 = 0; x1 < width1; x1++)
+        {
+            for (int y1 = 0; y1 < height1; y1++)
+            {
+                Vector2 pos1 = new Vector2(x1, y1);
+                Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
+
+                int x2 = (int)pos2.X;
+                int y2 = (int)pos2.Y;
+                if ((x2 >= 0) && (x2 < width2))
+                {
+                    if ((y2 >= 0) && (y2 < height2))
+                    {
+                        if (tex1[x1, y1].A > 0)
+                        {
+                            if (tex2[x2, y2].A > 0)
+                            {
+                                Vector2 screenCoord = Vector2.Transform(pos1, mat1);
+                                return screenCoord;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        return new Vector2(-1, -1);
+    }
 ```
 
-This should actually work. We will finish this chapter by cleaning up the method a bit, as there are a few things that can easily be optimized. To start with, both the inverseMat2, width2 and height2 variables inside the double for-loop are never changed, so we should put them before the for-loop so they are only calculated once.
-
-There’s one more optimization that’s easy to do. In our method, for each pixel of image A we’re doing two transformations: from image A to screen coordinates, and from these screen coordinates to image B. It would be better to replace them by a single transformation: from image A to image B.
-
-Using matrices, this is rather easy. Now, we’re transforming a coordinate by mat1, and then by inverse(mat2). We can obtain the matrix that is the combination of both, simply by multiplying them. Put this line at the top of the method:
-
-```csharp
- Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
-```
-
-Since the mat1to2 matrix is the combination of the mat1 and the inverse(mat2) matrices, transforming a coordinate from Image 1 by this matrix will immediately give us the coordinate in Image 2!
-
-This allows us to transform pos1 to pos2 using a single transformation! This is shown below, where I’ve listed our entire TexturesCollide method:
-
-```csharp
- private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
- {
-     Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
-     int width1 = tex1.GetLength(0);
-     int height1 = tex1.GetLength(1);
-     int width2 = tex2.GetLength(0);
-     int height2 = tex2.GetLength(1);
- 
-     for (int x1 = 0; x1 < width1; x1++)
-     {
-         for (int y1 = 0; y1 < height1; y1++)
-         {
-             Vector2 pos1 = new Vector2(x1,y1);
-             Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
- 
-             int x2 = (int)pos2.X;
-             int y2 = (int)pos2.Y;
-             if ((x2 >= 0) && (x2 < width2))
-             {
-                 if ((y2 >= 0) && (y2 < height2))
-                 {
-                     if (tex1[x1, y1].A > 0)
-                     {
-                         if (tex2[x2, y2].A > 0)
-                         {
-                             Vector2 screenPos = Vector2.Transform(pos1, mat1);
-                             return screenPos;
-                         }
-                     }
-                 }
-             }
-         }
-     }
- 
-     return new Vector2(-1, -1);
- }
-```
-
-> Note also, that we do not use the screen coordinates anymore. As such, when a collision is detected, we still need to transform the current coordinate of Image 1 by mat1 to obtain the screen coordinate, so it can be returned to the calling code.
+> Note also, that we do not use the screen coordinates anymore. As such, when a collision is detected, we still need to transform the current coordinate of Image 1 by mat1 to obtain the screen coordinate, so it can be returned to the calling code.  So the return line can be simplified to:
+>
+> ```csharp
+>   return Vector2.Transform(pos1, mat1);
+> ```
 
 There’s no screenshot for this chapter, although we’ve added some powerful functionality to our code. In the next chapter we will see how we can use this functionality to detect collisions between any two images.
 
-## Our full code thus far
+## Exercises
+
+You can try these exercises to practice what you've learned:
+
+* No exercises this time, but get ready for the next section!
+
+## The code thus far
 
 ```csharp
- using System;
- using System.Collections.Generic;
- using System.Linq;
- using Microsoft.Xna.Framework;
- using Microsoft.Xna.Framework.Audio;
- using Microsoft.Xna.Framework.Content;
- using Microsoft.Xna.Framework.GamerServices;
- using Microsoft.Xna.Framework.Graphics;
- using Microsoft.Xna.Framework.Input;
- using Microsoft.Xna.Framework.Media;
- 
- namespace XNATutorial
- {
-     public struct PlayerData
-     {
-         public Vector2 Position;
-         public bool IsAlive;
-         public Color Color;
-         public float Angle;
-         public float Power;
-     }
- 
-     public class Game1 : Microsoft.Xna.Framework.Game
-     {
-         GraphicsDeviceManager graphics;
-         SpriteBatch spriteBatch;
-         GraphicsDevice device;
-         Texture2D backgroundTexture;
-         Texture2D foregroundTexture;
-         Texture2D carriageTexture;
-         Texture2D cannonTexture;
-         Texture2D rocketTexture;
-         Texture2D smokeTexture;
-         Texture2D groundTexture;
-         SpriteFont font;
-         int screenWidth;
-         int screenHeight;
-         PlayerData[] players;
-         int numberOfPlayers = 4;
-         float playerScaling;
-         int currentPlayer = 0;
-         bool rocketFlying = false;
-         Vector2 rocketPosition;
-         Vector2 rocketDirection;
-         float rocketAngle;
-         float rocketScaling = 0.1f;
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
-        List<Vector2> smokeList = new List<Vector2> ();        Random randomizer = new Random();
-        int[] terrainContour;
+namespace Series2D1
+{
+    public struct PlayerData
+    {
+        public Vector2 Position;
+        public bool IsAlive;
+        public Color Color;
+        public float Angle;
+        public float Power;
+    }
+
+    public class Game1 : Game
+    {
+        //Properties
+        private GraphicsDeviceManager _graphics;
+        private SpriteBatch _spriteBatch;
+        private GraphicsDevice _device;
+        private Texture2D _backgroundTexture;
+        private Texture2D _foregroundTexture;
+        private Texture2D _carriageTexture;
+        private Texture2D _cannonTexture;
+        private Texture2D _rocketTexture;
+        private Texture2D _smokeTexture;
+        private Texture2D _groundTexture;
+        private SpriteFont _font;
+        private int _screenWidth;
+        private int _screenHeight;
+        private PlayerData[] _players;
+        private int _numberOfPlayers = 4;
+        private float _playerScaling;
+        private int _currentPlayer = 0;
+        private bool _rocketFlying = false;
+        private Vector2 _rocketPosition;
+        private Vector2 _rocketDirection;
+        private float _rocketAngle;
+        private float _rocketScaling = 0.1f;
+        private Color[] _playerColors = new Color[10]
+        {
+            Color.Red,
+            Color.Green,
+            Color.Blue,
+            Color.Purple,
+            Color.Orange,
+            Color.Indigo,
+            Color.Yellow,
+            Color.SaddleBrown,
+            Color.Tomato,
+            Color.Turquoise
+        };
+        private List<Vector2> _smokeList = new List<Vector2>();
+        private Random _randomizer = new Random();
+        private int[] _terrainContour;
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
+            _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
         protected override void Initialize()
         {
-            graphics.PreferredBackBufferWidth = 500;
-            graphics.PreferredBackBufferHeight = 500;
-            graphics.IsFullScreen = false;
-            graphics.ApplyChanges();
-            Window.Title = "Riemer's 2D XNA Tutorial";
+            // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferWidth = 500;
+            _graphics.PreferredBackBufferHeight = 500;
+            _graphics.IsFullScreen = false;
+            _graphics.ApplyChanges();
+            Window.Title = "Riemer's 2D MonoGame Tutorial";
 
             base.Initialize();
         }
 
         private void SetUpPlayers()
         {
-            Color[] playerColors = new Color[10];
-            playerColors[0] = Color.Red;
-            playerColors[1] = Color.Green;
-            playerColors[2] = Color.Blue;
-            playerColors[3] = Color.Purple;
-            playerColors[4] = Color.Orange;
-            playerColors[5] = Color.Indigo;
-            playerColors[6] = Color.Yellow;
-            playerColors[7] = Color.SaddleBrown;
-            playerColors[8] = Color.Tomato;
-            playerColors[9] = Color.Turquoise;
-
-            players = new PlayerData[numberOfPlayers];
-            for (int i = 0; i < numberOfPlayers; i++)
+            _players = new PlayerData[_numberOfPlayers];
+            for (int i = 0; i < _numberOfPlayers; i++)
             {
-                players[i].IsAlive = true;
-                players[i].Color = playerColors[i];
-                players[i].Angle = MathHelper.ToRadians(90);
-                players[i].Power = 100;
-                players[i].Position = new Vector2();
-                players[i].Position.X = screenWidth / (numberOfPlayers + 1) * (i + 1);
-                players[i].Position.Y = terrainContour[(int)players[i].Position.X];
+                _players[i].IsAlive = true;
+                _players[i].Color = _playerColors[i];
+                _players[i].Angle = MathHelper.ToRadians(90);
+                _players[i].Power = 100;
+                _players[i].Position = new Vector2();
+                _players[i].Position.X = _screenWidth / (_numberOfPlayers + 1) * (i + 1);
+                _players[i].Position.Y = _terrainContour[(int)_players[i].Position.X];
             }
-        }
-
-        protected override void LoadContent()
-        {
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            device = graphics.GraphicsDevice;
-
-
-            backgroundTexture = Content.Load<Texture2D> ("background");
-            carriageTexture = Content.Load<Texture2D> ("carriage");
-            cannonTexture = Content.Load<Texture2D> ("cannon");
-            rocketTexture = Content.Load<Texture2D> ("rocket");
-            smokeTexture = Content.Load<Texture2D> ("smoke");
-            groundTexture = Content.Load<Texture2D> ("ground");
-            font = Content.Load<SpriteFont> ("myFont");
-            screenWidth = device.PresentationParameters.BackBufferWidth;
-            screenHeight = device.PresentationParameters.BackBufferHeight;
-            playerScaling = 40.0f / (float)carriageTexture.Width;
-
-            GenerateTerrainContour();
-            SetUpPlayers();
-            FlattenTerrainBelowPlayers();
-            CreateForeground();
-        }
-
-        private void FlattenTerrainBelowPlayers()
-        {
-            foreach (PlayerData player in players)
-                if (player.IsAlive)
-                    for (int x = 0; x < 40; x++)
-                        terrainContour[(int)player.Position.X + x] = terrainContour[(int)player.Position.X];
         }
 
         private void GenerateTerrainContour()
         {
-            terrainContour = new int[screenWidth];
+            _terrainContour = new int[_screenWidth];
 
-            double rand1 = randomizer.NextDouble() + 1;
-            double rand2 = randomizer.NextDouble() + 2;
-            double rand3 = randomizer.NextDouble() + 3;
+            double rand1 = _randomizer.NextDouble() + 1;
+            double rand2 = _randomizer.NextDouble() + 2;
+            double rand3 = _randomizer.NextDouble() + 3;
 
-            float offset = screenHeight / 2;
+            float offset = _screenHeight / 2;
             float peakheight = 100;
             float flatness = 70;
 
-            for (int x = 0; x < screenWidth; x++)
+            for (int x = 0; x < _screenWidth; x++)
             {
                 double height = peakheight / rand1 * Math.Sin((float)x / flatness * rand1 + rand1);
                 height += peakheight / rand2 * Math.Sin((float)x / flatness * rand2 + rand2);
                 height += peakheight / rand3 * Math.Sin((float)x / flatness * rand3 + rand3);
                 height += offset;
-                terrainContour[x] = (int)height;
+                _terrainContour[x] = (int)height;
             }
         }
 
         private void CreateForeground()
         {
-            Color[,] groundColors = TextureTo2DArray(groundTexture);
-            Color[] foregroundColors = new Color[screenWidth * screenHeight];
+            Color[,] groundColors = TextureTo2DArray(_groundTexture);
+            Color[] foregroundColors = new Color[_screenWidth * _screenHeight];
 
-            for (int x = 0; x < screenWidth; x++)
+            for (int x = 0; x < _screenWidth; x++)
             {
-                for (int y = 0; y < screenHeight; y++)
+                for (int y = 0; y < _screenHeight; y++)
                 {
-                    if (y > terrainContour[x])
-                        foregroundColors[x + y * screenWidth] = groundColors[x % groundTexture.Width, y % groundTexture.Height];
+                    if (y > _terrainContour[x])
+                    {
+                        foregroundColors[x + y * _screenWidth] = groundColors[x % _groundTexture.Width, y % _groundTexture.Height];
+                    }
                     else
-                        foregroundColors[x + y * screenWidth] = Color.Transparent;
+                    {
+                        foregroundColors[x + y * _screenWidth] = Color.Transparent;
+                    }
                 }
             }
 
-            foregroundTexture = new Texture2D(device, screenWidth, screenHeight, false, SurfaceFormat.Color);
-            foregroundTexture.SetData(foregroundColors);
+            _foregroundTexture = new Texture2D(_device, _screenWidth, _screenHeight, false, SurfaceFormat.Color);
+            _foregroundTexture.SetData(foregroundColors);
+        }
+
+        private void FlattenTerrainBelowPlayers()
+        {
+            foreach (PlayerData player in _players)
+            {
+                if (player.IsAlive)
+                {
+                    for (int x = 0; x < 40; x++)
+                    {
+                        _terrainContour[(int)player.Position.X + x] = _terrainContour[(int)player.Position.X];
+                    }
+                }
+            }
         }
 
         private Color[,] TextureTo2DArray(Texture2D texture)
@@ -381,185 +366,241 @@ There’s no screenshot for this chapter, although we’ve added some powerful f
 
             Color[,] colors2D = new Color[texture.Width, texture.Height];
             for (int x = 0; x < texture.Width; x++)
-                for (int y = 0; y < texture.Height; y++)
-                    colors2D[x, y] = colors1D[x + y * texture.Width];
-
-            return colors2D;
-        }
-
-        protected override void UnloadContent()
-        {
-        }
-
-        protected override void Update(GameTime gameTime)
-        {
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                this.Exit();
-
-            ProcessKeyboard();
-            UpdateRocket();
-
-            base.Update(gameTime);
-        }
-
-        private void UpdateRocket()
-        {
-            if (rocketFlying)
             {
-                Vector2 gravity = new Vector2(0, 1);
-                rocketDirection += gravity / 10.0f;
-                rocketPosition += rocketDirection;
-                rocketAngle = (float)Math.Atan2(rocketDirection.X, -rocketDirection.Y);
-
-                for (int i = 0; i < 5; i++)
+                for (int y = 0; y < texture.Height; y++)
                 {
-                    Vector2 smokePos = rocketPosition;
-                    smokePos.X += randomizer.Next(10) - 5;
-                    smokePos.Y += randomizer.Next(10) - 5;
-                    smokeList.Add(smokePos);
+                    colors2D[x, y] = colors1D[x + y * texture.Width];
                 }
             }
+
+            return colors2D;
+
+        }
+
+        protected override void LoadContent()
+        {
+            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _device = _graphics.GraphicsDevice;
+
+            // TODO: use this.Content to load your game content here
+            _backgroundTexture = Content.Load<Texture2D>("background");
+            _carriageTexture = Content.Load<Texture2D>("carriage");
+            _cannonTexture = Content.Load<Texture2D>("cannon");
+            _rocketTexture = Content.Load<Texture2D>("rocket");
+            _smokeTexture = Content.Load<Texture2D>("smoke");
+            _groundTexture = Content.Load<Texture2D>("ground");
+            _font = Content.Load<SpriteFont>("myFont");
+
+            _screenWidth = _device.PresentationParameters.BackBufferWidth;
+            _screenHeight = _device.PresentationParameters.BackBufferHeight;
+
+            _playerScaling = 40.0f / (float)_carriageTexture.Width;
+
+            GenerateTerrainContour();
+            SetUpPlayers();
+            FlattenTerrainBelowPlayers();
+            CreateForeground();
         }
 
         private void ProcessKeyboard()
         {
             KeyboardState keybState = Keyboard.GetState();
-            if (keybState.IsKeyDown(Keys.Left))
-                players[currentPlayer].Angle -= 0.01f;
-            if (keybState.IsKeyDown(Keys.Right))
-                players[currentPlayer].Angle += 0.01f;
 
-            if (players[currentPlayer].Angle > MathHelper.PiOver2)
-                players[currentPlayer].Angle = -MathHelper.PiOver2;
-            if (players[currentPlayer].Angle < -MathHelper.PiOver2)
-                players[currentPlayer].Angle = MathHelper.PiOver2;
+            if (keybState.IsKeyDown(Keys.Left))
+            {
+                _players[_currentPlayer].Angle -= 0.01f;
+            }
+            if (keybState.IsKeyDown(Keys.Right))
+            {
+                _players[_currentPlayer].Angle += 0.01f;
+            }
+
+            if (_players[_currentPlayer].Angle > MathHelper.PiOver2)
+            {
+                _players[_currentPlayer].Angle = -MathHelper.PiOver2;
+            }
+            if (_players[_currentPlayer].Angle < -MathHelper.PiOver2)
+            {
+                _players[_currentPlayer].Angle = MathHelper.PiOver2;
+            }
 
             if (keybState.IsKeyDown(Keys.Down))
-                players[currentPlayer].Power -= 1;
+            {
+                _players[_currentPlayer].Power -= 1;
+            }
             if (keybState.IsKeyDown(Keys.Up))
-                players[currentPlayer].Power += 1;
+            {
+                _players[_currentPlayer].Power += 1;
+            }
             if (keybState.IsKeyDown(Keys.PageDown))
-                players[currentPlayer].Power -= 20;
+            {
+                _players[_currentPlayer].Power -= 20;
+            }
             if (keybState.IsKeyDown(Keys.PageUp))
-                players[currentPlayer].Power += 20;
+            {
+                _players[_currentPlayer].Power += 20;
+            }
 
-            if (players[currentPlayer].Power > 1000)
-                players[currentPlayer].Power = 1000;
-            if (players[currentPlayer].Power < 0)
-                players[currentPlayer].Power = 0;
+            if (_players[_currentPlayer].Power > 1000)
+            {
+                _players[_currentPlayer].Power = 1000;
+            }
+            if (_players[_currentPlayer].Power < 0)
+            {
+                _players[_currentPlayer].Power = 0;
+            }
 
             if (keybState.IsKeyDown(Keys.Enter) || keybState.IsKeyDown(Keys.Space))
             {
-                rocketFlying = true;
-
-                rocketPosition = players[currentPlayer].Position;
-                rocketPosition.X += 20;
-                rocketPosition.Y -= 10;
-                rocketAngle = players[currentPlayer].Angle;
+                _rocketFlying = true;
+                _rocketPosition = _players[_currentPlayer].Position;
+                _rocketPosition.X += 20;
+                _rocketPosition.Y -= 10;
+                _rocketAngle = _players[_currentPlayer].Angle;
                 Vector2 up = new Vector2(0, -1);
-                Matrix rotMatrix = Matrix.CreateRotationZ(rocketAngle);
-                rocketDirection = Vector2.Transform(up, rotMatrix);
-                rocketDirection *= players[currentPlayer].Power / 50.0f;
+                Matrix rotMatrix = Matrix.CreateRotationZ(_rocketAngle);
+                _rocketDirection = Vector2.Transform(up, rotMatrix);
+                _rocketDirection *= _players[_currentPlayer].Power / 50.0f;
             }
         }
 
+        private void UpdateRocket()
+        {
+            if (_rocketFlying)
+            {
+                Vector2 gravity = new Vector2(0, 1);
+                _rocketDirection += gravity / 10.0f;
+                _rocketPosition += _rocketDirection;
+                _rocketAngle = (float)Math.Atan2(_rocketDirection.X, -_rocketDirection.Y);
 
-         private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
-         {
-             Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
-             int width1 = tex1.GetLength(0);
-             int height1 = tex1.GetLength(1);
-             int width2 = tex2.GetLength(0);
-             int height2 = tex2.GetLength(1);
- 
-             for (int x1 = 0; x1 < width1; x1++)
-             {
-                 for (int y1 = 0; y1 < height1; y1++)
-                 {
-                     Vector2 pos1 = new Vector2(x1, y1);
-                     Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
- 
-                     int x2 = (int)pos2.X;
-                     int y2 = (int)pos2.Y;
-                     if ((x2 >= 0) && (x2 < width2))
-                     {
-                         if ((y2 >= 0) && (y2 < height2))
-                         {
-                             if (tex1[x1, y1].A > 0)
-                             {
-                                 if (tex2[x2, y2].A > 0)
-                                 {
-                                     Vector2 screenPos = Vector2.Transform(pos1, mat1);
-                                     return screenPos;
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
- 
-             return new Vector2(-1, -1);
-         }
- 
-         protected override void Draw(GameTime gameTime)
-         {
-             GraphicsDevice.Clear(Color.CornflowerBlue);
- 
-             spriteBatch.Begin();
-             DrawScenery();
-             DrawPlayers();
-             DrawText();
-             DrawRocket();
-             DrawSmoke();
-             spriteBatch.End();
- 
-             base.Draw(gameTime);
-         }
- 
-         private void DrawScenery()
-         {
-             Rectangle screenRectangle = new Rectangle(0, 0, screenWidth, screenHeight);
-             spriteBatch.Draw(backgroundTexture, screenRectangle, Color.White);
-             spriteBatch.Draw(foregroundTexture, screenRectangle, Color.White);
-         }
- 
-         private void DrawPlayers()
-         {
-             foreach (PlayerData player in players)
-             {
-                 if (player.IsAlive)
-                 {
-                     int xPos = (int)player.Position.X;
-                     int yPos = (int)player.Position.Y;
-                     Vector2 cannonOrigin = new Vector2(11, 50);
- 
-                     spriteBatch.Draw(cannonTexture, new Vector2(xPos + 20, yPos - 10), null, player.Color, player.Angle, cannonOrigin, playerScaling, SpriteEffects.None, 1);
-                     spriteBatch.Draw(carriageTexture, player.Position, null, player.Color, 0, new Vector2(0, carriageTexture.Height), playerScaling, SpriteEffects.None, 0);
-                 }
-             }
-         }
- 
-         private void DrawText()
-         {
-             PlayerData player = players[currentPlayer];
-             int currentAngle = (int)MathHelper.ToDegrees(player.Angle);
-             spriteBatch.DrawString(font, "Cannon angle: " + currentAngle.ToString(), new Vector2(20, 20), player.Color);
-             spriteBatch.DrawString(font, "Cannon power: " + player.Power.ToString(), new Vector2(20, 45), player.Color);
-         }
- 
-         private void DrawRocket()
-         {
-             if (rocketFlying)
-                 spriteBatch.Draw(rocketTexture, rocketPosition, null, players[currentPlayer].Color, rocketAngle, new Vector2(42, 240), 0.1f, SpriteEffects.None, 1);
-         }
- 
-         private void DrawSmoke()
-         {
-             foreach (Vector2 smokePos in smokeList)
-                 spriteBatch.Draw(smokeTexture, smokePos, null, Color.White, 0, new Vector2(40, 35), 0.2f, SpriteEffects.None, 1);
-         }
-     }
- }
+                for (int i = 0; i < 5; i++)
+                {
+                    Vector2 smokePos = _rocketPosition;
+                    smokePos.X += _randomizer.Next(10) - 5;
+                    smokePos.Y += _randomizer.Next(10) - 5;
+                    _smokeList.Add(smokePos);
+                }
+            }
+        }
+
+        private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
+        {
+            Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
+            int width1 = tex1.GetLength(0);
+            int height1 = tex1.GetLength(1);
+            int width2 = tex2.GetLength(0);
+            int height2 = tex2.GetLength(1);
+
+            for (int x1 = 0; x1 < width1; x1++)
+            {
+                for (int y1 = 0; y1 < height1; y1++)
+                {
+                    Vector2 pos1 = new Vector2(x1, y1);
+                    Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
+
+                    int x2 = (int)pos2.X;
+                    int y2 = (int)pos2.Y;
+                    if ((x2 >= 0) && (x2 < width2))
+                    {
+                        if ((y2 >= 0) && (y2 < height2))
+                        {
+                            if (tex1[x1, y1].A > 0)
+                            {
+                                if (tex2[x2, y2].A > 0)
+                                {
+                                    return Vector2.Transform(pos1, mat1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            return new Vector2(-1, -1);
+        }
+
+        protected override void Update(GameTime gameTime)
+        {
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
+                Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                Exit();
+            }
+
+            // TODO: Add your update logic here
+
+            ProcessKeyboard();
+
+            UpdateRocket();
+
+            base.Update(gameTime);
+        }
+
+        protected override void Draw(GameTime gameTime)
+        {
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+
+            // TODO: Add your drawing code here
+
+            _spriteBatch.Begin();
+            DrawScenery();
+            DrawPlayers();
+            DrawText();
+            DrawRocket();
+            DrawSmoke();
+            _spriteBatch.End();
+
+            base.Draw(gameTime);
+        }
+
+        private void DrawScenery()
+        {
+            Rectangle screenRectangle = new Rectangle(0, 0, _screenWidth, _screenHeight);
+            _spriteBatch.Draw(_backgroundTexture, screenRectangle, Color.White);
+            _spriteBatch.Draw(_foregroundTexture, screenRectangle, Color.White);
+        }
+
+        private void DrawPlayers()
+        {
+            for (int i = 0; i < _players.Length; i++)
+            {
+                if (_players[i].IsAlive)
+                {
+                    int xPos = (int)_players[i].Position.X;
+                    int yPos = (int)_players[i].Position.Y;
+                    Vector2 cannonOrigin = new Vector2(11, 50);
+
+                    _spriteBatch.Draw(_carriageTexture, _players[i].Position, null, _players[i].Color, 0, new Vector2(0, _carriageTexture.Height), _playerScaling, SpriteEffects.None, 0);
+                    _spriteBatch.Draw(_cannonTexture, new Vector2(xPos + 20, yPos - 10), null, _players[i].Color, _players[i].Angle, cannonOrigin, _playerScaling, SpriteEffects.None, 1);
+                }
+            }
+        }
+
+        private void DrawText()
+        {
+            PlayerData player = _players[_currentPlayer];
+            int currentAngle = (int)MathHelper.ToDegrees(player.Angle);
+            _spriteBatch.DrawString(_font, "Cannon angle: " + currentAngle.ToString(), new Vector2(20, 20), player.Color);
+            _spriteBatch.DrawString(_font, "Cannon power: " + player.Power.ToString(), new Vector2(20, 45), player.Color);
+        }
+
+        private void DrawRocket()
+        {
+            if (_rocketFlying)
+            {
+                _spriteBatch.Draw(_rocketTexture, _rocketPosition, null, _players[_currentPlayer].Color, _rocketAngle, new Vector2(42, 240), _rocketScaling, SpriteEffects.None, 1);
+            }
+        }
+
+        private void DrawSmoke()
+        {
+            for (int i = 0; i < _smokeList.Count; i++)
+            {
+                _spriteBatch.Draw(_smokeTexture, _smokeList[i], null, Color.White, 0, new Vector2(40, 35), 0.2f, SpriteEffects.None, 1);
+            }
+        }
+    }
+}
 ```
 
 ## Next Steps
