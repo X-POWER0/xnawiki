@@ -1,5 +1,7 @@
 # XNA Game Studio Archive
 
+> Please consider sponsoring the XNA Game Studio archive using the Github Sponsor button above, we welcome any support.
+
 ![XNA Game Studio](https://github.com/simondarksidej/XNAGameStudio/blob/archive/Images/xna_game_studio_logo.jpg?raw=true)
 
 The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
@@ -75,3 +77,5 @@ As well as several helpful short articles
 ## Contribute more
 
 If you find an XNA / MonoGame article that is worth preserving, be sure to drop us an Issue and let us know where to get it as we'll grab it as soon as we can.
+
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/U6U023ZGE)
