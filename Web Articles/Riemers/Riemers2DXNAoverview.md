@@ -28,6 +28,12 @@ Below you can find some screenshots of this series of 2D MonoGame Tutorials. The
 
 ![Example02](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Images/Riemers/2DXNA00OverView02.jpg?raw=true)
 
+## Source
+
+You can find the full upgraded source for this chapter here:
+
+- [2D series shooter - source](https://github.com/SimonDarksideJ/XNAGameStudio/tree/archive/MonoGameSamples/Riemers/Series_0_Shooters)
+
 ## Chapters
 
 1. [Starting your MonoGame 4.0 Project](Riemers2DXNA01starting)
