@@ -4,16 +4,16 @@ At this moment, we have our rockets flying around, but they are not yet collidin
 
 ## Generating terrain
 
-Before we can handle whether the rocket has collided with the terrain, we need to know the exact coordinates of our terrain, in this game this is rather simple, for each X coordinate of our screen the terrain has a certain Y coordinate.
+Before we can handle whether the rocket has collided with the terrain, we need to know the exact coordinates of our terrain, in this game, this is rather simple, for each X coordinate of our screen the terrain has a certain Y coordinate.
 
-One terribly wrong approach would be to use the 500 Y coordinates for the foreground texture we’re using at the moment. A much better approach is to define the terrain slope ourselves, and from this slope we will create the foreground texture, which we will do here.
+One terribly wrong approach would be to use the 500 Y coordinates for the foreground texture we’re using at the moment. A much better approach is to define the terrain slope ourselves, and from this slope, we will create the foreground texture, which we will do here.
 
 We will implement this using 2 methods:
 
 * GenerateTerrainContour which generates the slope, and
 * CreateForeground which creates the foreground texture based on the terrain slope.
 
-We’ll start with easy methods first to get the mechanism up and working, then in the next chapter we’ll refine both methods to get a nicer result.
+We’ll start with easy methods first to get the mechanism up and working, then in the next chapter, we will refine both methods to get a nicer result.
 
 The result of the GenerateTerrainContour will be a simple array of *ints*, storing one Y coordinate for each X coordinate of our screen. We will need this quite often in our code later on, so let us add it to the variables in the Properties section of our code:
 
@@ -35,7 +35,7 @@ Next in line is the **GenerateTerrainContour** method, which initializes this ar
     }
 ```
 
-The **terrainContour** will need to contain as many values as there are X coordinates, which can be found by using the screenWidth variable defined earlier. Next, for each X coordinate we store the same Y coordinate. Later on, this will result in a horizontally flat terrain, in the middle of our screen.
+The **terrainContour** will need to contain as many values as there are X coordinates, which can be found by using the screenWidth variable defined earlier. Next, for each X coordinate, we store the same Y coordinate. Later on, this will result in a horizontally flat terrain, in the middle of our screen.
 
 Moving on to the **CreateForeground** method, this method should create the foreground texture, based on the contents of the **terrainContour** array:
 
@@ -62,7 +62,7 @@ Moving on to the **CreateForeground** method, this method should create the fore
 ```
 
 1. The first line creates an array, capable of storing Colors. We initialize it so it can store one color for each pixel on our screen.
-2. Next, we scroll though each combination of X and Y coordinates, covering each pixel of our screen. For each pixel, we check whether it is above or below the terrain slope. If it is below the terrain (this means the Y coordinate is larger than the Y coordinate stored in the terrainContour array), we store the green color in our foregroundColors array. If the pixel is above the terrain, we store Transparant as color, meaning that the underling color (our background image) will remain visible at those pixels.
+2. Next, we scroll through each combination of X and Y coordinates, covering each pixel of our screen. For each pixel, we check whether it is above or below the terrain slope. If it is below the terrain (this means the Y coordinate is larger than the Y coordinate stored in the terrainContour array), we store the green color in our foregroundColors array. If the pixel is above the terrain, we store Transparant as color, meaning that the underlying color (our background image) will remain visible at those pixels.
 3. At the end of the method, we have an array of colors, but we still need to create a texture out of them.
 
 ## Creating a texture manually
@@ -100,11 +100,11 @@ Now run this code! You should see the screen shown below. (If it crashes, it’s
 
 This is the same as before, only with the foreground gone and the bottom half fully green. This means, that we have successfully created a texture, of which we have defined the color of each pixel.
 
-In the next chapter we will make some changes to the slope of the terrain and to the colors of our foreground texture to get rid of the solid green color.
+In the next chapter, we will make some changes to the slope of the terrain and to the colors of our foreground texture to get rid of the solid green color.
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * No exercises this time, but get ready for the next section!
 

@@ -4,7 +4,7 @@ In this chapter, we will learn how to render text to the screen so we can print 
 
 Text is very easy in MonoGame as it uses TrueType fonts to generate the textures needed to render text.  Other options are available but let us just go through the basics for now.
 
-## Importing fonts in to your project
+## Importing fonts into your project
 
 First, we need to add a font to our project and bind it to a variable in our code, much like how we would add an image to a project. Then we can simply render it using the SpriteBatch. We even don’t need to create a separate SpriteBatch: we can simply use the SpriteBatch we’re using to render our terrain and cannons.
 
@@ -12,7 +12,7 @@ Let’s start by adding the font to our project. To do this, find the Content pr
 
 ![MGCB-Editor Add Spritefont](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA07Text01.png?raw=true)
 
-In the dialog that opens, select “SpriteFont Description (.spritefont)” and give it a name at the top, I've used **myFont.spritefont** for this tutorial.  
+In the dialog that opens, select “SpriteFont Description (.spritefont)” and give it a name at the top, I have used **myFont.spritefont** for this tutorial.  
 
 ![MGCB-Editor Add Spritefont](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA07Text02.png?raw=true)
 
@@ -101,7 +101,7 @@ A Texture2D object can handle an image file, in the same way a SpriteFont object
 
 ## Drawing Text
 
-With the font loaded and the SpriteBatch already active, we are ready to draw some text. Once again, we will not put this directly in our Draw method, instead we will create a separate method:
+With the font loaded and the SpriteBatch already active, we are ready to draw some text. Once again, we will not put this directly in our Draw method, instead, we will create a separate method:
 
 ```csharp
     private void DrawText()
@@ -145,7 +145,7 @@ Obviously, the number printed to the screen does not correspond to the actual po
     }
 ```
 
-This looks up the data of the current player in our PlayerData array and from this data we use the Angle, Power and Color values while drawing the text to the screen.
+This looks up the data of the current player in our PlayerData array and from this data, we use the Angle, Power and Color values while drawing the text to the screen.
 
 That’s it! When you run the code you should see the screen below. Try to change the angle or the power: the values printed on the screen should change accordingly.
 
@@ -153,7 +153,7 @@ That’s it! When you run the code you should see the screen below. Try to chang
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Try changing the Font and size by editing the .spritefont file. (just make sure you have the font installed)
 * Try adding some more text to show the players name for the current player. Will mean you need to also update the PlayerData struct.

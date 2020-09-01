@@ -1,6 +1,6 @@
 # Making the rocket move
 
-This chapter, we will see how we can propagate the rocket. It’s fairly easy to just make it move forward, since we’ve already calculated it’s direction in the previous chapter. However, we also want it’s trajectory to be influenced by the gravity, so what you shoot upwards will eventually come down again. As a result, since the direction of the rocket will be adjusted, we will to update the angle at which the rocket should be drawn each time its direction is changed.
+This chapter, we will see how we can propagate the rocket. It’s fairly easy to just make it move forward since we’ve already calculated its direction in the previous chapter. However, we also want its trajectory to be influenced by the gravity, so what you shoot upwards will eventually come down again. As a result, since the direction of the rocket will be adjusted, we will update the angle at which the rocket should be drawn each time its direction is changed.
 
 ## Updating the rocket
 
@@ -22,11 +22,11 @@ Each time this method is called and a rocket has been shot, the rocketDirection 
     UpdateRocket();
 ```
 
-Now run the code, and launch a rocket! The rocket will fly in a straight line, at a speed depending of the current Power.
+Now run the code, and launch a rocket! The rocket will fly in a straight line, at a speed depending on the current Power.
 
 ## Adding gravity
 
-Quite an achievement, but it doesn’t look too real as it isn’t coming down, even if you shoot it at a very low Power. Therefore, we will add some gravitational influence. The gravitational force is a downward influence based on the direction of the rocket. 
+Quite an achievement, but it doesn’t look too real as it isn’t coming down, even if you shoot it at a very low power. Therefore, we will add some gravitational influence. The gravitational force is a downward influence based on the direction of the rocket. 
 
 Replace the contents inside the if-block of the **UpdateRocket** with this code:
 
@@ -52,7 +52,7 @@ Now back in high school, there were a few very basic rules that you should have 
 
 > “In a triangle having a corner of 90 degrees, you can find the angle of a corner by dividing the length of the opposite side by the length of the neighboring side, and take the arctangent of this division.”
 
-This follows immediately from the definition of the sine, cosine and tangent.
+This follows immediately from the definition of the sine, cosine, and tangent.
 
 Applied to our example, you can find the corresponding angle between our Direction and the Right (X) axis by taking the arctangent of Direction.Y/Direction.X. This is illustrated in the left part of the image above: we’re starting from the Direction shown there, and we want to find the Angle between this direction and the X axis. This would be given by the following code:
 
@@ -76,17 +76,17 @@ You will also have to add an additional "Using" statement to the top of the file
     using System;
 ```
 
-Instead of using the Atan method, you’ll usually want to use the Atan2 method, the difference being that with the Atan method you need to specify the division of the components as argument. Since we all know that –X/-Y is the same as X/Y, this would require an additional if-check, this if-check is contained in the Atan2 method allowing us to specify the 2 components separately.
+Instead of using the Atan method, you’ll usually want to use the Atan2 method, the difference being that with the Atan method you need to specify the division of the components as an argument. Since we all know that –X/-Y is the same as X/Y, this would require an additional if-check, this if-check is contained in the Atan2 method allowing us to specify the 2 components separately.
 
-That is it for this chapter, run the code and notice how your rocket is rotated corresponding to its direction!
+That is it for this chapter, run the code, and notice how your rocket is rotated corresponding to its direction!
 
 ![Direction to Angle](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA09Angle02.png?raw=true)
 
-In this chapter and the previous chapter, you’ve seen how to go from angle to direction, and from direction to angle. You will need this quite often in both 2D and 3D game programming.
+In this chapter and the previous chapter, you have seen how to go from angle to direction, and from direction to angle. You will need this quite often in both 2D and 3D game programming.
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * No exercises this time, but get ready for the next section!
 

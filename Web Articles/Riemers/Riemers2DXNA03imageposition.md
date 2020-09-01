@@ -1,6 +1,6 @@
 # Specifying the position of an image on the screen
 
-Last chapter we rendered 2 full-screen images. Obviously, to create a game we will also need to be able to render smaller images to the screen, at the position we define. That is what we’re going to do in this chapter.
+In the last chapter we rendered 2 full-screen images. Obviously, to create a game we will also need to be able to render smaller images to the screen, at the position we define. That is what we’re going to do in this chapter.
 
 This chapter, we are going to render the carriages and cannons for our players. Before we move on to the drawing code, we should define some data about our players, such as their position, color and whether they’re still alive or not. To store all this data nicely together, we should create a struct, which is nothing more than a container able to store some data we define.
 
@@ -38,7 +38,7 @@ When the code is finished, we want to be able to easily adjust the number of pla
 
 ## Setting up players
 
-To give players options of being different colours, first we will create a new pre-populated array of available Player colours by adding the following property to the **Properties** section of the code:
+To give players options of being different colours, first, we will create a new pre-populated array of available Player colours by adding the following property to the **Properties** section of the code:
 
 ```csharp
     private Color[] _playerColors = new Color[10]
@@ -72,19 +72,19 @@ Next create a new "SetUpPlayers" method which initializes our array of PlayerDat
     }
 ```
 
-We start by defining an array array of empty PlayerData objects, since I defined numberOfPlayers to be 4, this line will create an array holding 4 empty PlayerData objects.
+We start by defining an array of empty PlayerData objects since I defined numberOfPlayers to be 4, this line will create an array holding 4 empty PlayerData objects.
 
 The for loop then scrolls through each PlayerData object in the array, for each of them we set **IsAlive** to true and assign it a color from the PlayerColors array we defined earlier.
 
-Since the image of the cannon is vertically upwards and we want to start our game with all cannons lying vertically to the right, we need to rotate them over 90 degrees. (will will use this later in the series in [Rotation - Drawing the cannon](Riemers2DXNA05rotation)) Finally we set the initial cannon power to 100.
+Since the image of the cannon is vertically upwards and we want to start our game with all cannons lying vertically to the right, we need to rotate them over 90 degrees. (will use this later in the series in [Rotation - Drawing the cannon](Riemers2DXNA05rotation)) Finally, we set the initial cannon power to 100.
 
 > In game programming, and thus also in MonoGame, all angles are defined in [radians](http://en.wikipedia.org/wiki/Radian).  This might sound difficult, but if you know that pi (=3.14) radians correspond to 180 degrees, you can find how many radians correspond to any given number of degrees. 
 >
-> Even better, MonoGame does the calculations for us: we just need to pass in the number of degrees to the MathHelper.ToRadians method, and MonoGame will convert it to radians for us.
+> Even better, MonoGame does the calculations for us: we just need to pass in the number of degrees to the MathHelper.ToRadians method and MonoGame will convert it to radians for us.
 >
 > 90 Degrees corresponds to pi/2, so MathHelper.ToRadians(90) is the same as MathHelper.PiOver2 as used in our code.
 
-There’s one important thing we still need to initialize: the position of players on the terrain. As you can see, the foreground image has 4 flat areas, perfectly suited to place a cannon. When we will create a new foreground image ourselves in a later chapter, for now we know the position of these flat areas and will have to code them by hard. 
+There is one important thing we still need to initialize, the position of players on the terrain. As you can see, the foreground image has 4 flat areas, perfectly suited to place a cannon. When we will create a new foreground image ourselves in a later chapter, for now, we know the position of these flat areas and will have to code them by hand.
 
 These are the 4 positions of the 4 flat areas of the terrain (put this code at the end of the **SetUpPlayers** method):
 
@@ -172,7 +172,7 @@ We will solve these issues in the next chapter.
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 - Try adding more players and positioning them (do not forget to increase the numberOfPlayers variable)
 - Add different players with their own images, hint, odd players use carriages, even players use tanks?

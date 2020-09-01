@@ -1,6 +1,6 @@
 # Particle engine
 
-At this moment, whenever the rocket hits the terrain or a player, some particles are created, added to a list and rendered to the screen using additive alpha blending. However, the particles are not moving yet, which is what we’re going to solve this chapter.
+At this moment, whenever the rocket hits the terrain or a player, some particles are created and added to a list and rendered to the screen using additive alpha blending. However, the particles are not moving yet, which is what we’re going to solve this chapter.
 
 ## Evaluating live particles
 
@@ -8,9 +8,9 @@ The current position of any object can be calculated from 3 properties:
 
 * The initial position: this is the position of the particle at the very beginning of its life, the center of our explosion, the position on the screen where the collision happened.
 * The initial speed: the speed defines how much the position should be changed each second. (in 2D also called direction or velocity), for an explosion, the speed of the particles should be very at the beginning. In a 2D game, since the position has an X and Y component, the speed also has an X and Y component.
-* The acceleration: the acceleration defines how much the speed should be changed each second, since the particles start at a high speed, we want them to slow down over time so their speed reaches 0 at the end of the particle’s life. As you should feel, and as shown later, this means that the direction of the speed should be the opposite of the direction of the speed.
+* The acceleration: the acceleration defines how much the speed should be changed each second since the particles start at a high speed, we want them to slow down over time so their speed reaches 0 at the end of the particle’s life. As you should feel, and as shown later, this means that the direction of the speed should be the opposite of the direction of the speed.
 
-As I mentioned earlier, based on the initial position the initial speed and the acceleration, you can find the current position of the particle over time. This is done using the formula below:
+As I mentioned earlier, based on the initial position the initial speed, and the acceleration, you can find the current position of the particle over time. This is done using the formula below:
 
 ![Formula](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA19ParticleEngine1.png?raw=true)
 
@@ -39,11 +39,11 @@ We will code a new **UpdateParticles** method which scrolls through our List of 
 
 This method gets the current game time 'now' in Milliseconds (a float). Next, it scrolls through all particles and finds the current age of each particle, if the particle is older than its maximum age then we delete it from our List.
 
-> Note that the List is scrolled backwards. This has to do with deleting an object in a List: if you delete an object i, all objects following i jump one place forward, so i+1 becomes i and i+2 becomes i+1. Now, if you would be scrolling forward, the next iteration you check object i+1, which means you have skipped one object.
+> Note that the List is scrolled backwards. This has to do with deleting an object in a List: if you delete an object (i), all objects following i jump one place forward, so i+1 becomes i and i+2 becomes i+1. Now, if you would be scrolling forward, the next iteration you check object i+1, which means you have skipped one object.
 
 ## How to update the particles over time
 
-Now, Let us replace the comment line (**update current particle**) with some actual code, the following code should all be placed within the "Else" clock indicated by the comment above.
+Now, let us replace the comment line (**update current particle**) with some actual code, the following code should all be placed within the "Else" clock indicated by the comment above.
 
 If the particle is still active, we should update its position using the simple formula above. However, when working with time, we usually want to scale the time to a value between 0 and 1, where 0 means ‘begin’ and 1 means ‘end’, which will make a lot of the calculations easier as you’ll see at the end of the chapter. We’ll call this value between 0 and 1 the ‘relative time’, relTime in short, as follows:
 
@@ -61,7 +61,7 @@ This code will correctly update the position of each particle each time the meth
 
 We can make the particles fade away by reducing their color strength, remembering that the colors of our particles are all added together and then added to the scene. Now, before this is being done we will decrease their color values, by multiplying them with a value smaller than 1, between 1 and 0.
 
-At the beginning of a particle's life we will multiply its colors by the modulation color (1,1,1,1) white, then when it is halfway through, we will multiply it by color (0.5, 0.5, 0.5, 0.5) and at the very end we will multiply it by color (0,0,0,0), which makes sure the effect has absolutely zero effect in the final screen.
+At the beginning of a particle's life, we will multiply its colors by the modulation color (1,1,1,1) white, then when it is halfway through, we will multiply it by color (0.5, 0.5, 0.5, 0.5) and at the very end we will multiply it by color (0,0,0,0), which makes sure the effect has absolutely zero effect in the final screen.
 
 For this, we need to find this value that starts at 1 and ends at 0, which is easy to find since we already have a time value that starts at 0 and ends at 1:
 
@@ -92,7 +92,7 @@ To finish off this method, we still need to save the updated particle back into 
     _particleList[i] = particle;
 ```
 
-That’s it for the logic of our **UpdateParticles** method! Each time the method is called, the position, modulation color and size of each particle is updated.
+That’s it for the logic of our **UpdateParticles** method! Each time the method is called, the position, modulation color, and size of each particle is updated.
 
 ## Updating the particles from Update
 
@@ -105,7 +105,7 @@ Let us also call this method from within our **Update** method by adding the fol
     }
 ```
 
-And as a minor adjustment, let us also lock out our keyboard when the rocket is flying and when there is an active explosion.  This will make sure the player cannot change his cannon angle or power after he’s launched the rocket. In the **Update** method, remove the original "ProcessKeyboard()" line and add the following code just before "base.Update".
+And as a minor adjustment, let us also lock our keyboard when the rocket is flying and when there is an active explosion.  This will make sure the player cannot change his cannon angle or power after he’s launched the rocket. In the **Update** method, remove the original "ProcessKeyboard()" line and add the following code just before "base.Update".
 
 ```csharp
     if (!_rocketFlying && _particleList.Count == 0)
@@ -169,7 +169,7 @@ Now when you run this code, you’ll notice your explosion grows as large as we 
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Now that explosions are a little more realistic, try swapping out the explosion texture with another and try some different effects.
 

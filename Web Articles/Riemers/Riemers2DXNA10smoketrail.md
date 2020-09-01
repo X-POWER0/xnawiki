@@ -18,7 +18,7 @@ And initialize it in our **LoadContent** method:
 
 ## Particles for beginners
 
-There is one thing that makes the next task a bit difficult, we don’t know exactly how many smoke particles we will need, so we don’t know how many positions we need to store. But that is easily solved by using a default .NET feature, the List. A List is a collection that you do not need to specify its size, just add or remove items to/from it when you want. 
+There is one thing that makes the next task a bit difficult, we don’t know exactly how many smoke particles we will need, so we don’t know how many positions we need to store. But that is easily solved by using a default .NET feature, the List. A list is a collection that you do not need to specify its size, just add or remove items to/from it when you want. 
 
 The **List** is provided by a different part of the .NET Framework, so we need to add a new using to the top of the file, so add the following:
 
@@ -35,7 +35,7 @@ Next, add the following to the **Properties** section our code:
 
 We declare the List that will be used to store Vector2 objects and we initialize it as an empty List so it is ready to use. The second variable we are adding is very useful in game programming, it will generate random numbers whenever we ask it to. We will use some random numbers in this chapter as we will add a small amount of random deviation to the position of the smoke particles.
 
-Next we can update our **UpdateRocket** method to store the smoke position in our List, add this code to the end of the if-block in the **UpdateRocket** method:
+Next, we can update our **UpdateRocket** method to store the smoke position in our List, add this code to the end of the if-block in the **UpdateRocket** method:
 
 ```csharp
     Vector2 smokePos = _rocketPosition;
@@ -44,9 +44,9 @@ Next we can update our **UpdateRocket** method to store the smoke position in ou
     _smokeList.Add(smokePos);
 ```
 
-This retrieves the current position of the rocket, and adds a random component to both the X and Y coordinates. The randomizer is asked for a random number between 0 and 10, from which we subtract 5 resulting in a random number between -5 and 5. The resulting position is stored in our smokeList!
+This retrieves the current position of the rocket and adds a random component to both the X and Y coordinates. The randomizer is asked for a random number between 0 and 10, from which we subtract 5 resulting in a random number between -5 and 5. The resulting position is stored in our smokeList!
 
-All we need to do now, is draw the smoke image at each position stored in the smokeList. To this end, we will code a new **DrawSmoke** method:
+All we need to do now is draw the smoke image at each position stored in the smokeList. To this end, we will code a new **DrawSmoke** method:
 
 ```csharp
     private void DrawSmoke()
@@ -86,7 +86,7 @@ That’s it for this chapter!
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Try changing the frequency and number of smoke particles
 * See if you can clear the smoke particle list once the rocket leaves the screen

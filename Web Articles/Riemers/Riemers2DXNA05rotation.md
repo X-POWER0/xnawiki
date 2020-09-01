@@ -1,10 +1,10 @@
 # Rotation – Drawing the cannon
 
-We’ve almost covered every aspect of 2D rendering but one, rotation. In this chapter we will render our cannons on top of the carriages, according to the rotation angle stored in the PlayerData array.
+We’ve almost covered every aspect of 2D rendering but one, rotation. In this chapter, we will render our cannons on top of the carriages, according to the rotation angle stored in the PlayerData array.
 
 ## Rotating the cannon
 
-As mentioned in the previous chapters, by default MonoGame takes the top-left corner of the 2D image as origin. This is important for 2 reasons, of which we’ve covered the first one in the previous chapter:
+As mentioned in the previous chapters, by default MonoGame takes the top-left corner of the 2D image as the origin. This is important for 2 reasons, of which we’ve covered the first one in the previous chapter:
 
 * MonoGame will position the image on the screen so the origin point is at the position you specify in the SpriteBatch.Draw method.
 * When you rotate the image, MonoGame rotates the image around its origin point. This is a direct consequence of the previous point, this way the origin point stays at the position you specify, no matter what the rotation of the image is.
@@ -13,7 +13,7 @@ The image below illustrates this:
 
 ![Canon Rotation](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA05Cannons01.jpg?raw=true)
 
-In the upper case, the cannon is rendered with the top-left corner as origin. Now when we would apply a rotation to the cannon, such as in the upper-right image, the cannon would be rotated around this origin point. Now imagine the cannon is rotated over 90 degrees as in the upper-right image, and the cannon would be totally outside the carriage!
+In the upper case, the cannon is rendered with the top-left corner as the origin. Now when we would apply a rotation to the cannon, such as in the upper-right image, the cannon would be rotated around this origin point. Now imagine the cannon is rotated over 90 degrees as in the upper-right image, and the cannon would be totally outside the carriage!
 
 What we need to do is specify the origin point in the center of rotation, which is the one point that should remain fixed while being rotated. This point is illustrated by the blue dot in the bottom part of the image. Now when the cannon is rotated over 90 degrees, the result would be much nicer, as shown in the bottom-right image.
 
@@ -42,15 +42,15 @@ We need to specify 2 positions:
 * The new origin point of the cannon image
 * The screen position indicating where this origin point should be positioned.
 
-The cannon image is an image of 70x20 pixels, so I chose (11,50) as origin point. If you open the image file and locate this position, you’ll see it is at the rotational center of the cannon.
+The cannon image is an image of 70x20 pixels, so I chose (11,50) as the origin point. If you open the image file and locate this position, you’ll see it is at the rotational center of the cannon.
 
-> Note that this position needs to be defined based on the original size of the image, prior to any scaling.
+> Note that this position needs to be defined based on the original size of the image prior to any scaling.
 
 Next, we need to define where on the screen this cannon origin should be positioned. We want to position it 20 pixels to the right and 10 pixels up, relative to the player’s position, which was the top-left pixel of the carriage.
 
 Finally, we set the rotation angle using the angle stored in our PlayerData array, as well as setting the cannon color like the carriage.
 
-Now when you run this code, all the players cannons should be pointing to the right, as shown in the image below, as the cannon image is actually drawn upward, but because we initialized all of the angles to 90 degrees they are turned to the right.
+Now when you run this code, all the player's cannons should be pointing to the right, as shown in the image below, as the cannon image is actually drawn upward, but because we initialized all of the angles to 90 degrees they are turned to the right.
 
 ![Summary](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA05Cannons02.png?raw=true)
 
@@ -58,7 +58,7 @@ Next chapter we’ll learn how we can read in keyboard input, so we can adjust t
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Try setting the cannon angle for each player to something different using MathHelper.ToRadians function with various values of degrees.
 * Try playing with the SpriteEffects when drawing the carriages / cannons to see what they do (go crazy).

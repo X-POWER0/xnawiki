@@ -33,7 +33,7 @@ Open the Game1.cs code file. you will find it is littered with comments in green
 
 - The constructor method Game1() is called once at startup. It is used to load some variables needed by the MonoGame framework.
 - The Initialize method is also called once on startup. This is the method where we should put our initialization code.
-- The LoadContent method is used for importing media (such as images, objects and audio) as well as data related to the graphics card. In the Game class this is only called once on startup.
+- The LoadContent method is used for importing media (such as images, objects and audio) as well as data related to the graphics card. In the Game class, this is only called once on startup.
 - The Update method is called once every frame, at a rate of exactly 60 times/second. This is where we will put the code that needs to be updated throughout the lifetime of our program, such as the code that reads the keyboard and updates the geometry of our scene.
 - As often as your computer (and especially your graphics card) allows, the Draw method is called. This is where we should put the code that actually draws stuff to the screen.
 
@@ -41,13 +41,13 @@ As you can see, there is no code needed to open a window, as this will be done a
 
 ## Setting up the screen
 
-Let us move on, and discuss the graphics device. In short, the ‘device’ is what i will be talking about in the next series of tutorials, this a direct link to your graphical adapter. It is an object in your code that gives you direct access to the piece of hardware inside your computer that controls what you see on yor screen. This variable is readily available in our code as well as the GraphicsDevice variable, but we will be using this a lot (really, a lot) and we will make a shortcut for this. First, we’ll declare this variable, by adding this line to the top of our class (Commented as **"Properties"** for easy reference in the code below), exactly above the **Game1()** method:
+Let us move on, and discuss the graphics device. In short, the ‘device’ is what I will be talking about in the next series of tutorials, this a direct link to your graphical adapter. It is an object in your code that gives you direct access to the piece of hardware inside your computer that controls what you see on your screen. This variable is readily available in our code as well as the GraphicsDevice variable, but we will be using this a lot (really, a lot) and we will make a shortcut for this. First, we’ll declare this variable, by adding this line to the top of our class (Commented as **"Properties"** for easy reference in the code below), exactly above the **Game1()** method:
 
 ```csharp
     private GraphicsDevice _device;
 ```
 
-Obviously we need to fill this variable. Add this line to your LoadContent method:
+Obviously, we need to fill this variable. Add this line to your LoadContent method:
 
 ```csharp
     _device = _graphics.GraphicsDevice;
@@ -75,7 +75,7 @@ Where appropriate, after some chapters I will suggest some short exercises allow
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 - Change the size of your window to 800x600.
 - Instead of creating a windowed game, switch to 800x600 fullscreen mode (use Alt+F4 to terminate your program).

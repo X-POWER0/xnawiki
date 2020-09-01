@@ -1,6 +1,6 @@
 # Putting Collision Detection into practice
 
-For this chapter, we will put all we have learned in the past 2 chapters together and end up with fully working per-pixel collision detection system. We will create 2 methods, which will detect collision between our rocket and the terrain and players and another that detects whether the rocket is still inside the screen.
+For this chapter, we will put all we have learned in the past 2 chapters together and end up with a fully working per-pixel collision detection system. We will create 2 methods, which will detect collision between our rocket and the terrain and players and another that detects whether the rocket is still inside the screen.
 
 ## Checking collision with the terrain
 
@@ -19,7 +19,7 @@ Given the past 2 chapters, it is fairly easy to detect for collisions between th
     }
 ```
 
-In this method we create the transformation matrices for our rocket and foreground textures and pass them together with their color arrays to the TexturesCollide method. This method will then return (-1,-1) if no collision was detected, otherwise it will pass the screen coordinate of the collision. The result of this method will be returned by the **CheckTerrainCollision** method above.
+In this method, we create the transformation matrices for our rocket and foreground textures and pass them together with their color arrays to the TexturesCollide method. This method will then return (-1,-1) if no collision was detected, otherwise it will pass the screen coordinate of the collision. The result of this method will be returned by the **CheckTerrainCollision** method above.
 
 ## Checking collision with the players
 
@@ -55,7 +55,7 @@ Next in line is the **CheckPlayersCollision** method, which promises to be a lit
 ```
 
 1. First, the matrix of the rocket is created as this remains the same for all players.
-2. Next, for each player we check whether the player is alive, and if it is not the player that shot the rocket, as otherwise there would be a collision the very moment the rocket was shot.
+2. Next, for each player, we check whether the player is alive and if it is not the player that shot the rocket, as otherwise there would be a collision the very moment the rocket was shot.
 3. If all of this is true, we create the matrix for the carriage of the current player, as explained in the previous chapter.
 
 The matrices of the rocket and carriage are passed to the **TexturesCollide** method and the result is stored in the **carriageCollisionPoint** Vector2 variable.
@@ -90,7 +90,7 @@ If no collision was detected, we should then check for collisions between the ro
 
 Again, if a collision between the rocket and the cannon is detected, the screen position of the collision is returned. If no collision was detected the code continues and the next iteration of the for loop these checks will be done for the next player. In case no collision was found between the rocket and any player, the for loop ends and the CheckPlayersCollision returns (-1,-1).
 
-## Checking for objects going off screen
+## Checking for objects going off-screen
 
 Finally, we need a new method to check whether the rocket is still inside the window. This shouldn’t be that difficult:
 
@@ -194,7 +194,7 @@ Now, when all if this is added to your project in the correct way, your code sho
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * No exercises this time, but get ready for the next section!
 

@@ -1,6 +1,6 @@
 # Random terrain generation
 
-The result of last chapter does not meet the vision of rocky terrain as it is completely flat, as a first improvement, we are going to add slopes to the terrain. This doesn’t introduce any new MonoGame features, but will show us how randomness can be added to your game to improve replayability.
+The result of the last chapter does not meet the vision of rocky terrain as it is completely flat, as a first improvement, we are going to add slopes to the terrain. This doesn’t introduce any new MonoGame features but will show us how randomness can be added to your game to improve replayability.
 
 ## New terrain generator
 
@@ -22,7 +22,7 @@ Instead of a flat terrain, let us change our code so it generates a wave for ter
     }
 ```
 
-If you now run this code, you should see a terrain as shown in the image below. The Y coordinates are calculated using a [Sine function](https://en.wikipedia.org/wiki/Sine), which is the mathematical equivalent of a wave. There are a few parameters we can change to randomize this a bit further:
+If you now run this code, you should see the terrain as shown in the image below. The Y coordinates are calculated using a [Sine function](https://en.wikipedia.org/wiki/Sine), which is the mathematical equivalent of a wave. There are a few parameters we can change to randomize this a bit further:
 
 * The offset is the easiest one, as it simply sets the position of the midheight of the wave.
 * The peakheight value is multiplied by the output of the Sine function, so it defines how high the wave will be.
@@ -64,7 +64,7 @@ In our code, we will also add in a third wave to improve the resolution of our r
 
 For each wave:
 
-* We first draw a random value between 0 and 1 together with an offset making the the first wave between the [0,1] range
+* We first draw a random value between 0 and 1 together with an offset making the first wave between the [0,1] range
 * We add a second wave between the [1,2] range
 * And finally, the last wave between the [2,3] range.
 
@@ -76,7 +76,7 @@ Now when you try to run this code, you will get a much nicer terrain slope, as s
 
 One thing that immediately catches the eye when running this code, is that the players are not positioned on the terrain, this is simply because we are still using fixed positions for our players based on the original fixed foreground texture we used a few chapters ago.
 
-To solve this, find the **SetUpPlayers** method and replace it with the following code, which we will use to calculate the players new positions inside the for-loop of that method:
+To solve this, find the **SetUpPlayers** method and replace it with the following code, which we will use to calculate the player's new positions inside the for-loop of that method:
 
 ```csharp
     private void SetUpPlayers()
@@ -145,7 +145,7 @@ In the next chapter we will do something about the solid green color of our terr
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Alter the waves logic to mix up the terrain more
 * Try using [other mathematical waves](https://en.wikipedia.org/wiki/Trigonometric_functions#cos) such as cosine or tan to mix things up further, go wild
@@ -494,4 +494,4 @@ namespace Series2D1
 
 ## Next Steps
 
-[Texture to array of colors](Riemers2DXNA13texturetocolors)
+[Texture to an array of colors](Riemers2DXNA13texturetocolors)

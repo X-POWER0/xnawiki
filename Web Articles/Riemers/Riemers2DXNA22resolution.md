@@ -7,9 +7,9 @@ With all of the features in our 2D game implemented there is just one more impor
 When dealing with different resolutions, there are basically 2 solutions:
 
 * You can scale all graphics of your game to fit the current resolution. On larger resolutions, this might make your graphics look less nice as they are being stretched.
-* You can make best use of the pixels that are available. In the case of our game, this would result in a larger terrain and thus to a larger distance between all players, making it more difficult to hit each other.
+* You can make the best use of the pixels that are available. In the case of our game, this would result in a larger terrain and thus to a larger distance between all players, making it more difficult to hit each other.
 
-Since both approaches both have their pros and cons, let us discuss both of them. We will make it very easy to switch between them using a global Boolean, that should be added to our list of variables in the Properties section of our code, together with the native resolution of the game:
+Since both approaches have their pros and cons, let us discuss both of them. We will make it very easy to switch between them using a global Boolean, that should be added to our list of variables in the Properties section of our code, together with the native resolution of the game:
 
 ```csharp
     private const bool _resolutionIndependent = false;
@@ -37,7 +37,7 @@ If resolutionIndependent is false, the second approach will be followed.  Let us
 
 ## Determining the screen scaling factors
 
-When **resolutionIndependent** is false, things we be done the ‘old’ way, the code will create textures that are of the same size as the real resolution. This will result in a larger terrain, which can be rendered to the screen as it is.
+When **resolutionIndependent** is false, things can be done the ‘old’ way, the code will create textures that are of the same size as the real resolution. This will result in a larger terrain, which can be rendered to the screen as it is.
 
 The last changes we need to make are obviously in the Draw method. In case **resolutionIndependent** is true, we need to scale our entire scene so it perfectly fits the screen, therefore, we are first going to calculate exactly how much we need to scale the scene. Since the vertical and horizontal scaling can be different, we need to find 2 values, but instead of storing them in a Vector2, these will be stored in a Vector3 and using the 3rd component (which be set to 1) later on as we will need a Vector3 and not a Vector2.
 
@@ -93,11 +93,11 @@ And that is it! Now try changing the **baseScreenSize** values, as well as the s
 
 ![Finished game](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA22Finish1.png?raw=true)
 
-This concludes this Series of 2D Tutorials. I hope you enjoyed it as much as I enjoyed writing it, and that you have learned some things on your way.
+This concludes this series of 2D Tutorials. I hope you enjoyed it as much as I enjoyed writing it, and that you have learned some things on your way.
 
 Feel free to adjust/expand on the code, since this is the best way to really know how things work. After that, you should be more than ready to start coding your own 2D game!
 
-If you think you’ve mastered most of the functionality presented in this series, I strongly recommend you to have a look of the first Series of 3D Tutorials on this site. After finishing this 2D Series, you should find it very easy to continue your path and move on to 3D game programming!
+If you think you’ve mastered most of the functionality presented in this series, I strongly recommend you have a look at the first Series of 3D Tutorials on this site. After finishing this 2D Series, you should find it very easy to continue your path and move on to 3D game programming!
 
 ## Our final code
 

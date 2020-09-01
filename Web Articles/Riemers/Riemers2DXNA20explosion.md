@@ -4,7 +4,7 @@ While the explosions we added during the last three chapters look nice, they don
 
 ## Deforming terrain
 
-Although there will be no real concepts introduced in this chapter, I decided to add it to this series of 2D Tutorials as it is another example on the use of matrices. All we are going to add is a method called **AddCrater** since we want our rockets explosions to create craters, roughly the same shape of our explosion image. To to this we need to pass the 2D color array of this image to our method to find exactly where on the screen the crater should be and how large it should be.
+Although there will be no real concepts introduced in this chapter, I decided to add it to this series of 2D Tutorials as it is another example of the use of matrices. All we are going to add is a method called **AddCrater** since we want our rockets explosions to create craters, roughly the same shape of our explosion image. To do this we need to pass the 2D color array of this image to our method to find exactly where on the screen the crater should be and how large it should be.
 
 Starting with this new method:
 
@@ -45,7 +45,7 @@ Next, we calculate the pixel’s screen position (this is the position on the sc
 
 Finally, if this screen coordinate is not outside the screen region, we check if the pixel would be drawn in the terrain, if this is the case then the terrain should be lowered at that point.
 
-That is it for the method, all we need is to call it correctly. First we need to store its 2D array of colors, so add this line to our list of variables in the Properties section of our code:
+That is it for the method, all we need is to call it correctly. First, we need to store its 2D array of colors, so add this line to our list of variables in the Properties section of our code:
 
 ```csharp
     private Color[,] _explosionColorArray;
@@ -104,7 +104,7 @@ When you run this code, you should see a new crater each time your rocket collid
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * With craters and deformation in your hands, try making bigger explosions and even bigger craters.
 

@@ -3,8 +3,8 @@
 The final image of the previous chapter showed 3 large flaws, which we will solve now:
 
 * The carriages are drawn below the terrain, instead of on top of it.
-* The carriage are far too big.
-* They are gray.
+* The carriages are far too big.
+* They are grey.
 
 ## Fixing the Carriage draw position
 
@@ -33,7 +33,7 @@ Let’s discuss the multiple arguments in short:
 8. The 8th argument can be used to mirror the image horizontally of vertically before drawing it to the screen using the SpriteEffects enum.
 9. The final argument can be used to specify the layer the image should be drawn on. This is useful for advanced games having multiple transparent images stacked on top of each other.
 
-As sixth argument, we’re specifying the bottom-left corner of the image by specifying ***Vector2(0, carriageTexture.height)***. This position is indicated by the red dot in the image below. MonoGame will make sure this pixel is positioned at the position stored in player.Position.
+As the sixth argument, we are specifying the bottom-left corner of the image by specifying ***Vector2(0, carriageTexture.height)***. This position is indicated by the red dot in the image below. MonoGame will make sure this pixel is positioned at the position stored in player.Position.
 
 ![Gun Carriage](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA04SpriteBatch01.jpg?raw=true)
 
@@ -55,7 +55,7 @@ And then initialize it at the bottom of the LoadContent method:
 
 Since the width of each flat area on the terrain is 40 pixels, this scaling factor should scale the carriage so it fits on the flat area.
 
-Now we can use this new variable as scaling argument of our SpriteBatch.Draw method in the **DrawPlayers** method:
+Now we can use this new variable as the scaling argument of our SpriteBatch.Draw method in the **DrawPlayers** method:
 
 ```csharp
     _spriteBatch.Draw(_carriageTexture, _players[i].Position, null, Color.White, 0, new Vector2(0, _carriageTexture.Height), _playerScaling, SpriteEffects.None, 0);
@@ -63,11 +63,11 @@ Now we can use this new variable as scaling argument of our SpriteBatch.Draw met
 
 Now when you run this code, the carriage will be scaled down so they fit on the flat areas, next we just need to add some color to them!
 
-Or actually: remove some color, as in graphics programming the color ‘white’ is the combination of all colors together. Every possible color is made up of 3 components: the Red, Green and Blue (RGB) components. If you add all of them together, you get white. If you only mix red an blue together, you get purple. If you use none of them, you get black.
+Or actually: remove some color, as in graphics programming the color ‘white’ is the combination of all colors together. Every possible color is made up of 3 components: the Red, Green and Blue (RGB) components. If you add all of them together, you get white. If you only mix red and blue together, you get purple. If you use none of them, you get black.
 
 ## Coloring the player sprites
 
-The Color argument in the SpriteBatch.Draw() method is a useful tool to use, before the image is rendered to the screen MonoGame looks up the color of each of the pixels of the image and applies the color you specified in the SpriteBatch.Draw() method. Next, the Red components of both colors are multiplied with each other, the same is true for both Green and Blue components. The resulting color is then rendered to the screen!
+The Color argument in the SpriteBatch.Draw() method is a useful tool to use before the image is rendered to the screen MonoGame looks up the color of each of the pixels of the image and applies the color you specified in the SpriteBatch.Draw() method. Next, the Red components of both colors are multiplied with each other, the same is true for both Green and Blue components. The resulting color is then rendered to the screen!
 
 Let us say you want to render a white pixel to the screen which has full Red, Green and Blue components (RGB = 1,1,1). If you specified *Blue* as *Color* argument of the SpriteBatch, the Draw method having RGB = 0,0,1 would result in a color that is:
 
@@ -76,7 +76,7 @@ Let us say you want to render a white pixel to the screen which has full Red, Gr
 * Blue 1 * 1
 * = 0,0,1 = Blue
 
-A Second example is that you want to render the color ***0.8,0.6,1*** to the screen and you have specified ***0.5,0.2,0.4*** as *Color* argument. 
+A second example is that you want to render the color ***0.8,0.6,1*** to the screen and you have specified ***0.5,0.2,0.4*** as *Color* argument. 
 
 The resulting color would be:
 
@@ -107,7 +107,7 @@ Now if you run this code, all of the carriages should be drawn at the correct po
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Try to mirror the carriages horizontally by changing SpriteEffects.None in the SpriteBatch.Draw method.
 

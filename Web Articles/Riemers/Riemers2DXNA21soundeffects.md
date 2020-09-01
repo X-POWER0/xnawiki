@@ -12,9 +12,9 @@ We are going to add three simple sound effects:
 
 > The audio files are included in the asset bundle you downloaded earlier.
 
-Loading and playing sound effects has been simplified in MonoGame, to the point where you can load it the same as if were loading and using textures, all thanks to the improvements in the Content Pipeline.
+Loading and playing sound effects have been simplified in MonoGame, to the point where you can load it the same as if were loading and using textures, all thanks to the improvements in the Content Pipeline.
 
-Therefore, as we have done many time before with textures, add the 3 files into your Content project and then define these 3 variables in the Properties section of your code:
+Therefore, as we have done many times before with textures, add the 3 files into your Content project and then define these 3 variables in the Properties section of your code:
 
 ```csharp
     private SoundEffect _hitCannon;
@@ -36,7 +36,7 @@ Next, load the audio files in your LoadContent method:
     _launch = Content.Load<SoundEffect>("launch");
 ```
 
-Now, all you need to do, is call **Play()** for each of the new **SoundEffect** variables to play the sound, thanks to the simplicity of the MonoGame Framework!
+Now, all you need to do is call **Play()** for each of the new **SoundEffect** variables to play the sound, thanks to the simplicity of the MonoGame Framework!
 
 ## Playing SoundEffects
 

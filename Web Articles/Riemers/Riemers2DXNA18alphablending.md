@@ -1,6 +1,6 @@
 # Additive alpha blending
 
-The major issue with the result of last chapter is that the explosion images are rendered in their original format to the screen, exactly as they are defined in the image file. As a result the black borders are rendered on top of the contents already present in the backbuffer of our graphics card.
+The major issue with the result of the last chapter is that the explosion images are rendered in their original format to the screen, exactly as they are defined in the image file. As a result, the black borders are rendered on top of the contents already present in the backbuffer of our graphics card.
 
 In this chapter, we will fix this by turning additive alpha blending on before the particles are rendered.
 
@@ -19,13 +19,13 @@ Both colors are mixed together to obtain a new color for the pixel. In MonoGame,
 
 Both **SrcBlend** and **DestBlend** can be defined by us, which By default MonoGame expects to come from the images by supplying transparency information for each pixel. Within images that support transparency (for example PNG's), next to the R,G and B channel each color has a corresponding A (Alpha) channel, which contains the transparency information (which is references as RGBA). Some image formats, like PNG, store this information while others, like JPG, do not.
 
-Which brings us to the default alpha blending in MonoGame. By default the SpriteBatch uses this **Alpha** value as the **SrcBlend** factor and the inverse value (1-SrcBlend) as the DestBlend, as follows:
+Which brings us to the default alpha blending in MonoGame. By default, the SpriteBatch uses this **Alpha** value as the **SrcBlend** factor and the inverse value (1-SrcBlend) as the DestBlend, as follows:
 
 ```csharp
     NewColor = SrcAlpha * SrcColor + (1-SrcAlpha) * DestColor
 ```
 
-An example for this is the image of our carriage which is not transparent for each pixel of the carriage itself and is fully transparent for all other pixels. So for the pixels of our carriage, we get this:
+An example of this is the image of our carriage which is not transparent for each pixel of the carriage itself and is fully transparent for all other pixels. So for the pixels of our carriage, we get this:
 
 ```csharp
     NewColor = 1 * SrcColor + 0 * DestColor
@@ -111,7 +111,7 @@ When you run this code, your explosions should look a lot smoother, as shown in 
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * No exercises this time, but get ready for the next section!
 

@@ -30,12 +30,12 @@ These variables can be described as follows:
 
 * The first one keeps track of whether our rocket is in the air, and thus whether it should be drawn.
 * Obviously, at all times we need to know the position of the rocket.
-* The direction and angle of the rocket are needed when calculating the next position of the rocket, and is closely related to the angle. In fact, the angle can be calculated from the direction, but because we need both quite frequently we want both to be a easy accessible variable.
+* The direction and angle of the rocket are needed when calculating the next position of the rocket and is closely related to the angle. In fact, the angle can be calculated from the direction, but because we need both quite frequently we want both to be a easily accessible variable.
 * Finally, the scaling variable will remain a fixed constant, but since we will need it a few times in our code we also add it as a variable.
 
 ## Launching the rocket from the keyboard
 
-We we want to launch the rocket on a press of the spacebar (and the Enter key for fun). So add this code to the end of the ProcessKeyboard method:
+We want to launch the rocket on a press of the spacebar (and the Enter key for fun). So add this code to the end of the ProcessKeyboard method:
 
 ```csharp
     if (keybState.IsKeyDown(Keys.Enter) || keybState.IsKeyDown(Keys.Space))
@@ -54,11 +54,11 @@ The above code will:
 * Sets the position and angle for the rocket
 * Moves the rocket to appear just beyond the end of the cannon
 
-For the position, you start at the bottom-left corner of the carriage, and add 20 pixels to the right and 10 pixels up, corresponding to the center of the carriage. As starting angle of the rocket, we should simply take the current angle of the cannon.
+For the position, you start at the bottom-left corner of the carriage and add 20 pixels to the right and 10 pixels up, corresponding to the center of the carriage. For the starting angle of the rocket, we should simply take the current angle of the cannon.
 
 ## Firing the rocket
 
-A bit more complicated is to find the direction of the rocket. A direction should have a X and Y component, indicating how many pixels horizontally and vertically the rocket should be moved each time. Obviously, this can be found from the angle of the rocket.
+A bit more complicated is to find the direction of the rocket. A direction should have an X and Y component, indicating how many pixels horizontally and vertically the rocket should be moved each time. Obviously, this can be found from the angle of the rocket.
 
 One approach would be to take the sine and cosine of this angle and use this as Y and X components, but MonoGame allows us to use a much more elegant solution. We will start from the (0,-1) Up direction, and ask MonoGame to rotate this over an angle we specify. This is illustrated in the image below:
 
@@ -80,7 +80,7 @@ This is how we can obtain the rotation matrix:
 
 To explain the line above, think of how you would rotate the Up vector shown in the image above, you would take it between 2 fingers, and rotate it. Important here is that your fingers are pointing to the screen.
 
-This helps to understand the line of code above, it creates a matrix containing a rotation around the Z axis which provides us what we need. If the X axis is pointing to the right and the Y axis is pointing down, the Z axis is sticking out of the screen!
+This helps to understand the line of code above, it creates a matrix containing a rotation around the Z axis which provides us with what we need. If the X axis is pointing to the right and the Y axis is pointing down, the Z axis is sticking out of the screen!
 
 Now we have this matrix containing our rotation, we can ask MonoGame to transform our Up vector with this rotation:
 
@@ -88,7 +88,7 @@ Now we have this matrix containing our rotation, we can ask MonoGame to transfor
     _rocketDirection = Vector2.Transform(up, rotMatrix);
 ```
 
-This will take the original up direction, transform it with the rotation around the Z axis and store the result in the rocketDirection variable! Now all we need to do, is scale this direction up or down, depending on the Power the rocket was shot:
+This will take the original up direction, transform it with the rotation around the Z axis and store the result in the rocketDirection variable! Now all we need to do is scale this direction up or down, depending on the Power the rocket was shot:
 
 ```csharp
     _rocketDirection *= _players[_currentPlayer].Power / 50.0f;
@@ -132,7 +132,7 @@ Now when you run this code, whenever you press the spacebar or the enter key, yo
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * No exercises this time, but get ready for the next section!
 

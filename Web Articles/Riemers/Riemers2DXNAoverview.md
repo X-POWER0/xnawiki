@@ -2,7 +2,7 @@
 
 This part of the site shows you how easy it is to get a 2D MonoGame program up and running! This tutorial is aimed at people who would to start game programming in MonoGame and see some nice results in the shortest possible time. To this end, MonoGame is an ideal programming environment. Using C# as programming language, the code looks very much like Java, so anyone having some notions of Java should be able to start right away. Even more, this tutorial is written in such a way that anyone who has any programming experience should be able to completely understand and complete it!
 
-Each chapter of this series starts by explaining a 2D game programming concept, which is then put to practice by adding the code to our project. This helps you gradually building up your MonoGame skills, and in the end you’ll have created a complete 2D game!
+Each chapter of this series starts by explaining a 2D game programming concept, which is then put to practice by adding the code to our project. This helps you gradually building up your MonoGame skills, and in the end, you will have created a complete 2D game!
 
 The game we will create looks pretty simple, but don’t be mistaken: at the end of the series you’ll know enough to create almost any 2D game!
 
@@ -42,7 +42,7 @@ Below you can find some screenshots of this series of 2D MonoGame Tutorials. The
 10. [Adding the smoke trail](Riemers2DXNA10smoketrail)
 11. [Defining the colors of a texture per-pixel](Riemers2DXNA11manualtexturecreation)
 12. [Random terrain generation](Riemers2DXNA12randomterrain)
-13. [Texture to array of colors](Riemers2DXNA13texturetocolors)
+13. [Texture to an array of colors](Riemers2DXNA13texturetocolors)
 14. [2D Collision Detection](Riemers2DXNA14collisionoverview)
 15. [2D Transformation matrices](Riemers2DXNA15collisionmatrices)
 16. [Putting Collision Detection into practice](Riemers2DXNA16puttingcdintoaction)

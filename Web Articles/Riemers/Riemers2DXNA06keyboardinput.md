@@ -32,7 +32,7 @@ To keep our Update method clean, we will add a new method called **ProcessKeyboa
 
 This code is basically all we need!
 
-* The first line retrieves the current state of the keyboard, holding which keys are current pressed.
+* The first line retrieves the current state of the keyboard, holding which keys are currently pressed.
 * We use this KeyboardState object to the whether the Left and Right arrow keys are currently down, and if this is the case we change the angle of the current player.
 
 Now we need to call this method from our Update method (before *base.Update*), ensuring the keyboard is read exactly 60 times each second:
@@ -40,7 +40,8 @@ Now we need to call this method from our Update method (before *base.Update*), e
 ```csharp
     ProcessKeyboard();
 ```
-## Rotation validation (don't hit the floor)
+
+## Rotation validation (do not hit the floor)
 
 Now run this code! When you press the left and right arrow keys, the cannon of the first (red) player will rotate. However, at this moment you are able to rotate the cannon so it’s colliding with the terrain, so we should add this little logic to the end of the **ProcessKeyboard** method:
 
@@ -55,7 +56,7 @@ Now run this code! When you press the left and right arrow keys, the cannon of t
     }
 ```
 
-In this code you need to remember that Pi = 3.14 radians which corresponds to 180 degrees, so PiOver2 radians corresponds to 90 degrees. Then it is easy:
+In this code, you need to remember that Pi = 3.14 radians which correspond to 180 degrees, so PiOver2 radians corresponds to 90 degrees. Then it is easy:
 
 * If the cannon is at 90 degrees (meaning horizontally to the right), and the right button is pressed, the angle changes to -90 degrees so it is pointing to the left.
 * The last 2 lines make this true for the other way around.
@@ -102,7 +103,7 @@ That is it for this chapter! You can see the cannon rotate on your keyboard inpu
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Add more keys for increasing/decreasing the power
 * Try and make the rotation lock in place instead of flip to the other side of the carriage (like the power)

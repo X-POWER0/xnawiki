@@ -10,9 +10,9 @@ However, because an image is always a rectangle does not mean that the image it 
 
 ![Collision](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA14Collision1.png?raw=true)
 
-Before we can check for collision between 2 images, we need to make sure they are positioned correctly when they are moved to the correct position on the screen. If we dd not first position them correctly before checking for collisions, then the top-left pixels of both images would align and we would almost always have a collision. This is shown in the right part of the image above.
+Before we can check for collision between 2 images, we need to make sure they are positioned correctly when they are moved to the correct position on the screen. If we did not first position them correctly before checking for collisions, then the top-left pixels of both images would align and we would almost always have a collision. This is shown in the right part of the image above.
 
-For example, if both images are positioned so that the rocket is positioned in front of the cannon, much like shown in the left part of the image below. Although in the left part the rectangles of both images collide, we see the actual cannon and rocket detail actually do not collide. This is because in all pairs of overlapping pixels, at least one of both is transparent.
+For example, if both images are positioned so that the rocket is positioned in front of the cannon, much like shown in the left part of the image below. Although in the left part the rectangles of both images collide, we see the actual cannon and rocket detail actually do not collide. This is because, in all pairs of overlapping pixels, at least one of both is transparent.
 
 ![Collision](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA14Collision2.png?raw=true)
 
@@ -48,11 +48,11 @@ This is illustrated in the image above, the image shows a screen with a rotated 
 
 ## Using Matrices to simplify detection
 
-Very nice, but how can we ‘Find the screen coordinate occupied by this pixel’? This is done through matrices. Remember though matrices are nothing magical, in fact they are just a grid of 4x4 numbers, but all you to remember about matrices at this point is this:
+Very nice, but how can we ‘Find the screen coordinate occupied by this pixel’? This is done through matrices. Remember though matrices are nothing magical, in fact, they are just a grid of 4x4 numbers, but all you to remember about matrices at this point is this:
 
-* A matrix can store the position, rotation and scale of an image.
+* A matrix can store the position, rotation, and scale of an image.
 
-When a matrix holds the position, rotation and scale of an image, you can use this matrix to find the final screen coordinate of any pixel of this image, also important in this case in the other way around, if we take the inverse of this matrix given any screen coordinate, then we can find the coordinate of the pixel in the original image.
+When a matrix holds the position, rotation, and scale of an image, you can use this matrix to find the final screen coordinate of any pixel of this image, also important in this case in the other way around, if we take the inverse of this matrix given any screen coordinate, then we can find the coordinate of the pixel in the original image.
 
 Instead of doing this exercise for all pixels of image A, we will only discuss this for the bottom-right pixel (3,8) of image A. 
 
@@ -141,7 +141,7 @@ Now, in case no collision is detected we need to return (-1,-1) to the calling c
     return new Vector2(-1,-1);
 ```
 
-This implements the core functionality of the method. While there might be cases that this method survives, in general it will crash, because some pixels of image A will fall outside of image B. In the image above for example: the very first pixel the rocket (to the left of the top of the rocket) does not correspond to a pixel in image B, so this line will cause or program to crash:
+This implements the core functionality of the method. While there might be cases that this method survives, in general, it will crash because some pixels of image A will fall outside of image B. In the image above for example, the very first pixel of the rocket (to the left of the top of the rocket) does not correspond to a pixel in image B, so this line will cause or program to crash:
 
 ```csharp
     if (tex2[x2, y2].A > 0)
@@ -196,11 +196,11 @@ As this has been a bit of a rollercoaster ride, here is the full function for re
 >   return Vector2.Transform(pos1, mat1);
 > ```
 
-There’s no screenshot for this chapter, although we’ve added some powerful functionality to our code. In the next chapter we will see how we can use this functionality to detect collisions between any two images.
+There’s no screenshot for this chapter, although we’ve added some powerful functionality to our code. In the next chapter, we will see how we can use this functionality to detect collisions between any two images.
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * No exercises this time, but get ready for the next section!
 

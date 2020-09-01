@@ -1,12 +1,12 @@
 # Particles
 
-With collision detection added to our project, the functionality of our game is almost complete. There are however, some things lacking, such as a nice explosion whenever the rocket hits the terrain or another cannon.
+With collision detection added to our project, the functionality of our game is almost complete. There are, however, some things lacking, such as a nice explosion whenever the rocket hits the terrain or another cannon.
 
 A few years ago, 2D explosions were nothing more than pre-defined animations, similar to .gif image sequences, these contained a number of frames that were being cycled through.
 
-Today, since the available processing power has increased dramatically, both 2D as 3D explosions are built up from many small very faint fireball images that are rendered on top of each other, these small images all start at the explosion origin and travel in a random directions while they fade away over time. These small images are called particles, and the engine that updates them is called a particle system.
+Today, since the available processing power has increased dramatically, both 2D as 3D explosions are built up from many small very faint fireball images that are rendered on top of each other, these small images all start at the explosion origin and travel in random directions while they fade away over time. These small images are called particles, and the engine that updates them is called a particle system.
 
-The particle we are going to use as building block for our explosions is shown below (explosion.png), and can be found in the assets pack you downloaded previously. Import it into our project, add a variable in the Properties section:
+The particle we are going to use as a building block for our explosions is shown below (explosion.png), and can be found in the assets pack you downloaded previously. Import it into our project, add a variable in the Properties section:
 
 ```csharp
     private Texture2D _explosionTexture;
@@ -24,7 +24,7 @@ And load it in our LoadContent method:
 
 Before we can render the particles there are a few things about them that we need to keep track of. For example, we need to store the particle's current positions and scaling factors. To enable us to calculate their next position, we will need their direction, but that’s not all, we want the particles to also grow larger and fade out as time goes by, which means for each particle we need to store when it was created and how long the particle should stay alive before totally disappearing. Finally, since the particles should move very fast in the beginning and slow down at the end, we will need to store its acceleration.
 
-To store this data in a nice way, we wll define new struct called **ParticleData**, which can store all of this data. Add this at the very top of our file after the **PlayerData** struct:
+To store this data in a nice way, we will define a new struct called **ParticleData**, which can store all of this data. Add this at the very top of our file after the **PlayerData** struct:
 
 ```csharp
     public struct ParticleData
@@ -86,7 +86,7 @@ The method starts by creating a new, empty **ParticleData** object. There are a 
 
 Next, we store the "birth time" of the particle, which will be needed each frame when we need to determine the age of the particle. The maximum age will determine when the particle should be completely gone. The scaling property will determine the size of the particle, while the ModColor will allow us to make the particle fade away towards the end of its life.
 
-There is one very important property missing: the direction of the particle, if you want to make a more realistic particle system there is one very important word, randomness. Although all particles for one explosion should start at the same position, they should move towards different directions and the only way to obtain a nice result is to make these directions totally random.
+There is one very important property missing: the direction of the particle, if you want to make a more realistic particle system there is one very important word, randomness. Although all particles for one explosion should start in the same position, they should move towards different directions and the only way to obtain a nice result is to make these directions totally random.
 
 The following code will generate a random direction. Not only the direction itself is random, but also the length:
 
@@ -100,11 +100,11 @@ The following code will generate a random direction. Not only the direction itse
     particle.Acceleration = 3.0f * particle.Direction;
 ```
 
-First, we will start by determining how far the current particle should have travelled at the end of its life, we want a random value between 0 and the maximum size of the explosion.
+First, we will start by determining how far the current particle should have traveled at the end of its life, we want a random value between 0 and the maximum size of the explosion.
 
-We will use this **particleDistance** variable as the length of our direction, the only thing we need to do is rotate this over a random angle. This is done with the next three lines, first we define a Down vector of the length found in the first line. Next, we generate a random angle, and use this random angle to create a rotation matrix, as explained in the **"Angle to Direction"** chapter, which is used to rotate the Down vector over the random angle.
+We will use this **particleDistance** variable as the length of our direction, the only thing we need to do is rotate this over a random angle. This is done with the next three lines, first, we define a Down vector of the length found in the first line. Next, we generate a random angle, and use this random angle to create a rotation matrix, as explained in the **"Angle to Direction"** chapter, which is used to rotate the Down vector over the random angle.
 
-At this moment, we do not know exactly how the particle should be displaced at the end of its life, for now we use this displacement vector as Direction and Acceleration, which is totally wrong as we will see in the next chapter.
+At this moment, we do not know exactly how the particle should be displaced at the end of its life, for now, we use this displacement vector as Direction and Acceleration, which is totally wrong as we will see in the next chapter.
 
 Finally, this new particle should be added to the particleList at the end of the **AddExplosionParticle** method:
 
@@ -155,10 +155,10 @@ I agree that this final image is not really what we expect of an explosion. But 
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Try playing with the explosion variables from the CheckCollisions method to alter the explosions
-* I wonder what happens if you do actually shoot a rocket off the screen? Global Thermonuclear War? How big is that explosion.
+* I wonder what happens if you do actually shoot a rocket off the screen? Global Thermonuclear War? How big is that explosion?
 
 ## The code thus far
 

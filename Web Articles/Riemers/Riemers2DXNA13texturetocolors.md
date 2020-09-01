@@ -1,6 +1,6 @@
-# Texture to array of colors
+# Texture to an array of colors
 
-With the slopes finally ready, we can move on and do something about the solid green color of our terrain. Instead of using a fixed color, for each pixel of the terrain we’re going to look up the color from an existing ground image and use this color for our own terrain. This might be a problem when our terrain is larger than the existing ground image, which is why we need a ‘tileable’ ground image, meaning that you cannot see an edge when you put two of the images next to, on top or below each other.
+With the slopes finally ready, we can move on and do something about the solid green color of our terrain. Instead of using a fixed color, for each pixel of the terrain, we are going to look up the color from an existing ground image and use this color for our own terrain. This might be a problem when our terrain is larger than the existing ground image, which is why we need a ‘tileable’ ground image, meaning that you cannot see an edge when you put two of the images next to, on top of below each other.
 
 ## Coloring the ground from a texture
 
@@ -18,7 +18,7 @@ And initialize it in our LoadContent method:
 
 Now, instead of specifying a fixed color, we will transfer the color data from this image into our foregroundTexture. However, to do this we will need access to the color data stored inside the groundTexture. This is the opposite of what we did a few chapters ago where we created a texture from an array of colors, here we need to copy the data from an existing texture into an array of colors.
 
-This is not that difficult, so Let us start by adding this method to extract the data from a Texture2D:
+This is not that difficult, so let us start by adding this method to extract the data from a Texture2D:
 
 ```csharp
     private Color[,] TextureTo2DArray(Texture2D texture)
@@ -30,7 +30,7 @@ This is not that difficult, so Let us start by adding this method to extract the
 
 > Ignore any errors raised from this new function as we slowly build it up and explain.
 
-As described above, we want this method to accept a Texture2D object, extract the color data and return this color data as a 2D array. Having a 2D array makes things easier later on as each color inside this 2D array corresponds to a pixel from the 2D image.
+As described above, we want this method to accept a Texture2D object, extract the color data, and return this color data as a 2D array. Having a 2D array makes things easier later on as each color inside this 2D array corresponds to a pixel from the 2D image.
 
 For now, this method simply creates a 1D array of Colors, capable of storing one color for each pixel in the image (Width*Height pixels in the image). Then, it copies the color data from the texture into the array.
 
@@ -51,7 +51,7 @@ However, we want this data as a 2D array and not as a 1D array, so add this easy
     return colors2D;
 ```
 
-We first initialize a new 2D array large enough to store one Color for each pixel of the texture, then we copy the data from our 1D array to the exact location inside our 2D array. At the end, we return this 2D array to the calling code.
+We first initialize a new 2D array large enough to store one Color for each pixel of the texture, then we copy the data from our 1D array to the exact location inside our 2D array. In the end, we return this 2D array to the calling code.
 
 ## Applying the texture to the terrain
 
@@ -81,7 +81,7 @@ This will work fine, unless the screen is wider or higher than the width and hei
 
 > The [Modulo](https://en.wikipedia.org/wiki/Modulo_(mathematics)) is the remainder after division and can be best explained by the following example.
 >
-> If groundWidth = 400, then (100 modulo 400) remains 100, while (500 modulo 400) will also be 100. (532 modulo 400) is 132, (389 modulo 400) is 389 and (929 modulo 400) is 129. Which means that it maps all numbers inside the [0,groundWidth] range, exactly what we need.
+> If groundWidth = 400, then (100 modulo 400) remains 100, while (500 modulo 400) will also be 100. (532 modulo 400) is 132, (389 modulo 400) is 389 and (929 modulo 400) is 129. This means that it maps all numbers inside the [0,groundWidth] range, exactly what we need.
 >
 > The modulo operator in C# is ‘%’ so this is how we take (x modulo groundWidth):
 >
@@ -103,10 +103,10 @@ Two chapters ago, you learned how to create a Texture2D object from a 2D array o
 
 ## Exercises
 
-You can try these exercises to practice what you've learned:
+You can try these exercises to practice what you have learned:
 
 * Try using different textures for the terrain and see if the scaling logic works
-* Also try changing the starting window dimensions to test the same
+* Also, try changing the starting window dimensions to test the same
 
 ## The code thus far
 
