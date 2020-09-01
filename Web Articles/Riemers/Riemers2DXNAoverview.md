@@ -50,5 +50,5 @@ Below you can find some screenshots of this series of 2D MonoGame Tutorials. The
 18. [Additive alpha blending](Riemers2DXNA18alphablending)
 19. [Particle engine](Riemers2DXNA19particleengine)
 20. [Adding explosion craters](Riemers2DXNA20explosion)
-21. [Playing sound effects in XNA](Riemers2DXNA21soundeffects)
+21. [Playing sound effects](Riemers2DXNA21soundeffects)
 22. [Resolution independency](Riemers2DXNA22resolution)

@@ -1,648 +1,745 @@
-# Playing sound effects in XNA
+# Playing sound effects
 
-At this moment, we have a fully playable game, thanks to all the functionality we’ve added throughout this series of 2D XNA Tutorials. The overall feeling of a game is always MUCH improved once sound effects are added to it, which is what we’re about to do in this chapter.
+At this moment, we have a fully playable game thanks to all the functionality we have added throughout this series of 2D Tutorials. The overall feeling of a game is always GREATLY improved once sound effects are added to it, which is what we’re about to do in this chapter.
 
-We’re going to add three simple sound effects: one for the rocket launch, one for a terrain explosion and another one for a cannon explosion. You can download them by clicking on their names in the previous phrase (links don't work yet, for now use 3 sounds of your choice).
+## Loading sounds
 
-Loading and playing sound effects used to be quite cumbersome in previous XNA versions, and has been much simplified since XNA 4.0, where you can load it much like you would load and use textures.
+We are going to add three simple sound effects:
 
-Therefore, load the 3 files into your Content project as you would do for images. Next, define these 3 variables at the top of you code:
+* One for the rocket launch
+* One for a terrain explosion
+* And another one for a cannon explosion.
+
+> The audio files are included in the asset bundle you downloaded earlier.
+
+Loading and playing sound effects has been simplified in MonoGame, to the point where you can load it the same as if were loading and using textures, all thanks to the improvements in the Content Pipeline.
+
+Therefore, as we have done many time before with textures, add the 3 files into your Content project and then define these 3 variables in the Properties section of your code:
 
 ```csharp
- SoundEffect hitCannon;
- SoundEffect hitTerrain;
- SoundEffect launch;
+    private SoundEffect _hitCannon;
+    private SoundEffect _hitTerrain;
+    private SoundEffect _launch;
 ```
 
-And load them in your LoadContent method:
+As we are now using features from the MonoGame audio framework, we will also need to add a new using statement to the top of our class file, as follows:
 
 ```csharp
- hitCannon = Content.Load("hitcannon");
- hitTerrain = Content.Load("hitterrain");
- launch = Content.Load("launch");
+    using Microsoft.Xna.Framework.Audio;
 ```
 
-Now, all you need to do, is call the hitCannon.Play() to play the sound!
-
-The first effect should be started whenever the rocket is launched, which is detected in our ProcessKeyboard method. Add this line to the end of that method, inside the if-block that detects whether the rocket should be launched:
+Next, load the audio files in your LoadContent method:
 
 ```csharp
- launch.Play();
+    _hitCannon = Content.Load<SoundEffect>("hitcannon");
+    _hitTerrain = Content.Load<SoundEffect>("hitterrain");
+    _launch = Content.Load<SoundEffect>("launch");
 ```
 
-The other two effects should be started whenever a detection between the rocket and the terrain or a cannon is detected. So go to our CheckCollisions method, and add this line to the if-block that checks for cannon collisions:
+Now, all you need to do, is call **Play()** for each of the new **SoundEffect** variables to play the sound, thanks to the simplicity of the MonoGame Framework!
+
+## Playing SoundEffects
+
+The first effect (launch) should be started whenever a rocket is launched, which is detected in our **ProcessKeyboard** method. Add this line to the end of that method, inside the end of the if-block that detects when the rocket should be launched (keybState.IsKeyDown(Keys.Enter) || keybState.IsKeyDown(Keys.Space)):
 
 ```csharp
- hitCannon.Play();
+    _launch.Play();
 ```
 
-And this line to the if-block that detects terrain collisions:
+The other two effects should be started whenever a detection between the rocket and the terrain or a cannon is detected. So go to our **CheckCollisions** method, and add this line to the start of if-block that checks for player collisions (playerCollisionPoint.X > -1):
 
 ```csharp
- hitTerrain.Play();
+    _hitCannon.Play();
+```
+
+And this line to the start of the if-block that detects terrain collisions (terrainCollisionPoint.X > -1):
+
+```csharp
+    _hitTerrain.Play();
 ```
 
 That’s it! When you run the code, you should hear some sound effect each time you launch a rocket, and when the rocket hits something.
 
-// Image
+## Exercises
 
-## Our code thus far
+You can try these exercises to practice what you've learned:
+
+* If you do not like the sounds, try replacing them with your own (but not MP3's)
+* Try adding a new sound and playing it when the rocket leaves the screen.
+
+## The code thus far
 
 ```csharp
- using System;
- using System.Collections.Generic;
- using System.Linq;
- using Microsoft.Xna.Framework;
- using Microsoft.Xna.Framework.Audio;
- using Microsoft.Xna.Framework.Content;
- using Microsoft.Xna.Framework.GamerServices;
- using Microsoft.Xna.Framework.Graphics;
- using Microsoft.Xna.Framework.Input;
- using Microsoft.Xna.Framework.Media;
- 
- namespace XNATutorial
- {
-     public struct PlayerData
-     {
-         public Vector2 Position;
-         public bool IsAlive;
-         public Color Color;
-         public float Angle;
-         public float Power;
-     }
- 
-     public struct ParticleData
-     {
-         public float BirthTime;
-         public float MaxAge;
-         public Vector2 OrginalPosition;
-         public Vector2 Accelaration;
-         public Vector2 Direction;
-         public Vector2 Position;
-         public float Scaling;
-         public Color ModColor;
-     }
- 
-     public class Game1 : Microsoft.Xna.Framework.Game
-     {
-         GraphicsDeviceManager graphics;
-         SpriteBatch spriteBatch;
-         GraphicsDevice device;
-         Texture2D backgroundTexture;
-         Texture2D foregroundTexture;
-         Texture2D carriageTexture;
-         Texture2D cannonTexture;
-         Texture2D rocketTexture;
-         Texture2D smokeTexture;
-         Texture2D groundTexture;
-         Texture2D explosionTexture;
-         SpriteFont font;
-         SoundEffect hitCannon;
-         SoundEffect hitTerrain;
-         SoundEffect launch;
-         int screenWidth;
-         int screenHeight;
-         PlayerData[] players;
-         int numberOfPlayers = 4;
-         float playerScaling;
-         int currentPlayer = 0;
-         bool rocketFlying = false;
-         Vector2 rocketPosition;
-         Vector2 rocketDirection;
-         float rocketAngle;
-         float rocketScaling = 0.1f;
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
-        List<Vector2> smokeList = new List<Vector2> ();        Random randomizer = new Random();
-        int[] terrainContour;
-        Color[,] rocketColorArray;
-        Color[,] foregroundColorArray;
-        Color[,] carriageColorArray;
-        Color[,] cannonColorArray;
+namespace Series2D1
+{
+    public struct PlayerData
+    {
+        public Vector2 Position;
+        public bool IsAlive;
+        public Color Color;
+        public float Angle;
+        public float Power;
+    }
 
-        List<ParticleData> particleList = new List<ParticleData> ();        Color[,] explosionColorArray;
+    public struct ParticleData
+    {
+        public float BirthTime;
+        public float MaxAge;
+        public Vector2 OriginalPosition;
+        public Vector2 Acceleration;
+        public Vector2 Direction;
+        public Vector2 Position;
+        public float Scaling;
+        public Color ModColor;
+    }
+
+    public class Game1 : Game
+    {
+        //Properties
+        private GraphicsDeviceManager _graphics;
+        private SpriteBatch _spriteBatch;
+        private GraphicsDevice _device;
+        private Texture2D _backgroundTexture;
+        private Texture2D _foregroundTexture;
+        private Texture2D _carriageTexture;
+        private Texture2D _cannonTexture;
+        private Texture2D _rocketTexture;
+        private Texture2D _smokeTexture;
+        private Texture2D _groundTexture;
+        private Texture2D _explosionTexture;
+        private Color[,] _explosionColorArray;
+        private SpriteFont _font;
+        private SoundEffect _hitCannon;
+        private SoundEffect _hitTerrain;
+        private SoundEffect _launch;
+        private int _screenWidth;
+        private int _screenHeight;
+        private PlayerData[] _players;
+        private int _numberOfPlayers = 4;
+        private float _playerScaling;
+        private int _currentPlayer = 0;
+        private bool _rocketFlying = false;
+        private Vector2 _rocketPosition;
+        private Vector2 _rocketDirection;
+        private float _rocketAngle;
+        private float _rocketScaling = 0.1f;
+        private Color[] _playerColors = new Color[10]
+        {
+            Color.Red,
+            Color.Green,
+            Color.Blue,
+            Color.Purple,
+            Color.Orange,
+            Color.Indigo,
+            Color.Yellow,
+            Color.SaddleBrown,
+            Color.Tomato,
+            Color.Turquoise
+        };
+        private List<Vector2> _smokeList = new List<Vector2>();
+        private Random _randomizer = new Random();
+        private int[] _terrainContour;
+        private Color[,] _rocketColorArray;
+        private Color[,] _foregroundColorArray;
+        private Color[,] _carriageColorArray;
+        private Color[,] _cannonColorArray;
+        List<ParticleData> _particleList = new List<ParticleData>();
+
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
+            _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
         protected override void Initialize()
         {
-            graphics.PreferredBackBufferWidth = 500;
-            graphics.PreferredBackBufferHeight = 500;
-            graphics.IsFullScreen = false;
-            graphics.ApplyChanges();
-            Window.Title = "Riemer's 2D XNA Tutorial";
+            // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferWidth = 500;
+            _graphics.PreferredBackBufferHeight = 500;
+            _graphics.IsFullScreen = false;
+            _graphics.ApplyChanges();
+            Window.Title = "Riemer's 2D MonoGame Tutorial";
 
             base.Initialize();
         }
 
         private void SetUpPlayers()
         {
-            Color[] playerColors = new Color[10];
-            playerColors[0] = Color.Red;
-            playerColors[1] = Color.Green;
-            playerColors[2] = Color.Blue;
-            playerColors[3] = Color.Purple;
-            playerColors[4] = Color.Orange;
-            playerColors[5] = Color.Indigo;
-            playerColors[6] = Color.Yellow;
-            playerColors[7] = Color.SaddleBrown;
-            playerColors[8] = Color.Tomato;
-            playerColors[9] = Color.Turquoise;
-
-            players = new PlayerData[numberOfPlayers];
-            for (int i = 0; i < numberOfPlayers; i++)
+            _players = new PlayerData[_numberOfPlayers];
+            for (int i = 0; i < _numberOfPlayers; i++)
             {
-                players[i].IsAlive = true;
-                players[i].Color = playerColors[i];
-                players[i].Angle = MathHelper.ToRadians(90);
-                players[i].Power = 100;
-                players[i].Position = new Vector2();
-                players[i].Position.X = screenWidth / (numberOfPlayers + 1) * (i + 1);
-                players[i].Position.Y = terrainContour[(int)players[i].Position.X];
+                _players[i].IsAlive = true;
+                _players[i].Color = _playerColors[i];
+                _players[i].Angle = MathHelper.ToRadians(90);
+                _players[i].Power = 100;
+                _players[i].Position = new Vector2();
+                _players[i].Position.X = _screenWidth / (_numberOfPlayers + 1) * (i + 1);
+                _players[i].Position.Y = _terrainContour[(int)_players[i].Position.X];
             }
+        }
+
+        private void GenerateTerrainContour()
+        {
+            _terrainContour = new int[_screenWidth];
+
+            double rand1 = _randomizer.NextDouble() + 1;
+            double rand2 = _randomizer.NextDouble() + 2;
+            double rand3 = _randomizer.NextDouble() + 3;
+
+            float offset = _screenHeight / 2;
+            float peakheight = 100;
+            float flatness = 70;
+
+            for (int x = 0; x < _screenWidth; x++)
+            {
+                double height = peakheight / rand1 * Math.Sin((float)x / flatness * rand1 + rand1);
+                height += peakheight / rand2 * Math.Sin((float)x / flatness * rand2 + rand2);
+                height += peakheight / rand3 * Math.Sin((float)x / flatness * rand3 + rand3);
+                height += offset;
+                _terrainContour[x] = (int)height;
+            }
+        }
+
+        private void CreateForeground()
+        {
+            Color[,] groundColors = TextureTo2DArray(_groundTexture);
+            Color[] foregroundColors = new Color[_screenWidth * _screenHeight];
+
+            for (int x = 0; x < _screenWidth; x++)
+            {
+                for (int y = 0; y < _screenHeight; y++)
+                {
+                    if (y > _terrainContour[x])
+                    {
+                        foregroundColors[x + y * _screenWidth] = groundColors[x % _groundTexture.Width, y % _groundTexture.Height];
+                    }
+                    else
+                    {
+                        foregroundColors[x + y * _screenWidth] = Color.Transparent;
+                    }
+                }
+            }
+
+            _foregroundTexture = new Texture2D(_device, _screenWidth, _screenHeight, false, SurfaceFormat.Color);
+            _foregroundTexture.SetData(foregroundColors);
+
+            _foregroundColorArray = TextureTo2DArray(_foregroundTexture);
+        }
+
+        private void FlattenTerrainBelowPlayers()
+        {
+            foreach (PlayerData player in _players)
+            {
+                if (player.IsAlive)
+                {
+                    for (int x = 0; x < 40; x++)
+                    {
+                        _terrainContour[(int)player.Position.X + x] = _terrainContour[(int)player.Position.X];
+                    }
+                }
+            }
+        }
+
+        private Color[,] TextureTo2DArray(Texture2D texture)
+        {
+            Color[] colors1D = new Color[texture.Width * texture.Height];
+            texture.GetData(colors1D);
+
+            Color[,] colors2D = new Color[texture.Width, texture.Height];
+            for (int x = 0; x < texture.Width; x++)
+            {
+                for (int y = 0; y < texture.Height; y++)
+                {
+                    colors2D[x, y] = colors1D[x + y * texture.Width];
+                }
+            }
+
+            return colors2D;
+
         }
 
         protected override void LoadContent()
         {
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            device = graphics.GraphicsDevice;
+            _spriteBatch = new SpriteBatch(GraphicsDevice);
+            _device = _graphics.GraphicsDevice;
 
+            // TODO: use this.Content to load your game content here
+            _backgroundTexture = Content.Load<Texture2D>("background");
+            _carriageTexture = Content.Load<Texture2D>("carriage");
+            _cannonTexture = Content.Load<Texture2D>("cannon");
+            _rocketTexture = Content.Load<Texture2D>("rocket");
+            _smokeTexture = Content.Load<Texture2D>("smoke");
+            _groundTexture = Content.Load<Texture2D>("ground");
+            _explosionTexture = Content.Load<Texture2D>("explosion");
+            _font = Content.Load<SpriteFont>("myFont");
 
-            backgroundTexture = Content.Load<Texture2D> ("background");
-            carriageTexture = Content.Load<Texture2D> ("carriage");
-            cannonTexture = Content.Load<Texture2D> ("cannon");
-            rocketTexture = Content.Load<Texture2D> ("rocket");
-            smokeTexture = Content.Load<Texture2D> ("smoke");
-            groundTexture = Content.Load<Texture2D> ("ground");
-            explosionTexture = Content.Load<Texture2D> ("explosion");
-            font = Content.Load<SpriteFont> ("myFont");
-             hitCannon = Content.Load("hitcannon");
-             hitTerrain = Content.Load("hitterrain");
-             launch = Content.Load("launch");
- 
-             screenWidth = device.PresentationParameters.BackBufferWidth;
-             screenHeight = device.PresentationParameters.BackBufferHeight;
-             playerScaling = 40.0f / (float)carriageTexture.Width;
- 
-             GenerateTerrainContour();
-             SetUpPlayers();
-             FlattenTerrainBelowPlayers();
-             CreateForeground();
- 
-             rocketColorArray = TextureTo2DArray(rocketTexture);
-             carriageColorArray = TextureTo2DArray(carriageTexture);
-             cannonColorArray = TextureTo2DArray(cannonTexture);
-             explosionColorArray = TextureTo2DArray(explosionTexture);
-         }
- 
-         private void FlattenTerrainBelowPlayers()
-         {
-             foreach (PlayerData player in players)
-                 if (player.IsAlive)
-                     for (int x = 0; x < 40; x++)
-                         terrainContour[(int)player.Position.X + x] = terrainContour[(int)player.Position.X];
-         }
- 
-         private void GenerateTerrainContour()
-         {
-             terrainContour = new int[screenWidth];
- 
-             double rand1 = randomizer.NextDouble() + 1;
-             double rand2 = randomizer.NextDouble() + 2;
-             double rand3 = randomizer.NextDouble() + 3;
- 
-             float offset = screenHeight / 2;
-             float peakheight = 100;
-             float flatness = 70;
- 
-             for (int x = 0; x < screenWidth; x++)
-             {
-                 double height = peakheight / rand1 * Math.Sin((float)x / flatness * rand1 + rand1);
-                 height += peakheight / rand2 * Math.Sin((float)x / flatness * rand2 + rand2);
-                 height += peakheight / rand3 * Math.Sin((float)x / flatness * rand3 + rand3);
-                 height += offset;
-                 terrainContour[x] = (int)height;
-             }
-         }
- 
-         private void CreateForeground()
-         {
-             Color[,] groundColors = TextureTo2DArray(groundTexture);
-             Color[] foregroundColors = new Color[screenWidth * screenHeight];
- 
-             for (int x = 0; x < screenWidth; x++)
-             {
-                 for (int y = 0; y < screenHeight; y++)
-                 {
-                     if (y > terrainContour[x])
-                         foregroundColors[x + y * screenWidth] = groundColors[x % groundTexture.Width, y % groundTexture.Height];
-                     else
-                         foregroundColors[x + y * screenWidth] = Color.Transparent;
-                 }
-             }
- 
-             foregroundTexture = new Texture2D(device, screenWidth, screenHeight, false, SurfaceFormat.Color);
-             foregroundTexture.SetData(foregroundColors);
- 
-             foregroundColorArray = TextureTo2DArray(foregroundTexture);
-         }
- 
-         private Color[,] TextureTo2DArray(Texture2D texture)
-         {
-             Color[] colors1D = new Color[texture.Width * texture.Height];
-             texture.GetData(colors1D);
- 
-             Color[,] colors2D = new Color[texture.Width, texture.Height];
-             for (int x = 0; x < texture.Width; x++)
-                 for (int y = 0; y < texture.Height; y++)
-                     colors2D[x, y] = colors1D[x + y * texture.Width];
- 
-             return colors2D;
-         }
- 
-         protected override void UnloadContent()
-         {
-         }
- 
-         protected override void Update(GameTime gameTime)
-         {
-             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                 this.Exit();
- 
-             ProcessKeyboard();
-             UpdateRocket();
- 
-             if (rocketFlying)
-             {
-                 UpdateRocket();
-                 CheckCollisions(gameTime);
-             }
- 
-             if (particleList.Count > 0)
-                 UpdateParticles(gameTime);
- 
-             base.Update(gameTime);
-         }
- 
-         private void AddCrater(Color[,] tex, Matrix mat)
-         {
-             int width = tex.GetLength(0);
-             int height = tex.GetLength(1);
- 
-             for (int x = 0; x < width; x++)
-             {
-                 for (int y = 0; y < height; y++)
-                 {
-                     if (tex[x, y].R > 10)
-                     {
-                         Vector2 imagePos = new Vector2(x, y);
-                         Vector2 screenPos = Vector2.Transform(imagePos, mat);
- 
-                         int screenX = (int)screenPos.X;
-                         int screenY = (int)screenPos.Y;
- 
-                         if ((screenX) > 0 && (screenX < screenWidth))
-                             if (terrainContour[screenX] < screenY)
-                                 terrainContour[screenX] = screenY;
-                     }
-                 }
-             }
-         }
- 
-         private void UpdateParticles(GameTime gameTime)
-         {
-             float now = (float)gameTime.TotalGameTime.TotalMilliseconds;
-             for (int i = particleList.Count - 1; i >= 0; i--)
-             {
-                 ParticleData particle = particleList[i];
-                 float timeAlive = now - particle.BirthTime;
- 
-                 if (timeAlive > particle.MaxAge)
-                 {
-                     particleList.RemoveAt(i);
-                 }
-                 else
-                 {
-                     float relAge = timeAlive / particle.MaxAge;
-                     particle.Position = 0.5f * particle.Accelaration * relAge * relAge + particle.Direction * relAge + particle.OrginalPosition;
- 
-                     float invAge = 1.0f - relAge;
-                     particle.ModColor = new Color(new Vector4(invAge, invAge, invAge, invAge));
- 
-                     Vector2 positionFromCenter = particle.Position - particle.OrginalPosition;
-                     float distance = positionFromCenter.Length();
-                     particle.Scaling = (50.0f + distance) / 200.0f;
- 
-                     particleList[i] = particle;
-                 }
-             }
-         }
- 
-         private void AddExplosion(Vector2 explosionPos, int numberOfParticles, float size, float maxAge, GameTime gameTime)
-         {
-             for (int i = 0; i < numberOfParticles; i++)
-                 AddExplosionParticle(explosionPos, size, maxAge, gameTime);
- 
-             float rotation = (float)randomizer.Next(10);
-             Matrix mat = Matrix.CreateTranslation(-explosionTexture.Width / 2, -explosionTexture.Height / 2, 0) * Matrix.CreateRotationZ(rotation) * Matrix.CreateScale(size / (float)explosionTexture.Width * 2.0f) * Matrix.CreateTranslation(explosionPos.X, explosionPos.Y, 0);
-             AddCrater(explosionColorArray, mat);
- 
-             for (int i = 0; i < players.Length; i++)
-                 players[i].Position.Y = terrainContour[(int)players[i].Position.X];
-             FlattenTerrainBelowPlayers();
-             CreateForeground();
-         }
- 
-         private void AddExplosionParticle(Vector2 explosionPos, float explosionSize, float maxAge, GameTime gameTime)
-         {
-             ParticleData particle = new ParticleData();
- 
-             particle.OrginalPosition = explosionPos;
-             particle.Position = particle.OrginalPosition;
- 
-             particle.BirthTime = (float)gameTime.TotalGameTime.TotalMilliseconds;
-             particle.MaxAge = maxAge;
-             particle.Scaling = 0.25f;
-             particle.ModColor = Color.White;
- 
-             float particleDistance = (float)randomizer.NextDouble() * explosionSize;
-             Vector2 displacement = new Vector2(particleDistance, 0);
-             float angle = MathHelper.ToRadians(randomizer.Next(360));
-             displacement = Vector2.Transform(displacement, Matrix.CreateRotationZ(angle));
- 
-             particle.Direction = displacement * 2.0f;
-             particle.Accelaration = -particle.Direction;
- 
-             particleList.Add(particle);
-         }
- 
-         private void UpdateRocket()
-         {
-             if (rocketFlying)
-             {
-                 Vector2 gravity = new Vector2(0, 1);
-                 rocketDirection += gravity / 10.0f;
-                 rocketPosition += rocketDirection;
-                 rocketAngle = (float)Math.Atan2(rocketDirection.X, -rocketDirection.Y);
- 
-                 for (int i = 0; i < 5; i++)
-                 {
-                     Vector2 smokePos = rocketPosition;
-                     smokePos.X += randomizer.Next(10) - 5;
-                     smokePos.Y += randomizer.Next(10) - 5;
-                     smokeList.Add(smokePos);
-                 }
-             }
-         }
- 
-         private void ProcessKeyboard()
-         {
-             KeyboardState keybState = Keyboard.GetState();
-             if (keybState.IsKeyDown(Keys.Left))
-                 players[currentPlayer].Angle -= 0.01f;
-             if (keybState.IsKeyDown(Keys.Right))
-                 players[currentPlayer].Angle += 0.01f;
- 
-             if (players[currentPlayer].Angle > MathHelper.PiOver2)
-                 players[currentPlayer].Angle = -MathHelper.PiOver2;
-             if (players[currentPlayer].Angle < -MathHelper.PiOver2)
-                 players[currentPlayer].Angle = MathHelper.PiOver2;
- 
-             if (keybState.IsKeyDown(Keys.Down))
-                 players[currentPlayer].Power -= 1;
-             if (keybState.IsKeyDown(Keys.Up))
-                 players[currentPlayer].Power += 1;
-             if (keybState.IsKeyDown(Keys.PageDown))
-                 players[currentPlayer].Power -= 20;
-             if (keybState.IsKeyDown(Keys.PageUp))
-                 players[currentPlayer].Power += 20;
- 
-             if (players[currentPlayer].Power > 1000)
-                 players[currentPlayer].Power = 1000;
-             if (players[currentPlayer].Power < 0)
-                 players[currentPlayer].Power = 0;
- 
-             if (keybState.IsKeyDown(Keys.Enter) || keybState.IsKeyDown(Keys.Space))
-             {
-                 rocketFlying = true;
-                 launch.Play();
- 
-                 rocketPosition = players[currentPlayer].Position;
-                 rocketPosition.X += 20;
-                 rocketPosition.Y -= 10;
-                 rocketAngle = players[currentPlayer].Angle;
-                 Vector2 up = new Vector2(0, -1);
-                 Matrix rotMatrix = Matrix.CreateRotationZ(rocketAngle);
-                 rocketDirection = Vector2.Transform(up, rotMatrix);
-                 rocketDirection *= players[currentPlayer].Power / 50.0f;
-             }
-         }
- 
-         private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
-         {
-             Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
-             int width1 = tex1.GetLength(0);
-             int height1 = tex1.GetLength(1);
-             int width2 = tex2.GetLength(0);
-             int height2 = tex2.GetLength(1);
- 
-             for (int x1 = 0; x1 < width1; x1++)
-             {
-                 for (int y1 = 0; y1 < height1; y1++)
-                 {
-                     Vector2 pos1 = new Vector2(x1, y1);
-                     Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
- 
-                     int x2 = (int)pos2.X;
-                     int y2 = (int)pos2.Y;
-                     if ((x2 >= 0) && (x2 < width2))
-                     {
-                         if ((y2 >= 0) && (y2 < height2))
-                         {
-                             if (tex1[x1, y1].A > 0)
-                             {
-                                 if (tex2[x2, y2].A > 0)
-                                 {
-                                     Vector2 screenPos = Vector2.Transform(pos1, mat1);
-                                     return screenPos;
-                                 }
-                             }
-                         }
-                     }
-                 }
-             }
- 
-             return new Vector2(-1, -1);
-         }
- 
-         private Vector2 CheckTerrainCollision()
-         {
-             Matrix rocketMat = Matrix.CreateTranslation(-42, -240, 0) * Matrix.CreateRotationZ(rocketAngle) * Matrix.CreateScale(rocketScaling) * Matrix.CreateTranslation(rocketPosition.X, rocketPosition.Y, 0);
-             Matrix terrainMat = Matrix.Identity;
-             Vector2 terrainCollisionPoint = TexturesCollide(rocketColorArray, rocketMat, foregroundColorArray, terrainMat);
-             return terrainCollisionPoint;
-         }
- 
-         private Vector2 CheckPlayersCollision()
-         {
-             Matrix rocketMat = Matrix.CreateTranslation(-42, -240, 0) * Matrix.CreateRotationZ(rocketAngle) * Matrix.CreateScale(rocketScaling) * Matrix.CreateTranslation(rocketPosition.X, rocketPosition.Y, 0);
-             for (int i = 0; i < numberOfPlayers; i++)
-             {
-                 PlayerData player = players[i];
-                 if (player.IsAlive)
-                 {
-                     if (i != currentPlayer)
-                     {
-                         int xPos = (int)player.Position.X;
-                         int yPos = (int)player.Position.Y;
- 
-                         Matrix carriageMat = Matrix.CreateTranslation(0, -carriageTexture.Height, 0) * Matrix.CreateScale(playerScaling) * Matrix.CreateTranslation(xPos, yPos, 0);
-                         Vector2 carriageCollisionPoint = TexturesCollide(carriageColorArray, carriageMat, rocketColorArray, rocketMat);
- 
-                         if (carriageCollisionPoint.X > -1)
-                         {
-                             players[i].IsAlive = false;
-                             return carriageCollisionPoint;
-                         }
- 
-                         Matrix cannonMat = Matrix.CreateTranslation(-11, -50, 0) * Matrix.CreateRotationZ(player.Angle) * Matrix.CreateScale(playerScaling) * Matrix.CreateTranslation(xPos + 20, yPos - 10, 0);
-                         Vector2 cannonCollisionPoint = TexturesCollide(cannonColorArray, cannonMat, rocketColorArray, rocketMat);
-                         if (cannonCollisionPoint.X > -1)
-                         {
-                             players[i].IsAlive = false;
-                             return cannonCollisionPoint;
-                         }
-                     }
-                 }
-             }
-             return new Vector2(-1, -1);
-         }
- 
-         private bool CheckOutOfScreen()
-         {
-             bool rocketOutOfScreen = rocketPosition.Y > screenHeight;
-             rocketOutOfScreen |= rocketPosition.X < 0;
-             rocketOutOfScreen |= rocketPosition.X > screenWidth;
- 
-             return rocketOutOfScreen;
-         }
- 
-         private void CheckCollisions(GameTime gameTime)
-         {
-             Vector2 terrainCollisionPoint = CheckTerrainCollision();
-             Vector2 playerCollisionPoint = CheckPlayersCollision();
-             bool rocketOutOfScreen = CheckOutOfScreen();
- 
-             if (playerCollisionPoint.X > -1)
-             {
-                 rocketFlying = false;
+            _hitCannon = Content.Load<SoundEffect>("hitcannon");
+            _hitTerrain = Content.Load<SoundEffect>("hitterrain");
+            _launch = Content.Load<SoundEffect>("launch");
 
-                smokeList = new List<Vector2> ();                AddExplosion(playerCollisionPoint, 10, 80.0f, 2000.0f, gameTime);
+            _screenWidth = _device.PresentationParameters.BackBufferWidth;
+            _screenHeight = _device.PresentationParameters.BackBufferHeight;
 
-                 hitCannon.Play();
- 
-                 NextPlayer();
-             }
- 
-             if (terrainCollisionPoint.X > -1)
-             {
-                 rocketFlying = false;
+            _playerScaling = 40.0f / (float)_carriageTexture.Width;
 
-                smokeList = new List<Vector2> ();                AddExplosion(terrainCollisionPoint, 4, 30.0f, 1000.0f, gameTime);
+            GenerateTerrainContour();
+            SetUpPlayers();
+            FlattenTerrainBelowPlayers();
+            CreateForeground();
 
-                 hitTerrain.Play();
- 
-                 NextPlayer();
-             }
- 
-             if (rocketOutOfScreen)
-             {
-                 rocketFlying = false;
+            _rocketColorArray = TextureTo2DArray(_rocketTexture);
+            _carriageColorArray = TextureTo2DArray(_carriageTexture);
+            _cannonColorArray = TextureTo2DArray(_cannonTexture);
+            _explosionColorArray = TextureTo2DArray(_explosionTexture);
+        }
 
-                smokeList = new List<Vector2> ();
+        private void ProcessKeyboard()
+        {
+            KeyboardState keybState = Keyboard.GetState();
+
+            if (keybState.IsKeyDown(Keys.Left))
+            {
+                _players[_currentPlayer].Angle -= 0.01f;
+            }
+            if (keybState.IsKeyDown(Keys.Right))
+            {
+                _players[_currentPlayer].Angle += 0.01f;
+            }
+
+            if (_players[_currentPlayer].Angle > MathHelper.PiOver2)
+            {
+                _players[_currentPlayer].Angle = -MathHelper.PiOver2;
+            }
+            if (_players[_currentPlayer].Angle < -MathHelper.PiOver2)
+            {
+                _players[_currentPlayer].Angle = MathHelper.PiOver2;
+            }
+
+            if (keybState.IsKeyDown(Keys.Down))
+            {
+                _players[_currentPlayer].Power -= 1;
+            }
+            if (keybState.IsKeyDown(Keys.Up))
+            {
+                _players[_currentPlayer].Power += 1;
+            }
+            if (keybState.IsKeyDown(Keys.PageDown))
+            {
+                _players[_currentPlayer].Power -= 20;
+            }
+            if (keybState.IsKeyDown(Keys.PageUp))
+            {
+                _players[_currentPlayer].Power += 20;
+            }
+
+            if (_players[_currentPlayer].Power > 1000)
+            {
+                _players[_currentPlayer].Power = 1000;
+            }
+            if (_players[_currentPlayer].Power < 0)
+            {
+                _players[_currentPlayer].Power = 0;
+            }
+
+            if (keybState.IsKeyDown(Keys.Enter) || keybState.IsKeyDown(Keys.Space))
+            {
+                _rocketFlying = true;
+                _rocketPosition = _players[_currentPlayer].Position;
+                _rocketPosition.X += 20;
+                _rocketPosition.Y -= 10;
+                _rocketAngle = _players[_currentPlayer].Angle;
+                Vector2 up = new Vector2(0, -1);
+                Matrix rotMatrix = Matrix.CreateRotationZ(_rocketAngle);
+                _rocketDirection = Vector2.Transform(up, rotMatrix);
+                _rocketDirection *= _players[_currentPlayer].Power / 50.0f;
+
+                _launch.Play();
+            }
+        }
+
+        private void UpdateRocket()
+        {
+            if (_rocketFlying)
+            {
+                Vector2 gravity = new Vector2(0, 1);
+                _rocketDirection += gravity / 10.0f;
+                _rocketPosition += _rocketDirection;
+                _rocketAngle = (float)Math.Atan2(_rocketDirection.X, -_rocketDirection.Y);
+
+                for (int i = 0; i < 5; i++)
+                {
+                    Vector2 smokePos = _rocketPosition;
+                    smokePos.X += _randomizer.Next(10) - 5;
+                    smokePos.Y += _randomizer.Next(10) - 5;
+                    _smokeList.Add(smokePos);
+                }
+            }
+        }
+
+        private Vector2 TexturesCollide(Color[,] tex1, Matrix mat1, Color[,] tex2, Matrix mat2)
+        {
+            Matrix mat1to2 = mat1 * Matrix.Invert(mat2);
+            int width1 = tex1.GetLength(0);
+            int height1 = tex1.GetLength(1);
+            int width2 = tex2.GetLength(0);
+            int height2 = tex2.GetLength(1);
+
+            for (int x1 = 0; x1 < width1; x1++)
+            {
+                for (int y1 = 0; y1 < height1; y1++)
+                {
+                    Vector2 pos1 = new Vector2(x1, y1);
+                    Vector2 pos2 = Vector2.Transform(pos1, mat1to2);
+
+                    int x2 = (int)pos2.X;
+                    int y2 = (int)pos2.Y;
+                    if ((x2 >= 0) && (x2 < width2))
+                    {
+                        if ((y2 >= 0) && (y2 < height2))
+                        {
+                            if (tex1[x1, y1].A > 0)
+                            {
+                                if (tex2[x2, y2].A > 0)
+                                {
+                                    return Vector2.Transform(pos1, mat1);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            return new Vector2(-1, -1);
+        }
+
+        private Vector2 CheckTerrainCollision()
+        {
+            Matrix rocketMat = Matrix.CreateTranslation(-42, -240, 0) *
+                            Matrix.CreateRotationZ(_rocketAngle) *
+                            Matrix.CreateScale(_rocketScaling) *
+                            Matrix.CreateTranslation(_rocketPosition.X, _rocketPosition.Y, 0);
+            Matrix terrainMat = Matrix.Identity;
+            Vector2 terrainCollisionPoint = TexturesCollide(_rocketColorArray, rocketMat, _foregroundColorArray, terrainMat);
+            return terrainCollisionPoint;
+        }
+
+        private Vector2 CheckPlayersCollision()
+        {
+            Matrix rocketMat = Matrix.CreateTranslation(-42, -240, 0) *
+                               Matrix.CreateRotationZ(_rocketAngle) *
+                               Matrix.CreateScale(_rocketScaling) *
+                               Matrix.CreateTranslation(_rocketPosition.X, _rocketPosition.Y, 0);
+
+            for (int i = 0; i < _numberOfPlayers; i++)
+            {
+                PlayerData player = _players[i];
+                if (player.IsAlive)
+                {
+                    if (i != _currentPlayer)
+                    {
+                        int xPos = (int)player.Position.X;
+                        int yPos = (int)player.Position.Y;
+
+                        Matrix carriageMat = Matrix.CreateTranslation(0, -_carriageTexture.Height, 0) *
+                                             Matrix.CreateScale(_playerScaling) *
+                                             Matrix.CreateTranslation(xPos, yPos, 0);
+                        Vector2 carriageCollisionPoint = TexturesCollide(_carriageColorArray, carriageMat, _rocketColorArray, rocketMat);
+
+                        if (carriageCollisionPoint.X > -1)
+                        {
+                            _players[i].IsAlive = false;
+                            return carriageCollisionPoint;
+                        }
+
+                        Matrix cannonMat = Matrix.CreateTranslation(-11, -50, 0) *
+                                           Matrix.CreateRotationZ(player.Angle) *
+                                           Matrix.CreateScale(_playerScaling) *
+                                           Matrix.CreateTranslation(xPos + 20, yPos - 10, 0);
+
+                        Vector2 cannonCollisionPoint = TexturesCollide(_cannonColorArray, cannonMat, _rocketColorArray, rocketMat);
+                        if (cannonCollisionPoint.X > -1)
+                        {
+                            _players[i].IsAlive = false;
+                            return cannonCollisionPoint;
+                        }
+                    }
+                }
+            }
+            return new Vector2(-1, -1);
+        }
+
+        private bool CheckOutOfScreen()
+        {
+            bool rocketOutOfScreen = _rocketPosition.Y > _screenHeight;
+            rocketOutOfScreen |= _rocketPosition.X < 0;
+            rocketOutOfScreen |= _rocketPosition.X > _screenWidth;
+
+            return rocketOutOfScreen;
+        }
+
+        private void CheckCollisions(GameTime gameTime)
+        {
+            Vector2 terrainCollisionPoint = CheckTerrainCollision();
+            Vector2 playerCollisionPoint = CheckPlayersCollision();
+            bool rocketOutOfScreen = CheckOutOfScreen();
+
+            if (playerCollisionPoint.X > -1)
+            {
+                _hitCannon.Play();
+
+                _rocketFlying = false;
+
+                _smokeList = new List<Vector2>();
+                AddExplosion(playerCollisionPoint, 10, 80.0f, 2000.0f, gameTime);
+                NextPlayer();
+            }
+
+            if (terrainCollisionPoint.X > -1)
+            {
+                _hitTerrain.Play();
+
+                _rocketFlying = false;
+
+                _smokeList = new List<Vector2>();
+                AddExplosion(terrainCollisionPoint, 4, 30.0f, 1000.0f, gameTime);
+                NextPlayer();
+            }
+
+            if (rocketOutOfScreen)
+            {
+                _rocketFlying = false;
+
+                _smokeList = new List<Vector2>();
                 NextPlayer();
             }
         }
 
         private void NextPlayer()
         {
-            currentPlayer = currentPlayer + 1;
-            currentPlayer = currentPlayer % numberOfPlayers;
-            while (!players[currentPlayer].IsAlive)
-                currentPlayer = ++currentPlayer % numberOfPlayers;
+            _currentPlayer = _currentPlayer + 1;
+            _currentPlayer = _currentPlayer % _numberOfPlayers;
+            while (!_players[_currentPlayer].IsAlive)
+            {
+                _currentPlayer = ++_currentPlayer % _numberOfPlayers;
+            }
+        }
+
+        private void AddExplosion(Vector2 explosionPos, int numberOfParticles, float size, float maxAge, GameTime gameTime)
+        {
+            for (int i = 0; i < numberOfParticles; i++)
+            {
+                AddExplosionParticle(explosionPos, size, maxAge, gameTime);
+            }
+
+            float rotation = (float)_randomizer.Next(10);
+            Matrix mat = Matrix.CreateTranslation(-_explosionTexture.Width / 2, -_explosionTexture.Height / 2, 0) *
+                                                  Matrix.CreateRotationZ(rotation) *
+                                                  Matrix.CreateScale(size / (float)_explosionTexture.Width * 2.0f) *
+                                                  Matrix.CreateTranslation(explosionPos.X, explosionPos.Y, 0);
+
+            AddCrater(_explosionColorArray, mat);
+
+            for (int i = 0; i < _players.Length; i++)
+            {
+                _players[i].Position.Y = _terrainContour[(int)_players[i].Position.X];
+            }
+            FlattenTerrainBelowPlayers();
+            CreateForeground();
+        }
+
+        private void AddExplosionParticle(Vector2 explosionPos, float explosionSize, float maxAge, GameTime gameTime)
+        {
+            ParticleData particle = new ParticleData();
+
+            particle.OriginalPosition = explosionPos;
+            particle.Position = particle.OriginalPosition;
+
+            particle.BirthTime = (float)gameTime.TotalGameTime.TotalMilliseconds;
+            particle.MaxAge = maxAge;
+            particle.Scaling = 0.25f;
+            particle.ModColor = Color.White;
+
+            float particleDistance = (float)_randomizer.NextDouble() * explosionSize;
+            Vector2 displacement = new Vector2(particleDistance, 0);
+            float angle = MathHelper.ToRadians(_randomizer.Next(360));
+            displacement = Vector2.Transform(displacement, Matrix.CreateRotationZ(angle));
+
+            particle.Direction = displacement * 2.0f;
+            particle.Acceleration = -particle.Direction;
+
+            _particleList.Add(particle);
+        }
+
+        private void UpdateParticles(GameTime gameTime)
+        {
+            float now = (float)gameTime.TotalGameTime.TotalMilliseconds;
+            for (int i = _particleList.Count - 1; i >= 0; i--)
+            {
+                ParticleData particle = _particleList[i];
+                float timeAlive = now - particle.BirthTime;
+
+                if (timeAlive > particle.MaxAge)
+                {
+                    _particleList.RemoveAt(i);
+                }
+                else
+                {
+                    //update current particle
+                    float relAge = timeAlive / particle.MaxAge;
+                    particle.Position = 0.5f * particle.Acceleration * relAge * relAge + particle.Direction * relAge + particle.OriginalPosition;
+
+                    float invAge = 1.0f - relAge;
+                    particle.ModColor = new Color(new Vector4(invAge, invAge, invAge, invAge));
+
+                    Vector2 positionFromCenter = particle.Position - particle.OriginalPosition;
+                    float distance = positionFromCenter.Length();
+                    particle.Scaling = (50.0f + distance) / 200.0f;
+
+                    _particleList[i] = particle;
+                }
+            }
+        }
+
+        private void AddCrater(Color[,] tex, Matrix mat)
+        {
+            int width = tex.GetLength(0);
+            int height = tex.GetLength(1);
+
+            for (int x = 0; x < width; x++)
+            {
+                for (int y = 0; y < height; y++)
+                {
+                    if (tex[x, y].R > 10)
+                    {
+                        Vector2 imagePos = new Vector2(x, y);
+                        Vector2 screenPos = Vector2.Transform(imagePos, mat);
+
+                        int screenX = (int)screenPos.X;
+                        int screenY = (int)screenPos.Y;
+
+                        if ((screenX) > 0 && (screenX < _screenWidth))
+                        {
+                            if (_terrainContour[screenX] < screenY)
+                            {
+                                _terrainContour[screenX] = screenY;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        protected override void Update(GameTime gameTime)
+        {
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
+                Keyboard.GetState().IsKeyDown(Keys.Escape))
+            {
+                Exit();
+            }
+
+            // TODO: Add your update logic here
+
+            if (_rocketFlying)
+            {
+                UpdateRocket();
+                CheckCollisions(gameTime);
+            }
+
+            if (_particleList.Count > 0)
+            {
+                UpdateParticles(gameTime);
+            }
+
+            if (!_rocketFlying && _particleList.Count == 0)
+            {
+                ProcessKeyboard();
+            }
+
+            base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            spriteBatch.Begin();
+            // TODO: Add your drawing code here
+
+            _spriteBatch.Begin();
             DrawScenery();
             DrawPlayers();
             DrawText();
             DrawRocket();
             DrawSmoke();
-            spriteBatch.End();
+            _spriteBatch.End();
 
-            spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
+            _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.Additive);
             DrawExplosion();
-            spriteBatch.End();
+            _spriteBatch.End();
 
             base.Draw(gameTime);
         }
 
         private void DrawScenery()
         {
-            Rectangle screenRectangle = new Rectangle(0, 0, screenWidth, screenHeight);
-            spriteBatch.Draw(backgroundTexture, screenRectangle, Color.White);
-            spriteBatch.Draw(foregroundTexture, screenRectangle, Color.White);
+            Rectangle screenRectangle = new Rectangle(0, 0, _screenWidth, _screenHeight);
+            _spriteBatch.Draw(_backgroundTexture, screenRectangle, Color.White);
+            _spriteBatch.Draw(_foregroundTexture, screenRectangle, Color.White);
         }
 
         private void DrawPlayers()
         {
-            foreach (PlayerData player in players)
+            for (int i = 0; i < _players.Length; i++)
             {
-                if (player.IsAlive)
+                if (_players[i].IsAlive)
                 {
-                    int xPos = (int)player.Position.X;
-                    int yPos = (int)player.Position.Y;
+                    int xPos = (int)_players[i].Position.X;
+                    int yPos = (int)_players[i].Position.Y;
                     Vector2 cannonOrigin = new Vector2(11, 50);
 
-                    spriteBatch.Draw(cannonTexture, new Vector2(xPos + 20, yPos - 10), null, player.Color, player.Angle, cannonOrigin, playerScaling, SpriteEffects.None, 1);
-                    spriteBatch.Draw(carriageTexture, player.Position, null, player.Color, 0, new Vector2(0, carriageTexture.Height), playerScaling, SpriteEffects.None, 0);
+                    _spriteBatch.Draw(_carriageTexture, _players[i].Position, null, _players[i].Color, 0, new Vector2(0, _carriageTexture.Height), _playerScaling, SpriteEffects.None, 0);
+                    _spriteBatch.Draw(_cannonTexture, new Vector2(xPos + 20, yPos - 10), null, _players[i].Color, _players[i].Angle, cannonOrigin, _playerScaling, SpriteEffects.None, 1);
                 }
             }
         }
 
         private void DrawText()
         {
-            PlayerData player = players[currentPlayer];
+            PlayerData player = _players[_currentPlayer];
             int currentAngle = (int)MathHelper.ToDegrees(player.Angle);
-            spriteBatch.DrawString(font, "Cannon angle: " + currentAngle.ToString(), new Vector2(20, 20), player.Color);
-            spriteBatch.DrawString(font, "Cannon power: " + player.Power.ToString(), new Vector2(20, 45), player.Color);
+            _spriteBatch.DrawString(_font, "Cannon angle: " + currentAngle.ToString(), new Vector2(20, 20), player.Color);
+            _spriteBatch.DrawString(_font, "Cannon power: " + player.Power.ToString(), new Vector2(20, 45), player.Color);
         }
 
         private void DrawRocket()
         {
-            if (rocketFlying)
-                spriteBatch.Draw(rocketTexture, rocketPosition, null, players[currentPlayer].Color, rocketAngle, new Vector2(42, 240), 0.1f, SpriteEffects.None, 1);
+            if (_rocketFlying)
+            {
+                _spriteBatch.Draw(_rocketTexture, _rocketPosition, null, _players[_currentPlayer].Color, _rocketAngle, new Vector2(42, 240), _rocketScaling, SpriteEffects.None, 1);
+            }
         }
 
         private void DrawSmoke()
         {
-            foreach (Vector2 smokePos in smokeList)
-                spriteBatch.Draw(smokeTexture, smokePos, null, Color.White, 0, new Vector2(40, 35), 0.2f, SpriteEffects.None, 1);
+            for (int i = 0; i < _smokeList.Count; i++)
+            {
+                _spriteBatch.Draw(_smokeTexture, _smokeList[i], null, Color.White, 0, new Vector2(40, 35), 0.2f, SpriteEffects.None, 1);
+            }
         }
 
         private void DrawExplosion()
         {
-            for (int i = 0; i < particleList.Count; i++)
+            for (int i = 0; i < _particleList.Count; i++)
             {
-                ParticleData particle = particleList[i];
-                spriteBatch.Draw(explosionTexture, particle.Position, null, particle.ModColor, i, new Vector2(256, 256), particle.Scaling, SpriteEffects.None, 1);
+                ParticleData particle = _particleList[i];
+                _spriteBatch.Draw(_explosionTexture, particle.Position, null, particle.ModColor, i, new Vector2(256, 256), particle.Scaling, SpriteEffects.None, 1);
             }
         }
     }
