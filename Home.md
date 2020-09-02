@@ -67,7 +67,7 @@ Here you will find the following tutorial series
 * [3D Series 3 - HLSL](Riemers3DXNA3hlsloverview)
 * [3D Series 4 - Advanced Terrain](Riemers3DXNA4advterrainoverview)
 
-As well as several helpful short articles
+### As well as several helpful short articles
 
 * [Automatically generating normals](Riemersnormalgeneration)
 * [Matrices and DirectX](RiemersMattices)
