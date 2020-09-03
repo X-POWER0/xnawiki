@@ -1,12 +1,12 @@
 # The effect file
 
-One of the main differences between DirectX with C++ and MonoGame, is that we need an effect for everything we draw in 3D. So what exactly is an effect?
+One of the main differences between DirectX with C++ and MonoGame is that we need an effect for everything we draw in 3D. So what exactly is an effect?
 
 ## Effect files 101
 
-In 3D programming, all objects are represented using triangles. Even spheres can be represented using triangles if you use enough of them. An effect is some code that instructs your hardware (the graphics card) how it should display these triangles. An effect file contains one or more techniques, for example technique A and technique B, drawing triangles using technique A will for example draw them semi-transparent, while drawing them using technique B will for example draw all objects using only blue-gray colors as seen in some horror movies.
+In 3D programming, all objects are represented using triangles. Even spheres can be represented using triangles if you use enough of them. An effect is some code that instructs your hardware (the graphics card) how it should display these triangles. An effect file contains one or more techniques, for example, technique A and technique B, drawing triangles using technique A will draw them semi-transparent, while drawing them using technique B will draw all objects using only blue-gray colors as seen in some horror movies.
 
-Don’t worry too much about this, as this is already more advanced stuff which we will handle in [Series 3](Riemers3DXNA3hlsloverview.md).
+Do not worry too much about this, as this is already more advanced stuff which we will handle in [Series 3](Riemers3DXNA3hlsloverview.md).
 
 ## Your first effect
 
@@ -16,7 +16,7 @@ Now that you have downloaded the effect file (effects.fx) to the same folder as 
 
 Open the "Content" project (Content.mgcb) contained in the Content folder of your project by double-clicking on it, which will open the **MonoGame Content Builder editor tool** (MGCB-Editor)
 
-> If the editor does not open, please check the installation instructions on the [MonoGame documentation site here](https://docs.monogame.net/articles/tools/mgcb_editor.html). It should automatically be installed with Visual Studio but needs manually installation/registration when using .NET Core CLI.
+> If the editor does not open, please check the installation instructions on the [MonoGame documentation site here](https://docs.monogame.net/articles/tools/mgcb_editor.html). It should automatically be installed with Visual Studio but needs manual installation/registration when using .NET Core CLI.
 
 Now select ***Edit-> Add -> Existing Item***, as shown in the image below.
 
@@ -38,7 +38,7 @@ Next, we will link this effect file to a variable so that we can actually use it
     private Effect _effect;
 ```
 
-In your **LoadContent** method, add this line to have XNA load the .fx file into the effect variable for you:
+In your **LoadContent** method, add this line to have MonoGame load the .fx file into the effect variable for you:
 
 ```csharp
     _effect = Content.Load<Effect>("effects");
@@ -56,7 +56,7 @@ With the necessary variable loaded, we can now concentrate on the **Draw** metho
 
 MonoGame uses a buffer to draw to instead of drawing directly to the window, at the end of the **Draw** method, the contents of the buffer is drawn on the screen all at once. In this way, the screen will not flicker as it would when we would draw each part of our scene separately to the screen.
 
-Running this code will already give you the image you see below, but I would first like to add some additional code. As discussed above, to draw something, we first need to specify a **technique** from an **Effect** object, so we will immediately activate our effect so that in next chapter we are ready to render something to the screen! 
+Running this code will already give you the image you see below, but I would first like to add some additional code. As discussed above, to draw something, we first need to specify a **technique** from an **Effect** object, so we will immediately activate our effect so that in the next chapter we are ready to render something to the screen! 
 
 Add this line to the **Draw** method right before the "base.Draw" call (which should always be last):
 
@@ -77,7 +77,7 @@ A technique can be made up of multiple passes, so we need to iterate through the
 
 > All your drawing code must be put after your call to pass.Apply().
 
-Finally, we are through the initialization part! If you’re not yet 100% clear on effects and techniques, there is no need to worry as we will discuss them in more detail in [Series 3](Riemers3DXNA3hlsloverview.md). With all of this code set up, we are finally ready to start drawing things on the screen, which is what we will in do next chapter.
+Finally, we are through the initialization part! If you’re not yet 100% clear on effects and techniques, there is no need to worry as we will discuss them in more detail in [Series 3](Riemers3DXNA3hlsloverview.md). With all of this code set up, we are finally ready to start drawing things on the screen, which is what we will do in the next chapter.
 
 ![Summary](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-02Effect4.png?raw=true)
 
@@ -117,7 +117,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

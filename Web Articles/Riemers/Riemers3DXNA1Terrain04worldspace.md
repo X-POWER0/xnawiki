@@ -28,13 +28,13 @@ So make this adjustment in our Draw method:
     _effect.CurrentTechnique = _effect.Techniques["ColoredNoShading"];
 ```
 
-When you run this code, you will find that your triangle has disappeared. Why is that? Easy, because you haven't told MonoGame yet where to position the camera in your 3D World and where to look at!
+When you run this code, you will find that your triangle has disappeared. Why is that? Easy, because you have not told MonoGame yet where to position the camera in your 3D World and where to look at!
 
 ## Preparing the camera
 
 To position our camera, we need to define some matrices. **Stop!! matrices?!?**
 
-First, a small word about matrices, we define our points in 3D space because our content is in 3D, however, our screen is in 2D, so logically we need a method that transforms our 3D points somehow into 2D space. This is done by multiplying our 3D positions with a matrix, if you multiply a 3D position with such a matrix, you get the transformed position that is cen be rendered on screen. (If you want to know more about matrices, you can find more info in the [Extra Reading section](https://github.com/SimonDarksideJ/XNAGameStudio/wiki#as-well-as-several-helpful-short-articles) of this site)
+First, a small word about matrices, we define our points in 3D space because our content is in 3D, however, our screen is in 2D, so logically we need a method that transforms our 3D points somehow into 2D space. This is done by multiplying our 3D positions with a matrix, if you multiply a 3D position with such a matrix, you get the transformed position that can be rendered on screen. (If you want to know more about matrices, you can find more info in the [Extra Reading section](https://github.com/SimonDarksideJ/XNAGameStudio/wiki#as-well-as-several-helpful-short-articles) of this site)
 
 Because there are a lot of properties that need to be defined when transforming our points from 3D world space to our 2D screen, we split this transformation into two steps, first, we define two matrices by adding these variables to the properties section of your class:
 
@@ -61,13 +61,13 @@ The first line creates a matrix that stores the position and orientation of the 
 
 * The first argument defines the position of the camera. We position it 50 units on the positive Z axis.
 * The next parameter sets the target point the camera is looking at. We will be looking at our (0,0,0) 3D origin.
-* Finally, we need to define which direction is "UP", this is crutial as we can still rotate our camera around this axis.
+* Finally, we need to define which direction is "UP", this is crucial as we can still rotate our camera around this axis.
 
-The second line creates a matrix which stores how the camera looks at the scene, much like defining the lens if you will. 
+The second line creates a matrix that stores how the camera looks at the scene, much like defining the lens if you will.
 
 * The first argument sets the view angle, 45 degrees in our case.
-* Then we set the view aspect ratio, the ratio between the width and height of your screen. In our case of a 500x500 window this will equal 1, but this will be different for other resolutions.
-* The last parameters define the view range. Any objects closer to the camera than 1f will not be shown. Any object further away than 300.0f won't be shown either. These distances are called the near and the far clipping planes, since all objects outside of these these planes will be clipped (=not drawn).
+* Then we set the view aspect ratio, the ratio between the width and height of your screen. In our case of a 500x500 window, this will equal 1, but this will be different for other resolutions.
+* The last parameters define the view range. Any objects closer to the camera than 1f will not be shown. Any object further away than 300.0f will not be shown either. These distances are called the near and the far clipping planes since all objects outside of these planes will be clipped (=not drawn).
 
 Now that we have these matrices, we need to pass it to our technique, where they will be combined. This is done by the next lines of code, which we need to add to our Draw method immediately after the existing "_effect.CurrentTechnique" line:
 
@@ -151,7 +151,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

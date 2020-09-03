@@ -10,7 +10,7 @@ Let’s start by downloading the below files, you can find them by clicking on t
 
 Next open the "Content" project (Content.mgcb) contained in the Content folder of your project by double-clicking on it, which will open the **MonoGame Content Builder editor tool** (MGCB-Editor)
 
-> If the editor does not open, please check the installation instructions on the [MonoGame documentation site here](https://docs.monogame.net/articles/tools/mgcb_editor.html). It should automatically be installed with Visual Studio but needs manually installation/registration when using .NET Core CLI.
+> If the editor does not open, please check the installation instructions on the [MonoGame documentation site here](https://docs.monogame.net/articles/tools/mgcb_editor.html). It should automatically be installed with Visual Studio but needs manual installation/registration when using .NET Core CLI.
 
 Now select ***Edit-> Add -> Existing Item***, as shown in the image below.
 

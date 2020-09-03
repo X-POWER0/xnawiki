@@ -13,7 +13,7 @@ To do this, we have to create 2 new variables in our class in the Properties sec
     private int _terrainHeight = 3;
 ```
 
-We will approximate that there will be 4x3 points and that they are equidistant. So the only thing we do not know about our points, is the Z coordinate. We will use an multi-dimensional array to hold this information which we will also add to the Properties section of our class as well:
+We will approximate that there will be 4x3 points and that they are equidistant. So the only thing we do not know about our points is the Z coordinate. We will use a multi-dimensional array to hold this information which we will also add to the Properties section of our class as well:
 
 ```csharp
     private float[,] _heightData;
@@ -105,9 +105,9 @@ We will start by drawing the set of triangles drawn in solid lines (as indicated
 
 > Remember that terrainWidth and terrainHeight are the horizontal and vertical number of vertices in the terrain. We will need 2 rows of 3 triangles, giving us 6 triangles. These will require ***3*2 * 3 = 18 indices (=(terrainWidth-1)*(terrainHeight-1)*3)**.
 
-The first line creates an array capable of storing exactly this amount of integers, then you fill your array with indices. You scan the X and Y coordinates row by row, and this time you create your triangles. During the first row, where y=0, you need to create 6 triangles based on vertices 0 (bottom-left) till 7 (middle-right). Next, y becomes 1 and 1*terrainWidth=4 is added to each index: this time we create our 6 triangles on vertices 4 (middle-left) till 11 (top-right).
+The first line creates an array capable of storing exactly this amount of integers, then you fill your array with indices. You scan the X and Y coordinates row by row, and this time you create your triangles. During the first row, where y=0, you need to create 6 triangles based on vertices 0 (bottom-left) till 7 (middle-right). Next, y becomes 1, and 1*terrainWidth=4 is added to each index: this time we create our 6 triangles on vertices 4 (middle-left) till 11 (top-right).
 
-To make things easier, I have defined 4 shortcuts for the 4 corner indices of a quad, for each quad you store 3 indices, defining one triangle. Remember culling? It requires us to define the vertices in clockwise order, so you first define the top-left vertex, then the bottom-down vertex and finally the bottom-left vertex.
+To make things easier, I have defined 4 shortcuts for the 4 corner indices of a quad, for each quad you store 3 indices, defining one triangle. Remember culling? It requires us to define the vertices in clockwise order, so you first define the top-left vertex, then the bottom-down vertex, and finally the bottom-left vertex.
 
 The counter variable is an easy way to store vertices to an array, as we increment it each time an index has been added to the array. When the method finishes, the array will contain all indices required to render all bottom-left triangles.
 
@@ -151,9 +151,9 @@ Remember you’re still rendering only the bottom-left triangles. So when you wo
     }
 ```
 
-We will now be drawing twice as many vertices now, that is why the "* 3" has been replaced by "* 6" when specifying the number of indices. You can also see the second set of triangles being drawn clockwise relative to the camera, first the top-left corner, then the top-right and finally the bottom-right.
+We will now be drawing twice as many vertices now, that is why the "* 3" has been replaced by "* 6" when specifying the number of indices. You can also see the second set of triangles being drawn clockwise relative to the camera, first the top-left corner, then the top-right, and finally the bottom-right.
 
-Running this code will give you a better 3 dimensional view. We have especially taken care to only use the variables **terrainWidth** and **terrainHeight**, so that these are the only things we need change to increase the size of our map, together with the contents of the heightData array. It would be nice to find a mechanism to fill this last one automatically, which we will do in the next chapter.
+Running this code will give you a better 3-dimensional view. We have especially taken care to only use the variables **terrainWidth** and **terrainHeight**, so that these are the only things we need change to increase the size of our map, together with the contents of the heightData array. It would be nice to find a mechanism to fill this last one automatically, which we will do in the next chapter.
 
 ![Summary](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-07Terrain1.png?raw=true)
 
@@ -234,7 +234,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

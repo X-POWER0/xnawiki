@@ -1,10 +1,10 @@
 # Drawing your first Triangle
 
-This chapter will cover the basics of drawing. First a few things you should know about.
+This chapter will cover the basics of drawing. First, a few things you should know about.
 
 ## Creating 3D content
 
-Every object drawn in 3D is drawn using triangles. Even spheres can be represented using triangles, if you use enough of them. Surprisingly enough, a triangle is defined by 3 points. Every point is defined by a vector, specifying the X, Y and Z coordinates of the point. However, just knowing the coordinates of a point might not be enough, for example, you might also want to define a color for a given point as well, this is where a vertex (pl. vertices) comes in as it represents a list of properties for a given point, including the position, color and so on.
+Every object drawn in 3D is drawn using triangles. Even spheres can be represented using triangles if you use enough of them. Surprisingly enough, a triangle is defined by 3 points. Every point is defined by a vector, specifying the X, Y, and Z coordinates of the point. However, just knowing the coordinates of a point might not be enough, for example, you might also want to define a color for a given point as well, this is where a vertex (pl. vertices) comes in as it represents a list of properties for a given point, including the position, color and so on.
 
 MonoGame has a structure that fits perfectly to hold our vertex information, the **VertexPositionColor** struct, a vertex of this type can hold a position and a color, which is perfect to begin with. To define a triangle, we need 3 of these vertices, which we will store in an array.
 
@@ -42,7 +42,7 @@ So in the example above, the first point is halfway to the bottom left of the wi
 
 The **'f'** behind some of the numbers indicates the values are floats, the format of preference when working with MonoGame. We also set each of the vertices to different colors for variety.
 
-To finish, we still need to call this **SetUpVertices** method, as it uses the device we need to call it at the end of the LoadContent method which is called after **Initialize**, where the graphics care is setup:
+To finish, we still need to call this **SetUpVertices** method, as it uses the device we need to call it at the end of the LoadContent method which is called after **Initialize**, where the graphics card is setup:
 
 ```csharp
     SetUpVertices();
@@ -61,10 +61,10 @@ This line actually tells our graphics card to draw the triangle:
 * We want to draw 1 triangle from the vertices array, starting at vertex 0.
 * TriangleList means that our vertices array contains a list of triangles (in our case, a list of only 1 triangle).
 * If you would want to draw 4 triangles, you would need an array of 12 vertices.
-* Another possibility is to use a TriangleStrip, which can perform a lot faster, but is only useful to draw triangles that are connected to each other.
+* Another possibility is to use a TriangleStrip, which can perform a lot faster but is only useful to draw triangles that are connected to each other.
 * The last parameter specifies the VertexDeclaration, which is quite important. We have stored the position and color data for 3 vertices inside an array.
 
-When we instruct MonoGame to render a triangle based on this data, MonoGame will put all this data into a byte stream and send it over to the graphics card. Our graphics card receives the byte stream, but does not know what is in there and that is where the **VertexDeclaration** comes in, this object tells the graphics device what kind of vertices it can expect.
+When we instruct MonoGame to render a triangle based on this data, MonoGame will put all this data into a byte stream and send it over to the graphics card. Our graphics card receives the byte stream but does not know what is in there and that is where the **VertexDeclaration** comes in, this object tells the graphics device what kind of vertices it can expect.
 
 The **VertexDeclaration** is very important, as you will always need it before you can render any triangle to the screen. By specifying the **VertexPositionColor.VertexDeclaration**, we inform the graphics card that there are vertices coming that contain Position and Color data.
 
@@ -114,7 +114,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

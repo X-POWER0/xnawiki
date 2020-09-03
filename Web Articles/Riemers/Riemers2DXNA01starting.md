@@ -4,7 +4,7 @@ Welcome to the first entry of this MonoGame Tutorial. This tutorial is aimed at 
 
 ## The history of XNA/MonoGame
 
-Released in December 2004, XNA was a new approach to Game Development built around DirectX in C# (a managed language), which eased game programming in a lot of ways.  MonoGame then took the reigns in 2013 when Microsoft retired XNA, to continue the tradition of making the entry in to game development very easy. Since that time MonoGame has grown to become one of the premier C# development frameworks for building games and has given many studios their first entries to the gaming halls of fame.
+Released in December 2004, XNA was a new approach to Game Development built around DirectX in C# (a managed language), which eased game programming in a lot of ways.  MonoGame then took the reigns in 2013 when Microsoft retired XNA, to continue the tradition of making the entry into game development very easy. Since that time MonoGame has grown to become one of the premier C# development frameworks for building games and has given many studios their first entries to the gaming halls of fame.
 
 ## Required Software (free)
 
@@ -37,11 +37,11 @@ Open the Game1.cs code file. you will find it is littered with comments in green
 
 - The constructor method Game1() is called once at startup. It is used to load some variables needed by the MonoGame framework.
 - The Initialize method is also called once on startup. This is the method where we should put our initialization code.
-- The LoadContent method is used for importing media (such as images, objects and audio) as well as data related to the graphics card. In the Game class, this is only called once on startup.
+- The LoadContent method is used for importing media (such as images, objects, and audio) as well as data related to the graphics card. In the Game class, this is only called once on startup.
 - The Update method is called once every frame, at a rate of exactly 60 times/second. This is where we will put the code that needs to be updated throughout the lifetime of our program, such as the code that reads the keyboard and updates the geometry of our scene.
 - As often as your computer (and especially your graphics card) allows, the Draw method is called. This is where we should put the code that actually draws stuff to the screen.
 
-As you can see, there is no code needed to open a window, as this will be done automatically for us when you run your project. if you are running visual studio (Windows/Mac) you can press F5 to run your project and will get a nice blue window.
+As you can see, there is no code needed to open a window, as this will be done automatically for us when you run your project. if you are running Visual Studio (Windows/Mac) you can press F5 to run your project and will get a nice blue window.
 
 ## Setting up the screen
 

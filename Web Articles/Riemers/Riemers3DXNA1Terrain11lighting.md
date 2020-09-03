@@ -1,18 +1,18 @@
 # Experimenting with Lights in XNA
 
-Even when using colors and a Z buffer, your terrain seems to miss some depth detail when you turn on the Solid FillMode. By adding some lighting we can make it look a lot better. In this chapter we will see the impact of a light on 2 simple triangles so we can have a better understanding of how lights work in MonoGame. We will be using the code from the 'World space' chapter, so reload that code now.
+Even when using colors and a Z buffer, your terrain seems to miss some depth detail when you turn on the Solid FillMode. By adding some lighting we can make it look a lot better. In this chapter, we will see the impact of a light on 2 simple triangles so we can have a better understanding of how lights work in MonoGame. We will be using the code from the 'World space' chapter, so reload that code now.
 
 ## Calculating normals
 
-For this chapter, we will be using a directional light. Imagine this as the sunlight, which is light that travels in one singular direction. To calculate the effect of light hitting a triangle, MonoGame needs to understand how light will "bounce" off the triangle. To do this we calculate what is called a 'normal' for every vertex. Consider the next figure:
+For this chapter, we will be using a directional light. Imagine this as the sunlight, which is light that travels in one singular direction. To calculate the effect of light hitting a triangle, MonoGame needs to understand how the light will "bounce" off the triangle. To do this we calculate what is called a 'normal' for every vertex. Consider the next figure:
 
 ![Normals](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-11Lighting1.jpg?raw=true)
 
 If you have a light source a), and you shine a light on the 3 surfaces shown, how is MonoGame supposed to know that surface 1 should be lit more intensely than surface 3? If you look at the thin red lines in figure b), you will notice that their length is a nice indication of how much light you would want to be reflected (and thus seen) on every surface. So how can we calculate the length of these lines? Actually, MonoGame does the job for us, all we have to do is to provide the blue arrow perpendicular (with an angle of 90 degrees, the thin blue lines) to every surface and MonoGame does the rest (a simple cosine projection) for us!
 
-This is why we need to add normals (the perpendicular blue lines) to our vertex data. The **VertexPositionColor** will no longer do, as it does not allow us to store a normal for each vertex, and unfortunately, MonoGame does not offer a structure that can contain a position, a color and a normal. But that is not a problem as we can easily create one of our own.
+This is why we need to add normals (the perpendicular blue lines) to our vertex data. The **VertexPositionColor** will no longer do, as it does not allow us to store a normal for each vertex, and unfortunately, MonoGame does not offer a structure that can contain a position, a color, and a normal. But that is not a problem as we can easily create one of our own.
 
-> The main reason that MonoGame does not provide such a structure is because you would normally be using a texture with a model, and provides a vertex structure for that common use.  But thanks to the extensibility in MonoGame, you can create any structure you meet your needs and it will still "just work".
+> The main reason that MonoGame does not provide such a structure is that you would normally be using a texture with a model, and provides a vertex structure for that common use.  But thanks to the extensibility in MonoGame, you can create any structure you meet your needs and it will still "just work".
 
 Let us put this code at the top of our class, immediately above our variable declarations:
 
@@ -32,7 +32,7 @@ Let us put this code at the top of our class, immediately above our variable dec
     }
 ```
 
-This might look complicated, but I am sure you can understand the first 3 lines which is a new struct can hold a position, a color and a normal, exactly what we need! The bottom of the struct is a little more complex, and we will discuss it in its full detail in [Series 3](Riemers3DXNA3hlsloverview.md). For now, think of it as a manual for the graphics card to understand what kind of data is contained inside each vertex.
+This might look complicated, but I am sure you can understand the first 3 lines which is a new struct can hold a position, a color, and a normal, exactly what we need! The bottom of the struct is a little more complex, and we will discuss it in its full detail in [Series 3](Riemers3DXNA3hlsloverview.md). For now, think of it as a manual for the graphics card to understand what kind of data is contained inside each vertex.
 
 This allows us to change our vertex variable declaration to, so replace this in the Properties section:
 
@@ -54,7 +54,7 @@ To demonstrate this example, we will first reset the camera position in the **Se
     _viewMatrix = Matrix.CreateLookAt(new Vector3(0, -40, 100), new Vector3(0, 50, 0), new Vector3(0, 1, 0));
 ```
 
-Next, we will update our **SetUpVertices** method with 6 vertices that define the 2 triangles of the example above using out new **VertexPositionColorNormal** declaration:
+Next, we will update our **SetUpVertices** method with 6 vertices that define the 2 triangles of the example above using our new **VertexPositionColorNormal** declaration:
 
 ```csharp
     private void SetUpVertices()
@@ -90,9 +90,9 @@ Next, we will update our **SetUpVertices** method with 6 vertices that define th
 
 This defines the 2 surfaces of the picture above. By adding a Z coordinate (other than 0), the triangles are now 3D. You can notice that I have defined the "Normal" vectors perpendicular to the triangles, as to reflect example a) of the image above.
 
-At the end, we 'normalize our normals'. These 2 words have absolutely nothing to do with each other, it simply means we scale our normal vectors so their lengths become exactly one, this is required for correct lighting, as the length of the normals has an impact on the amount of lighting.
+In the end, we 'normalize our normals'. These 2 words have absolutely nothing to do with each other, it simply means we scale our normal vectors so their lengths become exactly one, this is required for correct lighting, as the length of the normals has an impact on the amount of lighting.
 
-All that there is left to do, is change the Draw method a bit:
+All that there is left to do is change the Draw method a bit:
 
 ```csharp
     _device.DrawUserPrimitives(PrimitiveType.TriangleList, _vertices, 0, 2, VertexPositionColorNormal.VertexDeclaration);
@@ -113,7 +113,7 @@ When you run this code, you should see an arrow (our 2 triangles), but you donâ€
     _effect.Parameters["xLightDirection"].SetValue(lightDirection);
 ```
 
-This instructs our technique to enable lighting calculations, now that the technique needs the normals, and we set the direction of our light. Note again that you need to normalize this vector, so that its lengths becomes one, otherwise the length of this vector influences the strength of the shading, while you want the shading to depend solely on the direction of the incoming light. You might also want to change the background color to black, to get a better view.
+This instructs our technique to enable lighting calculations, now that the technique needs the normals, and we set the direction of our light. Note again that you need to normalize this vector so that its lengths become one, otherwise the length of this vector influences the strength of the shading, while you want the shading to depend solely on the direction of the incoming light. You might also want to change the background color to black, to get a better view.
 
 Now if you run this code and you will see what I mean with 'edged lighting', the light shines brightly on the left panel, yet the right panel is darker. You can clearly see the difference between the two triangles! This is what was shown in the left part of the example image above.
 
@@ -200,7 +200,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }
@@ -291,7 +291,8 @@ namespace Series3D1
             base.Draw(gameTime);
         }
     }
-}```
+}
+```
 
 ## Next Steps
 

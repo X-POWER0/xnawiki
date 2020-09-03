@@ -1,6 +1,6 @@
 # Rotate your terrain using the keyboard
 
-Using MonoGame, it is very easy to read in the current state of your keyboard (gamepads and Touchscreens are also just as easy). The correct libraries, *Microsoft.Xna.Framework.Input*, are already linked to by default when you created your MonoGame project, so we can immediately move on to the code that reads in the keyboard input.
+Using MonoGame, it is very easy to read in the current state of your keyboard (gamepads and Touchscreens are also just as easy). The correct libraries, *Microsoft.Xna.Framework.Input*, is already linked to by default when you created your MonoGame project, so we can immediately move on to the code that reads in the keyboard input.
 
 Replace the line that updates your angle with the following piece of code in your **Update** method, which is called 60 times per second:
 
@@ -24,7 +24,7 @@ To:
     }
 ```
 
-Here you put the current state of the keyboard into a variable **'keyState'**. Using this variable, you can immediately read out which keys are currently being pressed! When the user presses the Left or Right keys, the value of the ‘angle’ variable will be adjusted.
+Here you put the current state of the keyboard into a variable **'keyState'**. Using this variable, you can immediately read which keys are currently being pressed! When the user presses the Left or Right keys, the value of the ‘angle’ variable will be adjusted.
 
 In our **Draw** method, we need to make sure that this rotation is also taken into account in our World matrix:
 
@@ -82,7 +82,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

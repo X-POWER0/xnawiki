@@ -32,4 +32,4 @@ In every chapter you will learn the basic features of MonoGame:
 
 During this series you will need to download the following resources:
 
-* ![3D Series1 - Terrain - Assets](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series1%20-%20Terrain%20-%20Assets.zip?raw=true)
+* [3D Series1 - Terrain - Assets](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series1%20-%20Terrain%20-%20Assets.zip?raw=true)

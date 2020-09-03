@@ -1,6 +1,6 @@
 # Improving performance by using VertexBuffers and IndexBuffers
 
-Your terrain is fully working, Each frame, all vertices and indices are being sent over to our graphics card, which means that every frame we are sending over exactly the same data. Obviously, this should be optimized.
+Your terrain is fully working, Each frame, all vertices, and indices are being sent over to our graphics card, which means that every frame we are sending over exactly the same data. Obviously, this should be optimized.
 
 ## More buffers
 
@@ -44,7 +44,7 @@ Finishing up, you to call the new **CopyToBuffers** method to the end of our **L
     CopyToBuffers();
 ```
 
-With that done, you only need to instruct your graphics card to fetch the vertex and index data from its own memory using the **DrawIndexedPrimitives** method instead of the *DrawUserIndexedPrimitives* method. Before we call this method, we need to let your graphics card know it should read from the buffers stored in its own memory by passing the references to the buffers we have initialized.  So, replace the call to **DrawUserIndexedPrimitives** with the following in the **Draw** method:
+With that done, you only need to instruct your graphics card to fetch the vertex and index data from its own memory using the **DrawIndexedPrimitives** method instead of the *DrawUserIndexedPrimitives* method. Before we call this method, we need to let your graphics card know it should read from the buffers stored in its own memory, by specifying the references of the buffers we have initialized.  So, replace the call to **DrawUserIndexedPrimitives** with the following in the **Draw** method:
 
 ```csharp
     _device.Indices = _myIndexBuffer;
@@ -56,7 +56,7 @@ With that done, you only need to instruct your graphics card to fetch the vertex
 
 This tells the graphics card where it should get its indices and vertices from to render the triangles.
 
-Running this code will give you the same result as in last chapter. This time however, all vertex and index data is transferred only once to your graphics card! Much better performance, especially as you start to work with terrains with MILLIONS of vertexes/indexes.
+Running this code will give you the same result as in the last chapter. This time, however, all vertex and index data are transferred only once to your graphics card! Much better performance, especially as you start to work with terrains with MILLIONS of vertexes/indexes.
 
 ![Summary](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-12TerrainLighting1.gif?raw=true)
 
@@ -121,7 +121,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

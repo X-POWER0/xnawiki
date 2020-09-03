@@ -13,7 +13,7 @@ The image file should be loaded in the **LoadContent** method. The .fx file was 
     LoadHeightData(heightMap);
 ```
 
-By using the Content Pipeline, it does not matter whether you are using a .bmp, .jpg or .pgn file. The second line then calls the LoadHeightData, which we will adjust so it receives this texture. Update the LoadHeightData method as follows:
+By using the Content Pipeline, it does not matter whether you are using a .bmp, .jpg, or .pgn file. The second line then calls the LoadHeightData, which we will adjust so it receives this texture. Update the LoadHeightData method as follows:
 
 ```csharp
 private void LoadHeightData(Texture2D heightMap)
@@ -35,7 +35,7 @@ private void LoadHeightData(Texture2D heightMap)
 }
 ```
 
-As you can see, this method receives the image as argument, and instead of using a predefined width and height for your terrain, we are now using the resolution of your image as the size of the terrain. The first 2 lines read the width and height of the image, and store them as width and height for the rest of our program, which will cause the rest of our code to automatically generate enough vertices and indices to render enough triangles.
+As you can see, this method receives the image as an argument, and instead of using a predefined width and height for your terrain, we are now using the resolution of your image as the size of the terrain. The first 2 lines read the width and height of the image and stores them as width and height for the rest of our program, which will cause the rest of our code to automatically generate enough vertices and indices to render enough triangles.
 
 Because you also want to access the color values of the pixels of the image, we create an array of Color objects into which we store the color of each pixel from the image. This is done in 2 easy lines.
 
@@ -117,7 +117,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

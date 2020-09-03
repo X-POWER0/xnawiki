@@ -1,6 +1,6 @@
 # Rotations and translations
 
-In this chapter we will make our triangle spin around (exciting stuff) and because we are using world space coordinates this is very easy to do.
+In this chapter, we will make our triangle spin around (exciting stuff) and because we are using world space coordinates this is very easy to do.
 
 ## Make me spin
 
@@ -53,7 +53,7 @@ A bit more complex is the Matrix CreateFromAxisAngle, where you can specify your
  Matrix worldMatrix = Matrix.CreateTranslation(-20.0f/3.0f, -10.0f / 3.0f, 0) * Matrix.CreateFromAxisAngle(rotAxis, angle);
 ```
 
-This will make our triangle spin around an ever changing axis. The first line defines this axis (which is changed every frame as it depends on the angle variable). The second line normalizes this axis, which is needed to make the CreateFromAxisAngle method work properly (Normalize() changes the coordinates of the vector, so the distance between the vector and the (0, 0, 0) point is exactly 1).
+This will make our triangle spin around an ever-changing axis. The first line defines this axis (which is changed every frame as it depends on the angle variable). The second line normalizes this axis, which is needed to make the CreateFromAxisAngle method work properly (Normalize() changes the coordinates of the vector, so the distance between the vector and the (0, 0, 0) point is exactly 1).
 
 ![Summary](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-05Rotation1.gif?raw=true)
 
@@ -98,7 +98,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

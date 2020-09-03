@@ -1,10 +1,10 @@
-# Starting your XNA 4.0 Project
+# Starting your MonoGame 4.0 Project
 
-Welcome to the first entry of this 3D XNA Tutorial. This tutorial is aimed at people who have not done any 3D programming and would like to see some results in the shortest possible time.
+Welcome to the first entry of this 3D MonoGame Tutorial. This tutorial is aimed at people who have not done any 3D programming and would like to see some results in the shortest possible time.
 
 ## The history of XNA/MonoGame
 
-Released in December 2004, XNA was a new approach to Game Development built around DirectX in C# (a managed language), which eased game programming in a lot of ways.  MonoGame then took the reigns in 2013 when Microsoft retired XNA, to continue the tradition of making the entry in to game development very easy. Since that time MonoGame has grown to become one of the premier C# development frameworks for building games and has given many studios their first entries to the gaming halls of fame.
+Released in December 2004, XNA was a new approach to Game Development built around DirectX in C# (a managed language), which eased game programming in a lot of ways.  MonoGame then took the reigns in 2013 when Microsoft retired XNA, to continue the tradition of making the entry into game development very easy. Since that time MonoGame has grown to become one of the premier C# development frameworks for building games and has given many studios their first entries to the gaming halls of fame.
 
 ## Required Software (free)
 
@@ -37,11 +37,11 @@ Open the Game1.cs code file. you will find it is littered with comments in green
 
 - The constructor method Game1() is called once at startup. It is used to load some variables needed by the MonoGame framework.
 - The Initialize method is also called once on startup. This is the method where we should put our initialization code.
-- The LoadContent method is used for importing media (such as images, objects and audio) as well as data related to the graphics card. In the Game class, this is only called once on startup.
+- The LoadContent method is used for importing media (such as images, objects, and audio) as well as data related to the graphics card. In the Game class, this is only called once on startup.
 - The Update method is called once every frame, at a rate of exactly 60 times/second. This is where we will put the code that needs to be updated throughout the lifetime of our program, such as the code that reads the keyboard and updates the geometry of our scene.
 - As often as your computer (and especially your graphics card) allows, the Draw method is called. This is where we should put the code that actually draws stuff to the screen.
 
-As you can see, there is no code needed to open a window, as this will be done automatically for us when you run your project. if you are running visual studio (Windows/Mac) you can press F5 to run your project and will get a nice blue window.
+As you can see, there is no code needed to open a window, as this will be done automatically for us when you run your project. if you are running Visual Studio (Windows/Mac) you can press F5 to run your project and will get a nice blue window.
 
 ## Setting up the screen
 
@@ -70,7 +70,7 @@ Next, we are going to specify some extra stuff related to our window such as its
     _graphics.PreferredBackBufferHeight = 500;
     _graphics.IsFullScreen = false;
     _graphics.ApplyChanges();
-    Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+    Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 ```
 
 The first line sets the size of our backbuffer which will contain what will be drawn to the screen. We also indicate that we want our program to run in a window. The last line sets the title of our window.
@@ -79,8 +79,8 @@ When you run this code, you should see a window of 500x500 pixels, with the titl
 
 ![Blank Screen](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA01Starting01.png?raw=true)
 
-After each chapter I will suggest some short exercises, so you practice what you’ve learned in the chapter. After the exercise, the whole code of the chapter is listed, with the changes of the current chapter highlighted. I have stripped away all the comments, so it looks a bit more compact.
-Also, the code surrounding the SpriteBatch has been removed as it is used only to render 2D graphics and we will not need is for this 3D series.
+After each chapter I will suggest some short exercises, so you practice what you have learned in the chapter. After the exercise, the whole code of the chapter is listed.
+As we are focusing purely on 3D for this tutorial, the code surrounding the SpriteBatch has been removed as it is used only to render 2D graphics and we will not need it.
 
 > **Important:** When you copy-paste the code into your Game.cs file, make sure you change the name of the **namespace** in your Program.cs file to **Series3D1**. The namespace by default is the same as the name you specified when creating the new project, so in my case it is Series3D1. You can find the namespace immediately below the using-block at the top of the code file.
 
@@ -119,7 +119,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

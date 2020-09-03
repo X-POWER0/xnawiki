@@ -1,10 +1,10 @@
 # Adding some color and the Z-Buffer
 
-You might already have a rotating terrain, but it definitely would be better looking filled with some colors instead of just plain white lines. One idea to do this, is to use natural colors, like the ones that we find in the mountains, at the bottom we have blue lakes, green trees, brown mountains and finally snow topped peaks. This means we will have to extend our **SetUpVertices** method a bit, so it stores the correct colors in each vertex.
+You might already have a rotating terrain, but it definitely would be better looking filled with some colors instead of just plain white lines. One idea to do this is to use natural colors, like the ones that we find in the mountains, at the bottom we have blue lakes, green trees, brown mountains, and finally snow-topped peaks. This means we will have to extend our **SetUpVertices** method a bit, so it stores the correct colors in each vertex.
 
 ## Coloring the map
 
-You cannot expect every image to have a lake at height 0 and a mountain peak at height 255 (the maximum value for a .bmp pixel). Most images height values are only between 50 and 200, this image would then produce a terrain without any lakes or snow topped peaks.
+You cannot expect every image to have a lake at height 0 and a mountain peak at height 255 (the maximum value for a .bmp pixel). Most images height values are only between 50 and 200, this image would then produce a terrain without any lakes or peaks.
 
 To remain as general as possible, we first have to detect the minimum and maximum heights in our image and store these values in the minHeight and maxHeight variables. We will put this code at the top of our **SetUpVertices** method:
 
@@ -62,7 +62,7 @@ Resulting in the following:
 
 ![Colored Wireframe](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-10Colors2.png?raw=true)
 
-When your run this code, you will indeed see a nicely colored network of lines. When we want to see the whole colored terrain, we just have to remove this line (or set it to FillMode.Solid) in the **Draw** method:
+When you run this code, you will indeed see a nicely colored network of lines. When we want to see the whole colored terrain, we just have to remove this line (or set it to FillMode.Solid) in the **Draw** method:
 
 ```csharp
     rs.FillMode = FillMode.WireFrame;
@@ -70,15 +70,15 @@ When your run this code, you will indeed see a nicely colored network of lines. 
 
 ## Dealing with the ZBuffer
 
-When you execute this, take a few moments to rotate the terrain a couple of times. On some computers, you will see that sometimes the middle peaks get overdrawn by the ‘invisible’ lake behind it. This is because we have not yet defined a ‘Z-buffer’! This Z buffer is nothing more than an array where your video card keeps track of the depth coordinate of every pixel that should be drawn on your screen (so in our case, a 500x500 matrix!). Every time your card receives a triangle to draw, it checks whether the triangle’s pixels are closer to the screen than the pixels already present in the Z-buffer. If they are closer, the Z-buffer’s contents is updated with these pixels for that region.
+When you execute this, take a few moments to rotate the terrain a couple of times. On some computers, you will see that sometimes the middle peaks get overdrawn by the ‘invisible’ lake behind it. This is because we have not yet defined a ‘Z-buffer’! This Z buffer is nothing more than an array where your video card keeps track of the depth coordinate of every pixel that should be drawn on your screen (so in our case, a 500x500 matrix!). Every time your card receives a triangle to draw, it checks whether the triangle’s pixels are closer to the screen than the pixels already present in the Z-buffer. If they are closer, the Z-buffer’s contents update with the pixels for that region.
 
-Of course, this whole process if fully automated. All we have to do, is to initialize our Z buffer with the largest possible distance to start with. So in fact, we have to first fill our buffer with ones. To do this automatically every update of our screen, change this line in the Draw method:
+Of course, this whole process if fully automated. All we have to do is to initialize our Z buffer with the largest possible distance to start with. So in fact, we have to first fill our buffer with ones. To do this automatically every update of our screen, change this line in the Draw method:
 
 ```csharp
     _device.Clear(ClearOptions.Target|ClearOptions.DepthBuffer, Color.Black, 1.0f, 0);
 ```
 
-> The | is a bitwise OR operator, in this case it means both the Target (the colors) as well as the DepthBuffer have to be cleared
+> The | is a bitwise OR operator, in this case, it means both the Target (the colors) as well as the DepthBuffer have to be cleared
 
 Now everyone should see the terrain rotating as expected.
 
@@ -130,7 +130,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }

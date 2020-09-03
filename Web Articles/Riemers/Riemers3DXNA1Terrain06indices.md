@@ -4,11 +4,11 @@ The triangle was nice, but what about a lot of triangles?
 
 ## Making a mountain out of a molehill
 
-To make more triangles, we simply would need to specify 3 vertices for every triangle we need. Consider next example:
+To make more triangles, we simply would need to specify 3 vertices for every triangle we need. Consider the following example:
 
 ![Triangles](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-6indices1.jpg?raw=true)
 
-Only 4 out of 6 vertices are unique. So the other 2 are simply a waste of bandwidth to your graphics card! It would be better to define the 4 vertices in an array from 0 to 3, and to define triangle one as vertices 1, 2 and 3 and then triangle two as vertices 2, 3 and 4. This way, the complex vertex data is not duplicated. 
+Only 4 out of 6 vertices are unique. So the other 2 are simply a waste of bandwidth to your graphics card! It would be better to define the 4 vertices in an array from 0 to 3, and to define triangle one as vertices 1, 2, and 3 and then triangle two as vertices 2, 3, and 4. This way, the complex vertex data is not duplicated. 
 
 This is exactly the idea behind indices. Suppose we would like to draw these 2 triangles :
 
@@ -34,7 +34,7 @@ To get started, change our SetUpVertices method as follows (I have compacted the
 
 Vertices 0 to 2 are positioned on the positive X axis. Vertices 3 and 4 have a negative Z component, as  MonoGame considers the negative Z axis to be ‘Forward’. As your vertices are defined along the Right and the Forward directions, the resulting triangles will be lying flat on the ground.
 
-Next, we will create a list of indices. As discussed earlier, indices references specific vertices defined in our array of vertices. The indices build the triangles, so for two triangles, we will need to define 6 indices. Start by defining the array at the top of your class. Since indices are integer numbers, you will define an array capable of storing **int's**.
+Next, we will create a list of indices. As discussed earlier, indices reference specific vertices defined in our array of vertices. The indices build the triangles, so for two triangles, we will need to define 6 indices. Start by defining the array at the top of your class. Since indices are integer numbers, you will define an array capable of storing **int's**.
 
 Let us start by adding a new variable to track our list of Indices in the Properties section of our class:
 
@@ -67,9 +67,9 @@ Or in shorthand:
     }
 ```
 
-As you can see, this method defines six indices tat make up two triangles. Vertex number one is referred to twice, which was our initial goal as you can see in the image above. In this case, the profit is rather small, but in bigger applications (as you will see soon ;) ) this is the way to go.
+As you can see, this method defines six indices that make up two triangles. Vertex number one is referred to twice, which was our initial goal as you can see in the image above. In this case, the profit is rather small, but in bigger applications (as you will see soon ;) ) this is the way to go.
 
-> Also note that the triangles have been defined in a **clockwise order** again, so MonoGame will see them as facing the camera and will not cull them away.
+> Also, note that the triangles have been defined in a **clockwise order** again, so MonoGame will see them as facing the camera and will not cull them away.
 
 Make sure to call this method from our **LoadContent** method after the call to SetUpVertices:
 
@@ -85,7 +85,7 @@ All that's left for this chapter is to draw the triangles from our buffer! Repla
 
 Instead of using the **DrawUserPrimitives** method, this time we call the **DrawUserIndexedPrimitives** method which allows us to specify both an **array of vertices** and an **array of indices**. The second-last argument specifies how many triangles are defined by the indices. Since one triangle is defined by 3 indices, we specify the number of indices divided by 3.
 
-Before your try this code, make your triangles stop rotating by resetting their World matrix to the unity matrix. The Identity matrix is the unity matrix, so your original World space coordinates will be used.
+Before you try this code, make your triangles stop rotating by resetting their World matrix to the unity matrix. The Identity matrix is the unity matrix, so your original World space coordinates will be used.
 
 ```csharp
     Matrix worldMatrix = Matrix.Identity;
@@ -105,7 +105,7 @@ Now when you run this code, you should see both triangles, but they’re still s
 
 ## Seeing how the sausage is made
 
-Another way to look our rendered content is to tellthe graphics card to NOT fill in the spaces inside the triangle, try changing this property to your **RasterizerState**:
+Another way to look at our rendered content is to tell the graphics card to NOT fill in the spaces inside the triangle, try changing this property to your **RasterizerState**:
 
 ```csharp
     rs.FillMode = FillMode.WireFrame;
@@ -137,8 +137,8 @@ The benefit of using indices in this example is not very big as we are only pass
 
 You can try these exercises to practice what you have learned:
 
-* Try to render the triangle that connects vertices 1, 3 and 4. The only changes you need to make are in the SetUpIndices method.
-* Use another vector, such as (1,0,0) as Up vector for your camera’s View matrix.
+* Try to render the triangle that connects vertices 1, 3, and 4. The only changes you need to make are in the **SetUpIndices** method.
+* Use another vector, such as (1,0,0) as Up vector for your camera’s view matrix.
 
 ## The code so far
 
@@ -175,7 +175,7 @@ namespace Series3D1
             _graphics.PreferredBackBufferHeight = 500;
             _graphics.IsFullScreen = false;
             _graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 1";
 
             base.Initialize();
         }
