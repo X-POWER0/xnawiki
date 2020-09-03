@@ -115,16 +115,18 @@ This will only draw the edges of our triangles, instead of solid triangles.
 
 ![Wireframe](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-06Indices2.png?raw=true)
 
-> If this chapter or next chapter doesn’t render any triangles to your window, chances are your graphics card isn’t capable of rendering from many indices. To solve this, store your indices as shorts instead of ints. Define your array like this:
+> By default MonoGame runs in what is referred to as "Reach" mode, aimed at targeting the lowest common denominator graphics platform, [you can read more about Graphics Profiles here](https://docs.microsoft.com/en-us/previous-versions/windows/xna/ff604995(v=xnagamestudio.42)).
+>
+> If you only wish to target high-end systems, you can upgrade your implementation to use the "HiDef" profile and then update the variables to use **ints** instead of **shorts** and by filling it like this:
 >
 > ```csharp
->     short[] indices;
+>     int[] indices;
 > ```
 >
 > And in your SetUpIndices method, initialize it like this:
 >
 > ```csharp
->     indices = new short[6];
+>     indices = new int[6];
 > ```
 >
 > This should work, even on pcs with lower-end graphics cards.
@@ -157,7 +159,7 @@ namespace Series3D1
         private Matrix _viewMatrix;
         private Matrix _projectionMatrix;
         private float _angle = 0f;
-        private int[] _indices;
+        private short[] _indices;
 
         public Game1()
         {
@@ -182,17 +184,17 @@ namespace Series3D1
         {
             _vertices = new VertexPositionColor[5]
             {
-            new VertexPositionColor() {Position = new Vector3(0f, 0f, 0f), Color = Color.White},
-            new VertexPositionColor() {Position = new Vector3(5f, 0f, 0f), Color = Color.White},
-            new VertexPositionColor() {Position = new Vector3(10f, 0f, 0f), Color = Color.White},
-            new VertexPositionColor() {Position = new Vector3(5f, 0f, -5f), Color = Color.White},
-            new VertexPositionColor() {Position = new Vector3(10f, 0f, -5f), Color = Color.White}
+                new VertexPositionColor() {Position = new Vector3(0f, 0f, 0f), Color = Color.White},
+                new VertexPositionColor() {Position = new Vector3(5f, 0f, 0f), Color = Color.White},
+                new VertexPositionColor() {Position = new Vector3(10f, 0f, 0f), Color = Color.White},
+                new VertexPositionColor() {Position = new Vector3(5f, 0f, -5f), Color = Color.White},
+                new VertexPositionColor() {Position = new Vector3(10f, 0f, -5f), Color = Color.White}
             };
         }
 
         private void SetUpIndices()
         {
-            _indices = new int[6] { 3, 1, 0, 4, 2, 1 };
+            _indices = new short[6] { 3, 1, 0, 4, 2, 1 };
         }
 
         private void SetUpCamera()
@@ -208,9 +210,10 @@ namespace Series3D1
 
             _effect = Content.Load<Effect>("effects");
 
+            SetUpCamera();
+
             SetUpVertices();
             SetUpIndices();
-            SetUpCamera();
         }
 
         protected override void Update(GameTime gameTime)

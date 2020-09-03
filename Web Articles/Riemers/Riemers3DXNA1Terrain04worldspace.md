@@ -79,7 +79,7 @@ Now that we have these matrices, we need to pass it to our technique, where they
 
 Although the first 2 lines are explained above, they are discussed in much more detail in [Series 3](Riemers3DXNA3hlsloverview.md). The third line sets another parameter, which is discussed in the next chapter.
 
-Do not forget to call this method from the end of the **LoadContent** method:
+Do not forget to call this method in the **LoadContent** method, placing it just after loading the effect file (since we want the camera setup early):
 
 ```csharp
     SetUpCamera();
@@ -181,8 +181,9 @@ namespace Series3D1
 
             _effect = Content.Load<Effect>("effects");
 
-            SetUpVertices();
             SetUpCamera();
+
+            SetUpVertices();
         }
 
         protected override void Update(GameTime gameTime)

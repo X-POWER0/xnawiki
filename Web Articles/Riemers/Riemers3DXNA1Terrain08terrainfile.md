@@ -26,8 +26,12 @@ private void LoadHeightData(Texture2D heightMap)
 
     _heightData = new float[_terrainWidth, _terrainHeight];
     for (int x = 0; x < _terrainWidth; x++)
+    {
         for (int y = 0; y < _terrainHeight; y++)
+        {
             _heightData[x, y] = heightMapColors[x + y * _terrainWidth].R / 5.0f;
+        }
+    }
 }
 ```
 
@@ -94,7 +98,7 @@ namespace Series3D1
         private Matrix _viewMatrix;
         private Matrix _projectionMatrix;
         private float _angle = 0f;
-        private int[] _indices;
+        private short[] _indices;
         private int _terrainWidth = 4;
         private int _terrainHeight = 3;
         private float[,] _heightData;
@@ -133,16 +137,16 @@ namespace Series3D1
 
         private void SetUpIndices()
         {
-            _indices = new int[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
+            _indices = new short[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
             int counter = 0;
             for (int y = 0; y < _terrainHeight - 1; y++)
             {
                 for (int x = 0; x < _terrainWidth - 1; x++)
                 {
-                    int lowerLeft = x + y * _terrainWidth;
-                    int lowerRight = (x + 1) + y * _terrainWidth;
-                    int topLeft = x + (y + 1) * _terrainWidth;
-                    int topRight = (x + 1) + (y + 1) * _terrainWidth;
+                    short lowerLeft = (short)(x + y * _terrainWidth);
+                    short lowerRight = (short)((x + 1) + y * _terrainWidth);
+                    short topLeft = (short)(x + (y + 1) * _terrainWidth);
+                    short topRight = (short)((x + 1) + (y + 1) * _terrainWidth);
 
                     _indices[counter++] = topLeft;
                     _indices[counter++] = lowerRight;
@@ -171,8 +175,12 @@ namespace Series3D1
 
             _heightData = new float[_terrainWidth, _terrainHeight];
             for (int x = 0; x < _terrainWidth; x++)
+            {
                 for (int y = 0; y < _terrainHeight; y++)
+                {
                     _heightData[x, y] = heightMapColors[x + y * _terrainWidth].R / 5.0f;
+                }
+            }
         }
 
         protected override void LoadContent()
@@ -182,11 +190,12 @@ namespace Series3D1
 
             _effect = Content.Load<Effect>("effects");
 
+            SetUpCamera();
+
             Texture2D heightMap = Content.Load<Texture2D>("heightmap");
             LoadHeightData(heightMap);
             SetUpVertices();
             SetUpIndices();
-            SetUpCamera();
         }
 
         protected override void Update(GameTime gameTime)

@@ -128,8 +128,9 @@ namespace Series3D1
 
             _effect = Content.Load<Effect>("effects");
 
-            SetUpVertices();
             SetUpCamera();
+
+            SetUpVertices();
         }
 
         protected override void Update(GameTime gameTime)

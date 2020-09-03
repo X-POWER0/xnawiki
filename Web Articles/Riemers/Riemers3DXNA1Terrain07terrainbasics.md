@@ -128,16 +128,16 @@ Remember you’re still rendering only the bottom-left triangles. So when you wo
 ```csharp
     private void SetUpIndices()
     {
-        _indices = new int[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
+        _indices = new short[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
         int counter = 0;
         for (int y = 0; y < _terrainHeight - 1; y++)
         {
             for (int x = 0; x < _terrainWidth - 1; x++)
             {
-                int lowerLeft = x + y * _terrainWidth;
-                int lowerRight = (x + 1) + y * _terrainWidth;
-                int topLeft = x + (y + 1) * _terrainWidth;
-                int topRight = (x + 1) + (y + 1) * _terrainWidth;
+                short lowerLeft = (short)(x + y * _terrainWidth);
+                short lowerRight = (short)((x + 1) + y * _terrainWidth);
+                short topLeft = (short)(x + (y + 1) * _terrainWidth);
+                short topRight = (short)((x + 1) + (y + 1) * _terrainWidth);
 
                 _indices[counter++] = topLeft;
                 _indices[counter++] = lowerRight;
@@ -157,21 +157,23 @@ Running this code will give you a better 3 dimensional view. We have especially 
 
 ![Summary](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-07Terrain1.png?raw=true)
 
-> If you don't see any triangle when you run the code, see the note at the end of the previous chapter. Your problem should be solved by creating an array that can store **shorts** instead of **ints** and by filling it like this:
+> By default MonoGame runs in what is referred to as "Reach" mode, aimed at targeting the lowest common denominator graphics platform, [you can read more about Graphics Profiles here](https://docs.microsoft.com/en-us/previous-versions/windows/xna/ff604995(v=xnagamestudio.42)).
+>
+> If you only wish to target high-end systems, you can upgrade your implementation to use the "HiDef" profile and then update the Index/Vertex arrays to use **ints** instead of **shorts** and by filling it like this:
 >
 > ```csharp
 >     private void SetUpIndices()
 >     {
->         _indices = new short[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
+>         _indices = new int[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
 >         int counter = 0;
 >         for (int y = 0; y < _terrainHeight - 1; y++)
 >         {
 >             for (int x = 0; x < _terrainWidth - 1; x++)
 >             {
->                 short lowerLeft = (short)(x + y * _terrainWidth);
->                 short lowerRight = (short)((x + 1) + y * _terrainWidth);
->                 short topLeft = (short)(x + (y + 1) * _terrainWidth);
->                 short topRight = (short)((x + 1) + (y + 1) * _terrainWidth);
+>                 int lowerLeft = x + y * _terrainWidth;
+>                 int lowerRight = (x + 1) + y * _terrainWidth;
+>                 int topLeft = x + (y + 1) * _terrainWidth;
+>                 int topRight = (x + 1) + (y + 1) * _terrainWidth;
 >
 >                 _indices[counter++] = topLeft;
 >                 _indices[counter++] = lowerRight;
@@ -184,6 +186,8 @@ Running this code will give you a better 3 dimensional view. We have especially 
 >         }
 >     }
 > ```
+>
+> Don't forget to also update the Index/Vertex Array data types, as well as the Width/Height variables too.
 
 ## Exercises
 
@@ -211,7 +215,7 @@ namespace Series3D1
         private Matrix _viewMatrix;
         private Matrix _projectionMatrix;
         private float _angle = 0f;
-        private int[] _indices;
+        private short[] _indices;
         private int _terrainWidth = 4;
         private int _terrainHeight = 3;
         private float[,] _heightData;
@@ -250,16 +254,16 @@ namespace Series3D1
 
         private void SetUpIndices()
         {
-            _indices = new int[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
+            _indices = new short[(_terrainWidth - 1) * (_terrainHeight - 1) * 6];
             int counter = 0;
             for (int y = 0; y < _terrainHeight - 1; y++)
             {
                 for (int x = 0; x < _terrainWidth - 1; x++)
                 {
-                    int lowerLeft = x + y * _terrainWidth;
-                    int lowerRight = (x + 1) + y * _terrainWidth;
-                    int topLeft = x + (y + 1) * _terrainWidth;
-                    int topRight = (x + 1) + (y + 1) * _terrainWidth;
+                    short lowerLeft = (short)(x + y * _terrainWidth);
+                    short lowerRight = (short)((x + 1) + y * _terrainWidth);
+                    short topLeft = (short)(x + (y + 1) * _terrainWidth);
+                    short topRight = (short)((x + 1) + (y + 1) * _terrainWidth);
 
                     _indices[counter++] = topLeft;
                     _indices[counter++] = lowerRight;
@@ -304,10 +308,11 @@ namespace Series3D1
 
             _effect = Content.Load<Effect>("effects");
 
+            SetUpCamera();
+
             LoadHeightData();
             SetUpVertices();
             SetUpIndices();
-            SetUpCamera();
         }
 
         protected override void Update(GameTime gameTime)
