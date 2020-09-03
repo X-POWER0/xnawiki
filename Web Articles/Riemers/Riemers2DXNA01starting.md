@@ -1,6 +1,10 @@
 # Starting your MonoGame 4.0 Project
 
-Welcome to the first entry of this MonoGame Tutorial. This tutorial is aimed at people who haven't done any MonoGame programming so far and would like to see some results in the shortest possible time. Released in December 2006, MonoGame is a new framework, built around DirectX, which eases game programming in a lot of ways.
+Welcome to the first entry of this MonoGame Tutorial. This tutorial is aimed at people who have not done any MonoGame programming so far and would like to see some results in the shortest possible time.
+
+## The history of XNA/MonoGame
+
+Released in December 2004, XNA was a new approach to Game Development built around DirectX in C# (a managed language), which eased game programming in a lot of ways.  MonoGame then took the reigns in 2013 when Microsoft retired XNA, to continue the tradition of making the entry in to game development very easy. Since that time MonoGame has grown to become one of the premier C# development frameworks for building games and has given many studios their first entries to the gaming halls of fame.
 
 ## Required Software (free)
 
@@ -41,7 +45,7 @@ As you can see, there is no code needed to open a window, as this will be done a
 
 ## Setting up the screen
 
-Let us move on, and discuss the graphics device. In short, the ‘device’ is what I will be talking about in the next series of tutorials, this a direct link to your graphical adapter. It is an object in your code that gives you direct access to the piece of hardware inside your computer that controls what you see on your screen. This variable is readily available in our code as well as the GraphicsDevice variable, but we will be using this a lot (really, a lot) and we will make a shortcut for this. First, we’ll declare this variable, by adding this line to the top of our class (Commented as **"Properties"** for easy reference in the code below), exactly above the **Game1()** method:
+Let us move on, and discuss the graphics device. In short, the 'device' is what I will be talking about in the next series of tutorials, this a direct link to your graphical adapter. It is an object in your code that gives you direct access to the piece of hardware inside your computer that controls what you see on your screen. This variable is readily available in our code as well as the GraphicsDevice variable, but we will be using this a lot (really, a lot) and we will make a shortcut for this. First, we’ll declare this variable, by adding this line to the top of our class (Commented as **"Properties"** for easy reference in the code below), exactly above the **Game1()** method:
 
 ```csharp
     private GraphicsDevice _device;
@@ -69,7 +73,7 @@ When you run this code, you should see a window of 500x500 pixels, with the titl
 
 ![Blank Screen](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/2DXNA01Starting01.png?raw=true)
 
-Where appropriate, after some chapters I will suggest some short exercises allowing you practice what you’ve learned in the chapter. At the end of each exercise, the whole code for the chapter is listed.
+Where appropriate, after some chapters I will suggest some short exercises allowing you practice what you have learned in the chapter. At the end of each exercise, the whole code for the chapter is listed.
 
 > **Important:** When you copy-paste the code into your Game.cs file, make sure you change the name of the **namespace** in your Program.cs file to **Series2D1**. The namespace by default is the same as the name you specified when creating the new project, so in my case it is Series2D1. You can find the namespace immediately below the using-block at the top of the code file.
 
@@ -78,7 +82,7 @@ Where appropriate, after some chapters I will suggest some short exercises allow
 You can try these exercises to practice what you have learned:
 
 - Change the size of your window to 800x600.
-- Instead of creating a windowed game, switch to 800x600 fullscreen mode (use Alt+F4 to terminate your program).
+- Instead of creating a windowed game, switch to full-screen mode (use Alt+F4 to terminate your program).
 
 ## Starting code
 
@@ -105,11 +109,11 @@ namespace Series2D1
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-             _graphics.PreferredBackBufferWidth = 500;
-             _graphics.PreferredBackBufferHeight = 500;
-             _graphics.IsFullScreen = false;
-             _graphics.ApplyChanges();
-             Window.Title = "Riemer's 2D MonoGame Tutorial";
+            _graphics.PreferredBackBufferWidth = 500;
+            _graphics.PreferredBackBufferHeight = 500;
+            _graphics.IsFullScreen = false;
+            _graphics.ApplyChanges();
+            Window.Title = "Riemer's 2D MonoGame Tutorial";
 
             base.Initialize();
         }

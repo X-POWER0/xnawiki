@@ -1,252 +1,255 @@
-# Recycling vertices using inidices
+# Recycling vertices using indices
 
-The triangle was nice, but what about a lot of triangles? We would need to specify 3 vertices for each triangle. Consider next example:
+The triangle was nice, but what about a lot of triangles?
+
+## Making a mountain out of a molehill
+
+To make more triangles, we simply would need to specify 3 vertices for every triangle we need. Consider next example:
 
 ![Triangles](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-6indices1.jpg?raw=true)
 
-Only 4 out of 6 vertices are unique. So the other 2 are simply a waste of bandwidth to your graphics card! It would be better to define the 4 vertices in an array from 0 to 3, and to define triangle 1 as vertices 1,2 and 3 and triangle 2 as vertices 2,3 and 4. This way, the complex vertex data is not duplicated. This is exactly the idea behind indices. Suppose we would like to draw these 2 triangles :
+Only 4 out of 6 vertices are unique. So the other 2 are simply a waste of bandwidth to your graphics card! It would be better to define the 4 vertices in an array from 0 to 3, and to define triangle one as vertices 1, 2 and 3 and then triangle two as vertices 2, 3 and 4. This way, the complex vertex data is not duplicated. 
+
+This is exactly the idea behind indices. Suppose we would like to draw these 2 triangles :
 
 ![Triangles](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-6indices2.jpg?raw=true)
 
-Normally we would have to define 6 vertices, now we will define only 5. So change our SetUpVertices method as follows:
+Normally we would have to define 6 vertices, now we will define only 5. This might not sound like much of a cost-saving, but consider if we had MILLIONS of triangles, it all adds up.
+
+To get started, change our SetUpVertices method as follows (I have compacted the code to make it more manageable):
 
 ```csharp
- private void SetUpVertices()
- {
-     vertices = new VertexPositionColor[5];
- 
-     vertices[0].Position = new Vector3(0f, 0f, 0f);
-     vertices[0].Color = Color.White;
-     vertices[1].Position = new Vector3(5f, 0f, 0f);
-     vertices[1].Color = Color.White;
-     vertices[2].Position = new Vector3(10f, 0f, 0f);
-     vertices[2].Color = Color.White;
-     vertices[3].Position = new Vector3(5f, 0f, -5f);
-     vertices[3].Color = Color.White;
-     vertices[4].Position = new Vector3(10f, 0f, -5f);
-     vertices[4].Color = Color.White;
- }
+    private void SetUpVertices()
+    {
+        _vertices = new VertexPositionColor[5]
+        {
+        new VertexPositionColor() {Position = new Vector3(0f, 0f, 0f), Color = Color.White},
+        new VertexPositionColor() {Position = new Vector3(5f, 0f, 0f), Color = Color.White},
+        new VertexPositionColor() {Position = new Vector3(10f, 0f, 0f), Color = Color.White},
+        new VertexPositionColor() {Position = new Vector3(5f, 0f, -5f), Color = Color.White},
+        new VertexPositionColor() {Position = new Vector3(10f, 0f, -5f), Color = Color.White}
+        };
+    }
 ```
 
-Vertices 0 to 2 are positioned on the positive X axis. Vertices 3 and 4 have a negative Z component, as XNA considers the negative Z axis to be ‘Forward’. As your vertices are defined along the Right and the Forward directions, the resulting triangles will be lying flat on the ground.
+Vertices 0 to 2 are positioned on the positive X axis. Vertices 3 and 4 have a negative Z component, as  MonoGame considers the negative Z axis to be ‘Forward’. As your vertices are defined along the Right and the Forward directions, the resulting triangles will be lying flat on the ground.
 
-Next, we will create a list of indices. As discussed above, the indices refer to vertices in our array of vertices. The indices define the triangles, so for 2 triangles we will need to define 6 indices. Start by defining the array at the top of your class. Since indices are integer numbers, you will define an array capable of storing ints:
+Next, we will create a list of indices. As discussed earlier, indices references specific vertices defined in our array of vertices. The indices build the triangles, so for two triangles, we will need to define 6 indices. Start by defining the array at the top of your class. Since indices are integer numbers, you will define an array capable of storing **int's**.
+
+Let us start by adding a new variable to track our list of Indices in the Properties section of our class:
 
 ```csharp
- int[] indices;
+    private int[] _indices;
 ```
 
-Let’s create another small method that fills the array of indices.
+And create another small method that fills the array of indices.
 
 ```csharp
- private void SetUpIndices()
- {
-     indices = new int[6];
- 
-     indices[0] = 3;
-     indices[1] = 1;
-     indices[2] = 0;
-     indices[3] = 4;
-     indices[4] = 2;
-     indices[5] = 1;
- }
+    private void SetUpIndices()
+    {
+        _indices = new int[6];
+
+        _indices[0] = 3;
+        _indices[1] = 1;
+        _indices[2] = 0;
+        _indices[3] = 4;
+        _indices[4] = 2;
+        _indices[5] = 1;
+    }
 ```
 
-As you can see, this method defines 6 indices, defining 2 triangles. Vertex number 1 is referred to twice, which was our initial goal as you can see in the image above. In this case, the profit is rather small, but in bigger applications (as you will see soon ;) this is the way to go. Also note that the triangles have been defined in a clockwise order again, so XNA will see them as facing the camera and will not cull them away.
-
-Make sure to call this method from our LoadContent method :
+Or in shorthand:
 
 ```csharp
- SetUpIndices();
+    private void SetUpIndices()
+    {
+        _indices = new int[6] {3,1,0,4,2,1};
+    }
 ```
 
-All that's left for this chapter is to draw the triangles from our buffer! Change the following line in your Draw method:
+As you can see, this method defines six indices tat make up two triangles. Vertex number one is referred to twice, which was our initial goal as you can see in the image above. In this case, the profit is rather small, but in bigger applications (as you will see soon ;) ) this is the way to go.
+
+> Also note that the triangles have been defined in a **clockwise order** again, so MonoGame will see them as facing the camera and will not cull them away.
+
+Make sure to call this method from our **LoadContent** method after the call to SetUpVertices:
 
 ```csharp
- device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3, VertexPositionColor.VertexDeclaration);
+    SetUpIndices();
 ```
 
-Instead of using the DrawUserPrimitives method, this time we call the DrawUserIndexedPrimitives method. This allows us to specify both an array of vertices and an array of indices. The second-last argument specifies how many triangles are defined by the indices. Since one triangle is defined by 3 indices, we specify the number of indices divided by 3.
+All that's left for this chapter is to draw the triangles from our buffer! Replace the following line in your Draw method:
+
+```csharp
+    _device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, _vertices, 0, _vertices.Length, _indices, 0, _indices.Length / 3, VertexPositionColor.VertexDeclaration);
+```
+
+Instead of using the **DrawUserPrimitives** method, this time we call the **DrawUserIndexedPrimitives** method which allows us to specify both an **array of vertices** and an **array of indices**. The second-last argument specifies how many triangles are defined by the indices. Since one triangle is defined by 3 indices, we specify the number of indices divided by 3.
 
 Before your try this code, make your triangles stop rotating by resetting their World matrix to the unity matrix. The Identity matrix is the unity matrix, so your original World space coordinates will be used.
 
 ```csharp
- Matrix worldMatrix = Matrix.Identity;
+    Matrix worldMatrix = Matrix.Identity;
 ```
 
-That's it! When you run the program, however, there will be not too much to see. This is because both your triangles and your camera are positioned on the floor! We’ll have to reposition our camera so the triangles are in sight of the camera. So go to our SetUpCamera method, and change the position of the camera so it is positioned above our (0,0,0) 3D origin:
+That's it! When you run the program, however, there will be not too much to see. This is because both your triangles and your camera are positioned on the floor! We’ll have to reposition our camera so the triangles are in sight of the camera. So go to our **SetUpCamera** method, and change the position of the camera so it is positioned above our (0,0,0) 3D origin:
 
 ```csharp
- viewMatrix = Matrix.CreateLookAt(new Vector3(0, 50, 0), new Vector3(0, 0, 0), new Vector3(0, 0, -1));
+    _viewMatrix = Matrix.CreateLookAt(new Vector3(0, 50, 0), new Vector3(0, 0, 0), new Vector3(0, 0, -1));
 ```
 
-We've positioned our camera 50 units above the (0,0,0) 3D origin, as the Y axis is considered as Up axis by XNA. However, because the camera is looking down, you can no longer specify the (0,1,0) Up vector as Up vector for the camera! Therefore, you specify the (0,0,-1) Forward vector as Up vector for the camera.
+We've positioned our camera 50 units above the (0,0,0) 3D origin, as the Y axis is considered as Up axis by  MonoGame. However, because the camera is looking down, you can no longer specify the (0,1,0) Up vector as Up vector for the camera! Therefore, you specify the (0,0,-1) Forward vector as Up vector for the camera.
 
-> See Recipe 2-1 for more information about the View matrix.
+Now when you run this code, you should see both triangles, but they’re still solid.
 
-Now when you run this code, you should see both triangles, but they’re still solid. Try changing this property to your renderstates:
+![Solid Triangles](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-06Indices1.png?raw=true)
+
+## Seeing how the sausage is made
+
+Another way to look our rendered content is to tellthe graphics card to NOT fill in the spaces inside the triangle, try changing this property to your **RasterizerState**:
 
 ```csharp
- rs.FillMode = FillMode.WireFrame;
+    rs.FillMode = FillMode.WireFrame;
 ```
 
 This will only draw the edges of our triangles, instead of solid triangles.
 
-// Current Status
+![Wireframe](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA1-06Indices2.png?raw=true)
 
-If this chapter or next chapter doesn’t render any triangles to your window, chances are your graphics card isn’t capable of rendering from many indices. To solve this, store your indices as shorts instead of ints. Define your array like this:
+> If this chapter or next chapter doesn’t render any triangles to your window, chances are your graphics card isn’t capable of rendering from many indices. To solve this, store your indices as shorts instead of ints. Define your array like this:
+>
+> ```csharp
+>     short[] indices;
+> ```
+>
+> And in your SetUpIndices method, initialize it like this:
+>
+> ```csharp
+>     indices = new short[6];
+> ```
+>
+> This should work, even on pcs with lower-end graphics cards.
+
+The benefit of using indices in this example is not very big as we are only passing 5 vertices instead of 6. In the next chapter, however, the benefit will be a lot larger.
+
+## Exercises
+
+You can try these exercises to practice what you have learned:
+
+* Try to render the triangle that connects vertices 1, 3 and 4. The only changes you need to make are in the SetUpIndices method.
+* Use another vector, such as (1,0,0) as Up vector for your camera’s View matrix.
+
+## The code so far
 
 ```csharp
- short[] indices;
-```
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
-And in your SetUpIndices method, initialize it like this:
+namespace Series3D1
+{
+    public class Game1 : Game
+    {
+        //Properties
+        private GraphicsDeviceManager _graphics;
+        private GraphicsDevice _device;
+        private Effect _effect;
+        private VertexPositionColor[] _vertices;
+        private Matrix _viewMatrix;
+        private Matrix _projectionMatrix;
+        private float _angle = 0f;
+        private int[] _indices;
 
-```csharp
- indices = new short[6];
-```
+        public Game1()
+        {
+            _graphics = new GraphicsDeviceManager(this);
+            Content.RootDirectory = "Content";
+            IsMouseVisible = true;
+        }
 
-This should work, even on pcs with lower-end graphics cards.
+        protected override void Initialize()
+        {
+            // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferWidth = 500;
+            _graphics.PreferredBackBufferHeight = 500;
+            _graphics.IsFullScreen = false;
+            _graphics.ApplyChanges();
+            Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
 
-The benefit of using indices in this example is not very big: we’re passing 5 vertices instead of 6. In the next chapter, however, the benefit will be a lot larger.
+            base.Initialize();
+        }
 
-You can try these exercises to practice what you've learned:
-Try to render the triangle that connects vertices 1, 3 and 4. The only changes you need to make are in the SetUpIndices method.
-Use another vector, such as (1,0,0) as Up vector for your camera’s View matrix.
-Here's the whole code so far:
+        private void SetUpVertices()
+        {
+            _vertices = new VertexPositionColor[5]
+            {
+            new VertexPositionColor() {Position = new Vector3(0f, 0f, 0f), Color = Color.White},
+            new VertexPositionColor() {Position = new Vector3(5f, 0f, 0f), Color = Color.White},
+            new VertexPositionColor() {Position = new Vector3(10f, 0f, 0f), Color = Color.White},
+            new VertexPositionColor() {Position = new Vector3(5f, 0f, -5f), Color = Color.White},
+            new VertexPositionColor() {Position = new Vector3(10f, 0f, -5f), Color = Color.White}
+            };
+        }
 
-```csharp
- using System;
- using System.Collections.Generic;
- using System.Linq;
- using Microsoft.Xna.Framework;
- using Microsoft.Xna.Framework.Audio;
- using Microsoft.Xna.Framework.Content;
- using Microsoft.Xna.Framework.GamerServices;
- using Microsoft.Xna.Framework.Graphics;
- using Microsoft.Xna.Framework.Input;
- using Microsoft.Xna.Framework.Media;
- 
- namespace Series3D1
- {
-     public class Game1 : Microsoft.Xna.Framework.Game
-     {
-         GraphicsDeviceManager graphics;
-         SpriteBatch spriteBatch;
-         GraphicsDevice device;
- 
-         Effect effect;
-         VertexPositionColor[] vertices;
-         Matrix viewMatrix;
-         Matrix projectionMatrix;
-         int[] indices;
- 
-         private float angle = 0f;
- 
-         public Game1()
-         {
-             graphics = new GraphicsDeviceManager(this);
-             Content.RootDirectory = "Content";
-         }
- 
-         protected override void Initialize()
-         {
-             graphics.PreferredBackBufferWidth = 500;
-             graphics.PreferredBackBufferHeight = 500;
-             graphics.IsFullScreen = false;
-             graphics.ApplyChanges();
-             Window.Title = "Riemer's XNA Tutorials -- 3D Series 1";
- 
-             base.Initialize();
-         }
- 
-         protected override void LoadContent()
-         {
-             spriteBatch = new SpriteBatch(GraphicsDevice);
- 
-             device = graphics.GraphicsDevice;
+        private void SetUpIndices()
+        {
+            _indices = new int[6] { 3, 1, 0, 4, 2, 1 };
+        }
 
-            effect = Content.Load<Effect> ("effects");            SetUpCamera();
+        private void SetUpCamera()
+        {
+            _viewMatrix = Matrix.CreateLookAt(new Vector3(0, 50, 0), new Vector3(0, 0, 0), new Vector3(0, 0, -1));
+            _projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, _device.Viewport.AspectRatio, 1.0f, 300.0f);
+        }
+
+        protected override void LoadContent()
+        {
+            // TODO: use this.Content to load your game content here
+            _device = _graphics.GraphicsDevice;
+
+            _effect = Content.Load<Effect>("effects");
 
             SetUpVertices();
+            SetUpIndices();
+            SetUpCamera();
+        }
 
-             SetUpIndices();
-         }
- 
-         protected override void UnloadContent()
-         {
-         }
- 
-         private void SetUpVertices()
-         {
-             vertices = new VertexPositionColor[5];
- 
-             vertices[0].Position = new Vector3(0f, 0f, 0f);
-             vertices[0].Color = Color.White;
-             vertices[1].Position = new Vector3(5f, 0f, 0f);
-             vertices[1].Color = Color.White;
-             vertices[2].Position = new Vector3(10f, 0f, 0f);
-             vertices[2].Color = Color.White;
-             vertices[3].Position = new Vector3(5f, 0f, -5f);
-             vertices[3].Color = Color.White;
-             vertices[4].Position = new Vector3(10f, 0f, -5f);
-             vertices[4].Color = Color.White;
-         }
- 
-         private void SetUpIndices()
-         {
-             indices = new int[6];
- 
-             indices[0] = 3;
-             indices[1] = 1;
-             indices[2] = 0;
-             indices[3] = 4;
-             indices[4] = 2;
-             indices[5] = 1;
-         }
- 
-         private void SetUpCamera()
-         {
-             viewMatrix = Matrix.CreateLookAt(new Vector3(0, 50, 0), new Vector3(0, 0, 0), new Vector3(0, 0, -1));
-             projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, device.Viewport.AspectRatio, 1.0f, 300.0f);
-         }
- 
-         protected override void Update(GameTime gameTime)
-         {
-             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                 this.Exit();
- 
-             angle += 0.005f;
- 
-             base.Update(gameTime);
-         }
- 
-         protected override void Draw(GameTime gameTime)
-         {
-             device.Clear(Color.DarkSlateBlue);
- 
-             RasterizerState rs = new RasterizerState();
-             rs.CullMode = CullMode.None;
-             rs.FillMode = FillMode.WireFrame;
-             device.RasterizerState = rs;
- 
-             effect.CurrentTechnique = effect.Techniques["ColoredNoShading"];
-             effect.Parameters["xView"].SetValue(viewMatrix);
-             effect.Parameters["xProjection"].SetValue(projectionMatrix);
-             Matrix worldMatrix = Matrix.Identity;
-             effect.Parameters["xWorld"].SetValue(worldMatrix);
- 
-             foreach (EffectPass pass in effect.CurrentTechnique.Passes)
-             {
-                 pass.Apply();
- 
-                 device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, vertices, 0, vertices.Length, indices, 0, indices.Length / 3, VertexPositionColor.VertexDeclaration);
-             }
- 
-             base.Draw(gameTime);
-         }
-     }
- }
+        protected override void Update(GameTime gameTime)
+        {
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
+
+            // TODO: Add your update logic here
+            _angle += 0.005f;
+
+            base.Update(gameTime);
+        }
+
+        protected override void Draw(GameTime gameTime)
+        {
+            _device.Clear(Color.DarkSlateBlue);
+
+            RasterizerState rs = new RasterizerState();
+            rs.CullMode = CullMode.None;
+            rs.FillMode = FillMode.WireFrame;
+            _device.RasterizerState = rs;
+
+            // TODO: Add your drawing code here
+            _effect.CurrentTechnique = _effect.Techniques["ColoredNoShading"];
+            _effect.Parameters["xView"].SetValue(_viewMatrix);
+            _effect.Parameters["xProjection"].SetValue(_projectionMatrix);
+            Matrix worldMatrix = Matrix.Identity;
+            _effect.Parameters["xWorld"].SetValue(worldMatrix);
+
+            foreach (EffectPass pass in _effect.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+                _device.DrawUserIndexedPrimitives(PrimitiveType.TriangleList, _vertices, 0, _vertices.Length, _indices, 0, _indices.Length / 3, VertexPositionColor.VertexDeclaration);
+            }
+
+            base.Draw(gameTime);
+        }
+    }
+}
 ```
 
 ## Next Steps
