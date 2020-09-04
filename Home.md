@@ -53,11 +53,11 @@ We've grabbed a load of articles from the site, including:
 * C# tutorials
 * XNA tutorials (even a couple of MonoGame articles too)
 
-## Riemers tutorial series
+## [Riemer's tutorial series](RimersArchiveOverview)
 
-Riemers was considered the premier tutorial site back in the early days of XNA and its author [Riemer Grootjans](https://www.amazon.com/Riemer-Grootjans/e/B002DP7P3U) also wrote several books on advanced programming techniques for XNA.
+Riemer's was considered the premier tutorial site back in the early days of XNA and its author [Riemer Grootjans](https://www.amazon.com/Riemer-Grootjans/e/B002DP7P3U) also wrote several books on advanced programming techniques for XNA.
 
-We've managed to archive the entire site's XNA content (with the exception of his books :D) and are upgrading this to the latest MonoGame version.
+We've managed to archive the [entire site's XNA content](RimersArchiveOverview) (with the exception of his books :D) and are upgrading this to the latest MonoGame version.
 
 Here you will find the following tutorial series
 
