@@ -4,13 +4,13 @@ As you have probably already guessed, in this chapter we are going to detect whe
 
 ## Bouncing off walls
 
-For the type of collision we will implement in this chapter, we will define 3 kinds of collisions:
+For the type of collision, we will implement in this chapter, we will define 3 kinds of collisions:
 
 * Building: When the player has crashed against a building of our 3D city
 * Boundary: When the xwing is outside the city, below the ground or too high in the sky
-* Target: If the xwing has crashed against one of the targets we will add in a next chapter.
+* Target: If the xwing has crashed against one of the targets we will add in the next chapter.
 
-The first thing to do is to add an enumeration to the top of your code, for example above your variable declarations:
+The first thing to do is to add an enumeration to the top of your code, for example, above your variable declarations:
 
 > Normally you would define enumerations in their own class for easy maintenance and reusability, but we are keeping the code contained for this tutorial series.
 
@@ -22,11 +22,11 @@ To detect collisions, we are going to model a sphere around our xwing, an abstra
 
 ![Collision](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-09Collision1.jpg?raw=true)
 
-> The sphere is the simplest and most efficient form of collision detection, as you only need to measure the distance between a colliding object (xwing) and a collision object (say a building).  Other collision volumes give more detailed collision information but can get more and more costly, with mesh collision (where we use the triangles of a model) being the most expensive.  Always with collision, it is a trade off between the quality of a collision (knowing specifically where a collision took place) and performance, and in most cases multiple methods are used with increasing quality of detection to reduce the calculations needed.
+> The sphere is the simplest and most efficient form of collision detection, as you only need to measure the distance between a colliding object (xwing) and a collision object (say a building).  Other collision volumes give more detailed collision information but can get more and more costly, with mesh collision (where we use the triangles of a model) being the most expensive.  Always with collision, it is a trade-off between the quality of a collision (knowing specifically where a collision took place) and performance, and in most cases, multiple methods are used with increasing quality of detection to reduce the calculations needed.
 >
 > For a deeper understanding of collisions, you can try reading this article ["Physics - Collision Detection"](https://research.ncl.ac.uk/game/mastersdegree/gametechnologies/physicstutorials/4collisiondetection/Physics%20-%20Collision%20Detection.pdf)
 
-By modelling our xwing as a sphere and using a box for a building (since buildings are actually box shaped), we can use the built in functionality of MonoGame to detect for collisions.
+By modeling our xwing as a sphere and using a box for a building (since buildings are actually box-shaped), we can use the built-in functionality of MonoGame to detect for collisions.
 
 For each building of our city, we will create a [**BoundingBox**](https://docs.monogame.net/api/Microsoft.Xna.Framework.BoundingBox.html) object. Next, if we create a [**BoundingSphere**](https://docs.monogame.net/api/Microsoft.Xna.Framework.BoundingSphere.html) object for our xwing, we can use the **Contains** method to check if they collide!
 
@@ -76,16 +76,16 @@ The method defined works as follows:
 
 * We start by retrieving the width and length of your city and creating a **List** capable of storing the collective BoundingBoxes.
 * Next, we scroll through the **floorPlan** and check for the type of building for each tile of the city. If there is a building, we create an array of 2 Vector3's, one indicating the lower-back-left point of the building, and one indicating the upper-front-right point of the building. These 2 points indicate a box!
-* Next we ask MonoGame to construct a **BoundingBox** object based on these 2 points using the **BoundingBox.CreateFromPoints** method.
+* Next, we ask MonoGame to construct a **BoundingBox** object based on these 2 points using the **BoundingBox.CreateFromPoints** method.
 * Once the BoundingBox for the current building has been created, you add it to the List.
 * In the end, you convert the List to an array and store this array in the **buildingBoundingBoxes** variable.
 
-We still need to create the BoundingBox that contains the whole city, that allows us to detect whether the xwing has left the city. This is done using exactly the same approach:
+We still need to create the BoundingBox that contains the whole city, that allows us to detect whether the xwing has left the city. This is done using the same approach:
 
 * You create an array of 2 points.
 * The first point is the lower-back-left point of the city
 * The other is the upper-front-right point of the city.
-* From these points you create a BoundingBox which you store in the **completeCityBox** variable.
+* From these points, you create a BoundingBox which you store in the **completeCityBox** variable.
 
 Put this code at the end of the **SetUpBoundingBoxes** method:
 
@@ -144,9 +144,9 @@ Now all we need to do is create a **BoundingSphere** around our xwing, and pass 
     }
 ```
 
-When checking if the xwing is collided in each update, we:
+When checking if the xwing has collided in each update, we:
 
-* First create a **BoundingSphere** with its origin at the current position of our xwing and set its radius to 0.04f, which somewhat corresponds to the size of our Model.
+* First, create a **BoundingSphere** with its origin at the current position of our xwing and set its radius to 0.04f, which somewhat corresponds to the size of our Model.
 * Next, we pass this **BoundingSphere** to the **CheckCollision** method. If the returned **CollisionType is not None**, we reset the position and rotation of our xwing back to the start (along with the camera following the xwing) and decrease the speed of the game as things were clearly going too fast for the player.
 
 Now run this code, and make sure you crash as soon as possible to try out your new code!

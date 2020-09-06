@@ -6,14 +6,14 @@ In this second series of MonoGame for C# Tutorials, you'll learn how to create a
 
 ![3D Series 2 - Flightsim](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-14Lerp1.gif?raw=true)
 
-Again, the main goal of this series is to cover MonoGame features. This means the physical flight model will not contain gravity influences, it just let you manoeuvre your aircraft.
+Again, the main goal of this series is to cover MonoGame features. This means the physical flight model will not contain gravity influences, it will just let you maneuver your aircraft.
 
 ## This is a list of the features you'll learn in this second series of MonoGame Tutorials
 
 - Adding textures to your triangles
 - Dynamically generating the 3D city environment
 - Adding the skybox to get rid of the black background
-- Basic, but accurate flight modelling
+- Basic, but accurate flight modeling
 - Camera movement
 - Point sprites, basic billboarding
 - Alpha blending

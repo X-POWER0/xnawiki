@@ -1,18 +1,18 @@
 # Alpha blending – Bullet collision
 
-As a difficult audience, the result of last chapter probably did not fully please you. My guess is the black borders around our fireballs did not seem too normal to you and you are completely right, the borders should be blended with whatever is behind them. Welcome to this chapter on alpha blending.
+As a difficult audience, the result of the last chapter probably did not fully please you. My guess is the black borders around our fireballs did not seem too normal to you and you are completely right, the borders should be blended with whatever is behind them. Welcome to this chapter on alpha blending.
 
 ## Blending the states
 
-Up till now, if two objects shared the same pixel, the pixel takes the color of the object closest to the camera. In the simplest form of alpha blending, the colors of both objects are added together, and the pixel takes the ‘sum’ of their colors. This is called “Additive alpha blending”.
+Up till now, if two objects share the same pixel, the pixel takes the color of the object closest to the camera. In the simplest form of alpha blending, the colors of both objects are added together, and the pixel takes the ‘sum’ of their colors. This is called “Additive alpha blending”.
 
 For example. Imagine having a completely blue background. Adding a red triangle in front of it would now, with the current settings, simply display a red triangle. With additive alpha blending turned on, the pixel of the triangle would contain blue+red, thus the whole triangle would be purple.
 
-Black is a special case. In terms of MonoGame, black is not a color, it is simply nothing. So black+blue gives us just blue, in general, black + a color results in this color. This is why I have drawn the borders of the fireball black, because the more black the image gets, the more of the background will be let through.
+Black is a special case. In terms of MonoGame, black is not a color, it is simply nothing. So black+blue gives us just blue, in general, black + a color results in this color. This is why I have drawn the borders of the fireball black because the more black the image gets, the more of the background will be let through.
 
-When do we need to turn on alpha blending? We need our bullets to be blended with the background, but the rest of our scene must not change. So we need to turn on alpha blending before drawing our bullets, and turn it off again afterwards.
+When do we need to turn on alpha blending? We need our bullets to be blended with the background, but the rest of our scene must not change. So we need to turn on alpha blending before drawing our bullets and turn it off again afterward.
 
-Let us start with adding the following code to our **DrawBullets** method, before last foreach loop in our method, that actually draws the bullets:
+Let us start with adding the following code to our **DrawBullets** method, before the last foreach loop in our method, that actually draws the bullets:
 
 ```csharp
     _device.BlendState = BlendState.Additive;
@@ -38,7 +38,7 @@ Which gives us in the case of additive blending:
 
 ## Back to the code
 
-Told you, it is that simple. It iss VERY important however, to disable alpha blending after we have drawn our bullets, otherwise, the next frame our entire scene would also be rendered with additive alpha blending! So put this line at the end of the **DrawBullets** method, right after the last foreach loop:
+Told you, it is that simple. It is VERY important, however, to disable alpha blending after we have drawn our bullets, otherwise, the next frame our entire scene would also be rendered with additive alpha blending! So put this line at the end of the **DrawBullets** method, right after the last foreach loop:
 
 ```csharp
     _device.BlendState = BlendState.Opaque;
@@ -76,7 +76,7 @@ We do not need to remove the bullet as the CheckCollision method automatically t
 
 ![Alpha Blending](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-12AlphaBlending1.jpg?raw=true)
 
-That will be all! With a 3D scene, our plane and some targets we can aim at and destroy, this is starting to look as a game. Let’s do something about that background.
+That will be all! With a 3D scene, our plane and some targets we can aim at and destroy, this is starting to look like a game. Let’s do something about that background.
 
 ## Exercises
 

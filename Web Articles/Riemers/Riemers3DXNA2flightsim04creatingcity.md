@@ -1,6 +1,6 @@
 # Drawing the buildings
 
-To be honest, there is not much new MonoGame stuff you will learn in this chapter, the code of last chapter will simply be expanded upon. We will be drawing buildings on the floorplan and their roofs. For this reason, I will summarize the adjustments and additions.
+To be honest, there is not much new MonoGame stuff you will learn in this chapter, the code of the last chapter will simply be expanded upon. We will be drawing buildings on the floorplan and their roofs. For this reason, I will summarize the adjustments and additions.
 
 ## Adding some height to our floor plan
 
@@ -37,7 +37,7 @@ To use the **Random** function, we also need to add a **using** statement, so ad
 
 With these additions to our **LoadFloorPlan** method, we first initialize a random number generator which we will then use to generate a random positive number, lower than the argument passed for those sections in the Floor Plan than contain a number one, replacing it with a positive integer between 1 and 5
 
-Next, we will start expanding the **SetUpVertices** method so it also provides the vertices for the walls and roofings.
+Next, we will start expanding the **SetUpVertices** method so it also provides the vertices for the walls and roofing.
 
 Add these variables to the beginning of the **SetUpVertices** method:
 
@@ -79,9 +79,9 @@ This follows the formula: currentBuilding * 2 / imagesInTexture.
 The X coordinate of the right side is applied similarly with the floor at 1/11, the first roof at 3/11, and so on until the last roof which is 11/11.
 In a formula: (currentBuilding * 2 + 1) / imagesInTexture.
 
-In a nutshell, if a 0 is encountered, the floor image is drawn, if a building number is encountered, the corresponding roof image is drawn at the corresponding height found in the buildingHeights array. You can try running this code, and each time you run the program you will see another image roof at a different height, because the type of buildings are chosen at random.
+In a nutshell, if a 0 is encountered, the floor image is drawn, if a building number is encountered, the corresponding roof image is drawn at the corresponding height found in the buildingHeights array. You can try running this code, and each time you run the program you will see another image roof at a different height because the type of buildings is chosen at random.
 
-The good news is that we have already covered all the new stuff of this chapter. The bad news is that drawing the walls of the buildings implies copying most of this code, but with different coordinates, normals, and texture coordinates. To be complete, I will list the whole method here and quickly discuss it:
+The good news is that we have already covered all the new stuff in this chapter. The bad news is that drawing the walls of the buildings implies copying most of this code, but with different coordinates, normals, and texture coordinates. To be complete, I will list the whole method here and quickly discuss it:
 
 ```csharp
     private void SetUpVertices()
@@ -154,9 +154,9 @@ The good news is that we have already covered all the new stuff of this chapter.
     }
 ```
 
-Wow THAT IS what I call a method! Quite impressive, but it contains nothing new to you. First the floors or roofs are drawn, yhen we add 6 vertices for each of the 4 walls.
+Wow! THAT IS what I call a method! Quite impressive, but it contains nothing new to you. First, the floors or roofs are drawn, then we add 6 vertices for each of the 4 walls.
 
-Note that each vertex has to store a correct 3D coordinate for the position, a correct texture coordinate so the correct part of the texture map is put over a wall, and a correct normal vector so we can add lighting in a next chapter. You should also notice that the Add method of the List comes in very handy.
+Note that each vertex has to store a correct 3D coordinate for the position, a correct texture coordinate so the correct part of the texture map is put over a wall, and a correct normal vector so we can add lighting in a future chapter. You should also notice that the Add method of the List comes in very handy.
 
 Run this code a few to verify that each time you get a different type of building.
 
@@ -204,7 +204,7 @@ Now run this code! This is what you should see:
 
 You can try these exercises to practice what you have learned:
 
-* Try a few different variations of the floorplan array, different sizes and positions of buildings.
+* Try a few different variations of the floorplan array, different sizes, and positions of buildings.
 * If you feel up for a challenge, also try using another scenery texture with different building coverings and make a building type 2 using this new texture.
 
 ## The code so far

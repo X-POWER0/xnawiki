@@ -1,6 +1,6 @@
 # Initialization of our Project
 
-Hi there! Glad you made it to this second series of the 3D MonoGame Tutorials. We are going to cover some new MonoGame features, put them together into one project, and end up with a real flight simulator! Again, the main goal is to show you some principles of MonoGame, so do not expect complete realistic flight physics, such as gravity, coriolis and others. This would add far too much maths, and draw our attention away from the MonoGame implementation.
+Hi there! Glad you made it to this second series of the 3D MonoGame Tutorials. We are going to cover some new MonoGame features, put them together into one project, and end up with a real flight simulator! Again, the main goal is to show you some principles of MonoGame, so do not expect complete realistic flight physics, such as gravity, Coriolis, and others. This would add far too much maths, and draw our attention away from the MonoGame implementation.
 
 The sole purpose of this first chapter is to set up our starting code. The code should be very simple to understand if you have finished the [first tutorial in the 3D series](Riemers2DXNAoverview). This is what the starting code does:
 

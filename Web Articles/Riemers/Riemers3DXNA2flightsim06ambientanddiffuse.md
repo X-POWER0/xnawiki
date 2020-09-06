@@ -1,10 +1,10 @@
 # Adding lighting to our city
 
-This will be a pretty short chapter, as we have already explored the basics about lighting in the [first 3D Series](Riemers3DXNA1Terrainoverview).
+This will be a pretty short chapter, as we have already explored the basics of lighting in the [first 3D Series](Riemers3DXNA1Terrainoverview).
 
 ## Bring out the sunlight
 
-As a first type of lighting, we are simply going to use a directional light, much as we have used in [Series 1](Riemers3DXNA1Terrain11lighting). All the vertices of the objects in our scene already contain normal data, we added it explicitly to the vertices of our 3D city in the **SetUpVertices** method, and the .x file we loaded the Model from, already contained normal information related to the model. So all we have to do is define the direction of the light, and explain the techniques use in order to take lighting into account!
+As the first type of lighting, we are simply going to use a directional light, much as we have used in [Series 1](Riemers3DXNA1Terrain11lighting). All the vertices of the objects in our scene already contain normal data, we added it explicitly to the vertices of our 3D city in the **SetUpVertices** method, and the .x file we loaded the Model from, already contained normal information related to the model. So all we have to do is define the direction of the light, and explain the techniques used in order to take lighting into account!
 
 Start by defining the direction of the light by adding this variable to the top of your code:
 
@@ -34,13 +34,13 @@ And these lines to the effect parameter configuration of the **DrawModel** metho
     currentEffect.Parameters["xLightDirection"].SetValue(_lightDirection);
 ```
 
-Now when run this code, you should see that some of the sides of our buildings are more lit than others. However, the sides that are on the opposite side of the light do not receive any light, and are therefore completely black!
+Now when you run this code, you should see that some of the sides of our buildings are more lit than others. However, the sides that are on the opposite side of the light do not receive any light, and are therefore completely black!
 
 ![Lighting](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-06Lighting1.jpg?raw=true)
 
 ## Adding Ambiance
 
-As in normal life, you don't just get completely darkened sides of buildings just because the sun is not shining on them, so we need to also add a bit of ambient lighting to all of pixels of our city in the **DrawCity** method:
+As in normal life, you don't just get completely darkened sides of buildings just because the sun is not shining on them, so we need to also add a bit of ambient lighting to all of the pixels of our city in the **DrawCity** method:
 
 ```csharp
     _effect.Parameters["xAmbient"].SetValue(0.5f);
@@ -52,7 +52,7 @@ And in our **DrawModel** method:
     currentEffect.Parameters["xAmbient"].SetValue(0.5f);
 ```
 
-Now when you run this code, you should see that there are no more dark sides on our buildings. Most sides are still pretty dark, but this is only because we are looking at the shadowed side of our city. You should already see some sides at the left side of our city that are being lit by our sunlight, but really, they should appear brighter.
+Now when you run this code, you should see that there are no more dark sides on our buildings. Most sides are still pretty dark, but this is only because we are looking at the shadowed side of our city. You should already see some sides on the left side of our city that is being lit by our sunlight, but really, they should appear brighter.
 
 ![Lighting](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-06Lighting2.jpg?raw=true)
 
@@ -65,7 +65,7 @@ You can try these exercises to practice what you have learned:
 * Change the intensity of the ambient lighting.
 * Change the direction of the sunlight.
 * Adjust the position of the camera to get a feeling of the impact of a directional light on your city.
-* (advanced) if you're felling lucky, also try adding keyboard input to manipulate the lighting values so you can see the changes in real-time.
+* (advanced) if you're feeling lucky, also try adding keyboard input to manipulate the lighting values so you can see the changes in real-time.
 
 ## The code so far
 

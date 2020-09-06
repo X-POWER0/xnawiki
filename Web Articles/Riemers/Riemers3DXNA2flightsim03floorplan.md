@@ -1,6 +1,6 @@
 # Creating a floorplan
 
-Now that we have seen how we can import simple images into our MonoGame project and have displayed them on triangles, it is not that difficult to create a large amount of images. It is however, more important to find a way to get the computer define all of the vertices for us.
+Now that we have seen how we can import simple images into our MonoGame project and have displayed them on triangles, it is not that difficult to create a large number of images. It is, however, more important to find a way to get the computer to define all of the vertices for us.
 
 ## The city floor plan
 
@@ -30,13 +30,13 @@ We will first create a small **LoadFloorPlan** method that fills the floorPlan a
 
 In this data, a 0 means *'draw a floor texture'* and a 1 means to *'leave that tile open'* (Later in this series, a 1 will indicate a building).  This method contains all the flexibility our program needs, simply changing a 0 to a 1, will result in an extra building drawn in our 3D city!
 
-Load this method from within the **Initalize** method:
+Load this method from within the **Initialize** method:
 
 ```csharp
     LoadFloorPlan();
 ```
 
-## Turning our floorplan in to a mesh
+## Turning our floorplan into a mesh
 
 Now we will update our **SetUpVertices** method, so it reads the data inside the array and automatically creates the corresponding vertices. In the last chapter you learned how to cover triangles with images, this time, we are going to load one texture image file which is composed of several images next to each other. The leftmost part of the texture will be the floor tile, followed by a wall, and a roofing image for each different type of building.
 
@@ -89,7 +89,7 @@ As we are now using a **List** for looping through our collection of vertices, w
 
 This code first retrieves the width and length of our future city, which will be 3x3 in the case of our current floorMap. Next, we create a List capable of storing **VertexPositionNormalTextures**. The main advantage of a List over an array is that you do not have to specify the number of elements you are going to add. You can just add elements, and the List will grow larger automatically.
 
-> Although "List's" are very convenient and useful for setting up data as we have done with out Vertices list, they should not be used in situations that require high-frequency lookups, such as within an **Update** loop. For these cases it is far better (and performant) to use a **for** loop.
+> Although "List's" are very convenient and useful for setting up data as we have done with our Vertices list, they should not be used in situations that require high-frequency lookups, such as within an **Update** loop. For these cases, it is far better (and performant) to use a **for** loop.
 
 Next, we scroll through the contents of the **floorMap** array, whenever a 0 is found in the floorMap, we want this loop to add 6 vertices to the List (2 triangles). We will finish this off properly later, for now, imagine that when the for loop finishes, the List contains 6 vertices for each 0 tile found in the floorMap.
 
@@ -137,11 +137,11 @@ With the "SetUpVertices" method finished, we can move on to the code that render
     }
 ```
 
-> This method of separating out the actual rendering of 3D elements is very common, ensuring that the correct shader parameters and draw method is used for that content.  Rendering can become quite complex and a fair amount of through has to go in to how specific elements of your game are processed and rendered as efficiently as possible, grouping together elements that are rendered the same way. (similar to how 2D content uses [SpriteBatches](Riemers2DXNA04spritebatch))
+> This method of separating the actual rendering of 3D elements is very common, ensuring that the correct shader parameters and draw method are used for that content.  Rendering can become quite complex and a fair amount of through has to go into how specific elements of your game are processed and rendered as efficiently as possible, grouping together elements that are rendered the same way. (similar to how 2D content uses [SpriteBatches](Riemers2DXNA04spritebatch))
 
 We will still be using the **Textured** technique in our effect (shader) to render our triangles from our vertices. As always, we need to apply our World, View, and Projection matrices to the effect. As we want the graphics card to also sample the colors from our texture, we need to pass this texture to the graphics card.
 
-The triangles are rendered from the **VertexBuffer**, which set set using our prebuilt buffer in the **SetUpVertices** method, the last argument of the **DrawPrimitives** method automatically determines how many triangles can be rendered from the VertexBuffer, since three vertices define one triangle, we know how many triangles to render!
+The triangles are rendered from the **VertexBuffer**, which are set using our prebuilt buffer in the **SetUpVertices** method, the last argument of the **DrawPrimitives** method automatically determines how many triangles can be rendered from the VertexBuffer, since three vertices define one triangle, we know how many triangles to render!
 
 Do not forget to also call this method from within your **Draw** method by updating it to look as follows:
 

@@ -15,12 +15,12 @@ Next, as usual, we will define a variable to store the target Model, as well as 
     private List<BoundingSphere> _targetList = new List<BoundingSphere> ();
 ```
 
-We will also use the last variable to track all of our targets, a **List** is exceptionally useful here as we will need to be able add and remove target from the list while our program is running, and for each target we also need to store 2 things:
+We will also use the last variable to track all of our targets, a **List** is exceptionally useful here as we will need to be able to add and remove the target from the list while our program is running, and for each target, we also need to store 2 things:
 
 * its position and
 * its size
 
-Therefore, a BoundingSphere works perfectly to store a target! Even more, later on we can use the built-in functionality of the BoundingSphere object to test for collisions.
+Therefore, a BoundingSphere works perfectly to store a target! Even more, later on, we can use the built-in functionality of the BoundingSphere object to test for collisions.
 
 Next, add this line to our **LoadContent** method, to load the model file into the **targetModel** variable:
 
@@ -101,7 +101,7 @@ Running this code should not give you any problems, but you will not notice a di
     }
 ```
 
-This method does exactly the same as our **DrawModel** method, except that its code is iterated for each target in our **targetList**.
+This method does the same as our previous **DrawModel** method, except that its code is iterated for each target in our **targetList**.
 
 The World matrix that is created for each target sets the **position** and **size** of the target. Next, the target is then rendered using the Colored technique, as the vertices in this particular .x file contain only Color and Normal information.
 

@@ -1,12 +1,12 @@
 # Drawing the skybox
 
-In this chapter we will do something about the solid background color surrounding our city. This will be done using a skybox.
+In this chapter, we will do something about the solid background color surrounding our city. This will be done using a skybox.
 
 ## What is a SkyBox
 
-What exactly is a skybox? It is simply nothing more than a cube with 6 nice landscape images which are drawn surrounding the camera. This gives the player the impression of being in an outdoor environment, while in fact, they are still trapped inside an enclosed box!
+What exactly is a skybox? It is simply nothing more than a cube with 6 nice landscape images that are drawn surrounding the camera. This gives the player the impression of being in an outdoor environment, while in fact, they are still trapped inside an enclosed box!
 
-Using the methods we have created thus far, you can expect this to be quite easy, as a skybox is nothing more than another mesh. Only this time, we need to load some texture files to apply to the faces the mesh.
+Using the methods we have created thus far, you can expect this to be quite easy, as a skybox is nothing more than another mesh. Only this time, we need to load some texture files to apply to the faces of the mesh.
 
 The mesh file (skybox.x) and the textures (six "skybox" files, one for each cube face) are included in the [asset for this series](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true), simply unpack them and add them to your content project as normal.
 
@@ -54,7 +54,7 @@ Normally, we would use the **LoadModel** method to load our skybox, but we canno
         }
 ```
 
-> Note that the signature of this method (the parameters and return) differs from the first LoadModel method in that has two arguments.
+> Note that the signature of this method (the parameters and return) differs from the first LoadModel method that has two arguments.
 
 The first line and 3 last lines are taken directly from our first LoadModel method. Only the middle part is new.
 

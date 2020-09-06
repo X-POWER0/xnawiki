@@ -4,7 +4,7 @@ Now we have our camera centered on the xwing, it is time to make our xwing fly. 
 
 ## Getting keyboard input
 
-In an plane, when you move to the left, your flaps will be adjusted so the plane rotates around its forward axis, when you pull the joystick towards you, the nose of the plane will be lifted up resulting in a rotation among the Right axis.
+In a plane, when you move to the left, your flaps will be adjusted so the plane rotates around its forward axis, when you pull the joystick towards you, the nose of the plane will be lifted up resulting in a rotation among the Right axis.
 
 We will start by adding a variable called ‘gameSpeed’, which we will increase the speed of the game when the player is playing well and decrease when the player crashes. We need to define this variable in the Properties section of our code:
 
@@ -12,7 +12,7 @@ We will start by adding a variable called ‘gameSpeed’, which we will increas
     private float _gameSpeed = 1.0f;
 ```
 
-Next we will add the **ProcessKeyboard** method, which will read the keyboard input and change the angles of the flight accordingly:
+Next, we will add the **ProcessKeyboard** method, which will read the keyboard input and change the angles of the flight accordingly:
 
 ```csharp
     private void ProcessKeyboard(GameTime gameTime)
@@ -35,7 +35,7 @@ Next we will add the **ProcessKeyboard** method, which will read the keyboard in
     }
 ```
 
-All this does is update a value (leftRightRotation) to rotate the plane around its forward axis when you push the left or right button, as discussed above, this amount of rotation will to be added to the current rotation of our xwing. First we will create a quaternion corresponding to this new rotation and then add it to the current rotation, which is then applied to the xwingRotation variable.
+All this does is update a value (leftRightRotation) to rotate the plane around its forward axis when you push the left or right button, as discussed above, this amount of rotation will be added to the current rotation of our xwing. First, we will create a quaternion corresponding to this new rotation and then add it to the current rotation, which is then applied to the xwingRotation variable.
 
 Add this code to the end of the **ProcessKeyboard** method:
 
@@ -58,7 +58,7 @@ Now when you run the program, when you push the left or right arrow button on yo
 
 ## Let us try another direction
 
-Next, Let us try to pull the nose of our xwing up, so add this code to the middle of our **ProcessKeyboard** method:
+Next, let us try to pull the nose of our xwing up, so add this code to the middle of our **ProcessKeyboard** method:
 
 ```csharp
     float upDownRotation = 0;
@@ -78,7 +78,7 @@ Of course, we now also need to include this in our additional rotation in the Qu
     Quaternion additionalRotation = Quaternion.CreateFromAxisAngle(new Vector3(0, 0, -1), leftRightRotation) * Quaternion.CreateFromAxisAngle(new Vector3(1, 0, 0), upDownRotation);
 ```
 
-Pressing the down arrow now, will result in pulling up the nose of the airplane and pressing up will do the reverse, just like normal flight controls. Running this code will also enable you to rotate your xwing in any angle you want!
+Pressing the down arrow now will result in pulling up the nose of the airplane, and pressing up will do the reverse, just like normal flight controls. Running this code will also enable you to rotate your xwing at any angle you want!
 
 ## Adding thrust
 
@@ -109,7 +109,7 @@ And there you have it! When you run this code, you should be able to fly your xw
 
 Try flying around in your 3D city, making some loops, and pay attention to the lighting of the buildings and the xwing as you rotate.
 
-Now that you can fly your plane, maybe it is time to do some collision detection, because flying through walls really is not a natural thing to happen.
+Now that you can fly your plane, maybe it is time to do some collision detection, because flying through walls is not exactly a natural thing to happen.
 
 ## Exercises
 

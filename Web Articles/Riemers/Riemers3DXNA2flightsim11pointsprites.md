@@ -1,16 +1,16 @@
 # Point sprites – Billboarding
 
-In this chapter we will be adding bullets to our game. We could use real 3D spheres for these bullets, but this would be asking a lot from our graphics card when there is a better way. Instead, we will be using a very simple 2D image of a fireball and use a new technique from the **effect** file. This technique allows us to specify just the central point of an image in 3D space, and the technique will then render the image so that it is always facing the viewer and scales it to reflect the distance between the viewer and its location in 3D space.  This technique is called billboarding.
+In this chapter, we will be adding bullets to our game. We could use real 3D spheres for these bullets, but this would be asking a lot from our graphics card when there is a better way. Instead, we will be using a very simple 2D image of a fireball and use a new technique from the **effect** file. This technique allows us to specify just the central point of an image in 3D space, and the technique will then render the image so that it is always facing the viewer and scales it to reflect the distance between the viewer and its location in 3D space.  This technique is called billboarding.
 
-Billboarding is used a lot in 3D games, for example to add trees in a forest.
+Billboarding is used a lot in 3D games, for example, to add trees in a forest.
 
 > For a lot of detailed information and samples on billboarding, [check this article on the openGL forum](http://www.opengl-tutorial.org/intermediate-tutorials/billboards-particles/billboards/).
 
 ## Time to fire up some bullets
 
-A **2D image** is also called a **sprite**, and since MonoGame needs only the center point of the image as 3D location, these 2D sprites when used in 3D, are called **point sprites**.
+A **2D image** is also called a **sprite**, and since MonoGame needs only the center point of the image as a 3D location, these 2D sprites when used in 3D, are called **point sprites**.
 
-When being fired, we want the bullets to move forward continuously, thus, for every bullet, we will need to keep track of the bullet's current position and its rotation, to calculate the direction of the bullet, just as we did with our plane. So we are going to define a new structto help track this information, which you should put at the very top of our code, above our variables:
+When being fired, we want the bullets to move forward continuously, thus, for every bullet, we will need to keep track of the bullet's current position and its rotation, to calculate the direction of the bullet, just as we did with our plane. So we are going to define a new struct to help track this information, which you should put at the very top of our code, above our variables:
 
 ```csharp
     public struct Bullet
@@ -117,8 +117,8 @@ We will define a new method called **DrawSprites** which draws the bullets store
     }
 ```
 
-For each bullet in our bulletList, this code will add 6 vertices to the bulletVertices array. As you can see, for all vertices we specify exactly the same position, the location of the bullet. The technique in the effect file, will use the texture coordinates to make sure two triangles are rendered around this center position, which is required to display the image.
-This technique is called **PointSprites**, so we need to select it. We will immediately set all the parameters required by the effect to work. 
+For each bullet in our bulletList, this code will add 6 vertices to the bulletVertices array. As you can see, for all vertices we specify the same position, the location of the bullet. The technique in the effect file will use the texture coordinates to make sure two triangles are rendered around this center position, which is required to display the image.
+This technique is called **PointSprites**, so we need to select it. We will immediately set all the parameters required by the effect to work.
 
 Add this code at the end of the if-block:
 
@@ -133,7 +133,7 @@ Add this code at the end of the if-block:
     _effect.Parameters["xPointSpriteSize"].SetValue(0.1f);
 ```
 
-As for all objects rendered into a 3D world, you first need to set the World, View and Projection matrices. Specific to the PointSprites technique, you need to pas the camera position, as well as the camera Up direction, allowing the technique to render the 2 triangles so they’re always facing the camera. Finally, you need to pass the texture, and define how large you want it to be.
+As for all objects rendered into a 3D world, you first need to set the World, View, and Projection matrices. Specific to the PointSprites technique, you need to pas the camera position, as well as the camera Up direction, allowing the technique to render the 2 triangles so they’re always facing the camera. Finally, you need to pass the texture and define how large you want it to be.
 
 Obviously, before this can work, we first need to define both camera variables in the Properties section of our code:
 
@@ -169,7 +169,7 @@ This concludes the method; All we have to do is call this method from the bottom
 
 Now try to run this code!
 
-You should see a screen as the one below:
+You should see a screen like the one below:
 
 ![Shooting](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-11Shoot1.gif?raw=true)
 

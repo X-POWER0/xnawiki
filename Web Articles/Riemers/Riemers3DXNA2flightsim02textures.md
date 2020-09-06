@@ -20,13 +20,13 @@ Now find the **LoadContent** method in your code and add this line after the lin
 
 This line binds the asset we just loaded in our project to the texture variable!
 
-With our texture loaded into our MonoGame project, it is time to define the 3 vertices which we will be storing in an array. As our vertices will need to be able to store both a 3D position and a texture coordinate (explained below), the vertex format will be **VertexPositionTexture**, so declare this variable in the Properties section of your code:
+With our texture loaded into our MonoGame project, it is time to define the 3 vertices which we will be stored in an array. As our vertices will need to be able to store both a 3D position and a texture coordinate (explained below), the vertex format will be **VertexPositionTexture**, so declare this variable in the Properties section of your code:
 
 ```csharp
     private VertexPositionTexture[] _vertices;
 ```
 
-Next we will be defining the 3 vertices of our triangle, add a new **SetUpVertices** method with the following code:
+Next, we will be defining the 3 vertices of our triangle, add a new **SetUpVertices** method with the following code:
 
 ```csharp
     private void SetUpVertices()
@@ -51,7 +51,7 @@ As you see, for every vertex we first define its position in 3D space. Notice ag
 
 The next 2 settings are very important, as they define which point in our texture image we want to correspond with the vertex. These coordinates are simply the X and Y coordinates of the texture, as follows:
 
-* The (0,0) texture coordinate being the top left point of the texture image
+* The (0,0) texture coordinate being the top-left point of the texture image
 * The (1,0) texture coordinate the top-right point
 * And the (1,1) texture coordinate the bottom-right point of the texture.
 
@@ -82,10 +82,10 @@ Go to our **Draw** method and add this code after our call to the Clear method:
     }
 ```
 
-As usual, we indicate which technique we want the graphics card to use to render the triangle to the screen. We need to instruct our graphics card to sample the color of every pixel from the texture image. This is exactly what the **TexturedNoShading** technique of my effect file does, so we set it as active technique. As we did not specify any normals for our vectors so we cannot expect the effect to do any meaningful shading calculations.
+As usual, we indicate which technique we want the graphics card to use to render the triangle to the screen. We need to instruct our graphics card to sample the color of every pixel from the texture image. This is exactly what the **TexturedNoShading** technique of my effect file does, so we set it as an active technique. As we did not specify any normals for our vectors so we cannot expect the effect to do any meaningful shading calculations.
 
 * As explained in Series 1, we need to set the World matrix to identity so the triangles will be rendered where we defined them, and View and Projection matrices so the graphics card can map the 3D positions to 2D screen coordinates.
-* Finally, we pass our texture to the technique. Then we actually draw our triangle from our vertices array, as done before in the first series.
+* Finally, we pass our texture to the technique. Then we draw our triangle from our vertices array, as done before in the first series.
 
 Running this should already give you a textured triangle, displaying half of the texture image!
 
@@ -134,7 +134,7 @@ Now run this code, and you should see the whole texture image, displayed by 2 tr
 
 ![Status](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-02Textures1.jpg?raw=true)
 
-You will notice the small gap between both triangles... This is of course because we defined the positions of the vertices that way, so you can actually see the image is made out of two separate triangles.
+You will notice the small gap between both triangles... This is of course because we defined the positions of the vertices that way, so you can see the image is made out of two separate triangles.
 
 ## Exercises
 

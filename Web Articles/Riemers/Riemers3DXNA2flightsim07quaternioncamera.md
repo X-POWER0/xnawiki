@@ -1,6 +1,6 @@
 # Using quaternions for rotations - dynamically positioning the camera behind our xwing
 
-In this chapter we are going to make our xwing fly around the city. Of course, this is not as easy as telling the thing to fly, we will need to reposition it ourselves and to make the camera track the xwing.
+In this chapter, we are going to make our xwing fly around the city. Of course, this is not as easy as telling the thing to fly, we will need to reposition it ourselves and to make the camera track the xwing.
 
 ## Camera theory
 
@@ -8,7 +8,7 @@ Imagine our xwing was flying through our 3D city, we would like our camera to fo
 
 To start to implement this, we are going to introduce two new variables, **xwingPosition** and **xwingRotationg**. These variables will determine the position and rotation of our camera relative to the xwing, in order to follow the xwing as it moves/rotates.
 
-We could store the rotation of our xwing as separate rotations around the X, Y and Z axis, however, in practice this is very tricky. The problem is mainly the same as with matrices, a rotation around X followed by a rotation around Y does NOT yield the same as a rotation around Y followed by a rotation around X.  In addition, deriving the total rotation from three separate values requires some trigonometric formulae (sin, cos, tan,…) and sometimes these suddenly switch signs, which would make our xwing fly backwards.
+We could store the rotation of our xwing as separate rotations around the X, Y, and Z axis, however, in practice this is very tricky. The problem is mainly the same as with matrices, a rotation around X followed by a rotation around Y does NOT yield the same as a rotation around Y followed by a rotation around X.  In addition, deriving the total rotation from three separate values requires some trigonometric formulae (sin, cos, tan,…) and sometimes these suddenly switch signs, which would make our xwing fly backwards.
 
 To solve both problems we will be using a Quaternion to store the rotation of our xwing. A Quaternion is very similar to a Matrix, but it can only store a rotation. Do not let the name of this thing scare you away (although it is very hard to understand mathematically), a quaternion is VERY easy to use. 
 
@@ -19,7 +19,7 @@ Go ahead and declare these 2 variables at the top of your code:
     private Quaternion _xwingRotation = Quaternion.Identity;
 ```
 
-As you can see, we have already initialized the starting position and rotation for our xwing, in the next chapter we will see how we can adjust the quaternion based on user input, for now use the quaternion identity (which is the same as a Zero rotation).
+As you can see, we have already initialized the starting position and rotation for our xwing, in the next chapter we will see how we can adjust the quaternion based on user input, for now, use the quaternion identity (which is the same as a Zero rotation).
 
 ## positioning the xwing
 
@@ -36,7 +36,7 @@ In our **DrawModel** method we already change the world matrix for our xwing so 
 
 This line looks complex, but it is quite easy:
 
-* First the mesh is translated (=moved) to its correct position.
+* First, the mesh is translated (=moved) to its correct position.
 * Next, the xwing is rotated among the rotation stored in the xwingRotation quaternion.
 * After this, it is rotated along 180 degrees to compensate for the opposite direction stored inside the model.
 * And finally, the model is scaled down so it fits nicely in our scene.
@@ -76,7 +76,7 @@ OK, so now we have the vector that will always be a bit behind and a bit above o
 
 ## Keeping the camera up to date
 
-Remember, when we create a viewMatrix, we not only need the position and target of our camera (which we both know at this moment), but also the vector that indicates the ‘up’-position of the xwing. This is found exactly the same way: we start with the vector that points up, and rotate it with the xwing rotation matrix:
+Remember, when we create a viewMatrix, we not only need the position and target of our camera (which we both know at this moment), but also the vector that indicates the ‘up’-position of the xwing. This is found exactly the same way, we start with the vector that points up and rotate it with the xwing rotation matrix:
 
 ```csharp
     Vector3 cameraUpDirection = new Vector3(0, 1, 0);

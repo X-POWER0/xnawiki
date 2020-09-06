@@ -1,6 +1,6 @@
 # Adding camera delay - Lerp
 
-Our flight simulator is almost finished. One of the most annoying things that remain is that your xwing responds instantaneously to your keyboard input. In fact, it is not just this is annoying, it is that the camera responds instantaneously. This results in rather quirky camera behavior.
+Our flight simulator is almost finished. One of the most annoying things that remain is that your xwing responds instantaneously to your keyboard input. In fact, it is not just this is annoying, it is that the camera responds instantaneously. This results in a rather quirky camera behavior.
 
 ## Chasing the camera
 
@@ -23,7 +23,7 @@ Next, we adjust the code in our **UpdateCamera** method so that it uses the new 
     cameraUpDirection = Vector3.Transform(cameraUpDirection, Matrix.CreateFromQuaternion(_cameraRotation));
 ```
 
-Now we still need to make our camera rotation follow the approximate rotation of the xwing, so what we will do is in each frame we will make the camera rotation get 10% closer to the xwing rotation. This might sound difficult, but using MonoGame it is not. Just add this line as first line in the **UpdateCamera** method:
+Now we still need to make our camera rotation follow the approximate rotation of the xwing, so what we will do is in each frame we will make the camera rotation get 10% closer to the xwing rotation. This might sound difficult, but using MonoGame it is not. Just add the following as the first line in the **UpdateCamera** method:
 
 ```csharp
     _cameraRotation = Quaternion.Lerp(_cameraRotation, _xwingRotation, 0.1f);
@@ -31,15 +31,15 @@ Now we still need to make our camera rotation follow the approximate rotation of
 
 The [**Lerp**](https://en.wikipedia.org/wiki/Linear_interpolation) function is one of the coolest functions in MonoGame. You can specify 2 Quaternions to the Lerp method, and specify that you want to know what is 10% between the two values. This is what is done in the line above.
 
-Even better, in MonoGame the Vector2, Vector3, Vector4, Matrix, Quaternion and maybe even some more objects have a [**Lerp function**](https://en.wikipedia.org/wiki/Linear_interpolation).
+Even better, in MonoGame the Vector2, Vector3, Vector4, Matrix, Quaternion, and maybe even some more objects have a [**Lerp function**](https://en.wikipedia.org/wiki/Linear_interpolation).
 
-> So as an example you can better visualize, if you have two Vector2s: V1 = (10,50) and V2 = (20,100), if you use the line Vector2.Lerp(V1,V2,0.2f), this will give you 20% between V1 and V2, which is in this case (12,60). You will definitely going to use this function a LOT when you create a game.
+> So as an example you can better visualize if you have two Vector2s: V1 = (10,50) and V2 = (20,100) if you use the line Vector2.Lerp(V1,V2,0.2f), this will give you 20% between V1 and V2, which is in this case (12,60). You will definitely are going to use this function a LOT when you create a game.
 
-Well that is all there is to it, I wish it were more complicated but the Lerp function rally takes care of the difficult part for us. When you run this code, you will see your camera follows your xwing much smoother.
+Well, that is all there is to it, I wish it were more complicated but the Lerp function rally takes care of the difficult part for us. When you run this code, you will see your camera follows your xwing much smoother.
 
 ![Lerp](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-14Lerp1.gif?raw=true)
 
-This concludes the second series of MonoGame tutorials. You have come a long way, from drawing a simple triangle, to a real flight simulator! Of course, this is not the endpoint, so after you take a break, there’s a 3rd series waiting for you. This 3rd series will introduce you to HLSL, which is where the fun really begins.
+This concludes the second series of MonoGame tutorials. You have come a long way, from drawing a simple triangle to a real flight simulator! Of course, this is not the endpoint, so after you take a break, there’s a 3rd series waiting for you. This 3rd series will introduce you to HLSL, which is where the fun really begins.
 
 ## Exercises
 
