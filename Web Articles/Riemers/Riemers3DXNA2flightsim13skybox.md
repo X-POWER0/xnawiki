@@ -1,246 +1,372 @@
 # Drawing the skybox
 
-This chapter, we’ll do something about the solid background color surrounding our city. This will be done using a skybox.
+In this chapter we will do something about the solid background color surrounding our city. This will be done using a skybox.
 
-What exactly is a skybox? In fact, it’s nothing more than a cube with 6 nice landscape images, drawn around the camera. This gives the player the impression of being in an outdoor environment, while in fact, he’s enclosed in a box!
+## What is a SkyBox
 
-Using the methods we’ve created thus far, we could expect this to be quite easy, as a skybox is nothing more than a mesh. Only this time, we need to load some texture files to accompany the mesh.
+What exactly is a skybox? It is simply nothing more than a cube with 6 nice landscape images which are drawn surrounding the camera. This gives the player the impression of being in an outdoor environment, while in fact, they are still trapped inside an enclosed box!
 
-You can download the mesh file itself (link), as well as the texure files (link). I’ve put the texture files in a zip file, if you’ve got problems opening it, you can also find the files here (link). The meshfile itself used to be supplied with the DirectX SDK. You can find lots of skybox texturefiles on the internet.
+Using the methods we have created thus far, you can expect this to be quite easy, as a skybox is nothing more than another mesh. Only this time, we need to load some texture files to apply to the faces the mesh.
 
-This time, we will need 2 variables: one to store the model, and an extra one to store the textures (because each subset of the model can have a different texture). So create these variables at the top of your code:
+The mesh file (skybox.x) and the textures (six "skybox" files, one for each cube face) are included in the [asset for this series](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true), simply unpack them and add them to your content project as normal.
+
+> If you prefer, you can find lots of other skybox texture files on the internet, just have a search and swap them out if you like.
+
+This time, we will need 2 variables:
+
+* One to store the model
+* And an extra one to store the textures, because each subset (face) of the model can have a different texture.
+
+So create these variables in the Properties section of your code:
 
 ```csharp
- Texture2D[] skyboxTextures;
- Model skyboxModel;
+    private Texture2D[] _skyboxTextures;
+    private Model _skyboxModel;
 ```
 
-Normally, we would use the LoadModel method to load our skybox, but we cannot do this since that method doesn’t load the textures. We’ll fix this by overloading that method: we’ll create a completely new version of the method, with exactly the same name, but with different arguments!
+## Loading the model and its textures
+
+Normally, we would use the **LoadModel** method to load our skybox, but we cannot do this since that method does not load textures. We will fix this by overloading the method and creating a new version with exactly the same name, but with different arguments!
+
+> Overloads are a useful feature in C#, which you see all the time in MonoGame, just look at the SpriteBatch.Begin method)
 
 ```csharp
- private Model LoadModel(string assetName, out Texture2D[] textures)
- {
+        private Model LoadModel(string assetName, out Texture2D[] textures)
+        {
+            Model newModel = Content.Load<Model>(assetName);
+            List<Texture2D> modelTextures = new List<Texture2D>();
 
-    Model newModel = Content.Load<Model> (assetName);
-    textures = new Texture2D[newModel.Meshes.Count];
-    int i = 0;
-    foreach (ModelMesh mesh in newModel.Meshes)
-        foreach (BasicEffect currentEffect in mesh.Effects)
-            textures[i++] = currentEffect.Texture;
+            foreach (ModelMesh mesh in newModel.Meshes)
+            {
+                foreach (BasicEffect currentEffect in mesh.Effects)
+                {
+                    modelTextures.Add(currentEffect.Texture);
+                }
 
-    foreach (ModelMesh mesh in newModel.Meshes)
-        foreach (ModelMeshPart meshPart in mesh.MeshParts)
-            meshPart.Effect = effect.Clone();
+                foreach (ModelMeshPart meshPart in mesh.MeshParts)
+                {
+                    meshPart.Effect = _effect.Clone();
+                }
+            }
 
-    return newModel;
-}
+            textures = modelTextures.ToArray();
+            return newModel;
+        }
 ```
 
-> Note that the signature of this method differs from the first LoadModel method in that it has 2 arguments.
+> Note that the signature of this method (the parameters and return) differs from the first LoadModel method in that has two arguments.
 
 The first line and 3 last lines are taken directly from our first LoadModel method. Only the middle part is new.
 
-Remember all parts of the model can hold a different effect? These effects also hold the name of the texture, corresponding to its part of the model. So we cycle through each effect in our model, and save all the textures in the textures array!
+> You may notice that we do not actually load the content directly for the SkyBox in MonoGame using Content.Load. This is because the model file (skybox.x) already contains the names for the specific Textures. So as long as they are in your Content project, the ```Content.Load<Model>``` will find and assign the texture reference from the model file.
 
-Call this method from within your LoadContent method:
+Remember that all parts of the model can hold different effects, these effects can also hold the name of the texture corresponding to the part of the model. So we cycle through each effect in our model, and save all the textures in the textures array!
 
-```csharp
- skyboxModel = LoadModel("skybox", out skyboxTextures);
-```
-
-So far for loading the skybox. All we have to do now, is draw it. What makes a skybox special? When your plane is moving, the city has to move relative to it. Not so for your skybox, which has always to be at a constant distance from your airplane. This will make our skybox look like it’s infinitely far away! So when our airplanes moves, we move the skybox with it, so our xwing will always be in the middle of it.
-
-Add this method at the bottom of your code:
+Call this method from within your **LoadContent** method:
 
 ```csharp
- private void DrawSkybox()
- {
-     SamplerState ss = new SamplerState();
-     ss.AddressU = TextureAddressMode.Clamp;
-     ss.AddressV = TextureAddressMode.Clamp;
-     device.SamplerStates[0] = ss;
-
-     DepthStencilState dss = new DepthStencilState();
-     dss.DepthBufferEnable = false;
-     device.DepthStencilState = dss;
-
-     Matrix[] skyboxTransforms = new Matrix[skyboxModel.Bones.Count];
-     skyboxModel.CopyAbsoluteBoneTransformsTo(skyboxTransforms);
-     int i = 0;
-     foreach (ModelMesh mesh in skyboxModel.Meshes)
-     {
-         foreach (Effect currentEffect in mesh.Effects)
-         {
-             Matrix worldMatrix = skyboxTransforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(xwingPosition);
-             currentEffect.CurrentTechnique = currentEffect.Techniques["Textured"];
-             currentEffect.Parameters["xWorld"].SetValue(worldMatrix);
-             currentEffect.Parameters["xView"].SetValue(viewMatrix);
-             currentEffect.Parameters["xProjection"].SetValue(projectionMatrix);
-             currentEffect.Parameters["xTexture"].SetValue(skyboxTextures[i++]);
-         }
-         mesh.Draw();
-     }
-
-     dss = new DepthStencilState();
-     dss.DepthBufferEnable = true;
-     device.DepthStencilState = dss;
- }
+    _skyboxModel = LoadModel("skybox", out _skyboxTextures);
 ```
 
-This method is explained in detail in Recipe 2-8. The texture addressing mode is set to Clamp, to get rid of the texture seams you would otherwise see at the edges of the box. We need to disable the Zbuffer so we don’t have to specify a size for the skybox. The skybox is rendered around our xwing, as its positions is used to create the World matrix.
+## Time to surround ourselves with our skybox
 
-As discussed in Recipe 2-8, you need to call this method as the first line in your Draw method after clearing the screen:
+So far so good for loading the skybox. All we have to do now is draw it. What makes a skybox special? When your plane is moving, the city has to move relative to it. Not so for your skybox, which has always to be at a constant distance from your airplane. This will make our skybox look like it is infinitely far away! So when our planes moves, we move the skybox with it, so our xwing will always be in the middle of it.
+
+Let us do this by adding a new method called **DrawSkybox** to your code:
 
 ```csharp
- DrawSkybox();
+    private void DrawSkybox()
+    {
+        SamplerState ss = new SamplerState();
+        ss.AddressU = TextureAddressMode.Clamp;
+        ss.AddressV = TextureAddressMode.Clamp;
+        _device.SamplerStates[0] = ss;
+
+        DepthStencilState dss = new DepthStencilState();
+        dss.DepthBufferEnable = false;
+        _device.DepthStencilState = dss;
+
+        Matrix[] skyboxTransforms = new Matrix[_skyboxModel.Bones.Count];
+        _skyboxModel.CopyAbsoluteBoneTransformsTo(skyboxTransforms);
+        int i = 0;
+        foreach (ModelMesh mesh in _skyboxModel.Meshes)
+        {
+            foreach (Effect currentEffect in mesh.Effects)
+            {
+                Matrix worldMatrix = skyboxTransforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(_xwingPosition);
+                currentEffect.CurrentTechnique = currentEffect.Techniques["Textured"];
+                currentEffect.Parameters["xWorld"].SetValue(worldMatrix);
+                currentEffect.Parameters["xView"].SetValue(_viewMatrix);
+                currentEffect.Parameters["xProjection"].SetValue(_projectionMatrix);
+                currentEffect.Parameters["xTexture"].SetValue(_skyboxTextures[i++]);
+            }
+            mesh.Draw();
+        }
+
+        dss = new DepthStencilState();
+        dss.DepthBufferEnable = true;
+        _device.DepthStencilState = dss;
+    }
 ```
 
-That’s it for this chapter! Running the code should give you an image as displayed below:
+The **texture addressing mode** is set to **Clamp** to get rid of the texture seams you would otherwise see at the edges of the box. We also disable the Zbuffer so that we do not have to specify a size for the skybox. The skybox is rendered around our xwing, as its position is used to create the World matrix.
+
+As the Skybox is the furthest object from the center (you always draw furthest and then gradually on top of each other to closest), you need to call this method as the first line in your **Draw** method, just after clearing the screen:
+
+```csharp
+    DrawSkybox();
+```
+
+And that is it for this chapter! Running the code should give you a nice world background, surrounding your city as displayed below:
 
 ![Skybox](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-13Skybox1.jpg?raw=true)
 
-## The code thus far
+## Exercises
+
+You can try these exercises to practice what you have learned:
+
+* Try your own skybox textures if you like (just be sure they have the same filenames)
+* If you are feeling adventurous, try downloading a completely different skybox model and textures to see if the above code holds.  Bear in mind, the above method will need altering if you need to load and then assign the textures to the skybox sides manually.
+
+## The code so far
 
 ```csharp
- using System;
- using System.Collections.Generic;
- using System.Linq;
- using Microsoft.Xna.Framework;
- using Microsoft.Xna.Framework.Audio;
- using Microsoft.Xna.Framework.Content;
- using Microsoft.Xna.Framework.GamerServices;
- using Microsoft.Xna.Framework.Graphics;
- using Microsoft.Xna.Framework.Input;
- using Microsoft.Xna.Framework.Media;
- 
- namespace Series3D2
- {
-     public class Game1 : Microsoft.Xna.Framework.Game
-     {
-         enum CollisionType { None, Building, Boundary, Target }
- 
-         struct Bullet
-         {
-             public Vector3 position;
-             public Quaternion rotation;
-         }
- 
-         GraphicsDeviceManager graphics;
-         SpriteBatch spriteBatch;
-         GraphicsDevice device;
-         Effect effect;
-         Texture2D sceneryTexture;
-         Model xwingModel;
-         VertexBuffer cityVertexBuffer;
-         Texture2D[] skyboxTextures;
-         Model skyboxModel;
+using System;
+using System.Collections.Generic;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
-         int[,] floorPlan;
-         int[] buildingHeights = new int[] { 0, 2, 2, 6, 5, 4 };
-         Vector3 lightDirection = new Vector3(3, -2, 5);
-         Vector3 xwingPosition = new Vector3(8, 1, -3);
-         Quaternion xwingRotation = Quaternion.Identity;
-         float gameSpeed = 1.0f;
-         BoundingBox[] buildingBoundingBoxes;
-         BoundingBox completeCityBox;
-         const int maxTargets = 50;
-         Model targetModel;
+namespace Series3D2
+{
+    public class Game1 : Game
+    {
+        public enum CollisionType { None, Building, Boundary, Target }
 
-        List<BoundingSphere> targetList = new List<BoundingSphere> ();        Texture2D bulletTexture;
+        public struct Bullet
+        {
+            public Vector3 position;
+            public Quaternion rotation;
+        }
 
-        List<Bullet> bulletList = new List<Bullet> ();        double lastBulletTime = 0;
-        Vector3 cameraPosition;
-        Vector3 cameraUpDirection;
+        //Properties
+        private GraphicsDeviceManager _graphics;
+        private SpriteBatch _spriteBatch;
+        private GraphicsDevice _device;
+        private Effect _effect;
 
-        Matrix viewMatrix;
-        Matrix projectionMatrix;
+        private Matrix _viewMatrix;
+        private Matrix _projectionMatrix;
+        private Texture2D _sceneryTexture;
+        private int[,] _floorPlan;
+        private VertexBuffer _cityVertexBuffer;
+        private int[] _buildingHeights = new int[] { 0, 2, 2, 6, 5, 4 };
+        private Model _xwingModel;
+        private Vector3 _lightDirection = new Vector3(3, -2, 5);
+        private Vector3 _xwingPosition = new Vector3(8, 1, -3);
+        private Quaternion _xwingRotation = Quaternion.Identity;
+        private float _gameSpeed = 1.0f;
+        private BoundingBox[] _buildingBoundingBoxes;
+        private BoundingBox _completeCityBox;
+        private Model _targetModel;
+        private const int _maxTargets = 50;
+        private List<Bullet> _bulletList = new List<Bullet>();
+        private double _lastBulletTime = 0;
+        private Texture2D _bulletTexture;
+
+        private List<BoundingSphere> _targetList = new List<BoundingSphere>();
+        private Vector3 _cameraPosition;
+        private Vector3 _cameraUpDirection;
+        private Texture2D[] _skyboxTextures;
+        private Model _skyboxModel;
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
+            _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            IsMouseVisible = true;
         }
 
         protected override void Initialize()
         {
-            graphics.PreferredBackBufferWidth = 500;
-            graphics.PreferredBackBufferHeight = 500;
-            graphics.IsFullScreen = false;
-            graphics.ApplyChanges();
-            Window.Title = "Riemer's XNA Tutorials -- 3D Series 2";
+            // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferWidth = 500;
+            _graphics.PreferredBackBufferHeight = 500;
+            _graphics.IsFullScreen = false;
+            _graphics.ApplyChanges();
+            Window.Title = "Riemer's MonoGame Tutorials -- 3D Series 2";
 
-            lightDirection.Normalize();            
+            LoadFloorPlan();
+
+            _lightDirection.Normalize();
 
             base.Initialize();
         }
 
-        protected override void LoadContent()
+        private void SetUpCamera()
         {
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            
-            device = graphics.GraphicsDevice;
+            _viewMatrix = Matrix.CreateLookAt(new Vector3(20, 13, -5), new Vector3(8, 0, -7), new Vector3(0, 1, 0));
+            _projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, _device.Viewport.AspectRatio, 0.2f, 500.0f);
+        }
 
-            effect = Content.Load<Effect> ("effects");
-            sceneryTexture = Content.Load<Texture2D> ("texturemap");            xwingModel = LoadModel("xwing");
-            targetModel = LoadModel("target");
+        private void SetUpVertices()
+        {
+            int differentBuildings = _buildingHeights.Length - 1;
+            float imagesInTexture = 1 + differentBuildings * 2;
 
-            bulletTexture = Content.Load<Texture2D> ("bullet");
-             skyboxModel = LoadModel("skybox", out skyboxTextures);
- 
-             LoadFloorPlan();
-             SetUpVertices();
-             SetUpBoundingBoxes();
-             AddTargets();
-         }
- 
-         private void LoadFloorPlan()
-         {
-             floorPlan = new int[,]
-             {
-                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,1,1,0,0,0,1,1,0,0,1,0,1},
-                 {1,0,0,1,1,0,0,0,1,0,0,0,1,0,1},
-                 {1,0,0,0,1,1,0,1,1,0,0,0,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,1,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,1,1,0,0,0,1,0,0,0,0,0,0,1},
-                 {1,0,1,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,1,0,0,0,0,0,0,0,0,1},
-                 {1,0,0,0,0,1,0,0,0,1,0,0,0,0,1},
-                 {1,0,1,0,0,0,0,0,0,1,0,0,0,0,1},
-                 {1,0,1,1,0,0,0,0,1,1,0,0,0,1,1},
-                 {1,0,0,0,0,0,0,0,1,1,0,0,0,1,1},
-                 {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-             };
- 
-             Random random = new Random();
-             int differentBuildings = buildingHeights.Length - 1;
-             for (int x = 0; x < floorPlan.GetLength(0); x++)
-                 for (int y = 0; y < floorPlan.GetLength(1); y++)
-                     if (floorPlan[x, y] == 1)
-                         floorPlan[x, y] = random.Next(differentBuildings) + 1;
-         }
- 
-         private void SetUpBoundingBoxes()
-         {
-             int cityWidth = floorPlan.GetLength(0);
-             int cityLength = floorPlan.GetLength(1);
- 
+            int cityWidth = _floorPlan.GetLength(0);
+            int cityLength = _floorPlan.GetLength(1);
 
-            List<BoundingBox> bbList = new List<BoundingBox> ();            for (int x = 0; x < cityWidth; x++)
+            List<VertexPositionNormalTexture> verticesList = new List<VertexPositionNormalTexture>();
+            for (int x = 0; x < cityWidth; x++)
             {
                 for (int z = 0; z < cityLength; z++)
                 {
-                    int buildingType = floorPlan[x, z];
+                    int currentBuilding = _floorPlan[x, z];
+
+                    //floor or ceiling
+                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z), new Vector3(0, 1, 0), new Vector2(currentBuilding * 2 / imagesInTexture, 1)));
+                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z - 1), new Vector3(0, 1, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 0)));
+                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z), new Vector3(0, 1, 0), new Vector2((currentBuilding * 2 + 1) / imagesInTexture, 1)));
+
+                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z - 1), new Vector3(0, 1, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 0)));
+                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z - 1), new Vector3(0, 1, 0), new Vector2((currentBuilding * 2 + 1) / imagesInTexture, 0)));
+                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z), new Vector3(0, 1, 0), new Vector2((currentBuilding * 2 + 1) / imagesInTexture, 1)));
+
+                    if (currentBuilding != 0)
+                    {
+                        //front wall
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z - 1), new Vector3(0, 0, -1), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z - 1), new Vector3(0, 0, -1), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z - 1), new Vector3(0, 0, -1), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 1)));
+
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z - 1), new Vector3(0, 0, -1), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z - 1), new Vector3(0, 0, -1), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z - 1), new Vector3(0, 0, -1), new Vector2((currentBuilding * 2) / imagesInTexture, 0)));
+
+                        //back wall
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(0, 0, 1), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z), new Vector3(0, 0, 1), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z), new Vector3(0, 0, 1), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z), new Vector3(0, 0, 1), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z), new Vector3(0, 0, 1), new Vector2((currentBuilding * 2) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(0, 0, 1), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+
+                        //left wall
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z), new Vector3(-1, 0, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z - 1), new Vector3(-1, 0, 0), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z - 1), new Vector3(-1, 0, 0), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z - 1), new Vector3(-1, 0, 0), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, _buildingHeights[currentBuilding], -z), new Vector3(-1, 0, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z), new Vector3(-1, 0, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+
+                        //right wall
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(1, 0, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z - 1), new Vector3(1, 0, 0), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z - 1), new Vector3(1, 0, 0), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 1)));
+
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z - 1), new Vector3(1, 0, 0), new Vector2((currentBuilding * 2 - 1) / imagesInTexture, 0)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(1, 0, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 1)));
+                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, _buildingHeights[currentBuilding], -z), new Vector3(1, 0, 0), new Vector2((currentBuilding * 2) / imagesInTexture, 0)));
+                    }
+                }
+            }
+
+            _cityVertexBuffer = new VertexBuffer(_device, VertexPositionNormalTexture.VertexDeclaration, verticesList.Count, BufferUsage.WriteOnly);
+            _cityVertexBuffer.SetData<VertexPositionNormalTexture>(verticesList.ToArray());
+        }
+
+        private void LoadFloorPlan()
+        {
+            _floorPlan = new int[,]
+            {
+                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,1,1,0,0,0,1,1,0,0,1,0,1},
+                {1,0,0,1,1,0,0,0,1,0,0,0,1,0,1},
+                {1,0,0,0,1,1,0,1,1,0,0,0,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,1,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,1,1,0,0,0,1,0,0,0,0,0,0,1},
+                {1,0,1,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,1,0,0,0,0,0,0,0,0,1},
+                {1,0,0,0,0,1,0,0,0,1,0,0,0,0,1},
+                {1,0,1,0,0,0,0,0,0,1,0,0,0,0,1},
+                {1,0,1,1,0,0,0,0,1,1,0,0,0,1,1},
+                {1,0,0,0,0,0,0,0,1,1,0,0,0,1,1},
+                {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
+            };
+
+            Random random = new Random();
+            int differentBuildings = _buildingHeights.Length - 1;
+            for (int x = 0; x < _floorPlan.GetLength(0); x++)
+            {
+                for (int y = 0; y < _floorPlan.GetLength(1); y++)
+                {
+                    if (_floorPlan[x, y] == 1)
+                    {
+                        _floorPlan[x, y] = random.Next(differentBuildings) + 1;
+                    }
+                }
+            }
+        }
+
+        private Model LoadModel(string assetName)
+        {
+            Model newModel = Content.Load<Model>(assetName);
+            foreach (ModelMesh mesh in newModel.Meshes)
+            {
+                foreach (ModelMeshPart meshPart in mesh.MeshParts)
+                {
+                    meshPart.Effect = _effect.Clone();
+                }
+            }
+            return newModel;
+        }
+
+        private Model LoadModel(string assetName, out Texture2D[] textures)
+        {
+            Model newModel = Content.Load<Model>(assetName);
+            List<Texture2D> modelTextures = new List<Texture2D>();
+
+            foreach (ModelMesh mesh in newModel.Meshes)
+            {
+                foreach (BasicEffect currentEffect in mesh.Effects)
+                {
+                    modelTextures.Add(currentEffect.Texture);
+                }
+
+                foreach (ModelMeshPart meshPart in mesh.MeshParts)
+                {
+                    meshPart.Effect = _effect.Clone();
+                }
+            }
+
+            textures = modelTextures.ToArray();
+            return newModel;
+        }
+
+        private void SetUpBoundingBoxes()
+        {
+            int cityWidth = _floorPlan.GetLength(0);
+            int cityLength = _floorPlan.GetLength(1);
+
+            List<BoundingBox> bbList = new List<BoundingBox>();
+            for (int x = 0; x < cityWidth; x++)
+            {
+                for (int z = 0; z < cityLength; z++)
+                {
+                    int buildingType = _floorPlan[x, z];
                     if (buildingType != 0)
                     {
-                        int buildingHeight = buildingHeights[buildingType];
+                        int buildingHeight = _buildingHeights[buildingType];
                         Vector3[] buildingPoints = new Vector3[2];
                         buildingPoints[0] = new Vector3(x, 0, -z);
                         buildingPoints[1] = new Vector3(x + 1, buildingHeight, -z - 1);
@@ -249,22 +375,22 @@ That’s it for this chapter! Running the code should give you an image as displ
                     }
                 }
             }
-            buildingBoundingBoxes = bbList.ToArray();
+            _buildingBoundingBoxes = bbList.ToArray();
 
             Vector3[] boundaryPoints = new Vector3[2];
             boundaryPoints[0] = new Vector3(0, 0, 0);
             boundaryPoints[1] = new Vector3(cityWidth, 20, -cityLength);
-            completeCityBox = BoundingBox.CreateFromPoints(boundaryPoints);
+            _completeCityBox = BoundingBox.CreateFromPoints(boundaryPoints);
         }
 
         private void AddTargets()
         {
-            int cityWidth = floorPlan.GetLength(0);
-            int cityLength = floorPlan.GetLength(1);
+            int cityWidth = _floorPlan.GetLength(0);
+            int cityLength = _floorPlan.GetLength(1);
 
             Random random = new Random();
 
-            while (targetList.Count < maxTargets)
+            while (_targetList.Count < _maxTargets)
             {
                 int x = random.Next(cityWidth);
                 int z = -random.Next(cityLength);
@@ -274,391 +400,334 @@ That’s it for this chapter! Running the code should give you an image as displ
                 BoundingSphere newTarget = new BoundingSphere(new Vector3(x, y, z), radius);
 
                 if (CheckCollision(newTarget) == CollisionType.None)
-                    targetList.Add(newTarget);
+                {
+                    _targetList.Add(newTarget);
+                }
             }
         }
 
-        private void SetUpVertices()
+        protected override void LoadContent()
         {
-            int differentBuildings = buildingHeights.Length - 1;
-            float imagesInTexture = 1 + differentBuildings * 2;
+            _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            int cityWidth = floorPlan.GetLength(0);
-            int cityLength = floorPlan.GetLength(1);
+            // TODO: use this.Content to load your game content here
+            _device = _graphics.GraphicsDevice;
+            _effect = Content.Load<Effect>("effects");
+            _sceneryTexture = Content.Load<Texture2D>("texturemap");
+            _bulletTexture = Content.Load<Texture2D>("bullet");
 
+            _xwingModel = LoadModel("xwing");
+            _targetModel = LoadModel("target");
+            _skyboxModel = LoadModel("skybox", out _skyboxTextures);
 
-            List<VertexPositionNormalTexture> verticesList = new List<VertexPositionNormalTexture> ();
-            for (int x = 0; x < cityWidth; x++)
+            SetUpCamera();
+            SetUpVertices();
+            SetUpBoundingBoxes();
+            AddTargets();
+        }
+
+        private void UpdateCamera()
+        {
+            Vector3 cameraPosition = new Vector3(0, 0.1f, 0.6f);
+            cameraPosition = Vector3.Transform(cameraPosition, Matrix.CreateFromQuaternion(_xwingRotation));
+            cameraPosition += _xwingPosition;
+            Vector3 cameraUpDirection = new Vector3(0, 1, 0);
+            cameraUpDirection = Vector3.Transform(cameraUpDirection, Matrix.CreateFromQuaternion(_xwingRotation));
+
+            _viewMatrix = Matrix.CreateLookAt(cameraPosition, _xwingPosition, cameraUpDirection);
+            _projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, _device.Viewport.AspectRatio, 0.2f, 500.0f);
+
+            _cameraPosition = cameraPosition;
+            _cameraUpDirection = cameraUpDirection;
+        }
+
+        private void ProcessKeyboard(GameTime gameTime)
+        {
+            float leftRightRotation = 0;
+            float upDownRotation = 0;
+
+            float turningSpeed = (float)gameTime.ElapsedGameTime.TotalMilliseconds / 1000.0f;
+            turningSpeed *= 1.6f * _gameSpeed;
+
+            KeyboardState keys = Keyboard.GetState();
+
+            if (keys.IsKeyDown(Keys.Right))
             {
-                for (int z = 0; z < cityLength; z++)
+                leftRightRotation += turningSpeed;
+            }
+            if (keys.IsKeyDown(Keys.Left))
+            {
+                leftRightRotation -= turningSpeed;
+            }
+            if (keys.IsKeyDown(Keys.Down))
+            {
+                upDownRotation += turningSpeed;
+            }
+            if (keys.IsKeyDown(Keys.Up))
+            {
+                upDownRotation -= turningSpeed;
+            }
+
+            Quaternion additionalRotation = Quaternion.CreateFromAxisAngle(new Vector3(0, 0, -1), leftRightRotation) * Quaternion.CreateFromAxisAngle(new Vector3(1, 0, 0), upDownRotation);
+            _xwingRotation *= additionalRotation;
+
+            if (keys.IsKeyDown(Keys.Space))
+            {
+                double currentTime = gameTime.TotalGameTime.TotalMilliseconds;
+                if (currentTime - _lastBulletTime > 100)
                 {
-                    int currentbuilding = floorPlan[x, z];
+                    Bullet newBullet = new Bullet();
+                    newBullet.position = _xwingPosition;
+                    newBullet.rotation = _xwingRotation;
+                    _bulletList.Add(newBullet);
 
-                    //floor or ceiling
-                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z), new Vector3(0, 1, 0), new Vector2(currentbuilding * 2 / imagesInTexture, 1)));
-                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z - 1), new Vector3(0, 1, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 0)));
-                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z), new Vector3(0, 1, 0), new Vector2((currentbuilding * 2 + 1) / imagesInTexture, 1)));
+                    _lastBulletTime = currentTime;
+                }
+            }
+        }
 
-                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z - 1), new Vector3(0, 1, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 0)));
-                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z - 1), new Vector3(0, 1, 0), new Vector2((currentbuilding * 2 + 1) / imagesInTexture, 0)));
-                    verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z), new Vector3(0, 1, 0), new Vector2((currentbuilding * 2 + 1) / imagesInTexture, 1)));
+        private void MoveForward(ref Vector3 position, Quaternion rotationQuat, float speed)
+        {
+            Vector3 addVector = Vector3.Transform(new Vector3(0, 0, -1), rotationQuat);
+            position += addVector * speed;
+        }
 
-                    if (currentbuilding != 0)
-                    {
-                        //front wall
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z - 1), new Vector3(0, 0, -1), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z - 1), new Vector3(0, 0, -1), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z - 1), new Vector3(0, 0, -1), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 1)));
-
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z - 1), new Vector3(0, 0, -1), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z - 1), new Vector3(0, 0, -1), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z - 1), new Vector3(0, 0, -1), new Vector2((currentbuilding * 2) / imagesInTexture, 0)));
-
-                        //back wall
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(0, 0, 1), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z), new Vector3(0, 0, 1), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z), new Vector3(0, 0, 1), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z), new Vector3(0, 0, 1), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z), new Vector3(0, 0, 1), new Vector2((currentbuilding * 2) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(0, 0, 1), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-
-                        //left wall
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z), new Vector3(-1, 0, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z - 1), new Vector3(-1, 0, 0), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z - 1), new Vector3(-1, 0, 0), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z - 1), new Vector3(-1, 0, 0), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, buildingHeights[currentbuilding], -z), new Vector3(-1, 0, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x, 0, -z), new Vector3(-1, 0, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-
-                        //right wall
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(1, 0, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z - 1), new Vector3(1, 0, 0), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z - 1), new Vector3(1, 0, 0), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 1)));
-
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z - 1), new Vector3(1, 0, 0), new Vector2((currentbuilding * 2 - 1) / imagesInTexture, 0)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, 0, -z), new Vector3(1, 0, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 1)));
-                        verticesList.Add(new VertexPositionNormalTexture(new Vector3(x + 1, buildingHeights[currentbuilding], -z), new Vector3(1, 0, 0), new Vector2((currentbuilding * 2) / imagesInTexture, 0)));
-                    }
+        private CollisionType CheckCollision(BoundingSphere sphere)
+        {
+            for (int i = 0; i < _buildingBoundingBoxes.Length; i++)
+            {
+                if (_buildingBoundingBoxes[i].Contains(sphere) != ContainmentType.Disjoint)
+                {
+                    return CollisionType.Building;
                 }
             }
 
-            cityVertexBuffer = new VertexBuffer(device, VertexPositionNormalTexture.VertexDeclaration, verticesList.Count, BufferUsage.WriteOnly);
+            if (_completeCityBox.Contains(sphere) != ContainmentType.Contains)
+            {
+                return CollisionType.Boundary;
+            }
 
-            cityVertexBuffer.SetData<VertexPositionNormalTexture> (verticesList.ToArray());        }
+            for (int i = 0; i < _targetList.Count; i++)
+            {
+                if (_targetList[i].Contains(sphere) != ContainmentType.Disjoint)
+                {
+                    _targetList.RemoveAt(i);
+                    i--;
+                    AddTargets();
 
-        private Model LoadModel(string assetName)
+                    return CollisionType.Target;
+                }
+            }
+
+            return CollisionType.None;
+        }
+
+        private void UpdateBulletPositions(float moveSpeed)
         {
+            for (int i = 0; i < _bulletList.Count; i++)
+            {
+                Bullet currentBullet = _bulletList[i];
+                MoveForward(ref currentBullet.position, currentBullet.rotation, moveSpeed * 2.0f);
+                _bulletList[i] = currentBullet;
 
-            Model newModel = Content.Load<Model> (assetName);            foreach (ModelMesh mesh in newModel.Meshes)
-                foreach (ModelMeshPart meshPart in mesh.MeshParts)
-                    meshPart.Effect = effect.Clone();
-            return newModel;
+                BoundingSphere bulletSphere = new BoundingSphere(currentBullet.position, 0.05f);
+                CollisionType colType = CheckCollision(bulletSphere);
+                if (colType != CollisionType.None)
+                {
+                    _bulletList.RemoveAt(i);
+                    i--;
+
+                    if (colType == CollisionType.Target)
+                        _gameSpeed *= 1.05f;
+                }
+            }
         }
 
+        protected override void Update(GameTime gameTime)
+        {
+            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed ||
+                Keyboard.GetState().IsKeyDown(Keys.Escape))
+                Exit();
 
-         private Model LoadModel(string assetName, out Texture2D[] textures)
-         {
+            // TODO: Add your update logic here
+            UpdateCamera();
+            ProcessKeyboard(gameTime);
 
-            Model newModel = Content.Load<Model> (assetName);
-            textures = new Texture2D[newModel.Meshes.Count];
+            float moveSpeed = gameTime.ElapsedGameTime.Milliseconds / 500.0f * _gameSpeed;
+            MoveForward(ref _xwingPosition, _xwingRotation, moveSpeed);
+
+            BoundingSphere xwingSpere = new BoundingSphere(_xwingPosition, 0.04f);
+            if (CheckCollision(xwingSpere) != CollisionType.None)
+            {
+                _xwingPosition = new Vector3(8, 1, -3);
+                _xwingRotation = Quaternion.Identity;
+                _gameSpeed /= 1.1f;
+            }
+
+            UpdateBulletPositions(moveSpeed);
+
+            base.Update(gameTime);
+        }
+
+        private void DrawCity()
+        {
+            _effect.CurrentTechnique = _effect.Techniques["Textured"];
+            _effect.Parameters["xWorld"].SetValue(Matrix.Identity);
+            _effect.Parameters["xView"].SetValue(_viewMatrix);
+            _effect.Parameters["xProjection"].SetValue(_projectionMatrix);
+            _effect.Parameters["xTexture"].SetValue(_sceneryTexture);
+            _effect.Parameters["xEnableLighting"].SetValue(true);
+            _effect.Parameters["xLightDirection"].SetValue(_lightDirection);
+            _effect.Parameters["xAmbient"].SetValue(0.5f);
+
+            foreach (EffectPass pass in _effect.CurrentTechnique.Passes)
+            {
+                pass.Apply();
+                _device.SetVertexBuffer(_cityVertexBuffer);
+                _device.DrawPrimitives(PrimitiveType.TriangleList, 0, _cityVertexBuffer.VertexCount / 3);
+            }
+        }
+
+        private void DrawModel()
+        {
+            Matrix worldMatrix = Matrix.CreateScale(0.0005f, 0.0005f, 0.0005f) *
+                                 Matrix.CreateRotationY(MathHelper.Pi) *
+                                 Matrix.CreateFromQuaternion(_xwingRotation) *
+                                 Matrix.CreateTranslation(_xwingPosition);
+
+            Matrix[] xwingTransforms = new Matrix[_xwingModel.Bones.Count];
+            _xwingModel.CopyAbsoluteBoneTransformsTo(xwingTransforms);
+
+            foreach (ModelMesh mesh in _xwingModel.Meshes)
+            {
+                foreach (Effect currentEffect in mesh.Effects)
+                {
+                    currentEffect.CurrentTechnique = currentEffect.Techniques["Colored"];
+                    currentEffect.Parameters["xWorld"].SetValue(xwingTransforms[mesh.ParentBone.Index] * worldMatrix);
+                    currentEffect.Parameters["xView"].SetValue(_viewMatrix);
+                    currentEffect.Parameters["xProjection"].SetValue(_projectionMatrix);
+                    currentEffect.Parameters["xEnableLighting"].SetValue(true);
+                    currentEffect.Parameters["xLightDirection"].SetValue(_lightDirection);
+                    currentEffect.Parameters["xAmbient"].SetValue(0.5f);
+                }
+                mesh.Draw();
+            }
+        }
+
+        private void DrawTargets()
+        {
+            for (int i = 0; i < _targetList.Count; i++)
+            {
+                Matrix worldMatrix = Matrix.CreateScale(_targetList[i].Radius) * Matrix.CreateTranslation(_targetList[i].Center);
+
+                Matrix[] targetTransforms = new Matrix[_targetModel.Bones.Count];
+                _targetModel.CopyAbsoluteBoneTransformsTo(targetTransforms);
+                foreach (ModelMesh modelMesh in _targetModel.Meshes)
+                {
+                    foreach (Effect currentEffect in modelMesh.Effects)
+                    {
+                        currentEffect.CurrentTechnique = currentEffect.Techniques["Colored"];
+                        currentEffect.Parameters["xWorld"].SetValue(targetTransforms[modelMesh.ParentBone.Index] * worldMatrix);
+                        currentEffect.Parameters["xView"].SetValue(_viewMatrix);
+                        currentEffect.Parameters["xProjection"].SetValue(_projectionMatrix);
+                        currentEffect.Parameters["xEnableLighting"].SetValue(true);
+                        currentEffect.Parameters["xLightDirection"].SetValue(_lightDirection);
+                        currentEffect.Parameters["xAmbient"].SetValue(0.5f);
+                    }
+
+                    modelMesh.Draw();
+                }
+            }
+        }
+
+        private void DrawBullets()
+        {
+            if (_bulletList.Count > 0)
+            {
+                VertexPositionTexture[] bulletVertices = new VertexPositionTexture[_bulletList.Count * 6];
+                int i = 0;
+
+                foreach (Bullet currentBullet in _bulletList)
+                {
+                    Vector3 center = currentBullet.position;
+
+                    bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(1, 1));
+                    bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(0, 0));
+                    bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(1, 0));
+
+                    bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(1, 1));
+                    bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(0, 1));
+                    bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(0, 0));
+                }
+
+                _effect.CurrentTechnique = _effect.Techniques["PointSprites"];
+                _effect.Parameters["xWorld"].SetValue(Matrix.Identity);
+                _effect.Parameters["xProjection"].SetValue(_projectionMatrix);
+                _effect.Parameters["xView"].SetValue(_viewMatrix);
+                _effect.Parameters["xCamPos"].SetValue(_cameraPosition);
+                _effect.Parameters["xTexture"].SetValue(_bulletTexture);
+                _effect.Parameters["xCamUp"].SetValue(_cameraUpDirection);
+                _effect.Parameters["xPointSpriteSize"].SetValue(0.1f);
+
+                _device.BlendState = BlendState.Additive;
+
+                foreach (EffectPass pass in _effect.CurrentTechnique.Passes)
+                {
+                    pass.Apply();
+                    _device.DrawUserPrimitives(PrimitiveType.TriangleList, bulletVertices, 0, _bulletList.Count * 2);
+                }
+                _device.BlendState = BlendState.Opaque;
+
+            }
+
+        }
+
+        private void DrawSkybox()
+        {
+            SamplerState ss = new SamplerState();
+            ss.AddressU = TextureAddressMode.Clamp;
+            ss.AddressV = TextureAddressMode.Clamp;
+            _device.SamplerStates[0] = ss;
+
+            DepthStencilState dss = new DepthStencilState();
+            dss.DepthBufferEnable = false;
+            _device.DepthStencilState = dss;
+
+            Matrix[] skyboxTransforms = new Matrix[_skyboxModel.Bones.Count];
+            _skyboxModel.CopyAbsoluteBoneTransformsTo(skyboxTransforms);
             int i = 0;
-            foreach (ModelMesh mesh in newModel.Meshes)
-                foreach (BasicEffect currentEffect in mesh.Effects)
-                    textures[i++] = currentEffect.Texture;
+            foreach (ModelMesh mesh in _skyboxModel.Meshes)
+            {
+                foreach (Effect currentEffect in mesh.Effects)
+                {
+                    Matrix worldMatrix = skyboxTransforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(_xwingPosition);
+                    currentEffect.CurrentTechnique = currentEffect.Techniques["Textured"];
+                    currentEffect.Parameters["xWorld"].SetValue(worldMatrix);
+                    currentEffect.Parameters["xView"].SetValue(_viewMatrix);
+                    currentEffect.Parameters["xProjection"].SetValue(_projectionMatrix);
+                    currentEffect.Parameters["xTexture"].SetValue(_skyboxTextures[i++]);
+                }
+                mesh.Draw();
+            }
 
-            foreach (ModelMesh mesh in newModel.Meshes)
-                foreach (ModelMeshPart meshPart in mesh.MeshParts)
-                    meshPart.Effect = effect.Clone();
-
-            return newModel;
+            dss = new DepthStencilState();
+            dss.DepthBufferEnable = true;
+            _device.DepthStencilState = dss;
         }
+        protected override void Draw(GameTime gameTime)
+        {
+            _device.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.DarkSlateBlue, 1.0f, 0);
 
- 
-         protected override void UnloadContent()
-         {
-         }
- 
-         protected override void Update(GameTime gameTime)
-         {
-             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
-                 this.Exit();
- 
-             ProcessKeyboard(gameTime);
-             float moveSpeed = gameTime.ElapsedGameTime.Milliseconds / 500.0f * gameSpeed;
-             MoveForward(ref xwingPosition, xwingRotation, moveSpeed);
- 
-             BoundingSphere xwingSpere = new BoundingSphere(xwingPosition, 0.04f);
-             if (CheckCollision(xwingSpere) != CollisionType.None)
-             {
-                 xwingPosition = new Vector3(8, 1, -3);
-                 xwingRotation = Quaternion.Identity;
-                 gameSpeed /= 1.1f;
-             }
- 
-             UpdateCamera();
-             UpdateBulletPositions(moveSpeed);
- 
-             base.Update(gameTime);
-         }
- 
-         private void UpdateCamera()
-         {
-             Vector3 campos = new Vector3(0, 0.1f, 0.6f);
-             campos = Vector3.Transform(campos, Matrix.CreateFromQuaternion(xwingRotation));
-             campos += xwingPosition;
- 
-             Vector3 camup = new Vector3(0, 1, 0);
-             camup = Vector3.Transform(camup, Matrix.CreateFromQuaternion(xwingRotation));
- 
-             viewMatrix = Matrix.CreateLookAt(campos, xwingPosition, camup);
-             projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, device.Viewport.AspectRatio, 0.2f, 500.0f);
- 
-             cameraPosition = campos;
-             cameraUpDirection = camup;
-         }
- 
-         private void ProcessKeyboard(GameTime gameTime)
-         {
-             float leftRightRot = 0;
- 
-             float turningSpeed = (float)gameTime.ElapsedGameTime.TotalMilliseconds / 1000.0f;
-             turningSpeed *= 1.6f * gameSpeed;
-             KeyboardState keys = Keyboard.GetState();
-             if (keys.IsKeyDown(Keys.Right))
-                 leftRightRot += turningSpeed;
-             if (keys.IsKeyDown(Keys.Left))
-                 leftRightRot -= turningSpeed;
- 
-             float upDownRot = 0;
-             if (keys.IsKeyDown(Keys.Down))
-                 upDownRot += turningSpeed;
-             if (keys.IsKeyDown(Keys.Up))
-                 upDownRot -= turningSpeed;
- 
-             Quaternion additionalRot = Quaternion.CreateFromAxisAngle(new Vector3(0, 0, -1), leftRightRot) * Quaternion.CreateFromAxisAngle(new Vector3(1, 0, 0), upDownRot);
-             xwingRotation *= additionalRot;
- 
-             if (keys.IsKeyDown(Keys.Space))
-             {
-                 double currentTime = gameTime.TotalGameTime.TotalMilliseconds;
-                 if (currentTime - lastBulletTime > 100)
-                 {
-                     Bullet newBullet = new Bullet();
-                     newBullet.position = xwingPosition;
-                     newBullet.rotation = xwingRotation;
-                     bulletList.Add(newBullet);
- 
-                     lastBulletTime = currentTime;
-                 }
-             }
-         }
- 
-         private void MoveForward(ref Vector3 position, Quaternion rotationQuat, float speed)
-         {
-             Vector3 addVector = Vector3.Transform(new Vector3(0, 0, -1), rotationQuat);
-             position += addVector * speed;
-         }
- 
-         private CollisionType CheckCollision(BoundingSphere sphere)
-         {
-             for (int i = 0; i < buildingBoundingBoxes.Length; i++)
-                 if (buildingBoundingBoxes[i].Contains(sphere) != ContainmentType.Disjoint)
-                     return CollisionType.Building;
- 
-             if (completeCityBox.Contains(sphere) != ContainmentType.Contains)
-                 return CollisionType.Boundary;
- 
-             for (int i = 0; i < targetList.Count; i++)
-             {
-                 if (targetList[i].Contains(sphere) != ContainmentType.Disjoint)
-                 {
-                     targetList.RemoveAt(i);
-                     i--;
-                     AddTargets();
- 
-                     return CollisionType.Target;
-                 }
-             }
- 
-             return CollisionType.None;
-         }
- 
-         private void UpdateBulletPositions(float moveSpeed)
-         {
-             for (int i = 0; i < bulletList.Count; i++)
-             {
-                 Bullet currentBullet = bulletList[i];
-                 MoveForward(ref currentBullet.position, currentBullet.rotation, moveSpeed * 2.0f);
-                 bulletList[i] = currentBullet;
- 
-                 BoundingSphere bulletSphere = new BoundingSphere(currentBullet.position, 0.05f);
-                 CollisionType colType = CheckCollision(bulletSphere);
-                 if (colType != CollisionType.None)
-                 {
-                     bulletList.RemoveAt(i);
-                     i--;
- 
-                     if (colType == CollisionType.Target)
-                         gameSpeed *= 1.05f;
-                 }
-             }
-         }
- 
-         protected override void Draw(GameTime gameTime)
-         {
-             device.Clear(ClearOptions.Target | ClearOptions.DepthBuffer, Color.DarkSlateBlue, 1.0f, 0);
- 
-             DrawSkybox();
-             DrawCity();
-             DrawModel();
-             DrawTargets();
-             DrawBullets();
- 
-             base.Draw(gameTime);
-         }
- 
-         private void DrawCity()
-         {
-             effect.CurrentTechnique = effect.Techniques["Textured"];
-             effect.Parameters["xWorld"].SetValue(Matrix.Identity);
-             effect.Parameters["xView"].SetValue(viewMatrix);
-             effect.Parameters["xProjection"].SetValue(projectionMatrix);
-             effect.Parameters["xTexture"].SetValue(sceneryTexture);
-             effect.Parameters["xEnableLighting"].SetValue(true);
-             effect.Parameters["xLightDirection"].SetValue(lightDirection);
-             effect.Parameters["xAmbient"].SetValue(0.5f);
- 
-             foreach (EffectPass pass in effect.CurrentTechnique.Passes)
-             {
-                 pass.Apply();
-                 device.SetVertexBuffer(cityVertexBuffer);
-                 device.DrawPrimitives(PrimitiveType.TriangleList, 0, cityVertexBuffer.VertexCount/3);
-             }
-         }
- 
-         private void DrawModel()
-         {
-             Matrix worldMatrix = Matrix.CreateScale(0.0005f, 0.0005f, 0.0005f) * Matrix.CreateRotationY(MathHelper.Pi) * Matrix.CreateFromQuaternion(xwingRotation) * Matrix.CreateTranslation(xwingPosition);
- 
-             Matrix[] xwingTransforms = new Matrix[xwingModel.Bones.Count];
-             xwingModel.CopyAbsoluteBoneTransformsTo(xwingTransforms);
-             foreach (ModelMesh mesh in xwingModel.Meshes)
-             {
-                 foreach (Effect currentEffect in mesh.Effects)
-                 {
-                     currentEffect.CurrentTechnique = currentEffect.Techniques["Colored"];
-                     currentEffect.Parameters["xWorld"].SetValue(xwingTransforms[mesh.ParentBone.Index] * worldMatrix);
-                     currentEffect.Parameters["xView"].SetValue(viewMatrix);
-                     currentEffect.Parameters["xProjection"].SetValue(projectionMatrix);
-                     currentEffect.Parameters["xEnableLighting"].SetValue(true);
-                     currentEffect.Parameters["xLightDirection"].SetValue(lightDirection);
-                     currentEffect.Parameters["xAmbient"].SetValue(0.5f);
-                 }
-                 mesh.Draw();
-             }
-         }
- 
-         private void DrawTargets()
-         {
-             for (int i = 0; i < targetList.Count; i++)
-             {
-                 Matrix worldMatrix = Matrix.CreateScale(targetList[i].Radius) * Matrix.CreateTranslation(targetList[i].Center);
- 
-                 Matrix[] targetTransforms = new Matrix[targetModel.Bones.Count];
-                 targetModel.CopyAbsoluteBoneTransformsTo(targetTransforms);
-                 foreach (ModelMesh modmesh in targetModel.Meshes)
-                 {
-                     foreach (Effect currentEffect in modmesh.Effects)
-                     {
-                         currentEffect.CurrentTechnique = currentEffect.Techniques["Colored"];
-                         currentEffect.Parameters["xWorld"].SetValue(targetTransforms[modmesh.ParentBone.Index] * worldMatrix);
-                         currentEffect.Parameters["xView"].SetValue(viewMatrix);
-                         currentEffect.Parameters["xProjection"].SetValue(projectionMatrix);
-                         currentEffect.Parameters["xEnableLighting"].SetValue(true);
-                         currentEffect.Parameters["xLightDirection"].SetValue(lightDirection);
-                         currentEffect.Parameters["xAmbient"].SetValue(0.5f);
-                     }
-                     modmesh.Draw();
-                 }
-             }
-         }
- 
-         private void DrawBullets()
-         {
-             if (bulletList.Count > 0)
-             {
-                 VertexPositionTexture[] bulletVertices = new VertexPositionTexture[bulletList.Count * 6];
-                 int i = 0;
-                 foreach (Bullet currentBullet in bulletList)
-                 {
-                     Vector3 center = currentBullet.position;
- 
-                     bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(1, 1));
-                     bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(0, 0));
-                     bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(1, 0));
- 
-                     bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(1, 1));
-                     bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(0, 1));
-                     bulletVertices[i++] = new VertexPositionTexture(center, new Vector2(0, 0));
-                 }
- 
-                 effect.CurrentTechnique = effect.Techniques["PointSprites"];
-                 effect.Parameters["xWorld"].SetValue(Matrix.Identity);
-                 effect.Parameters["xProjection"].SetValue(projectionMatrix);
-                 effect.Parameters["xView"].SetValue(viewMatrix);
-                 effect.Parameters["xCamPos"].SetValue(cameraPosition);
-                 effect.Parameters["xTexture"].SetValue(bulletTexture);
-                 effect.Parameters["xCamUp"].SetValue(cameraUpDirection);
-                 effect.Parameters["xPointSpriteSize"].SetValue(0.1f);
- 
-                 device.BlendState = BlendState.Additive;
- 
-                 foreach (EffectPass pass in effect.CurrentTechnique.Passes)
-                 {
-                     pass.Apply();
-                     device.DrawUserPrimitives(PrimitiveType.TriangleList, bulletVertices, 0, bulletList.Count * 2);
-                 }
- 
-                 device.BlendState = BlendState.Opaque;
-             }
-         }
- 
-         private void DrawSkybox()
-         {
-             SamplerState ss = new SamplerState();
-             ss.AddressU = TextureAddressMode.Clamp;
-             ss.AddressV = TextureAddressMode.Clamp;
-             device.SamplerStates[0] = ss;
- 
-             DepthStencilState dss = new DepthStencilState();
-             dss.DepthBufferEnable = false;
-             device.DepthStencilState = dss;
- 
-             Matrix[] skyboxTransforms = new Matrix[skyboxModel.Bones.Count];
-             skyboxModel.CopyAbsoluteBoneTransformsTo(skyboxTransforms);
-             int i = 0;
-             foreach (ModelMesh mesh in skyboxModel.Meshes)
-             {
-                 foreach (Effect currentEffect in mesh.Effects)
-                 {
-                     Matrix worldMatrix = skyboxTransforms[mesh.ParentBone.Index] * Matrix.CreateTranslation(xwingPosition);
-                     currentEffect.CurrentTechnique = currentEffect.Techniques["Textured"];
-                     currentEffect.Parameters["xWorld"].SetValue(worldMatrix);
-                     currentEffect.Parameters["xView"].SetValue(viewMatrix);
-                     currentEffect.Parameters["xProjection"].SetValue(projectionMatrix);
-                     currentEffect.Parameters["xTexture"].SetValue(skyboxTextures[i++]);
-                 }
-                 mesh.Draw();
-             }
- 
-             dss = new DepthStencilState();
-             dss.DepthBufferEnable = true;
-             device.DepthStencilState = dss;
-         }
-     }
- }
+            DrawSkybox();
+            DrawCity();
+            DrawModel();
+            DrawTargets();
+            DrawBullets();
+
+            base.Draw(gameTime);
+        }
+    }
+}
 ```
 
 ## Next Steps

@@ -79,14 +79,14 @@ OK, so now we have the vector that will always be a bit behind and a bit above o
 Remember, when we create a viewMatrix, we not only need the position and target of our camera (which we both know at this moment), but also the vector that indicates the ‘up’-position of the xwing. This is found exactly the same way: we start with the vector that points up, and rotate it with the xwing rotation matrix:
 
 ```csharp
-    Vector3 cameraUp = new Vector3(0, 1, 0);
-    cameraUp = Vector3.Transform(cameraUp, Matrix.CreateFromQuaternion(_xwingRotation));
+    Vector3 cameraUpDirection = new Vector3(0, 1, 0);
+    cameraUpDirection = Vector3.Transform(cameraUpDirection, Matrix.CreateFromQuaternion(_xwingRotation));
 ```
 
 Now we have everything we need to create our camera matrices, the position, target, and up-vector. So by adding the following, we can create our new matrices:
 
 ```csharp
-    _viewMatrix = Matrix.CreateLookAt(cameraPosition, _xwingPosition, cameraUp);
+    _viewMatrix = Matrix.CreateLookAt(cameraPosition, _xwingPosition, cameraUpDirection);
     _projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, _device.Viewport.AspectRatio, 0.2f, 500.0f);
 ```
 
@@ -321,10 +321,10 @@ namespace Series3D2
             Vector3 cameraPosition = new Vector3(0, 0.1f, 0.6f);
             cameraPosition = Vector3.Transform(cameraPosition, Matrix.CreateFromQuaternion(_xwingRotation));
             cameraPosition += _xwingPosition;
-            Vector3 cameraUp = new Vector3(0, 1, 0);
-            cameraUp = Vector3.Transform(cameraUp, Matrix.CreateFromQuaternion(_xwingRotation));
+            Vector3 cameraUpDirection = new Vector3(0, 1, 0);
+            cameraUpDirection = Vector3.Transform(cameraUpDirection, Matrix.CreateFromQuaternion(_xwingRotation));
 
-            _viewMatrix = Matrix.CreateLookAt(cameraPosition, _xwingPosition, cameraUp);
+            _viewMatrix = Matrix.CreateLookAt(cameraPosition, _xwingPosition, cameraUpDirection);
             _projectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, _device.Viewport.AspectRatio, 0.2f, 500.0f);
         }
 

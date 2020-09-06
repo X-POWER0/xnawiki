@@ -4,7 +4,7 @@ Welcome to this second series of MonoGame for C# Tutorials! In the first series,
 
 In this second series of MonoGame for C# Tutorials, you'll learn how to create a complete flight simulator. This will include flying your aircraft in a true 3D city and firing bullets at objects! Here’s a sample screenshot of what you’ll create:
 
-![3D Series 2 - Flightsim](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/RiemersOverview08.jpg?raw=true)
+![3D Series 2 - Flightsim](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-14Lerp1.gif?raw=true)
 
 Again, the main goal of this series is to cover MonoGame features. This means the physical flight model will not contain gravity influences, it just let you manoeuvre your aircraft.
 
