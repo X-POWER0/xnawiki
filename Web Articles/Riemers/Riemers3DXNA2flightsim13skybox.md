@@ -119,7 +119,7 @@ As the Skybox is the furthest object from the center (you always draw furthest a
 
 And that is it for this chapter! Running the code should give you a nice world background, surrounding your city as displayed below:
 
-![Skybox](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-13Skybox1.jpg?raw=true)
+![Skybox](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-13Skybox1.gif?raw=true)
 
 ## Exercises
 
