@@ -49,10 +49,8 @@ With that done, you only need to instruct your graphics card to fetch the vertex
 ```csharp
     _device.Indices = _myIndexBuffer;
     _device.SetVertexBuffer(_myVertexBuffer);
-    _device.DrawIndexedPrimitives(PrimitiveType.TriangleList, _vertices.Length, 0, _indices.Length / 3);
+    _device.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, 0, _indices.Length / 3);
 ```
-
-> You may get a warning about the above use of the **DrawIndexedPrimitives** function being obsolete, you can safely ignore that for the moment.
 
 This tells the graphics card where it should get its indices and vertices from to render the triangles.
 
