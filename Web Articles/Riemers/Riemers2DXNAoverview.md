@@ -32,7 +32,7 @@ Below you can find some screenshots of this series of 2D MonoGame Tutorials. The
 
 You can find the full upgraded source for this chapter here:
 
-- [2D series shooter - source](https://github.com/SimonDarksideJ/XNAGameStudio/tree/archive/MonoGameSamples/Riemers/Series_0_Shooters)
+- [2D series shooter - source](https://github.com/SimonDarksideJ/MonoGameSamples/tree/main/Riemers/Series_0_Shooters)
 
 ## Chapters
 

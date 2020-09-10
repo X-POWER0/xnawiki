@@ -57,3 +57,9 @@ You can download the [asset pack here](https://github.com/SimonDarksideJ/XNAGame
 ![Example Scene 3](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-00screen3.jpg?raw=true)
 
 ![Example Scene 4](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/3DXNA2-00screen4.jpg?raw=true)
+
+## Source
+
+You can find the full upgraded source for this chapter here:
+
+- [3D Series 2 - Flightsim](https://github.com/SimonDarksideJ/MonoGameSamples/tree/main/Riemers/Series_2_Flightsim)
