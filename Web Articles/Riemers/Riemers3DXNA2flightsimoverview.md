@@ -18,7 +18,7 @@ Again, the main goal of this series is to cover MonoGame features. This means th
 - Point sprites, basic billboarding
 - Alpha blending
 
-During this series you will need to download the [asset pack](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true) which contains the following resources:
+During this series you will need to download the [asset pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true) which contains the following resources:
 
 - Starting Effect file: effects.fx
 - Textures: riemerstexture.bmp
@@ -29,7 +29,7 @@ During this series you will need to download the [asset pack](https://github.com
 - Skybox: skybox.x
 - Skybox: skyboxtextures (6 images)
 
-You can download the [asset pack here](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true)
+You can download the [asset pack here](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true)
 
 ## Chapters
 
