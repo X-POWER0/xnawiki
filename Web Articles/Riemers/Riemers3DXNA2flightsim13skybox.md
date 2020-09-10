@@ -8,7 +8,7 @@ What exactly is a skybox? It is simply nothing more than a cube with 6 nice land
 
 Using the methods we have created thus far, you can expect this to be quite easy, as a skybox is nothing more than another mesh. Only this time, we need to load some texture files to apply to the faces of the mesh.
 
-The mesh file (skybox.x) and the textures (six "skybox" files, one for each cube face) are included in the [asset for this series](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true), simply unpack them and add them to your content project as normal.
+The mesh file (skybox.x) and the textures (six "skybox" files, one for each cube face) are included in the [asset for this series](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true), simply unpack them and add them to your content project as normal.
 
 > If you prefer, you can find lots of other skybox texture files on the internet, just have a search and swap them out if you like.
 

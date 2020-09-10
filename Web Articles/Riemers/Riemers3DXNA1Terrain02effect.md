@@ -10,7 +10,7 @@ Do not worry too much about this, as this is already more advanced stuff which w
 
 ## Your first effect
 
-MonoGame needs an effect file to draw even the simplest triangles, so I have written an effect file that contains some very basic techniques. If you have not done so already, you can download the [asset pack that contains the "effect.fx" file here](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series1%20-%20Terrain%20-%20Assets.zip?raw=true). Right-click on the link, and select "Save As". You should put the file on your hard drive, for example in the same folder as your code files.
+MonoGame needs an effect file to draw even the simplest triangles, so I have written an effect file that contains some very basic techniques. If you have not done so already, you can download the [asset pack that contains the "effect.fx" file here](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series1%20-%20Terrain%20-%20Assets.zip?raw=true). Right-click on the link, and select "Save As". You should put the file on your hard drive, for example in the same folder as your code files.
 
 Now that you have downloaded the effect file (effects.fx) to the same folder as your code files, we will import the file into our MonoGame project.
 

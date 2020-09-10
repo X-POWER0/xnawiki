@@ -23,7 +23,7 @@ Each part also contains an effect, and if applicable, the texture image, that sh
 
 ## Importing 3D content
 
-Enough theory, let us see how this works in practice. We will be loading a spaceship into our scene, Import the *"xwing.x"* file from the [Asset Pack](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true) into your Content project for your Solution, the same way as you did with images! You should now have an asset called ‘xwing’.
+Enough theory, let us see how this works in practice. We will be loading a spaceship into our scene, Import the *"xwing.x"* file from the [Asset Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true) into your Content project for your Solution, the same way as you did with images! You should now have an asset called ‘xwing’.
 
 Next, we will create a variable to assign the Model to, so add this to the Properties section of the code:
 

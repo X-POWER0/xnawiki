@@ -4,7 +4,7 @@ Up till now, the only way we have seen to add some color to our scene is to decl
 
 ## Painting with textures
 
-As a first example, we are going to draw 1 simple triangle, and cover it with a texture. Import the "riemerstexture.bmp" image from the [Asset pack](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true) and add it to the Content project of your MonoGame solution, just as you did earlier for the effect file.
+As a first example, we are going to draw 1 simple triangle, and cover it with a texture. Import the "riemerstexture.bmp" image from the [Asset pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true) and add it to the Content project of your MonoGame solution, just as you did earlier for the effect file.
 
 In our code, we are going to add a new variable to hold this texture image. Add this line to the **Properties** your code:
 

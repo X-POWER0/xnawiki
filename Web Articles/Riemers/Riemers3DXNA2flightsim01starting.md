@@ -10,7 +10,7 @@ The sole purpose of this first chapter is to set up our starting code. The code 
 
 So open a new MonoGame project (I used the DesktopGL template, but you can whichever suits your target platform) as described in [chapter one of the first series](Riemers3DXNA1Terrain01starting), I named my project "**Series3D2**". You are free to give your project a different name, but then you must replace the **namespace** of my code with your project name. This line is the first line under your using-block in my code.
 
-If you have not done this already, download the assets for this series and add my [standard effect file](https://github.com/simondarksidej/XNAGameStudio/raw/archive/Images/Riemers/https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true), which you need to import into your MonoGame project as explained in ["The effect file"](Riemers3DXNA1Terrain02effect) in series 1. This effect file contains all techniques we are going to need in this second series.
+If you have not done this already, download the assets for this series and add my [standard effect file](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series2%20-%20FlightSim%20-%20Assets.zip?raw=true), which you need to import into your MonoGame project as explained in ["The effect file"](Riemers3DXNA1Terrain02effect) in series 1. This effect file contains all techniques we are going to need in this second series.
 
 > Remember, you will learn everything you need to know about effect files in the [third series](Riemers3DXNA3hlsloverview). For now, simply copy-paste the code below into your Game1.cs file.
 
