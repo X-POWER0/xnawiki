@@ -30,6 +30,8 @@ In every chapter you will learn the basic features of MonoGame:
 12. [Terrain lighting: making use of what we learned in the previous chapter to enable lighting over our terrain](Riemers3DXNA1Terrain12terrainlighting)
 13. [Improving performance by using VertexBuffers and IndexBuffers](Riemers3DXNA1Terrain13buffers)
 
+## Assets
+
 During this series you will need to download the following resources:
 
 * [3D Series1 - Terrain - Assets](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series1%20-%20Terrain%20-%20Assets.zip)
