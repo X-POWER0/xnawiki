@@ -32,7 +32,7 @@ Below you can find some screenshots of this series of 2D MonoGame Tutorials. The
 
 During this series you will need to download the following resources:
 
-- [2D series shooter - Assets](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/3D%20Series1%20-%20Terrain%20-%20Assets.zip?raw=true)
+- [2D series shooter - Assets](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/Samples/Riemers/2D%20Series%20-%20Shooters%20-%20Assets.zip)
 
 ## Source
 
