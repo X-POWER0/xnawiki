@@ -1,4 +1,8 @@
-# Complete solutions
+# The XNA Game Studio archive catalogue
+
+Listed below, the entire XNA Educational archive organized in to sections for easier access.
+
+## Complete solutions
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -20,10 +24,11 @@ Title | Area | Description | Type
 [*Snow Shovel*](https://github.com/simondarksidej/XNAGameStudio/wiki/Snow-Shovel) | Games: 2D Graphics, Input, Touch & Gestures | Snow Shovel is a simple game designed for Windows Phone 7 that shows how to draw 2D sprites and handle player input by using the accelerometer. | Code Sample
 [*Spacewar*](https://github.com/simondarksidej/XNAGameStudio/wiki/Spacewar) | Games: 2D Graphics, Games: Collision, Games: Graphics | Spacewar is a complete starship combat game. It comes in two versions: Retro and Evolved. | Code Sample
 [*Yacht*](https://github.com/simondarksidej/XNAGameStudio/wiki/Yacht) | Games: 2D Graphics, Games: Gameplay, Games: Graphics, Input, Touch & Gestures, Networking & Web Services | This is a complete wi-fi supported multiplayer dice game for Windows Phone. | Code Sample
+|||
 
 ---
 
-# Shaders and effects
+## Shaders and effects
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -59,10 +64,11 @@ Title | Area | Description | Type
 [*Sprite Effects*](https://github.com/simondarksidej/XNAGameStudio/wiki/Sprite-Effects) | Games: 2D Graphics, Games: Content Pipeline, Games: Graphics, Games: Postprocessing, Games: Shaders | This sample shows how shaders can be used to implement special effects when drawing 2D graphics with SpriteBatch. | Code Sample
 [*Split Screen*](https://github.com/simondarksidej/XNAGameStudio/wiki/Split-Screen) | Games: 2D Graphics, Games: 3D Graphics, Games: Graphics, User Experience | This sample demonstrates how to display the same scene in two viewports by using two separate view and projection matrices, simulating a two-player game scenario. | Code Sample
 [*Stock Effects*](https://github.com/simondarksidej/XNAGameStudio/wiki/Stock-Effects) | Games: Shaders | Stock effects provides source code for the five effects (BasicEffect, SkinnedEffect, EnvironmentMapEffect, DualTextureEffect, and AlphaTestEffect), and the default shader used by SpriteBatch (SpriteEffect). | Code Sample
+|||
 
 ---
 
-# Physics and AI
+## Physics and AI
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -85,10 +91,11 @@ Title | Area | Description | Type
 [*Simple Animation*](https://github.com/simondarksidej/XNAGameStudio/wiki/Simple-Animation) | Games: 3D Graphics, Games: Graphics, Games: Shaders | This sample shows how to apply simple program controlled rigid body animation to a model rendered by using the XNA Framework. | Code Sample
 [*Skinned Model*](https://github.com/simondarksidej/XNAGameStudio/wiki/Skinned-Model) | Games: 3D Graphics, Games: Content Pipeline, Games: Graphics, Games: Shaders | This sample shows how to process and render a skinned character model by using the XNA Framework Content Pipeline. | Code Sample
 [*Waypoint Navigation*](https://github.com/simondarksidej/XNAGameStudio/wiki/Waypoint-Navigation) | Games: Artificial Intelligence | This sample demonstrates basic artificial intelligence navigation in 2D by using waypoints. | Code Sample
+|||
 
 ---
 
-# Content Pipeline
+## Content Pipeline
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -102,10 +109,11 @@ Title | Area | Description | Type
 [*Particles Pipeline*](https://github.com/simondarksidej/XNAGameStudio/wiki/Particles-Pipeline) | Games: 2D Graphics, Games: Content Pipeline, Games: Graphics | This sample builds on the Particles 2D sample to allow authoring of particle effects in XML files, which makes creating new particle systems and modifying particle system parameters a much simpler task. | Code Sample
 [*Skinned Model Extensions Tutorial*](https://github.com/simondarksidej/XNAGameStudio/wiki/Skinned-Model-Extensions-Tutorial) | Games: 3D Graphics, Games: Collision, Games: Content Pipeline, Games: Graphics | This tutorial will teach you how to extend the Skinned Model sample by directly accessing and manipulating the [*positions of specific bones to add three new features. | Tutorial
 [*Sprite Sheet*](https://github.com/simondarksidej/XNAGameStudio/wiki/Sprite-Sheet) | Games: 2D Graphics, Games: Content Pipeline, Games: Graphics | This sample shows how to implement sprite sheets, combining many separate sprite images into a single larger texture that will be more efficient for graphics hardware. | Code Sample
+|||
 
 ---
 
-# Networking samples
+## Networking samples
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -120,10 +128,11 @@ Title | Area | Description | Type
 [*Network Architecture Peer-to-Peer*](https://github.com/simondarksidej/XNAGameStudio/wiki/Network-Architecture-Peer-to-Peer )| Networking & Web Services | This sample implements a simple multiplayer network session, using a peer-to-peer network topology where each computer is responsible for updating the state of its locally controlled players. | Code Sample
 [*Recipe: Non-Linear Navigation Service for Windows*](https://github.com/simondarksidej/XNAGameStudio/wiki/Recipe-Non-Linear-Navigation-Service-for-Windows) | User Experience | Windows Phone Recipes provide you with building blocks that you can use in your own applications to accelerate your development. We created the Non-Linear Navigation Service for Windows Phone in order to give you the ability to simplify and improve how the Windows Phone back stack works in your application. | Article
 [*Recipe: Push Notification Server Side Helper*](https://github.com/simondarksidej/XNAGameStudio/wiki/Recipe-Push-Notification-Server-Side-Helper) | Push Notifications | This library provides an easy way for sending all three kinds of push notification messages currently supported by Microsoft Push Notification Services. | Article
+|||
 
 ---
 
-# Misc Tools / Audio and Assets
+## Misc Tools / Audio and Assets
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -154,18 +163,21 @@ Title | Area | Description | Type
 [*Touch Thumbsticks*](https://github.com/simondarksidej/XNAGameStudio/wiki/Touch-Thumbsticks) | Input, Touch & Gestures | This sample demonstrates a technique for using the touch panel to provide thumbstick-style controls on Windows Phone 7. | Code Sample
 [*Unit Converter Starter Kit*](https://github.com/simondarksidej/XNAGameStudio/wiki/Unit-Converter-Starter-Kit) | Games: Data Management | This Starter Kit is a complete Unit Converter application written in C#. The program enables the user to convert values from one type of unit to another. | Code Sample
 [*User Interface Controls*](https://github.com/simondarksidej/XNAGameStudio/wiki/User-Interface-Controls) | User Experience | This sample demonstrates a set of extensible user interface controls that you can drop right into your Windows Phone 7 game. | Code Sample
+|||
 
 ---
 
-#Winforms Samples
+## Winforms Samples
+
 Title | Area | Description | Type
 ---|---|---|---
 [*WinForms Series 1 Graphics Device*](https://github.com/simondarksidej/XNAGameStudio/wiki/WinForms-Series-1-Graphics-Device) | Games: Graphics | This sample shows you how to use an XNA Framework GraphicsDevice object to display 3D graphics inside a WinForms application. | Code Sample
 [*WinForms Series 2 Content Loading*](https://github.com/simondarksidej/XNAGameStudio/wiki/WinForms-Series-2-Content-Loading) | Games: Content Pipeline, Games: Graphics | This sample shows you how to import arbitrary 3D models at runtime by running the Content Pipeline importers and processors dynamically. | Code Sample
- 
+|||
+
 ---
 
-# Assorted documentation
+## Assorted documentation
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -189,10 +201,11 @@ Title | Area | Description | Type
 [*Xbox 360 Controller Images*](https://github.com/simondarksidej/XNAGameStudio/wiki/Xbox-360-Controller-Images) | Games: 2D Graphics, Input, Touch & Gestures | This pack is a set of Xbox 360 controller graphics that you can use in your games. | Tool
 [*Xbox 360 Controller Button Images*](https://github.com/simondarksidej/XNAGameStudio/wiki/Xbox-360-Controller-Button-Images) | Games: 2D Graphics, Input, Touch & Gestures | This pack is a set of images that represent the buttons, thumbsticks, and triggers on the Xbox 360 Controller. | Tool
 [*Xbox 360 Performance Best Practices*](https://github.com/simondarksidej/XNAGameStudio/wiki/Xbox-360-Performance-Best-Practices) | Performance & Optimization | This article discusses best practices for achieving good performance on Xbox 360 for XNA Game Studio games. | Article
+|||
 
 ---
 
-# Avatar samples (Not supported by MG yet)
+## Avatar samples (Not supported by MG yet)
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -203,10 +216,11 @@ Title | Area | Description | Type
 [*Avatar Multiple Animations Sample*](https://github.com/simondarksidej/XNAGameStudio/wiki/Avatar-Multiple-Animations-Sample) | Games: 3D Graphics, Games: Graphics | This sample demonstrates how to play two animations simultaneously on different parts of a single avatar. | Code Sample
 [*Avatar Animation Blending Sample*](https://github.com/simondarksidej/XNAGameStudio/wiki/Avatar-Animation-Blending-Sample) | Games: 3D Graphics, Games: Graphics | This sample shows how to blend two avatar animations together so that they smoothly transition from one animation to the next. | Code Sample
 [*Avatar Usage Guidelines*](https://github.com/simondarksidej/XNAGameStudio/wiki/Avatar-Usage-Guidelines) || Learn the rules about acceptable - and unacceptable - Avatar usage in Xbox LIVE Indie Games. | Article
+|||
 
 ---
 
-# Archived (pre XNA 4.0) samples 
+## Archived (pre XNA 4.0) samples
 
 Title | Area | Description | Type
 ---|---|---|---
@@ -226,3 +240,4 @@ Title | Area | Description | Type
 [*Pickture*](https://github.com/simondarksidej/XNAGameStudio/wiki/Pickture) (ARCHIVED) | Games: 3D Graphics, Games: Gameplay, Games: Graphics, Games: Shaders | The Pickture Sample is a photo-based puzzle game with a twist: on the more difficult settings, the board is two sided and puzzle chips can be flipped. | Code Sample
 [*Catapult*](https://github.com/simondarksidej/XNAGameStudio/wiki/Catapult) (ARCHIVED) | Data and Isolated Storage, Games: 2D Graphics, Games: Gameplay, Games: Physics | The Catapult Sample is a quick, addictive game where the goal is to send a pumpkin flying as far as possible. | Code Sample
 [*Racing Game*](https://github.com/simondarksidej/XNAGameStudio/wiki/Racing-Game) (ARCHIVED) | Games: 3D Graphics, Games: Graphics, Games: Postprocessing, Games: Shaders | Racing Game is a 3D auto racing game that features advanced graphics, audio, and input processing. Race around the track and try to beat the ghost car to achieve the best time. | Code Sample
+|||
