@@ -2,13 +2,13 @@
 
 The Education library from XNA Game Studios, valuable for MonoGame Developers for advanced samples.
 
-# Getting Started
+## Getting Started
 
 The project contains all the XNA samples from the XNA Creators Club site, however, they are still currently in XNA Game format, meaning by default they can only be opened on machines running Visual Studio 2010 with the XNA Game Studio development MSI's installed
 
 The plan is to upgrade / migrate each sample to source in a MonoGame project.  Along with gathering all the necessary XNA documentation to support them.
 
-# Using XNA projects in Visual Studio 2013 / 2015
+## Using XNA projects in Visual Studio 2013 / 2015
 
 Help is at hand for more modern visual studio versions by using the awesome MXA Game Studio visual studio addon.
 
@@ -28,6 +28,17 @@ Additionally, the MXA Studio provided a "fixed" version of the [XNA Game Studio 
 
 You can still build and run the projects on Windows, however, deploying to Xbox and Phone does not work anymore. But you can still open those projects successfully.
 
-# Now get going
+## Now get going
 
 Over time the archive will be made MonoGame ready (maybe even some other XNA based frameworks as well, who knows). So be patient or even get involved. 
+
+## Archived original XNA installers
+
+For prosperity, the archive also retains the original XNA installers for those that wish to take a trip down memory lane:
+
+* [Microsoft XNA Game Studio 3.1](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS31_setup.zip)
+* [Microsoft XNA Game Studio 4.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS40_setup.zip)
+* [Microsoft XNA Framework Redistributable 4.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx40_redist.zip)
+* [Microsoft XNA Game Studio 4.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnalangpack.ja-JP.zip)
+* [Microsoft XNA Game Studio 4.0 Refresh](https://github.com/SimonDarksideJ/XNAGameStudio/blob/archive/XNA%20Redistributables/XNAGS40_refresh_setup.zip)
+* [Microsoft XNA Framework Redistributable 4.0 Refresh](https://github.com/SimonDarksideJ/XNAGameStudio/blob/archive/XNA%20Redistributables/xnafx40_Refresh_redist.zip)
