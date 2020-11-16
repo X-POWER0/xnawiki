@@ -36,9 +36,36 @@ Over time the archive will be made MonoGame ready (maybe even some other XNA bas
 
 For prosperity, the archive also retains the original XNA installers for those that wish to take a trip down memory lane:
 
+### XNA Game Studio 1.0 (2006)
+
+* [Microsoft XNA Game Studio 1.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnagse_setup.zip)
+* [Microsoft XNA Game Studio 1.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx_redist.zip)
+
+### XNA Game Studio 2.0 (2007)
+
+* [Microsoft XNA Game Studio 2.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS20_setup.zip)
+* [Microsoft XNA Game Studio 2.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnags20_docs_ja.zip)
+* [Microsoft XNA Game Studio 2.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx20_redist.zip)
+
+### XNA Game Studio 3.0 (2008)
+
+* [Microsoft XNA Game Studio 3.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS30_setup.zip)
+* [Microsoft XNA Game Studio 3.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnags30_docs_ja.zip)
+* [Microsoft XNA Game Studio 3.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx30_redist.zip)
+
+### XNA Game Studio 3.1 (2009)
+
 * [Microsoft XNA Game Studio 3.1](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS31_setup.zip)
+* [Microsoft XNA Game Studio 3.1 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx31_redist.zip)
+* [Microsoft XNA Game Studio 3.1 Zune Extensions](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/zuneextensions.zip)
+
+### XNA Game Studio 4.0
+
 * [Microsoft XNA Game Studio 4.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS40_setup.zip)
-* [Microsoft XNA Framework Redistributable 4.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx40_redist.zip)
+* [Microsoft XNA Framework 4.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx40_redist.zip)
 * [Microsoft XNA Game Studio 4.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnalangpack.ja-JP.zip)
+
+### XNA Game Studio 4.0 Refresh
+
 * [Microsoft XNA Game Studio 4.0 Refresh](https://github.com/SimonDarksideJ/XNAGameStudio/blob/archive/XNA%20Redistributables/XNAGS40_refresh_setup.zip)
-* [Microsoft XNA Framework Redistributable 4.0 Refresh](https://github.com/SimonDarksideJ/XNAGameStudio/blob/archive/XNA%20Redistributables/xnafx40_Refresh_redist.zip)
+* [Microsoft XNA Framework 4.0 Refresh Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/blob/archive/XNA%20Redistributables/xnafx40_Refresh_redist.zip)
