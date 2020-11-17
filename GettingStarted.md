@@ -65,7 +65,7 @@ For prosperity, the archive also retains the original XNA installers for those t
 
 * [Microsoft XNA Game Studio 4.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS40_setup.zip)
 * [Microsoft XNA Framework 4.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx40_redist.zip)
-* [Microsoft XNA Game Studio 4.0 JPN documentation](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnalangpack.ja-JP.zip)
+* [Microsoft XNA Game Studio 4.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnalangpack.ja-JP.zip)
 
 ### XNA Game Studio 4.0 Refresh
 
