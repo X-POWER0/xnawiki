@@ -58,6 +58,8 @@ For prosperity, the archive also retains the original XNA installers for those t
 * [Microsoft XNA Game Studio 3.1](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS31_setup.zip)
 * [Microsoft XNA Game Studio 3.1 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx31_redist.zip)
 * [Microsoft XNA Game Studio 3.1 Zune Extensions](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/zuneextensions.zip)
+* [Microsoft XNA Game Studio 3.1 JPN](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS31_setup-JA.zip)
+* [Microsoft XNA Game Studio 3.1 Redistributable JPN](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx31_redist-JA.zip)
 
 ### XNA Game Studio 4.0
 
