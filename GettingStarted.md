@@ -44,13 +44,13 @@ For prosperity, the archive also retains the original XNA installers for those t
 ### XNA Game Studio 2.0 (2007)
 
 * [Microsoft XNA Game Studio 2.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS20_setup.zip)
-* [Microsoft XNA Game Studio 2.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnags20_docs_ja.zip)
+* [Microsoft XNA Game Studio 2.0 JPN documentation](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnags20_docs_ja.zip)
 * [Microsoft XNA Game Studio 2.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx20_redist.zip)
 
 ### XNA Game Studio 3.0 (2008)
 
 * [Microsoft XNA Game Studio 3.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS30_setup.zip)
-* [Microsoft XNA Game Studio 3.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnags30_docs_ja.zip)
+* [Microsoft XNA Game Studio 3.0 JPN documentation](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnags30_docs_ja.zip)
 * [Microsoft XNA Game Studio 3.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx30_redist.zip)
 
 ### XNA Game Studio 3.1 (2009)
@@ -65,7 +65,7 @@ For prosperity, the archive also retains the original XNA installers for those t
 
 * [Microsoft XNA Game Studio 4.0](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/XNAGS40_setup.zip)
 * [Microsoft XNA Framework 4.0 Redistributable](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnafx40_redist.zip)
-* [Microsoft XNA Game Studio 4.0 JPN Language Pack](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnalangpack.ja-JP.zip)
+* [Microsoft XNA Game Studio 4.0 JPN documentation](https://github.com/SimonDarksideJ/XNAGameStudio/raw/archive/XNA%20Redistributables/xnalangpack.ja-JP.zip)
 
 ### XNA Game Studio 4.0 Refresh
 
